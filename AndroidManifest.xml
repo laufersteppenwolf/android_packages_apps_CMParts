@@ -294,5 +294,14 @@
 
         <service android:enabled="true" android:name=".services.RenderFXService" />
         <service android:enabled="true" android:name=".services.BatteryService" />
+
+        <!-- dx -->
+        <activity android:name=".activities.GingerDXActivity" android:label="@string/gingerdx_settings_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.cyanogenmod.cmparts.SHORTCUT"/>
+            </intent-filter>
+        </activity>
+        
     </application>
 </manifest>

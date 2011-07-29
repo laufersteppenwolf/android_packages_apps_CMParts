@@ -695,6 +695,14 @@
     <string name="perm_enable_warning_message">Warning!\nRevoking most permissions will most likely cause applications to malfunction. If an application with revoked permissions force-closes please grant the expected permissions or don\'t use the application.\nPlease DO NOT send bug reports to Cyanogenmod if an application with revoked permissions is not working as expected!</string>
     <string name="perm_enable_warning_title">Are you sure?</string>
 
+    <!-- dx -->
+    <!-- GingerDX settings -->
+    <string name="gingerdx_settings_title">GingerDX settings</string>
+    <string name="gingerdx_settings_summary">Change GingerDX-specific options</string>
+    <string name="pref_led_disabled_group_title">LED disabled in night...</string>
+    <string name="pref_led_disabled_title">...activated</string>
+    <string name="pref_led_disabled_from_title">...from</string>
+    <string name="pref_led_disabled_to_title">...to</string>
 
 
 </resources>
