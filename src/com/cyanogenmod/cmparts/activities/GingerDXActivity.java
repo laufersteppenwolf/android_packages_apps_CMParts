@@ -25,14 +25,14 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private static final String LED_DISABLED_FROM_PREF = "pref_led_disabled_from";
     private static final String LED_DISABLED_TO_PREF = "pref_led_disabled_to";
 
-//    private static final String FLIPPING_DOWN_MUTES_RINGER_PREF = "pref_flipping_mutes_ringer";
+    private static final String FLIPPING_DOWN_MUTES_RINGER_PREF = "pref_flipping_mutes_ringer";
 //    private static final String FLIPPING_DOWN_SNOOZES_ALARM_PREF = "pref_flipping_snoozes_alarm";
 //	private static final String BACK_BUTTON_ENDS_CALL_PREF = "pref_back_button_ends_call";
 //	private static final String TRANSPARENT_STATUS_BAR_PREF = "pref_transparent_status_bar";
 //	private static final String HIDE_AVATAR_MESSAGE_PREF = "pref_hide_avatar_message";
 //	private static final String DO_PROFILE_SCROLLING_PREF = "pref_do_profile_scrolling";
 //	private static final String DO_PROFILE_FLINGING_PREF = "pref_do_profile_flinging";
-//    private static final String CALL_ME_LOUDER_PREF = "pref_call_me_louder";
+    private static final String CALL_ME_LOUDER_PREF = "pref_call_me_louder";
 //    private static final String RINGER_LOOP_PREF = "pref_ringer_loop";
 
 
@@ -42,13 +42,13 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private ListPreference mLedDisabledToPref;
     private CheckBoxPreference mLedDisabledPref;
 //    private ListPreference mTransparentStatusBarPref;
-//    private CheckBoxPreference mFlippingDownMutesRinger;
+    private CheckBoxPreference mFlippingDownMutesRinger;
 //    private CheckBoxPreference mFlippingDownSnoozesAlarm;
 //    private CheckBoxPreference mBackButtonEndsCall;
 //    private CheckBoxPreference mHideAvatarMessage;
 //    private CheckBoxPreference mDoProfileScrolling;
 //    private CheckBoxPreference mDoProfileFlinging;
-//    private CheckBoxPreference mCallMeLouder;
+    private CheckBoxPreference mCallMeLouder;
 //    private CheckBoxPreference mRingerLoop;
     
 
@@ -76,8 +76,8 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         	Settings.System.NOTIFICATION_LIGHT_DISABLED_END, 6)));
         mLedDisabledToPref.setOnPreferenceChangeListener(this);
                     
-//        mFlippingDownMutesRinger = (CheckBoxPreference) prefSet.findPreference(FLIPPING_DOWN_MUTES_RINGER_PREF);
-//        mFlippingDownMutesRinger.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.FLIPPING_DOWN_MUTES_RINGER, 1) == 1);
+        mFlippingDownMutesRinger = (CheckBoxPreference) prefSet.findPreference(FLIPPING_DOWN_MUTES_RINGER_PREF);
+        mFlippingDownMutesRinger.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.FLIPPING_DOWN_MUTES_RINGER, 1) == 1);
 
 //        mFlippingDownSnoozesAlarm = (CheckBoxPreference) prefSet.findPreference(FLIPPING_DOWN_SNOOZES_ALARM_PREF);
 //        mFlippingDownSnoozesAlarm.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.FLIPPING_DOWN_SNOOZES_ALARM, 1) == 1);
@@ -101,8 +101,8 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 //        if (mDoProfileFlinging != null)
 //		    mDoProfileFlinging.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.DO_PROFILE_FLINGING, 0) == 1);
 
-//	    mCallMeLouder = (CheckBoxPreference) prefSet.findPreference(CALL_ME_LOUDER_PREF);
-//	    mCallMeLouder.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.CALL_ME_LOUDER, 0) == 1));
+	    mCallMeLouder = (CheckBoxPreference) prefSet.findPreference(CALL_ME_LOUDER_PREF);
+	    mCallMeLouder.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.CALL_ME_LOUDER, 0) == 1));
 
 //	    mRingerLoop = (CheckBoxPreference) prefSet.findPreference(RINGER_LOOP_PREF);
 //	    mRingerLoop.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.RINGER_LOOP, 1) == 1));
@@ -116,10 +116,10 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
                 Settings.System.NOTIFICATION_LIGHT_DISABLED, mLedDisabledPref.isChecked() ? 1 : 0);
             return true;
         }
-//        else if (preference == mFlippingDownMutesRinger) {
-//            Settings.System.putInt(getContentResolver(), Settings.System.FLIPPING_DOWN_MUTES_RINGER, mFlippingDownMutesRinger.isChecked() ? 1 : 0);
-//            return true;
-//        }
+        else if (preference == mFlippingDownMutesRinger) {
+            Settings.System.putInt(getContentResolver(), Settings.System.FLIPPING_DOWN_MUTES_RINGER, mFlippingDownMutesRinger.isChecked() ? 1 : 0);
+            return true;
+        }
 //        else if (preference == mFlippingDownSnoozesAlarm) {
 //            Settings.System.putInt(getContentResolver(), Settings.System.FLIPPING_DOWN_SNOOZES_ALARM, mFlippingDownSnoozesAlarm.isChecked() ? 1 : 0);
 //            return true;
@@ -140,9 +140,9 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 //            Settings.System.putInt(getContentResolver(), Settings.System.DO_PROFILE_FLINGING, mDoProfileFlinging.isChecked() ? 1 : 0);
 //            return true;
 //        }
-//        else if (preference == mCallMeLouder) {
-//            Settings.System.putInt(getContentResolver(), Settings.System.CALL_ME_LOUDER, mCallMeLouder.isChecked() ? 1 : 0);
-//        }
+        else if (preference == mCallMeLouder) {
+            Settings.System.putInt(getContentResolver(), Settings.System.CALL_ME_LOUDER, mCallMeLouder.isChecked() ? 1 : 0);
+        }
 //        else if (preference == mRingerLoop) {
 //            Settings.System.putInt(getContentResolver(), Settings.System.RINGER_LOOP, mRingerLoop.isChecked() ? 1 : 0);
 //        }

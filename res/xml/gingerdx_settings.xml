@@ -6,11 +6,11 @@
 <!--	<CheckBoxPreference android:key="pref_do_profile_flinging"-->
 <!--	    android:title="Profile flinging"/>-->
 
-<!--	<PreferenceCategory android:key="flipping_category" android:title="@string/flipping_down_title">-->
-<!--		<CheckBoxPreference android:key="pref_flipping_mutes_ringer" android:title="@string/pref_flipping_down_mutes_ringer_title"/>-->
+	<PreferenceCategory android:key="flipping_category" android:title="@string/flipping_down_title">
+		<CheckBoxPreference android:key="pref_flipping_mutes_ringer" android:title="@string/pref_flipping_down_mutes_ringer_title"/>
 <!--		<CheckBoxPreference android:key="pref_flipping_snoozes_alarm" android:title="@string/pref_flipping_down_snoozes_alarm_title"-->
 <!--			android:summary="@string/pref_flipping_down_snoozes_alarm_summary"/>-->
-<!--	</PreferenceCategory>-->
+	</PreferenceCategory>
 
 	<PreferenceCategory android:key="led_disabled_category" android:title="@string/pref_led_disabled_group_title">
 		<CheckBoxPreference android:key="pref_led_disabled"
@@ -24,28 +24,16 @@
 	</PreferenceCategory>
 
 <!--	<PreferenceCategory android:key="statusbar_category" android:title="@string/statusbar_title">-->
-<!--        <PreferenceScreen android:key="ui_status_bar_menu"-->
-<!--            android:title="@string/ui_status_bar_title"-->
-<!--            android:summary="@string/ui_status_bar_summary" >-->
-<!--            <intent android:action="android.intent.action.MAIN"-->
-<!--                android:targetPackage="com.cyanogenmod.cmparts"-->
-<!--                android:targetClass="com.cyanogenmod.cmparts.activities.UIStatusBarActivity" />-->
-<!--        </PreferenceScreen>-->
-<!--		<CheckBoxPreference android:key="expanded_hide_indicator"-->
-<!--			android:title="@string/title_expanded_hide_indicator" android:summary="@string/summary_expanded_hide_indicator"-->
-<!--			android:defaultValue="false"/>-->
 <!--		<ListPreference android:key="pref_transparent_status_bar" android:dialogTitle="@string/pref_transparent_status_bar_title"-->
 <!--		    android:title="@string/pref_transparent_status_bar_title" android:summary="@string/pref_transparent_status_bar_summary"-->
 <!--		    android:entries="@array/entries_transparent_status_bar" android:entryValues="@array/values_transparent_status_bar" />-->
-<!--		<CheckBoxPreference android:key="pref_bottom_status_bar"-->
-<!--		    android:title="@string/pref_bottom_status_bar_title"/>-->
 <!--	</PreferenceCategory>-->
 
-<!--	<PreferenceCategory android:key="call_category" android:title="@string/call_features_title">-->
+	<PreferenceCategory android:key="call_category" android:title="@string/call_features_title">
 <!--		<CheckBoxPreference android:key="pref_back_button_ends_call"-->
 <!--		    android:title="@string/pref_back_button_ends_call_title"/>-->
-<!--		<CheckBoxPreference android:key="pref_call_me_louder"-->
-<!--		    android:title="@string/pref_call_me_louder_title" android:summary="@string/pref_call_me_louder_summary"/>-->
+		<CheckBoxPreference android:key="pref_call_me_louder"
+		    android:title="@string/pref_call_me_louder_title" android:summary="@string/pref_call_me_louder_summary"/>
 <!--		<CheckBoxPreference android:key="pref_ringer_loop"-->
 <!--		    android:title="@string/pref_ringer_loop_title" android:summary="@string/pref_ringer_loop_summary"/>-->
 <!--		<PreferenceScreen android:key="custom_carrier_menu"-->
@@ -55,7 +43,7 @@
 <!--                android:targetPackage="com.cyanogenmod.cmparts"-->
 <!--                android:targetClass="com.cyanogenmod.cmparts.activities.CustomCarrier" />-->
 <!--		</PreferenceScreen>		    -->
-<!--	</PreferenceCategory>-->
+	</PreferenceCategory>
 
 <!--	<PreferenceCategory android:key="other_category" android:title="@string/other_features_title">-->
 <!--		<CheckBoxPreference android:key="pref_edge_glow"-->

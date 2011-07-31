@@ -704,5 +704,14 @@
     <string name="pref_led_disabled_from_title">...from</string>
     <string name="pref_led_disabled_to_title">...to</string>
 
+    <string name="flipping_down_title">Flipping down...</string>
+    <string name="pref_flipping_down_mutes_ringer_title">...mutes ringer</string>
+    <string name="pref_flipping_down_snoozes_alarm_title">...snoozes alarm</string>
+    <string name="pref_flipping_down_snoozes_alarm_summary">No responsibility for being fired!</string>
+
+    <string name="call_features_title">Call features</string>
+    <string name="pref_call_me_louder_title">Call Me Louder</string>
+    <string name="pref_call_me_louder_summary">Louder ringer when phone is inside bags</string>
+
 
 </resources>
