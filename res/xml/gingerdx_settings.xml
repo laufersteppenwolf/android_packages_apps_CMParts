@@ -8,8 +8,8 @@
 
 	<PreferenceCategory android:key="flipping_category" android:title="@string/flipping_down_title">
 		<CheckBoxPreference android:key="pref_flipping_mutes_ringer" android:title="@string/pref_flipping_down_mutes_ringer_title"/>
-<!--		<CheckBoxPreference android:key="pref_flipping_snoozes_alarm" android:title="@string/pref_flipping_down_snoozes_alarm_title"-->
-<!--			android:summary="@string/pref_flipping_down_snoozes_alarm_summary"/>-->
+		<CheckBoxPreference android:key="pref_flipping_snoozes_alarm" android:title="@string/pref_flipping_down_snoozes_alarm_title"
+			android:summary="@string/pref_flipping_down_snoozes_alarm_summary"/>
 	</PreferenceCategory>
 
 	<PreferenceCategory android:key="led_disabled_category" android:title="@string/pref_led_disabled_group_title">
