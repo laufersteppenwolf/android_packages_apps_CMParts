@@ -27,7 +27,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 
     private static final String FLIPPING_DOWN_MUTES_RINGER_PREF = "pref_flipping_mutes_ringer";
     private static final String FLIPPING_DOWN_SNOOZES_ALARM_PREF = "pref_flipping_snoozes_alarm";
-//	private static final String BACK_BUTTON_ENDS_CALL_PREF = "pref_back_button_ends_call";
+	private static final String BACK_BUTTON_ENDS_CALL_PREF = "pref_back_button_ends_call";
 //	private static final String TRANSPARENT_STATUS_BAR_PREF = "pref_transparent_status_bar";
 //	private static final String HIDE_AVATAR_MESSAGE_PREF = "pref_hide_avatar_message";
 //	private static final String DO_PROFILE_SCROLLING_PREF = "pref_do_profile_scrolling";
@@ -44,7 +44,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 //    private ListPreference mTransparentStatusBarPref;
     private CheckBoxPreference mFlippingDownMutesRinger;
     private CheckBoxPreference mFlippingDownSnoozesAlarm;
-//    private CheckBoxPreference mBackButtonEndsCall;
+    private CheckBoxPreference mBackButtonEndsCall;
 //    private CheckBoxPreference mHideAvatarMessage;
 //    private CheckBoxPreference mDoProfileScrolling;
 //    private CheckBoxPreference mDoProfileFlinging;
@@ -82,8 +82,8 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         mFlippingDownSnoozesAlarm = (CheckBoxPreference) prefSet.findPreference(FLIPPING_DOWN_SNOOZES_ALARM_PREF);
         mFlippingDownSnoozesAlarm.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.FLIPPING_DOWN_SNOOZES_ALARM, 1) == 1);
 
-//        mBackButtonEndsCall = (CheckBoxPreference) prefSet.findPreference(BACK_BUTTON_ENDS_CALL_PREF);
-//        mBackButtonEndsCall.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.BACK_BUTTON_ENDS_CALL, 0) == 1);
+        mBackButtonEndsCall = (CheckBoxPreference) prefSet.findPreference(BACK_BUTTON_ENDS_CALL_PREF);
+        mBackButtonEndsCall.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.BACK_BUTTON_ENDS_CALL, 0) == 1);
 
 //        mHideAvatarMessage = (CheckBoxPreference) prefSet.findPreference(HIDE_AVATAR_MESSAGE_PREF);
 //	    mHideAvatarMessage.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.HIDE_AVATAR_MESSAGE, 0) == 1);
@@ -124,10 +124,10 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
             Settings.System.putInt(getContentResolver(), Settings.System.FLIPPING_DOWN_SNOOZES_ALARM, mFlippingDownSnoozesAlarm.isChecked() ? 1 : 0);
             return true;
         }
-//        else if (preference == mBackButtonEndsCall) {
-//            Settings.System.putInt(getContentResolver(), Settings.System.BACK_BUTTON_ENDS_CALL, mBackButtonEndsCall.isChecked() ? 1 : 0);
-//            return true;
-//        }
+        else if (preference == mBackButtonEndsCall) {
+            Settings.System.putInt(getContentResolver(), Settings.System.BACK_BUTTON_ENDS_CALL, mBackButtonEndsCall.isChecked() ? 1 : 0);
+            return true;
+        }
 //        else if (preference == mHideAvatarMessage) {
 //            Settings.System.putInt(getContentResolver(), Settings.System.HIDE_AVATAR_MESSAGE, mHideAvatarMessage.isChecked() ? 1 : 0);
 //            return true;
