@@ -34,7 +34,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 //	private static final String DO_PROFILE_SCROLLING_PREF = "pref_do_profile_scrolling";
 //	private static final String DO_PROFILE_FLINGING_PREF = "pref_do_profile_flinging";
     private static final String CALL_ME_LOUDER_PREF = "pref_call_me_louder";
-//    private static final String RINGER_LOOP_PREF = "pref_ringer_loop";
+    private static final String RINGER_LOOP_PREF = "pref_ringer_loop";
 
 
     static Context mContext;
@@ -51,7 +51,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 //    private CheckBoxPreference mDoProfileScrolling;
 //    private CheckBoxPreference mDoProfileFlinging;
     private CheckBoxPreference mCallMeLouder;
-//    private CheckBoxPreference mRingerLoop;
+    private CheckBoxPreference mRingerLoop;
     
 
     @Override
@@ -109,8 +109,8 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 	    mCallMeLouder = (CheckBoxPreference) prefSet.findPreference(CALL_ME_LOUDER_PREF);
 	    mCallMeLouder.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.CALL_ME_LOUDER, 0) == 1));
 
-//	    mRingerLoop = (CheckBoxPreference) prefSet.findPreference(RINGER_LOOP_PREF);
-//	    mRingerLoop.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.RINGER_LOOP, 1) == 1));
+	    mRingerLoop = (CheckBoxPreference) prefSet.findPreference(RINGER_LOOP_PREF);
+	    mRingerLoop.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.RINGER_LOOP, 1) == 1));
 	    
     }
         
@@ -152,9 +152,9 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         else if (preference == mCallMeLouder) {
             Settings.System.putInt(getContentResolver(), Settings.System.CALL_ME_LOUDER, mCallMeLouder.isChecked() ? 1 : 0);
         }
-//        else if (preference == mRingerLoop) {
-//            Settings.System.putInt(getContentResolver(), Settings.System.RINGER_LOOP, mRingerLoop.isChecked() ? 1 : 0);
-//        }
+        else if (preference == mRingerLoop) {
+            Settings.System.putInt(getContentResolver(), Settings.System.RINGER_LOOP, mRingerLoop.isChecked() ? 1 : 0);
+        }
         return false;
     }
 
