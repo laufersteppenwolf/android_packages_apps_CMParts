@@ -30,6 +30,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 	private static final String BACK_BUTTON_ENDS_CALL_PREF = "pref_back_button_ends_call";
 	private static final String TRANSPARENT_STATUS_BAR_PREF = "pref_transparent_status_bar";
 	private static final String HIDE_AVATAR_MESSAGE_PREF = "pref_hide_avatar_message";
+	private static final String QUICK_COPY_PASTE_PREF = "pref_quick_copy_paste";
 //	private static final String DO_PROFILE_SCROLLING_PREF = "pref_do_profile_scrolling";
 //	private static final String DO_PROFILE_FLINGING_PREF = "pref_do_profile_flinging";
     private static final String CALL_ME_LOUDER_PREF = "pref_call_me_louder";
@@ -46,6 +47,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private CheckBoxPreference mFlippingDownSnoozesAlarm;
     private CheckBoxPreference mBackButtonEndsCall;
     private CheckBoxPreference mHideAvatarMessage;
+    private CheckBoxPreference mQuickCopyPaste;
 //    private CheckBoxPreference mDoProfileScrolling;
 //    private CheckBoxPreference mDoProfileFlinging;
     private CheckBoxPreference mCallMeLouder;
@@ -88,6 +90,9 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 		mHideAvatarMessage = (CheckBoxPreference) prefSet.findPreference(HIDE_AVATAR_MESSAGE_PREF);
 		mHideAvatarMessage.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.HIDE_AVATAR_MESSAGE, 0) == 1);
 
+		mQuickCopyPaste = (CheckBoxPreference) prefSet.findPreference(QUICK_COPY_PASTE_PREF);
+		mQuickCopyPaste.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.QUICK_COPY_PASTE, 1) == 1);
+		
         mTransparentStatusBarPref = (ListPreference) prefSet.findPreference(TRANSPARENT_STATUS_BAR_PREF);
         mTransparentStatusBarPref.setValue(String.valueOf(Settings.System.getInt(mContext.getContentResolver(),
         	Settings.System.TRANSPARENT_STATUS_BAR, 0)));
@@ -130,6 +135,10 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         }
         else if (preference == mHideAvatarMessage) {
             Settings.System.putInt(getContentResolver(), Settings.System.HIDE_AVATAR_MESSAGE, mHideAvatarMessage.isChecked() ? 1 : 0);
+            return true;
+        }
+        else if (preference == mQuickCopyPaste) {
+            Settings.System.putInt(getContentResolver(), Settings.System.QUICK_COPY_PASTE, mQuickCopyPaste.isChecked() ? 1 : 0);
             return true;
         }
 //        else if (preference == mDoProfileScrolling) {

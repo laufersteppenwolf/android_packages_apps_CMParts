@@ -43,6 +43,8 @@
 	<PreferenceCategory android:key="other_category" android:title="@string/other_features_title">
 		<CheckBoxPreference android:key="pref_hide_avatar_message"
 		    android:title="@string/pref_hide_avatar_message_title"/>
+		<CheckBoxPreference android:key="pref_quick_copy_paste"
+		    android:title="@string/pref_quick_copy_paste_title"/>
 		<ListPreference android:key="pref_transparent_status_bar" android:dialogTitle="@string/pref_transparent_status_bar_title"
 		    android:title="@string/pref_transparent_status_bar_title" android:summary="@string/pref_transparent_status_bar_summary"
 		    android:entries="@array/entries_transparent_status_bar" android:entryValues="@array/values_transparent_status_bar" />
