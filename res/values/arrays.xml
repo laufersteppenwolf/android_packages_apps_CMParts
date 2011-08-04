@@ -699,5 +699,18 @@
         <item>9am</item>
     </string-array>    
     
+    <string-array name="values_transparent_status_bar">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    
+    <string-array name="entries_transparent_status_bar">
+        <item>Disabled</item>
+        <item>Theme</item>
+        <item>Semi-transparent</item>
+        <item>Gradient</item>
+    </string-array>    
 
 </resources>

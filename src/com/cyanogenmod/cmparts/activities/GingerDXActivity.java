@@ -28,7 +28,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private static final String FLIPPING_DOWN_MUTES_RINGER_PREF = "pref_flipping_mutes_ringer";
     private static final String FLIPPING_DOWN_SNOOZES_ALARM_PREF = "pref_flipping_snoozes_alarm";
 	private static final String BACK_BUTTON_ENDS_CALL_PREF = "pref_back_button_ends_call";
-//	private static final String TRANSPARENT_STATUS_BAR_PREF = "pref_transparent_status_bar";
+	private static final String TRANSPARENT_STATUS_BAR_PREF = "pref_transparent_status_bar";
 //	private static final String HIDE_AVATAR_MESSAGE_PREF = "pref_hide_avatar_message";
 //	private static final String DO_PROFILE_SCROLLING_PREF = "pref_do_profile_scrolling";
 //	private static final String DO_PROFILE_FLINGING_PREF = "pref_do_profile_flinging";
@@ -41,7 +41,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private ListPreference mLedDisabledFromPref;
     private ListPreference mLedDisabledToPref;
     private CheckBoxPreference mLedDisabledPref;
-//    private ListPreference mTransparentStatusBarPref;
+    private ListPreference mTransparentStatusBarPref;
     private CheckBoxPreference mFlippingDownMutesRinger;
     private CheckBoxPreference mFlippingDownSnoozesAlarm;
     private CheckBoxPreference mBackButtonEndsCall;
@@ -85,13 +85,13 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         mBackButtonEndsCall = (CheckBoxPreference) prefSet.findPreference(BACK_BUTTON_ENDS_CALL_PREF);
         mBackButtonEndsCall.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.BACK_BUTTON_ENDS_CALL, 0) == 1);
 
-//        mHideAvatarMessage = (CheckBoxPreference) prefSet.findPreference(HIDE_AVATAR_MESSAGE_PREF);
-//	    mHideAvatarMessage.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.HIDE_AVATAR_MESSAGE, 0) == 1);
+//		mHideAvatarMessage = (CheckBoxPreference) prefSet.findPreference(HIDE_AVATAR_MESSAGE_PREF);
+//		mHideAvatarMessage.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.HIDE_AVATAR_MESSAGE, 0) == 1);
 
-//        mTransparentStatusBarPref = (ListPreference) prefSet.findPreference(TRANSPARENT_STATUS_BAR_PREF);
-//        mTransparentStatusBarPref.setValue(String.valueOf(Settings.System.getInt(mContext.getContentResolver(),
-//        	Settings.System.TRANSPARENT_STATUS_BAR, 0)));
-//        mTransparentStatusBarPref.setOnPreferenceChangeListener(this);
+        mTransparentStatusBarPref = (ListPreference) prefSet.findPreference(TRANSPARENT_STATUS_BAR_PREF);
+        mTransparentStatusBarPref.setValue(String.valueOf(Settings.System.getInt(mContext.getContentResolver(),
+        	Settings.System.TRANSPARENT_STATUS_BAR, 0)));
+        mTransparentStatusBarPref.setOnPreferenceChangeListener(this);
 
 //        mDoProfileScrolling = (CheckBoxPreference) prefSet.findPreference(DO_PROFILE_SCROLLING_PREF);
 //        if (mDoProfileScrolling != null)
@@ -162,11 +162,11 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
             	Settings.System.putInt(mContext.getContentResolver(), Settings.System.NOTIFICATION_LIGHT_DISABLED_END, val);
             	mLedDisabledToPref.setValue(String.valueOf(val));
             }
-//	        if (preference == mTransparentStatusBarPref) {
-//				int val = Integer.parseInt(String.valueOf(newValue));
-//            	Settings.System.putInt(mContext.getContentResolver(), Settings.System.TRANSPARENT_STATUS_BAR, val);
-//            	mTransparentStatusBarPref.setValue(String.valueOf(val));
-//            }
+	        if (preference == mTransparentStatusBarPref) {
+				int val = Integer.parseInt(String.valueOf(newValue));
+            	Settings.System.putInt(mContext.getContentResolver(), Settings.System.TRANSPARENT_STATUS_BAR, val);
+            	mTransparentStatusBarPref.setValue(String.valueOf(val));
+            }
         }
         return false;
     }

@@ -23,11 +23,6 @@
 		    android:entries="@array/entries_led_disabled_to" android:entryValues="@array/values_led_disabled_to" />
 	</PreferenceCategory>
 
-<!--	<PreferenceCategory android:key="statusbar_category" android:title="@string/statusbar_title">-->
-<!--		<ListPreference android:key="pref_transparent_status_bar" android:dialogTitle="@string/pref_transparent_status_bar_title"-->
-<!--		    android:title="@string/pref_transparent_status_bar_title" android:summary="@string/pref_transparent_status_bar_summary"-->
-<!--		    android:entries="@array/entries_transparent_status_bar" android:entryValues="@array/values_transparent_status_bar" />-->
-<!--	</PreferenceCategory>-->
 
 	<PreferenceCategory android:key="call_category" android:title="@string/call_features_title">
 		<CheckBoxPreference android:key="pref_back_button_ends_call"
@@ -45,11 +40,12 @@
 <!--		</PreferenceScreen>		    -->
 	</PreferenceCategory>
 
-<!--	<PreferenceCategory android:key="other_category" android:title="@string/other_features_title">-->
-<!--		<CheckBoxPreference android:key="pref_edge_glow"-->
-<!--		    android:title="@string/pref_edge_glow_title" android:summary="@string/pref_edge_glow_summary"/>-->
+	<PreferenceCategory android:key="other_category" android:title="@string/other_features_title">
 <!--		<CheckBoxPreference android:key="pref_hide_avatar_message"-->
 <!--		    android:title="@string/pref_hide_avatar_message_title"/>-->
-<!--	</PreferenceCategory>-->
+		<ListPreference android:key="pref_transparent_status_bar" android:dialogTitle="@string/pref_transparent_status_bar_title"
+		    android:title="@string/pref_transparent_status_bar_title" android:summary="@string/pref_transparent_status_bar_summary"
+		    android:entries="@array/entries_transparent_status_bar" android:entryValues="@array/values_transparent_status_bar" />
+	</PreferenceCategory>
 
 </PreferenceScreen>
