@@ -721,6 +721,13 @@
 	<string name="pref_quick_copy_paste_title">Quick copy / Quick paste</string>
     <string name="pref_transparent_status_bar_title">Status bar transparency</string>
     <string name="pref_transparent_status_bar_summary">Reboot to apply changes</string>
+    
+    <string name="pref_custom_carrier_title">Custom carrier text</string>
+    <string name="pref_custom_carrier_summary">Appears on lockscreen/statusbar</string>
+    <string name="carrier_label">Carrier text (empty to disable)</string>
+    <string name="custom_carrier">Carrier text</string>
+    <string name="ok_button">Done</string>
+    <string name="cancel_button">Cancel</string>
 
 
 </resources>

@@ -302,6 +302,12 @@
                 <category android:name="com.cyanogenmod.cmparts.SHORTCUT"/>
             </intent-filter>
         </activity>
+        <activity android:name=".activities.CustomCarrier" android:label="@string/custom_carrier" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.cyanogenmod.cmparts.SHORTCUT" />
+            </intent-filter>
+        </activity>
         
     </application>
 </manifest>
