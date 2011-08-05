@@ -78,13 +78,17 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
     File lockWall;
 
     enum LockscreenStyle{
+        Random,
         Slider,
         Rotary,
         RotaryRevamped,
-        Lense;
+        Lense,
+        Sense;
 
         static public LockscreenStyle getStyleById(int id){
             switch (id){
+                case 0:
+                    return Random;
                 case 1:
                     return Slider;
                 case 2:
@@ -93,6 +97,8 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
                     return RotaryRevamped;
                 case 4:
                     return Lense;
+                case 5:
+                    return Sense;
                 default:
                     return RotaryRevamped;
             }
@@ -104,6 +110,8 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
 
         static public int getIdByStyle(LockscreenStyle lockscreenstyle){
             switch (lockscreenstyle){
+                case Random:
+                    return 0;
                 case Slider:
                     return 1;
                 case Rotary:
@@ -112,6 +120,8 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
                     return 3;
                 case Lense:
                     return 4;
+                case Sense:
+                    return 5;
                 default:
                     return 3;
             }
