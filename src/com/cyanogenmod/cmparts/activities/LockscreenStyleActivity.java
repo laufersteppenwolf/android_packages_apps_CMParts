@@ -182,6 +182,24 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
         mLockscreenStyle = LockscreenStyle.getStyleById(
                 Settings.System.getInt(getContentResolver(),
                 Settings.System.LOCKSCREEN_STYLE_PREF, 3));
+
+        // hide sense by default
+        if (Settings.System.getInt(getContentResolver(), Settings.System.ABOUT_CLICKED, 0) < 8) {
+		    // entries
+		    CharSequence[] xmlentries = mLockscreenStylePref.getEntries();
+		    CharSequence[] entries = new CharSequence[xmlentries.length - 1];
+		    for (int i = 0; i < xmlentries.length - 1; i++) {
+		    	entries[i] = xmlentries[i];
+		    }
+		    mLockscreenStylePref.setEntries(entries);
+			// values
+		    CharSequence[] xmlvalues = mLockscreenStylePref.getEntryValues();
+		    CharSequence[] values = new CharSequence[xmlentries.length - 1];
+		    for (int i = 0; i < xmlentries.length - 1; i++) {
+		    	values[i] = xmlvalues[i];
+		    }
+		    mLockscreenStylePref.setEntryValues(values);        
+        }
         mLockscreenStylePref.setValue(String.valueOf(LockscreenStyle.getIdByStyle(mLockscreenStyle)));
         mLockscreenStylePref.setOnPreferenceChangeListener(this);
 
