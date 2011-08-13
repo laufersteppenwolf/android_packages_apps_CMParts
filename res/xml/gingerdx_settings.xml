@@ -48,6 +48,9 @@
 		<ListPreference android:key="pref_transparent_status_bar" android:dialogTitle="@string/pref_transparent_status_bar_title"
 		    android:title="@string/pref_transparent_status_bar_title" android:summary="@string/pref_transparent_status_bar_summary"
 		    android:entries="@array/entries_transparent_status_bar" android:entryValues="@array/values_transparent_status_bar" />
+		<CheckBoxPreference android:key="pref_sense3_lockscreen"
+		    android:title="@string/pref_sense3_lockscreen_title"
+		    android:summary="@string/pref_sense3_lockscreen_summary" />
         <Preference android:key="pref_gingerdx_about"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/pref_gingerdx_about_title"

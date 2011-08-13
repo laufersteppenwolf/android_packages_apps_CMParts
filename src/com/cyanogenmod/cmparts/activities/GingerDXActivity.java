@@ -36,7 +36,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private static final String CALL_ME_LOUDER_PREF = "pref_call_me_louder";
     private static final String RINGER_LOOP_PREF = "pref_ringer_loop";
     private static final String ABOUT_PREF = "pref_gingerdx_about";
-
+    private static final String SENSE3_LOCKSCREEN_PREF = "pref_sense3_lockscreen";
 
     static Context mContext;
 
@@ -53,6 +53,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 //    private CheckBoxPreference mDoProfileFlinging;
     private CheckBoxPreference mCallMeLouder;
     private CheckBoxPreference mRingerLoop;
+    private CheckBoxPreference mSense3Lockscreen;
 	private Preference mAbout;    
 
     @Override
@@ -116,6 +117,12 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 	    mAbout = (Preference) prefSet.findPreference(ABOUT_PREF);
 		mAbout.setSummary("GingerDX " + android.os.SystemProperties.get("ro.build.display.id"));
         mAbout.setEnabled(true);
+
+	    mSense3Lockscreen = (CheckBoxPreference) prefSet.findPreference(SENSE3_LOCKSCREEN_PREF);
+	    if (mSense3Lockscreen != null) {
+		    mRingerLoop.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.USE_SENSE3_LOCKSCREEN, 0) == 1));
+	    }
+
     }
         
     @Override
@@ -159,10 +166,13 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         else if (preference == mRingerLoop) {
             Settings.System.putInt(getContentResolver(), Settings.System.RINGER_LOOP, mRingerLoop.isChecked() ? 1 : 0);
         }
+        else if (preference == mSense3Lockscreen) {
+            Settings.System.putInt(getContentResolver(), Settings.System.USE_SENSE3_LOCKSCREEN, mSense3Lockscreen.isChecked() ? 1 : 0);
+        }
         else if (preference == mAbout) {
         	// increase the number of clicks
-        	int numSelected = Settings.System.getInt(getContentResolver(), Settings.System.ABOUT_CLICKED, 0);
-        	Settings.System.putInt(getContentResolver(), Settings.System.ABOUT_CLICKED, numSelected + 1);
+//        	int numSelected = Settings.System.getInt(getContentResolver(), Settings.System.ABOUT_CLICKED, 0);
+//        	Settings.System.putInt(getContentResolver(), Settings.System.ABOUT_CLICKED, numSelected + 1);
         }
         return false;
     }
