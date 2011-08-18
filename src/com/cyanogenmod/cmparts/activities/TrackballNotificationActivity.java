@@ -412,7 +412,7 @@ public class TrackballNotificationActivity extends PreferenceActivity implements
             blendPulse.setSummary(R.string.pref_trackball_blend_summary);
             blendPulse.setTitle(R.string.pref_trackball_blend_title);
             blendPulse.setChecked(getInt(Settings.System.TRACKBALL_NOTIFICATION_BLEND_COLOR, 0) == 1);
-            blendPulse.setEnabled(getInt(Settings.System.TRACKBALL_NOTIFICATION_SUCCESSION, 1) != 1);
+            blendPulse.setEnabled(getInt(Settings.System.TRACKBALL_NOTIFICATION_SUCCESSION, 0) != 1);
             advancedScreen.addPreference(blendPulse);
             if (SHOLES_DEVICE) {
                 blendPulse.setEnabled(false);
@@ -424,7 +424,7 @@ public class TrackballNotificationActivity extends PreferenceActivity implements
             successionPulse.setKey(PULSE_SUCCESSION);
             successionPulse.setSummary(R.string.pref_trackball_sucess_summary);
             successionPulse.setTitle(R.string.pref_trackball_sucess_title);
-            successionPulse.setChecked(getInt(Settings.System.TRACKBALL_NOTIFICATION_SUCCESSION, 1) == 1);
+            successionPulse.setChecked(getInt(Settings.System.TRACKBALL_NOTIFICATION_SUCCESSION, 0) == 1);
             successionPulse.setEnabled(getInt(Settings.System.TRACKBALL_NOTIFICATION_BLEND_COLOR, 0) != 1);
             advancedScreen.addPreference(successionPulse);
 
@@ -741,7 +741,7 @@ public class TrackballNotificationActivity extends PreferenceActivity implements
 
     public void pulseLight(int color) {
         mGlobalPulse = getInt(Settings.System.TRACKBALL_SCREEN_ON, 0);
-        mGlobalSuccession = getInt(Settings.System.TRACKBALL_NOTIFICATION_SUCCESSION, 1);
+        mGlobalSuccession = getInt(Settings.System.TRACKBALL_NOTIFICATION_SUCCESSION, 0);
         mGlobalBlend = getInt(Settings.System.TRACKBALL_NOTIFICATION_BLEND_COLOR, 0);
 
         Notification notification = new Notification();
