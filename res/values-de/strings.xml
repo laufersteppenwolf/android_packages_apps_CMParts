@@ -103,6 +103,12 @@
     <string name="ui_status_bar_compact_carrier_summary">Alternatives Layout des Benachrichtigungsbereichs mit kürzerem Betreibernamen.</string>
     <string name="ui_status_bar_toggle_brightness">Statuszeile Helligkeitsanpassung</string>
     <string name="ui_status_bar_toggle_brightness_summary">Erlaubt Änderung der Helligkeit, indem mit dem Finger über die Statuszeile gewischt wird.</string>
+    <string name="ui_status_bar_toggle_info">Automatische Helligkeit ist aktiviert</string>
+    <string name="ui_status_bar_cm_signal_text_title">Alternative Signalanzeige</string>
+    <string name="ui_status_bar_cm_signal_text_summary">Anzeige der Mobilfunk-Signalstärke in dBm statt der Balkenanzeige</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">Balken</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">Signalstärke (nur Wert)</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Signalstärke inkl. "dBm"</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED-Benachrichtigungen</string>
@@ -123,6 +129,22 @@
     <!-- User interface : Lock Screen -->
     <string name="ui_lockscreen_title">Bildschirmsperre anpassen</string>
     <string name="pref_lockscreen_delay_title">Verzögerung</string>
+    <string name="pref_lockscreen_security_title">Sicherheitssperre</string>
+    <string name="pref_lockscreen_security_delay_note_title">Hinweis</string>
+    <string name="pref_lockscreen_security_delay_note_summary">Ist der Lockscreen deaktiviert, werden entsprechenden Timeouts ignoriert. Es wird dann nur der Timeout für die Sicherheitssperre verwendet</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">Nach Display-Timeout</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">Nach Abschalten des Displays</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">Zeit, ab der die Sicherheitssperre aktiviert wird, nachdem das Display sich selbst abgeschaltet hat</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">Zeit, ab der die Sicherheitssperre aktivert wird, nachdem das Display manuell abgeschaltet wurde</string>
+    <string name="pref_lockscreen_slide_title">Slider</string>
+    <string name="pref_lockscreen_slide_delay_note_title">Hinweis</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">Der Slider-Lockscreen (ohne Sicherheitssperre) wird nur angezeigt, wenn die Zeit für die Sicherheitssperre länger ist als die Zeit für den Slider-Lockscreen</string>
+    <string name="pref_lockscreen_slide_delay_title">Separate Zeit für Slider</string>
+    <string name="pref_lockscreen_slide_delay_summary">Ermöglicht die Verwendung eines separaten Timers für den Slider-Lockscreen, bevor die Sicherheitssperre aktiviert wird</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">Nach Display-Timeout</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">Nach Abschalten des Displays</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Zeit, ab der der Slider-Lock aktiviert wird, nachdem das Display sich selbst abgeschaltet hat</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Zeit, ab der der Slider-Lock aktiviert wird, nachdem das Display manuell abgeschaltet wurde</string>
     <string name="pref_lockscreen_timeout_lock_delay">Bei Bildschirm-Timeout</string>
     <string name="pref_lockscreen_screenoff_lock_delay">Bei Abschalten des Bildschirms</string>
     <string name="pref_lockscreen_timeout_lock_delay_summary">Wie lange warten bis der Lockscreen aktiv wird beim Timeout des Displays</string>
@@ -237,6 +259,14 @@
     <string name="pref_lockscreen_custom_app_activity_title">Verknüpfte Anwendung</string>
     <string name="pref_lockscreen_custom_icon_style_title">Anwendungssymbol für Anwendung</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Anwendungs-Icon statt CM-Icon für den App-Starter verwenden</string>
+    <string name="pref_lockscreen_custom_background_title">Hintergrund wählen</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">Hintergrund wählen</string>
+    <string name="pref_lockscreen_custom_background_summary">Wähle ein Bild oder Farbfüllung als Hintergrund für den Lockscreen</string>
+    <string name="pref_lockscreen_custom_background_summary_color">Aktuell: Farbfüllung</string>
+    <string name="pref_lockscreen_custom_background_summary_image">Aktuell: Benutzerd. Hintergrund</string>
+    <string name="pref_lockscreen_custom_background_summary_default">Aktuell: Hintergrundbild</string>
+    <string name="pref_lockscreen_background_result_successful">Hintergrund geändert</string>
+    <string name="pref_lockscreen_background_result_not_successful">Hintergrund nicht geändert</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Runterziehen zum Entsperren</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">Zum Entsperren des Bildschirms den rotierenden Slider runterziehen. Nach rechts schieben startet die App</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Rotationspfeile verbergen</string>
@@ -409,7 +439,6 @@
     <string name="pref_render_effect_calibrated_cool">Kalibriert (N1) Kalt</string>
     <string name="pref_render_effect_red">Rot</string>
 
-
     <!-- Widget Types -->
     <string name="widget_render_effect_night">Nacht</string>
     <string name="widget_render_effect_terminal">Terminal</string>
@@ -421,7 +450,6 @@
     <string name="widget_render_effect_calibrated">Kal</string>
     <string name="widget_render_effect_calibrated_red">Kal Schwachrot</string>
     <string name="widget_render_effect_calibrated_cool">Kal Kalt</string>
-
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Energie-Widget</string>
@@ -467,6 +495,13 @@
     <string name="pref_screentimeout_mode_summary">Verzögerung vor automatischer Bildschirmabschaltung anpassen</string>
     <string name="pref_ring_mode_title">Klingelmodi</string>
     <string name="pref_ring_mode_summary">Den Klingelmodus wählen</string>
+    <string name="cm_sound_mode_soundVib_vib">Töne+Vibration/Vibration</string>
+    <string name="cm_sound_mode_sound_vib">Töne/Vibration</string>
+    <string name="cm_sound_mode_sound_silent">Töne/Lautlos</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Töne+Vibration/Vibration/Lautlos</string>
+    <string name="cm_sound_mode_sound_vib_silent">Töne/Vibration/Lautlos</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Töne+Vibration/Töne/Vibration/Lautlos</string>
+    <string name="cm_sound_mode_vib_silent">Vibration/Lautlos</string>
     <string name="pref_flash_mode_title">Taschenlampe</string>
     <string name="pref_flash_mode_summary">Wähle zwischen normaler und hoher Helligkeit der Taschenlampe</string>
 
@@ -590,8 +625,8 @@
     <string name="pref_lockscreen_disable_unlock_tab">Entsperr-Slider verbergen</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Hinweis: Es muss Trackball-, MENÜ- oder Gesten-Entsperren aktiviert sein bevor diese Option möglich ist</string>
     <string name="gestures_action_label">Aktion:</string>
-        <string name="gestures_draw_label">Geste:</string>
-        <string name="gestures_draw_for_label">Geste für \"<xliff:g id="action">%s</xliff:g>\":</string>
+    <string name="gestures_draw_label">Geste:</string>
+    <string name="gestures_draw_for_label">Geste für \"<xliff:g id="action">%s</xliff:g>\":</string>
     <string name="gestures_already_present">Warnung: Ähnliche Geste ist bereits mit einer anderen Aktion verknüpft!</string>
     <string name="gestures_run_in_background">Im Hintergrund ausführen</string>
 

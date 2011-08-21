@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->
     <string name="app_name">CyanogenMod settings</string>
@@ -399,6 +398,12 @@
     <string name="application_settings_title">Application settings</string>
     <string name="application_settings_summary">Change various application settings such as install location</string>
 
+    <!-- Application Settings : Switch storage mountpoints -->
+    <string name="pref_switch_storage_title">Use internal storage</string>
+    <string name="pref_switch_storage_summary_on">Using expanded internal storage for apps and media</string>
+    <string name="pref_switch_storage_summary_off">Using removable card for apps and media</string>
+    <string name="pref_storage_switch_unavailable">This device doesn\'t have expanded internal storage</string>
+
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Allow application moving</string>
     <string name="pref_move_all_apps_summary">Allow moving of any application to external storage</string>
@@ -439,7 +444,7 @@
     <string name="pref_render_effect_calibrated_cool">Calibrated (N1) Cool</string>
     <string name="pref_render_effect_red">Red</string>
 
-    <!--  Widget Types -->
+    <!-- Widget Types -->
     <string name="widget_render_effect_night">Night</string>
     <string name="widget_render_effect_terminal">Term</string>
     <string name="widget_render_effect_blue">Blue</string>
@@ -495,6 +500,13 @@
     <string name="pref_screentimeout_mode_summary">Choose how the Screentimeout button changes modes</string>
     <string name="pref_ring_mode_title">Sound modes</string>
     <string name="pref_ring_mode_summary">Choose how the sound button changes modes</string>
+    <string name="cm_sound_mode_soundVib_vib">Sound+Vibrate/Vibrate</string>
+    <string name="cm_sound_mode_sound_vib">Sound/Vibrate</string>
+    <string name="cm_sound_mode_sound_silent">Sound/Silent</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Sound+Vib/Vib/Silent</string>
+    <string name="cm_sound_mode_sound_vib_silent">Sound/Vibrate/Silent</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Sound+Vibrate/Sound/Vibrate/Silent</string>
+    <string name="cm_sound_mode_vib_silent">Vibrate/Silent</string>
     <string name="pref_flash_mode_title">Flash mode</string>
     <string name="pref_flash_mode_summary">Choose High / Death Ray</string>
 
@@ -591,7 +603,7 @@
     <string name="user_defined_key3">Quick Key 3</string>
     <string name="user_defined_not_set">Nothing Set</string>
 
-    <!--  Lockscreen gesture strings -->
+    <!-- Lockscreen gesture strings -->
     <string name="pref_lockscreen_gestures_enable_title">Use lockscreen gestures</string>
     <string name="pref_lockscreen_gestures_trail_title">Show gesture trails</string>
     <string name="pref_lockscreen_gestures_builder_title">Build gestures</string>
@@ -732,6 +744,5 @@
     <string name="custom_carrier">Carrier text</string>
     <string name="ok_button">Done</string>
     <string name="cancel_button">Cancel</string>
-
 
 </resources>
