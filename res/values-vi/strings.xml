@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- dx -->
+    <!-- GingerDX settings -->
+    <string name="gingerdx_settings_title">Cấu hình GingerDX</string>
+    <string name="gingerdx_settings_summary">Tùy chỉnh riêng cho GingerDX</string>
+    <string name="pref_led_disabled_group_title">Tắt đèn LED vào ban đêm...</string>
+    <string name="pref_led_disabled_title">...kích hoạt</string>
+    <string name="pref_led_disabled_from_title">...từ</string>
+    <string name="pref_led_disabled_to_title">...đến</string>
+
+    <string name="flipping_down_title">Úp máy...</string>
+    <string name="pref_flipping_down_mutes_ringer_title">...tắt chuông gọi</string>
+    <string name="pref_flipping_down_snoozes_alarm_title">...tắt chuông báo giờ</string>
+    <string name="pref_flipping_down_snoozes_alarm_summary">Mất việc không chịu trách nhiệm!</string>
+
+    <string name="call_features_title">Chức năng cuộc gọi</string>
+    <string name="pref_call_me_louder_title">Call Me Louder</string>
+    <string name="pref_call_me_louder_summary">Chuông báo kêu to hơn khi ở trong túi</string>
+    <string name="pref_back_button_ends_call_title">Nút back dừng cuộc gọi</string>
+    <string name="pref_ringer_loop_title">Lặp lại chuông cuộc gọi</string>
+    <string name="pref_ringer_loop_summary">Bất kể định dạng chuông nào</string>
+
+    <string name="other_features_title">Các chức năng khác</string>
+	<string name="pref_hide_avatar_message_title">Ẩn hình đại diện trong SMS</string>
+	<string name="pref_quick_copy_paste_title">Copy / Paste nhanh</string>
+    <string name="pref_transparent_status_bar_title">Thanh trạng thái trong suốt</string>
+    <string name="pref_transparent_status_bar_summary">Khởi động lại máy để có hiệu lực</string>
+    <string name="pref_sense3_lockscreen_title">Khóa màn hình Sense 3</string>
+    <string name="pref_sense3_lockscreen_summary">Đang trong quá trình phát triển</string>
+    <string name="pref_gingerdx_about_title">Giới thiệu</string>
+    <string name="pref_gingerdx_about_default">GingerDX built v000 by doixanh@xda</string>
+    
+    <string name="pref_custom_carrier_title">Đặt tên nhà mạng</string>
+    <string name="pref_custom_carrier_summary">Chỉ trong khóa màn hình / thanh trạng thái</string>
+    <string name="carrier_label">Tên nhà mạng (để trống nếu không dùng)</string>
+    <string name="custom_carrier">Tên nhà mạng</string>
+    <string name="ok_button">Xác nhận </string>
+    <string name="cancel_button">Hủy</string>
+
+</resources>
