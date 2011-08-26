@@ -689,4 +689,41 @@
     <string name="ui_status_bar_cm_signal_text_show_bars">Barras de sinal</string>
     <string name="ui_status_bar_cm_signal_text_show_text">Texto de sinal</string>
     <string name="ui_status_bar_cm_signal_text_show_text_dbm">Texto de sinal com dBm</string>
+
+
+	<string name="gingerdx_settings_title">Definições GingerDX</string>
+	<string name="gingerdx_settings_summary">Alterar opções específicas do GingerDX</string> 
+	<string name="pref_led_disabled_group_title">LED desactivado a noite...</string> 
+	<string name="pref_led_disabled_title">...activar</string> 
+	<string name="pref_led_disabled_from_title">...desde as</string>
+	<string name="pref_led_disabled_to_title">...até as</string>
+
+	<string name="flipping_down_title">Flipping down...</string> 
+	<string name="pref_flipping_down_mutes_ringer_title">...silencia o toque</string>
+	<string name="pref_flipping_down_snoozes_alarm_title">...repete o alarme</string>
+	<string name="pref_flipping_down_snoozes_alarm_summary">Não me responsabilizo se for despedido!</string>
+
+	<string name="call_features_title">Funcionalidades de chamada</string>
+	<string name="pref_call_me_louder_title">Call Me Louder</string> 
+	<string name="pref_call_me_louder_summary">Aumenta o volume do toque de chamada, quando dentro de uma mala</string>
+	<string name="pref_back_button_ends_call_title">Botão de voltar termina a chamada</string>
+	<string name="pref_ringer_loop_title">Repetir toque de chamada</string>
+	<string name="pref_ringer_loop_summary">Outra e mais outra vez...</string>
+
+	<string name="other_features_title">Outras funcionalidades</string>
+	<string name="pref_hide_avatar_message_title">Esconder avatar nas SMS\'s</string>
+	<string name="pref_quick_copy_paste_title">Copy/Paste rápido</string>
+	<string name="pref_transparent_status_bar_title">Transparêcia na barra de notificações</string>
+	<string name="pref_transparent_status_bar_summary">Reiniciar para aplicar alterações</string>
+	<string name="pref_sense3_lockscreen_title">Bloqueio de ecrã Sense 3</string>
+	<string name="pref_sense3_lockscreen_summary">Somente função básica</string>
+	<string name="pref_gingerdx_about_title">Acerca de...</string>
+	<string name="pref_gingerdx_about_default">GingerDX built v000 by doixanh@xda</string> 
+
+	<string name="pref_custom_carrier_title">Texto de operadora alternativo</string>
+	<string name="pref_custom_carrier_summary">Aparece no bloqueio de ecrã/barra de notificações</string>
+	<string name="carrier_label">(vazio para desactivar)</string>
+	<string name="custom_carrier">Texto de operadora</string>
+	<string name="ok_button">Pronto</string>
+	<string name="cancel_button">Cancelar</string>
 </resources>
