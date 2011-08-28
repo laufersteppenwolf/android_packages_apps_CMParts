@@ -670,4 +670,42 @@
     <string name="perm_enable_management_summary">Włącz zarządzanie uprawnieniami aplikacji</string>
     <string name="perm_enable_warning_message">Uwaga!\nOdwołanie większości uprawnień prawdopodobnie spowoduje błędne działanie aplikacji. Jeśli wymuszane jest zamknięcie aplikacji, której odebrano uprawnienia, należy zapewnić jej oczekiwane przywileje lub zaprzestać jej użytkowania.\nProsimy o nie zgłaszanie błędów, jeśli aplikacja z odebranymi prawami nie działa jak powinna!</string>
     <string name="perm_enable_warning_title">Czy jesteś pewien?</string>
+    
+	<!-- dx -->
+	<!-- GingerDX settings -->
+	<string name="gingerdx_settings_title">Ustawienia GingerDX</string>
+	<string name="gingerdx_settings_summary">Zmień unikalne ustawienia GingerDX</string>
+	<string name="pref_led_disabled_group_title">Wyłącza diodę LED w nocy...</string>
+	<string name="pref_led_disabled_title">...aktywne</string>
+	<string name="pref_led_disabled_from_title">...od</string>
+	<string name="pref_led_disabled_to_title">...do</string>
+
+	<string name="flipping_down_title">Machnięcie telefonem w dół...</string>
+	<string name="pref_flipping_down_mutes_ringer_title">...wy cisza dzwonek</string>
+	<string name="pref_flipping_down_snoozes_alarm_title">...a ktywuje drzemkę budzika</string>
+	<string name="pref_flipping_down_snoozes_alarm_summary">Je śli Cię wyleją, to nie moja wina!</string>
+
+	<string name="call_features_title">Ustawienia połączeń</string>
+	<string name="pref_call_me_louder_title">Call Me Louder</string>
+	<string name="pref_call_me_louder_summary">Głośniejszy dzwonek gdy telefon znajduje się w torbie</string>
+	<string name="pref_back_button_ends_call_title">Klawisz "wstecz" kończy połączenie</string>
+	<string name="pref_ringer_loop_title">Zapętlenie dzwonka</string>
+	<string name="pref_ringer_loop_summary">...i jeszcze jeden i jeszcze raz ...</string>
+
+	<string name="other_features_title">Inne funkcje</string>
+	<string name="pref_hide_avatar_message_title">Ukrywaj awatar w treści SMS-ów</string>
+	<string name="pref_quick_copy_paste_title">Szybkie kopiowanie / Szybkie wklejanie</string>
+	<string name="pref_transparent_status_bar_title">Przeźrocz ystość belki statusu</string>
+	<string name="pref_transparent_status_bar_summary">Uruchom ponownie telefon, by zobaczyć efekt</string>
+	<string name="pref_sense3_lockscreen_title">Sense 3 Lockscreen</string>
+	<string name="pref_sense3_lockscreen_summary">Tylko podstawowa funkcjonalność</string>
+	<string name="pref_gingerdx_about_title">O...</string>
+	<string name="pref_gingerdx_about_default">GingerDX built v000 by doixanh@xda</string>
+
+	<string name="pref_custom_carrier_title">Własna nazwa operatora</string>
+	<string name="pref_custom_carrier_summary">Pojawia się podczas blokady ekranu / na belce statusu</string>
+	<string name="carrier_label">Własna nazwa operatora (puste pole wyłącza opcję)</string>
+	<string name="custom_carrier">Własna nazwa operatora</string>
+	<string name="ok_button">Potwierdź</string>
+	<string name="cancel_button">Anuluj</string>    
 </resources>

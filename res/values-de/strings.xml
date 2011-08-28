@@ -708,4 +708,43 @@
     <string name="perm_enable_management_summary">Berechtigungsverwaltung für Anwendungen aktivieren</string>
     <string name="perm_enable_warning_message">Warnung!\nDas Entziehen von Berechtigungen wird in den meisten Anwendungen Fehler verursachen. Wenn eine Anwendung mit entzogenen Berechtigungen abstürzt, müssen die benötigten Berechtigungen gestattet werden.\nBitte KEINE Bugreports an CyanogenMod senden, wenn eine Anwendung mit entzogenen Berechtigungen nicht wie erwartet funktioniert!</string>
     <string name="perm_enable_warning_title">Sicher?</string>
+    
+    <!-- dx -->
+	<!-- GingerDX settings -->
+	<string name="gingerdx_settings_title">GingerDX Einstellungen</string>
+	<string name="gingerdx_settings_summary">GingerDX spezifische Optionen</string>
+	<string name="pref_led_disabled_group_title">LED Abschaltung in der Nacht</string>
+	<string name="pref_led_disabled_title">Aktiviert</string>
+	<string name="pref_led_disabled_from_title">Von...</string>
+	<string name="pref_led_disabled_to_title">Bis...</string>
+
+	<string name="flipping_down_title">Kippen stellt...</string>
+	<string name="pref_flipping_down_mutes_ringer_title">...Al arm auf Still</string>
+	<string name="pref_flipping_down_snoozes_alarm_title">...A larm auf Schlummer</string>
+	<string name="pref_flipping_down_snoozes_alarm_summary">Ke ine Haftung für daraus resultierende Kündigung!</string>
+
+	<string name="call_features_title">Anruf Funktionen</string>
+	<string name="pref_call_me_louder_title">Anruflautstärke</string>
+	<string name="pref_call_me_louder_summary">Lauter Rufton wenn Telefon in der Tasche</string>
+	<string name="pref_back_button_ends_call_title">Zurück-Taste beendet Anruf</string>
+	<string name="pref_ringer_loop_title">Rufton wiederholung</string>
+	<string name="pref_ringer_loop_summary">In einer Endlosschleife</string>
+
+	<string name="other_features_title">Weitere Funktionen</string>
+	<string name="pref_hide_avatar_message_title">Avatar in SMS Nachrichten verbergen</string>
+	<string name="pref_quick_copy_paste_title">Schnelles Kopieren/Einfügen</string>
+	<string name="pref_transparent_status_bar_title">Transpare nz der Statuszeile</string>
+	<string name="pref_transparent_status_bar_summary">Neustar t um Änderungen wirksam zu machen</string>
+	<string name="pref_sense3_lockscreen_title">Sense 3 Lockscreen</string>
+	<string name="pref_sense3_lockscreen_summary">Nur einfache Funktionalität</string>
+	<string name="pref_gingerdx_about_title">Über</string>
+	<string name="pref_gingerdx_about_default">GingerDX build v000 by doixanh@xda</string>
+
+	<string name="pref_custom_carrier_title">Angepasster Betreiber Text</string>
+	<string name="pref_custom_carrier_summary">In Lockscreen/Statuszeile anzeigen</string>
+	<string name="carrier_label">Betreiber Text (Leer für Standard)</string>
+	<string name="custom_carrier">Betreiber Text</string>
+	<string name="ok_button">Fertig</string>
+	<string name="cancel_button">Abbruch</string>
+
 </resources>
