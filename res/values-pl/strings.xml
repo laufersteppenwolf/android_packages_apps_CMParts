@@ -680,10 +680,10 @@
 	<string name="pref_led_disabled_from_title">...od</string>
 	<string name="pref_led_disabled_to_title">...do</string>
 
-	<string name="flipping_down_title">Machnięcie telefonem w dół...</string>
-	<string name="pref_flipping_down_mutes_ringer_title">...wy cisza dzwonek</string>
-	<string name="pref_flipping_down_snoozes_alarm_title">...a ktywuje drzemkę budzika</string>
-	<string name="pref_flipping_down_snoozes_alarm_summary">Je śli Cię wyleją, to nie moja wina!</string>
+	<string name="flipping_down_title">Obrócenie telefonu</string>
+	<string name="pref_flipping_down_mutes_ringer_title">...wycisza dzwonek</string>
+	<string name="pref_flipping_down_snoozes_alarm_title">...aktywuje drzemkę budzika</string>
+	<string name="pref_flipping_down_snoozes_alarm_summary">Jeśli Cię wyleją, to nie moja wina!</string>
 
 	<string name="call_features_title">Ustawienia połączeń</string>
 	<string name="pref_call_me_louder_title">Call Me Louder</string>
@@ -695,7 +695,7 @@
 	<string name="other_features_title">Inne funkcje</string>
 	<string name="pref_hide_avatar_message_title">Ukrywaj awatar w treści SMS-ów</string>
 	<string name="pref_quick_copy_paste_title">Szybkie kopiowanie / Szybkie wklejanie</string>
-	<string name="pref_transparent_status_bar_title">Przeźrocz ystość belki statusu</string>
+	<string name="pref_transparent_status_bar_title">Przeźroczystość belki statusu</string>
 	<string name="pref_transparent_status_bar_summary">Uruchom ponownie telefon, by zobaczyć efekt</string>
 	<string name="pref_sense3_lockscreen_title">Sense 3 Lockscreen</string>
 	<string name="pref_sense3_lockscreen_summary">Tylko podstawowa funkcjonalność</string>
