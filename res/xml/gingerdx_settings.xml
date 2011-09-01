@@ -38,6 +38,8 @@
                 android:targetPackage="com.cyanogenmod.cmparts"
                 android:targetClass="com.cyanogenmod.cmparts.activities.CustomCarrier" />
 		</PreferenceScreen>		    
+		<CheckBoxPreference android:key="pref_smart_dialer"
+		    android:title="@string/pref_smart_dialer_title" android:summary="@string/pref_smart_dialer_summary"/>
 	</PreferenceCategory>
 
 	<PreferenceCategory android:key="other_category" android:title="@string/other_features_title">

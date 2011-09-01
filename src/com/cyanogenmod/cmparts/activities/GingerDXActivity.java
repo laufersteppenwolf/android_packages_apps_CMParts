@@ -37,6 +37,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private static final String RINGER_LOOP_PREF = "pref_ringer_loop";
     private static final String ABOUT_PREF = "pref_gingerdx_about";
     private static final String SENSE3_LOCKSCREEN_PREF = "pref_sense3_lockscreen";
+    private static final String SMART_DIALER_PREF = "pref_smart_dialer";
 
     static Context mContext;
 
@@ -54,6 +55,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private CheckBoxPreference mCallMeLouder;
     private CheckBoxPreference mRingerLoop;
     private CheckBoxPreference mSense3Lockscreen;
+    private CheckBoxPreference mSmartDialer;
 	private Preference mAbout;    
 
     @Override
@@ -100,14 +102,6 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         	Settings.System.TRANSPARENT_STATUS_BAR, 0)));
         mTransparentStatusBarPref.setOnPreferenceChangeListener(this);
 
-//        mDoProfileScrolling = (CheckBoxPreference) prefSet.findPreference(DO_PROFILE_SCROLLING_PREF);
-//        if (mDoProfileScrolling != null)
-//		    mDoProfileScrolling.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.DO_PROFILE_SCROLLING, 0) == 1);
-
-//        mDoProfileFlinging = (CheckBoxPreference) prefSet.findPreference(DO_PROFILE_FLINGING_PREF);
-//        if (mDoProfileFlinging != null)
-//		    mDoProfileFlinging.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.DO_PROFILE_FLINGING, 0) == 1);
-
 	    mCallMeLouder = (CheckBoxPreference) prefSet.findPreference(CALL_ME_LOUDER_PREF);
 	    mCallMeLouder.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.CALL_ME_LOUDER, 0) == 1));
 
@@ -119,10 +113,18 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         mAbout.setEnabled(true);
 
 	    mSense3Lockscreen = (CheckBoxPreference) prefSet.findPreference(SENSE3_LOCKSCREEN_PREF);
-	    if (mSense3Lockscreen != null) {
-		    mRingerLoop.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.USE_SENSE3_LOCKSCREEN, 0) == 1));
-	    }
+	    mSense3Lockscreen.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.USE_SENSE3_LOCKSCREEN, 0) == 1));
 
+	    mSmartDialer = (CheckBoxPreference) prefSet.findPreference(SMART_DIALER_PREF);
+	    mSmartDialer.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.SMART_DIALER, 1) == 1));
+
+//        mDoProfileScrolling = (CheckBoxPreference) prefSet.findPreference(DO_PROFILE_SCROLLING_PREF);
+//        if (mDoProfileScrolling != null)
+//		    mDoProfileScrolling.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.DO_PROFILE_SCROLLING, 0) == 1);
+
+//        mDoProfileFlinging = (CheckBoxPreference) prefSet.findPreference(DO_PROFILE_FLINGING_PREF);
+//        if (mDoProfileFlinging != null)
+//		    mDoProfileFlinging.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.DO_PROFILE_FLINGING, 0) == 1);
     }
         
     @Override
@@ -152,14 +154,6 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
             Settings.System.putInt(getContentResolver(), Settings.System.QUICK_COPY_PASTE, mQuickCopyPaste.isChecked() ? 1 : 0);
             return true;
         }
-//        else if (preference == mDoProfileScrolling) {
-//            Settings.System.putInt(getContentResolver(), Settings.System.DO_PROFILE_SCROLLING, mDoProfileScrolling.isChecked() ? 1 : 0);
-//            return true;
-//        }
-//        else if (preference == mDoProfileFlinging) {
-//            Settings.System.putInt(getContentResolver(), Settings.System.DO_PROFILE_FLINGING, mDoProfileFlinging.isChecked() ? 1 : 0);
-//            return true;
-//        }
         else if (preference == mCallMeLouder) {
             Settings.System.putInt(getContentResolver(), Settings.System.CALL_ME_LOUDER, mCallMeLouder.isChecked() ? 1 : 0);
         }
@@ -169,6 +163,18 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         else if (preference == mSense3Lockscreen) {
             Settings.System.putInt(getContentResolver(), Settings.System.USE_SENSE3_LOCKSCREEN, mSense3Lockscreen.isChecked() ? 1 : 0);
         }
+        else if (preference == mSmartDialer) {
+            Settings.System.putInt(getContentResolver(), Settings.System.SMART_DIALER, mSmartDialer.isChecked() ? 1 : 0);
+        }
+
+//        else if (preference == mDoProfileScrolling) {
+//            Settings.System.putInt(getContentResolver(), Settings.System.DO_PROFILE_SCROLLING, mDoProfileScrolling.isChecked() ? 1 : 0);
+//            return true;
+//        }
+//        else if (preference == mDoProfileFlinging) {
+//            Settings.System.putInt(getContentResolver(), Settings.System.DO_PROFILE_FLINGING, mDoProfileFlinging.isChecked() ? 1 : 0);
+//            return true;
+//        }
         else if (preference == mAbout) {
         	// increase the number of clicks
 //        	int numSelected = Settings.System.getInt(getContentResolver(), Settings.System.ABOUT_CLICKED, 0);

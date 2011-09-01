@@ -10,8 +10,8 @@
 	<string name="pref_led_disabled_to_title">...έως</string>
 
 	<string name="flipping_down_title">Αναποδογύρισμα προκαλεί...</string>
-	<string name="pref_flipping_down_mutes_ringer_title">...σί γαση</string>
-	<string name="pref_flipping_down_snoozes_alarm_title">...α κύρωση ξυπνητηριού</string>
+	<string name="pref_flipping_down_mutes_ringer_title">...σίγαση</string>
+	<string name="pref_flipping_down_snoozes_alarm_title">...ακύρωση ξυπνητηριού</string>
 	<string name="pref_flipping_down_snoozes_alarm_summary">Κα μία ευθύνη εάν σας απολύσουν!</string>
 
 	<string name="call_features_title">Χαρακτηριστικά κλήσεων</string>
@@ -25,7 +25,7 @@
 	<string name="pref_hide_avatar_message_title">Απόκρυψη εικόνων επαφών στα SMS</string>
 	<string name="pref_quick_copy_paste_title">Γρήγορη Αντιγραφή/Επικόλληση</string>
 	<string name="pref_transparent_status_bar_title">Διαφάνεια γραμμής κατάστασης</string>
-	<string name="pref_transparent_status_bar_summary">Επανεκκ ίνηση για εφαρμογή αλλαγών</string>
+	<string name="pref_transparent_status_bar_summary">Επανεκκίνηση για εφαρμογή αλλαγών</string>
 	<string name="pref_sense3_lockscreen_title">Οθόνη κλειδώματος Sense 3</string>
 	<string name="pref_sense3_lockscreen_summary">Μόνο βασική λειτουργία</string>
 	<string name="pref_gingerdx_about_title">Σχετικά</string>
