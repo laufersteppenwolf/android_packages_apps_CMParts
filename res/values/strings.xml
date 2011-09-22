@@ -109,6 +109,8 @@
     <string name="ui_status_bar_cm_signal_text_show_bars">Signal bars</string>
     <string name="ui_status_bar_cm_signal_text_show_text">Signal text</string>
     <string name="ui_status_bar_cm_signal_text_show_text_dbm">Signal text w/dBm</string>
+    <string name="ui_status_bar_headset_title">Show headset icon</string>
+    <string name="ui_status_bar_headset_summary">Headset icon will appear when headset is plugged in</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED notifications</string>
@@ -151,6 +153,7 @@
     <string name="msg_color_picker">Tap on center color to confirm.\nPress back to cancel</string>
 
     <!-- User interface: LED notifications -->
+    <string name="group_settings">Settings</string>
     <string name="trackball_notifications_title">LED notification colors</string>
     <string name="dialog_color_trackball">Choose a color</string>
     <string name="dialog_blink_trackball">Choose a blink rate</string>
@@ -186,13 +189,32 @@
     <string name="trackball_category_add_summary">Add a category to the list</string>
     <string name="trackball_category_remove_title">Remove category</string>
     <string name="trackball_category_remove_summary">Remove a category from the list</string>
-    <string name="trackball_remove_default_toast">Can\'t remove this category as it is the default one.</string>
     <string name="trackball_reset_all">Reset all colors and categories.</string>
-    <string name="trackball_array_error">Unfortunately there was an array error. This package has been forced into the Miscellaneous category.</string>
     <string name="trackball_color_notice_title">NOTE:</string>
     <string name="trackball_color_notice_summary">Not all colors will display on all devices</string>
+    <string name="trackball_category_unconfigured">Unconfigured</string>
+    <string name="trackball_category_misc">Miscellaneous</string>
+    <string name="trackball_app_save_title">Save</string>
+    <string name="trackball_app_save_summary">Save settings for this application</string>
+    <string name="trackball_app_reset_title">Reset</string>
+    <string name="trackball_app_reset_summary">Remove custom settings for this application</string>
+
+    <string name="trackball_force_mode_title">LED mode</string>
+    <string name="trackball_force_mode_dialog">Please select a mode</string>
+    <string name="trackball_force_mode_summary">Configure how the LED should behave</string>
+
+    <string name="trackball_app_email">Email</string>
+    <string name="trackball_app_mms">Messaging</string>
+    <string name="trackball_app_gvoice">Google Voice</string>
+    <string name="trackball_app_gmail">Gmail</string>
+    <string name="trackball_app_gtalk">GTalk</string>
+    <string name="trackball_app_twitter">Twitter</string>
+    <string name="trackball_app_twicca">Twicca</string>
+    <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
+    <string name="trackball_app_dialer">Missed Call</string>
 
     <!-- Trackball color entries -->
+    <string name="trackball_color_entry_use_app">Use application setting</string>
     <string name="trackball_color_entry_green">Green</string>
     <string name="trackball_color_entry_white">White</string>
     <string name="trackball_color_entry_red">Red</string>
@@ -204,7 +226,6 @@
     <string name="trackball_color_entry_orange">Orange</string>
     <string name="trackball_color_entry_light_blue">Light Blue</string>
     <string name="trackball_color_entry_random">Random</string>
-    <string name="trackball_color_entry_none">None</string>
     <string name="trackball_color_entry_amber">Amber</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -272,6 +293,7 @@
     <string name="pref_lockscreen_style_summary">Choose the style of the lockscreen</string>
     <string name="pref_in_call_style_title">Incoming call style</string>
     <string name="pref_in_call_style_summary">Choose the style of the incoming calls accept/reject widget</string>
+    <string name="lockscreen_music_title">Music Controls</string>
     <string name="pref_volbtn_music_controls_title">Volume button music controls</string>
     <string name="pref_volbtn_music_controls_summary">Seek music tracks when long-pressing the volume buttons while screen off</string>
     <string name="pref_cambtn_music_controls_title">Camera button music control</string>
@@ -295,6 +317,9 @@
     <string name="pref_input_custom_search_app_activity_title">Custom application</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Long-press search app</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Starts a custom app when long-pressing the search key</string>
+
+    <string name="pref_backtrack_title">BackTrack Minipad</string>
+    <string name="pref_backtrack_summary">Enable/disable BackTrack Minipad</string>
 
     <!-- Long Press Menu -->
     <string name="long_press_menu_title">Long-press menu settings</string>
@@ -400,8 +425,8 @@
 
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">Use internal storage</string>
-    <string name="pref_switch_storage_summary_on">Using expanded internal storage for apps and media</string>
-    <string name="pref_switch_storage_summary_off">Using removable card for apps and media</string>
+    <string name="pref_switch_storage_summary_on">Using expanded internal storage for apps and media (requires reboot)</string>
+    <string name="pref_switch_storage_summary_off">Using removable card for apps and media (requires reboot)</string>
     <string name="pref_storage_switch_unavailable">This device doesn\'t have expanded internal storage</string>
 
     <!-- Application Settings : Move any app -->
@@ -413,6 +438,7 @@
     <string name="pref_install_location_summary">Select where new applications should be installed</string>
 
     <string name="general_title">General</string>
+    <string name="camera_title">Camera</string>
     <string name="buttons_title">Buttons</string>
 
     <!-- UI Settings : Power off prompt -->
@@ -560,6 +586,11 @@
     <string name="sound_vibrate_in_call_title">Vibrate during calls</string>
     <string name="sound_vibrate_in_call_summary_off">Notifications will not vibrate during a call</string>
     <string name="sound_vibrate_in_call_summary_on">Notifications will vibrate normally</string>
+    <string name="sound_camera_shutter_disable_title">Mute camera shutter</string>
+    <string name="sound_camera_shutter_disable_summary_on">Shutter sound will not be played</string>
+    <string name="sound_camera_shutter_disable_summary_off">Shutter sound will be played</string>
+    <string name="sound_camera_shutter_disable_warning_title">WARNING: This may be illegal!</string>
+    <string name="sound_camera_shutter_disable_warning">Disabling camera shutter sound is illegal in some areas. Are you sure you want to disable it?</string>
     <string name="sound_to_speaker_title">Always play on speaker</string>
     <string name="sound_notifications_title">Notifications</string>
     <string name="sound_rings_title">Ring tones</string>
@@ -601,6 +632,8 @@
     <string name="user_defined_key1">Quick Key 1</string>
     <string name="user_defined_key2">Quick Key 2</string>
     <string name="user_defined_key3">Quick Key 3</string>
+    <string name="user_defined_envelope_key">Envelope Key</string>
+    <string name="user_defined_explorer_key">Explorer Key</string>
     <string name="user_defined_not_set">Nothing Set</string>
 
     <!-- Lockscreen gesture strings -->

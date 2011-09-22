@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->
     <string name="app_name">Impostazioni CyanogenMod</string>
@@ -152,6 +151,7 @@
     <string name="msg_color_picker">Premi al centro per confermare.\nPremi indietro per annullare</string>
 
     <!-- User interface: LED notifcations -->
+    <string name="group_settings">Impostazioni</string>
     <string name="trackball_notifications_title">Colori Notifiche LED</string>
     <string name="dialog_color_trackball">Scegli un colore</string>
     <string name="dialog_blink_trackball">Scegli frequenza di lampeggio</string>
@@ -187,13 +187,32 @@
     <string name="trackball_category_add_summary">Aggiungi una categoria alla lista</string>
     <string name="trackball_category_remove_title">Rimuovi categoria</string>
     <string name="trackball_category_remove_summary">Rimuovi una categoria dalla lista</string>
-    <string name="trackball_remove_default_toast">Non è possibile rimuovere la categoria di default.</string>
     <string name="trackball_reset_all">Ripristina le app e le categorie</string>
-    <string name="trackball_array_error">Purtroppo si è verificato un errore di array. Questa app è stata forzata nella categoria Miscellaneous.</string>
     <string name="trackball_color_notice_title">NOTA:</string>
     <string name="trackball_color_notice_summary">Alcuni dispositivi non sono in grado di visualizzare tutti i colori disponibili.</string>
+    <string name="trackball_category_unconfigured">Non configurate</string>
+    <string name="trackball_category_misc">Varie</string>
+    <string name="trackball_app_save_title">Salva</string>
+    <string name="trackball_app_save_summary">Salva le impostazioni per questa applicazione</string>
+    <string name="trackball_app_reset_title">Ripristina</string>
+    <string name="trackball_app_reset_summary">Rimuovi le impostazioni personalizzate per questa applicazione</string>
+
+    <string name="trackball_force_mode_title">Modalità LED</string>
+    <string name="trackball_force_mode_dialog">Seleziona una modalità</string>
+    <string name="trackball_force_mode_summary">Configura il comportamento del LED</string>
+
+    <string name="trackball_app_email">Email</string>
+    <string name="trackball_app_mms">Messaggi</string>
+    <string name="trackball_app_gvoice">Google Voice</string>
+    <string name="trackball_app_gmail">Gmail</string>
+    <string name="trackball_app_gtalk">GTalk</string>
+    <string name="trackball_app_twitter">Twitter</string>
+    <string name="trackball_app_twicca">Twicca</string>
+    <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
+    <string name="trackball_app_dialer">Chiamata persa</string>
 
     <!-- Trackball color entries -->
+    <string name="trackball_color_entry_use_app">Usa impostazioni app</string>
     <string name="trackball_color_entry_green">Verde</string>
     <string name="trackball_color_entry_white">Bianco</string>
     <string name="trackball_color_entry_red">Rosso</string>
@@ -205,7 +224,6 @@
     <string name="trackball_color_entry_orange">Arancione</string>
     <string name="trackball_color_entry_light_blue">Blu Chiaro</string>
     <string name="trackball_color_entry_random">Random</string>
-    <string name="trackball_color_entry_none">Nessuno</string>
     <string name="trackball_color_entry_amber">Ambra</string>
 
     <!-- Trackball Settings : Warning dialog -->
@@ -296,6 +314,9 @@
     <string name="pref_input_custom_search_app_activity_title">Applicazione personalizzata</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Long-press tasto cerca</string>
     <string name="pref_input_custom_long_search_app_toggle_summary">Avvia un\'applicazione personalizzata alla pressione prolungata del tasto cerca</string>
+
+    <string name="pref_backtrack_title">BackTrack Minipad</string>
+    <string name="pref_backtrack_summary">Attiva/disattiva BackTrack Minipad</string>
 
     <!-- Long Press Menu -->
     <string name="long_press_menu_title">Long-press tasto menu</string>
@@ -398,6 +419,12 @@
     <!-- Application Settings -->
     <string name="application_settings_title">Impostazioni applicazioni</string>
     <string name="application_settings_summary">Modifica diverse impostazioni riguardanti le applicazioni</string>
+
+    <!-- Application Settings : Switch storage mountpoints -->
+    <string name="pref_switch_storage_title">Usa memoria interna</string>
+    <string name="pref_switch_storage_summary_on">Utilizza l\'espansione di memoria interna per le app e i contenuti multimediali (riavvio richiesto)</string>
+    <string name="pref_switch_storage_summary_off">Utilizza la scheda rimovibile per le app e i contenuti multimediali (riavvio richiesto)</string>
+    <string name="pref_storage_switch_unavailable">Questo dispositivo non ha una memoria interna espandibile</string>
 
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Abilita spostamento app</string>
