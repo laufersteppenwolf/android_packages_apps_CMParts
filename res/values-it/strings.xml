@@ -14,7 +14,6 @@
     <string name="input_settings_title_subhead">Impostazioni input</string>
     <string name="input_settings_summary_head">Gestione input, tasti, feedback aptico</string>
     <string name="interface_settings_title_head">Interfaccia</string>
-    <string name="interface_settings_title_subhead">Impostazioni interfaccia</string>
     <string name="interface_settings_summary_head">Modifiche interfaccia, overscrolling, effetto render</string>
     <string name="lockscreen_settings_title_head">Lockscreen</string>
     <string name="lockscreen_settings_title_subhead">Impostazioni lockscreen</string>
@@ -35,7 +34,6 @@
 
     <!-- User interface -->
     <string name="ui_title">Interfaccia utente</string>
-    <string name="ui_summary">Impostazioni e modifiche interfaccia utente</string>
 
     <string name="pref_electron_beam_animation_on">Animazione accensione schermo</string>
     <string name="pref_electron_beam_animation_off">Animazione spegnimento schermo</string>
@@ -109,13 +107,14 @@
     <string name="ui_status_bar_cm_signal_text_show_bars">Barre</string>
     <string name="ui_status_bar_cm_signal_text_show_text">Testo</string>
     <string name="ui_status_bar_cm_signal_text_show_text_dbm">Testo con dBm</string>
+    <string name="ui_status_bar_headset_title">Usa icona cuffie</string>
+    <string name="ui_status_bar_headset_summary">Visualizza l\'icona quando si inseriscono le cuffie</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">Notifiche LED</string>
     <string name="trackball_summary">Imposta colore e pulsazione delle notifiche trackball/LED</string>
 
     <!-- User interface : WebView -->
-    <string name="ui_webview_title">WebView</string>
     <string name="pref_pinch_reflow_title">Reflow dopo il pinch in</string>
     <string name="pref_pinch_reflow_summary">Reflow dei contenuti web dopo il pinch to zoom</string>
 
@@ -127,7 +126,6 @@
     <string name="pref_overscroll_weight_summary">Seleziona il peso degli elementi scorrevoli</string>
 
     <!-- User interface : Lock Screen -->
-    <string name="ui_lockscreen_title">Impostazioni blocco schermo</string>
     <string name="pref_lockscreen_delay_title">Ritardo</string>
     <string name="pref_lockscreen_security_title">Blocco di sicurezza</string>
     <string name="pref_lockscreen_security_delay_note_title">Nota</string>
@@ -152,7 +150,6 @@
 
     <!-- User interface: LED notifcations -->
     <string name="group_settings">Impostazioni</string>
-    <string name="trackball_notifications_title">Colori Notifiche LED</string>
     <string name="dialog_color_trackball">Scegli un colore</string>
     <string name="dialog_blink_trackball">Scegli frequenza di lampeggio</string>
     <string name="color_trackball_flash_title">Colore lampeggio</string>
@@ -245,9 +242,10 @@
     <string name="pref_lockscreen_timeout_summary">Imposta il ritardo per il blocco del dispositivo dopo il timeout o lo spegnimento dello schermo</string>
 
     <!-- Lockscreen Settings -->
-    <string name="lockscreen_settings_title">Impostazioni Lockscreen</string>
     <string name="pref_lockscreen_always_battery_title">Visualizza sempre stato batteria</string>
     <string name="pref_lockscreen_always_battery_summary">Visualizza sempre lo stato della batteria nel lockscreen</string>
+    <string name="pref_lockscreen_widgets_layout_title">Layout del widget</string>
+    <string name="pref_lockscreen_widgets_layout_summary">Modifica il layout di orologio, data, operatore e stato</string>
     <string name="pref_lockscreen_music_controls_title">Comandi musicali</string>
     <string name="pref_lockscreen_music_controls_summary">Visualizza i comandi del player musicale nel lockscreen</string>
     <string name="pref_lockscreen_now_playing_title">Nome brano</string>
@@ -269,9 +267,15 @@
     <string name="pref_lockscreen_quick_unlock_control_title">Sblocco veloce</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">Non è richiesto premere OK dopo aver inserito il PIN o la Password. Cancellare conta come tentativo fallito.</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Lanciatore app personalizzato</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">Visualizza un secondo tab nel lockscreen a tab scorrevoli, visualizza l\'icona di un\'app personalizzata nel lockscreen rotante.</string>
+    <string name="pref_lockscreen_custom_app_toggle_summary">Visualizza un secondo tab nel lockscreen a tab scorrevoli, visualizza l\'icona di un\'app personalizzata nel lockscreen rotante, aggiunge un terzo anello nel lockscreen ad anelli.</string>
     <string name="pref_lockscreen_custom_app_activity_title">Applicazione personalizzata</string>
-     <string name="pref_lockscreen_custom_background_title">Seleziona sfondo</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">Seleziona il collegamento da aggiungere</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">Seleziona il collegamento da rimuovere</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">Annulla</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_add">Aggiungi</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Rimuovi</string>
+    <string name="pref_lockscreen_ring_custom_apps_notset">Non impostato</string>
+    <string name="pref_lockscreen_custom_background_title">Seleziona sfondo</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Seleziona sfondo</string>
     <string name="pref_lockscreen_custom_background_summary">Seleziona un\'immagine o un colore come sfondo del lockscreen</string>
     <string name="pref_lockscreen_custom_background_summary_color">Attuale : Colore</string>
@@ -285,25 +289,31 @@
     <string name="pref_lockscreen_rotary_unlock_down_summary">Sblocca lo schermo trascinando verso il basso la barra rotante. Trascina a destra per avviare l\'applicazione personalizzata</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Nascondi frecce</string>
     <string name="pref_lockscreen_rotary_hide_arrows_summary">Nascondi le frecce direzionali nel lockscreen rotante</string>
-    <string name="lockscreen_style_header">Preferenze stile</string>
-    <string name="lockscreen_delay_header">Ritardo e timeout</string>
     <string name="pref_lockscreen_style_title">Stile lockscreen</string>
     <string name="pref_lockscreen_style_summary">Scegli lo stile del lockscreen</string>
     <string name="pref_in_call_style_title">Stile chiamata in arrivo</string>
     <string name="pref_in_call_style_summary">Seleziona lo stile del widget accetta/rifiuta per le chiamate in arrivo</string>
+    <string name="lockscreen_music_title">Controlli musicali</string>
     <string name="pref_volbtn_music_controls_title">Seleziona traccia con tasto volume</string>
     <string name="pref_volbtn_music_controls_summary">Seleziona la traccia musicale tenendo premuto il tasto volume quando lo schermo è spento</string>
     <string name="pref_cambtn_music_controls_title">Play/pause con tasto fotocamera</string>
     <string name="pref_cambtn_music_controls_summary">Play/pause tenendo premuto il tasto della fotocamera quando lo schermo è spento</string>
     <string name="lockscreen_widgets_note_title">Nota</string>
     <string name="lockscreen_widgets_note_summary">Con lo stile \"lense\" verranno visualizzati solo i comandi musicali. Le impostazioni seguenti non verrano perse per permettere di passare facilmente da uno stile all\'altro.</string>
+    <string name="lockscreen_calendar_title">Calendario nel lockscreen</string>
+    <string name="pref_lockscreen_calendar_alarm_title">Visualizza prossimo evento</string>
+    <string name="pref_lockscreen_calendar_alarm_summary">Visualizza la data e l\'ora del prossimo evento nel calendario</string>
+    <string name="pref_lockscreen_calendars_title">Calendari</string>
+    <string name="pref_lockscreen_calendars_summary">Cerca gli eventi tra questi calendari</string>
+    <string name="pref_lockscreen_calendar_reminders_only_title">Solo promemoria</string>
+    <string name="pref_lockscreen_calendar_reminders_only_summary">Tieni in considerazione solo gli eventi con promemoria</string>
+    <string name="pref_lockscreen_calendar_lookahead_title">Intervallo di ricerca</string>
+    <string name="pref_lockscreen_calendar_lookahead_summary">Seleziona l\'intervallo di tempo entro il quale cercare i prossimi eventi</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">Impostazioni input</string>
-    <string name="input_settings_summary">Scegli il comportamento dei tasti</string>
     <string name="haptic_title">Modifiche feedback aptico</string>
     <string name="haptic_summary">Scegli quando e con che intensità vuoi che intervenga il feedback aptico</string>
-    <string name="button_settings_title">Impostazioni tasti</string>
     <string name="long_press_home_title">Long-press tasto home</string>
     <string name="long_press_home_summary">Numero di applicazioni recenti, etc.</string>
 
@@ -382,7 +392,6 @@
 
     <!-- Performance Settings -->
     <string name="performance_settings_title">Impostazioni performance</string>
-    <string name="performance_settings_summary">Modifiche alle performance del dispositivo</string>
 
     <!-- Performance Settings : Compcache -->
     <string name="pref_compcache_title">Usa compcache</string>
@@ -418,7 +427,6 @@
 
     <!-- Application Settings -->
     <string name="application_settings_title">Impostazioni applicazioni</string>
-    <string name="application_settings_summary">Modifica diverse impostazioni riguardanti le applicazioni</string>
 
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">Usa memoria interna</string>
@@ -435,6 +443,7 @@
     <string name="pref_install_location_summary">Seleziona dove vuoi che vengano installate le nuove applicazioni</string>
 
     <string name="general_title">Generale</string>
+    <string name="camera_title">Fotocamera</string>
     <string name="buttons_title">Tasti</string>
 
     <!-- UI Settings : Power off prompt -->
@@ -573,8 +582,6 @@
     <string name="ll_num_levels">Imposta numero livelli</string>
 
     <!-- Sound -->
-    <string name="sound_title">Impostazioni audio</string>
-    <string name="sound_summary">Impostazioni audio e audio focus</string>
     <string name="sound_notifications_focus_title">Focus Notifiche</string>
     <string name="sound_notifications_focus_summary">L\'Audio focus fa in modo che durante una notifica venga diminuito il volume delle app compatibili.</string>
     <string name="sound_volume_control_silent_title">Stato silenzioso</string>
@@ -582,6 +589,11 @@
     <string name="sound_vibrate_in_call_title">Vibra durante chiamata</string>
     <string name="sound_vibrate_in_call_summary_off">Nessuna vibrazione in caso di notifiche durante una chiamata</string>
     <string name="sound_vibrate_in_call_summary_on">Vibrazione attiva in caso di notifiche durante una chiamata</string>
+    <string name="sound_camera_shutter_disable_title">Silenzia otturatore</string>
+    <string name="sound_camera_shutter_disable_summary_on">Non verrà riprodotto il suono dell\'otturatore</string>
+    <string name="sound_camera_shutter_disable_summary_off">Verrà riprodotto il suono dell\'otturatore</string>
+    <string name="sound_camera_shutter_disable_warning_title">ATTENZIONE: Questo può essere illegale!</string>
+    <string name="sound_camera_shutter_disable_warning">In alcuni stati è illegale disattivare il suono dell\'otturatore. Sei sicuro di volerlo disattivare?</string>
     <string name="sound_to_speaker_title">Riproduci solo tramite speaker</string>
     <string name="sound_notifications_title">Notifiche</string>
     <string name="sound_rings_title">Suonerie</string>
@@ -623,6 +635,8 @@
     <string name="user_defined_key1">Tasto Rapido 1</string>
     <string name="user_defined_key2">Tasto Rapido 2</string>
     <string name="user_defined_key3">Tasto Rapido 3</string>
+    <string name="user_defined_envelope_key">Tasto Busta</string>
+    <string name="user_defined_explorer_key">Tasto Explorer</string>
     <string name="user_defined_not_set">Non definito</string>
 
     <!--  Lockscreen gesture strings -->
@@ -631,16 +645,12 @@
     <string name="pref_lockscreen_gestures_builder_title">Crea gesture</string>
     <string name="pref_lockscreen_gestures_sensitivity_title">Sensibilità</string>
     <string name="pref_lockscreen_gestures_color_title">Colore gesture</string>
-    <string name="label_create_gesture">Crea una gesture</string>
     <string name="gestures_button_add">Aggiungi gesture</string>
     <string name="gestures_button_discard">Annulla</string>
     <string name="gestures_button_done">Fatto</string>
     <string name="gestures_error_missing_shortcut">Devi selezionare un\'azione per questa gesture!</string>
-    <string name="gestures_save_success">Gesture salvata in %s</string>
-    <string name="gestures_cancel_action">Cancella</string>
     <string name="gestures_loading">Caricando gesture...</string>
     <string name="gestures_empty">Nessuna gesture</string>
-    <string name="gestures_activity">Gesture</string>
     <string name="gestures_delete">Elimina</string>
     <string name="gestures_delete_success">Gesture eliminata</string>
     <string name="gestures_error_loading">Problema nel caricare il file delle gesture.</string>
@@ -678,8 +688,6 @@
     <string name="title_phone_goggles_start">Inizio modalità phone goggles</string>
     <string name="title_phone_goggles_end">Fine modalità phone goggles</string>
     <string name="title_phone_goggles_confirmation_enabled">Richiedi conferma</string>
-    <string name="title_phone_goggles_phone_enabled">Telefono</string>
-    <string name="title_phone_goggles_sms_enabled">Messaggi</string>
     <string name="title_phone_goggles_maths_level">Difficoltà problemi</string>
     <string name="title_phone_goggles_work_filtered">Lavoro</string>
     <string name="title_phone_goggles_mobile_filtered">Mobile</string>

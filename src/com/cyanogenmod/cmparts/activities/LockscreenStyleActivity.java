@@ -42,6 +42,7 @@ import com.cyanogenmod.cmparts.utils.ShortcutPickHelper;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class LockscreenStyleActivity extends PreferenceActivity implements
         OnPreferenceChangeListener, ShortcutPickHelper.OnPickListener {
@@ -86,6 +87,10 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
     
     private int mWhichApp = -1;
 
+    private int mWhichApp = -1;
+
+    private int mMaxRingCustomApps = Settings.System.LOCKSCREEN_CUSTOM_RING_APP_ACTIVITIES.length;
+
     enum LockscreenStyle{
         Random,
         Slider,
@@ -112,7 +117,7 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
                 case 6:
                     return Ring;
                 default:
-                    return RotaryRevamped;
+                    return Ring;
             }
         }
 
@@ -137,7 +142,7 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
                 case Ring:
                     return 6;
                 default:
-                    return 3;
+                    return 5;
             }
         }
     }
@@ -159,7 +164,7 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
                 case 4:
                     return Ring;
                 default:
-                    return RotaryRevamped;
+                    return Ring;
             }
         }
 
@@ -178,7 +183,7 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
                 case Ring:
                     return 4;
                 default:
-                    return 3;
+                    return 4;
             }
         }
     }
@@ -200,16 +205,15 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
         mLockscreenStylePref = (ListPreference) prefSet.findPreference(LOCKSCREEN_STYLE_PREF);
         mLockscreenStyle = LockscreenStyle.getStyleById(
                 Settings.System.getInt(getContentResolver(),
-                Settings.System.LOCKSCREEN_STYLE_PREF, 3));
+                Settings.System.LOCKSCREEN_STYLE_PREF, 6));
 
-        // hide sense by default
         mLockscreenStylePref.setValue(String.valueOf(LockscreenStyle.getIdByStyle(mLockscreenStyle)));
         mLockscreenStylePref.setOnPreferenceChangeListener(this);
 
         mInCallStylePref = (ListPreference) prefSet.findPreference(IN_CALL_STYLE_PREF);
         mInCallStyle = InCallStyle.getStyleById(
                 Settings.System.getInt(getContentResolver(),
-                Settings.System.IN_CALL_STYLE_PREF, 3));
+                Settings.System.IN_CALL_STYLE_PREF, 4));
         mInCallStylePref.setValue(String.valueOf(InCallStyle.getIdByStyle(mInCallStyle)));
         mInCallStylePref.setOnPreferenceChangeListener(this);
 
@@ -235,7 +239,7 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
 
         updateStylePrefs(mLockscreenStyle, mInCallStyle);
 
-        mCustomAppActivityPref = (Preference) prefSet
+        mCustomAppActivityPref = prefSet
                 .findPreference(LOCKSCREEN_CUSTOM_APP_ACTIVITY);
 
         mCustomBackground = (ListPreference) prefSet
@@ -324,80 +328,81 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
             return true;
         } else if (preference == mCustomAppActivityPref) {
             if (mLockscreenStyle == LockscreenStyle.Ring) {
-                String[] items = new String[4];
-                for (int q = 0; q < 4; q++) {
-                    items[q] = (q + 1) + " - ";
-                    
-                    String uri = Settings.System.getString(getContentResolver(),
-                            Settings.System.LOCKSCREEN_CUSTOM_RING_APP_ACTIVITIES[q]);
-                    if (uri != null) {
-                        items[q] += mPicker.getFriendlyNameForUri(uri);
-                    }
-                    else {
-                        items[q] += "<" + getResources().getString(R.string.pref_lockscreen_ring_custom_apps_notset) + ">";
-                    }
-                }
-                
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle(R.string.pref_lockscreen_ring_custom_apps_dialog_title_set);
-                builder.setItems(items, new Dialog.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                        mWhichApp = which;
-                        mPicker.pickShortcut();
-                    }
-                });
-                builder.setPositiveButton(R.string.pref_lockscreen_ring_custom_apps_dialog_unset, 
-                        new Dialog.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                        String[] items = new String[4];
-                        for (int q = 0; q < 4; q++) {
-                            items[q] = (q + 1) + " - ";
-                            
-                            String uri = Settings.System.getString(getContentResolver(),
-                                    Settings.System.LOCKSCREEN_CUSTOM_RING_APP_ACTIVITIES[q]);
-                            if (uri != null) {
-                                items[q] += mPicker.getFriendlyNameForUri(uri);
-                            }
-                            else {
-                                items[q] += "<" + getResources().getString(R.string.pref_lockscreen_ring_custom_apps_notset) + ">";
-                            }
+
+                final String[] items = getCustomRingAppItems();
+
+                if (items.length == 0) {
+                    mWhichApp = 0;
+                    mPicker.pickShortcut();
+                } else {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setTitle(R.string.pref_lockscreen_ring_custom_apps_dialog_title_set);
+                    builder.setItems(items, new Dialog.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                            mWhichApp = which;
+                            mPicker.pickShortcut();
                         }
-                        
-                        AlertDialog.Builder builder = new AlertDialog.Builder(LockscreenStyleActivity.this);
-                        builder.setTitle(R.string.pref_lockscreen_ring_custom_apps_dialog_title_unset);
-                        builder.setItems(items, new Dialog.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                                Settings.System.putString(getContentResolver(),
-                                        Settings.System.LOCKSCREEN_CUSTOM_RING_APP_ACTIVITIES[which], null);
-                                mCustomAppActivityPref.setSummary(getCustomRingAppSummary());
-                            }
-                        });
-                        builder.setNegativeButton(R.string.pref_lockscreen_ring_custom_apps_dialog_cancel, 
+                    });
+                    if (items.length < mMaxRingCustomApps) {
+                        builder.setPositiveButton(R.string.pref_lockscreen_ring_custom_apps_dialog_add,
                                 new Dialog.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.dismiss();
+                                mWhichApp = items.length;
+                                mPicker.pickShortcut();
                             }
                         });
-                        builder.setCancelable(true);
-                        builder.create().show();
                     }
-                });
-                builder.setNegativeButton(R.string.pref_lockscreen_ring_custom_apps_dialog_cancel, 
-                        new Dialog.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-                builder.setCancelable(true);
-                builder.create().show();
+                    builder.setNeutralButton(R.string.pref_lockscreen_ring_custom_apps_dialog_remove,
+                            new Dialog.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+
+                            AlertDialog.Builder builder = new AlertDialog.Builder(LockscreenStyleActivity.this);
+                            builder.setTitle(R.string.pref_lockscreen_ring_custom_apps_dialog_title_unset);
+                            builder.setItems(items, new Dialog.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                    Settings.System.putString(getContentResolver(),
+                                            Settings.System.LOCKSCREEN_CUSTOM_RING_APP_ACTIVITIES[which], null);
+                                    //shift the rest of items down
+                                    for (int q = which + 1; q < mMaxRingCustomApps; q++) {
+                                        Settings.System.putString(getContentResolver(),
+                                                Settings.System.LOCKSCREEN_CUSTOM_RING_APP_ACTIVITIES[q - 1],
+                                                Settings.System.getString(getContentResolver(),
+                                                Settings.System.LOCKSCREEN_CUSTOM_RING_APP_ACTIVITIES[q]));
+                                        Settings.System.putString(getContentResolver(),
+                                                Settings.System.LOCKSCREEN_CUSTOM_RING_APP_ACTIVITIES[q], null);
+                                    }
+                                    mCustomAppActivityPref.setSummary(getCustomRingAppSummary());
+                                }
+                            });
+                            builder.setNegativeButton(R.string.pref_lockscreen_ring_custom_apps_dialog_cancel,
+                                    new Dialog.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            });
+                            builder.setCancelable(true);
+                            builder.create().show();
+                        }
+                    });
+                    builder.setNegativeButton(R.string.pref_lockscreen_ring_custom_apps_dialog_cancel,
+                            new Dialog.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                        }
+                    });
+                    builder.setCancelable(true);
+                    builder.create().show();
+                }
             } else {
                 mPicker.pickShortcut();
             }
@@ -504,11 +509,12 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
     private void updateStylePrefs(LockscreenStyle lockscreenStyle, InCallStyle inCallStyle) {
         // slider style & lense style
         if (lockscreenStyle == LockscreenStyle.Slider
-                || lockscreenStyle == LockscreenStyle.Lense) {
-            if(inCallStyle==InCallStyle.Slider){
+                || lockscreenStyle == LockscreenStyle.Lense
+                || lockscreenStyle == LockscreenStyle.Ring) {
+            if (inCallStyle == InCallStyle.Slider || inCallStyle == InCallStyle.Ring) {
                 mRotaryHideArrowsToggle.setChecked(false);
                 mRotaryHideArrowsToggle.setEnabled(false);
-            }else{
+            } else {
                 mRotaryHideArrowsToggle.setEnabled(true);
             }
             mRotaryUnlockDownToggle.setChecked(false);
@@ -524,17 +530,8 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
                 mRotaryUnlockDownToggle.setEnabled(false);
             }
         // ring style
-        } else if (lockscreenStyle == LockscreenStyle.Ring) {
-            if(inCallStyle==InCallStyle.Slider){
-                mRotaryHideArrowsToggle.setChecked(false);
-                mRotaryHideArrowsToggle.setEnabled(false);
-            }else{
-                mRotaryHideArrowsToggle.setEnabled(true);
-            }
-            mRotaryUnlockDownToggle.setChecked(false);
-            mRotaryUnlockDownToggle.setEnabled(false);
         }
-        
+
         // disable custom app starter for lense - would be ugly in above if
         // statement
         if (lockscreenStyle == LockscreenStyle.Lense) {
@@ -545,6 +542,15 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
             mCustomAppTogglePref.setEnabled(true);
         }
         
+        // disable custom app icon style for ring - would be ugly in above if
+        // statement
+        if (lockscreenStyle == LockscreenStyle.Ring) {
+            mCustomIconStyle.setChecked(false);
+            mCustomIconStyle.setEnabled(false);
+        } else if (mCustomAppTogglePref.isChecked() == true){
+            mCustomIconStyle.setEnabled(true);
+        }
+
         // disable custom app icon style for ring - would be ugly in above if
         // statement
         if (lockscreenStyle == LockscreenStyle.Ring) {
@@ -568,25 +574,30 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
         Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_CUSTOM_ICON_STYLE,
                 value ? 2 : 1);
     }
-    
+
     private String getCustomRingAppSummary() {
         String summary = "";
-        
-        for (int q = 0; q < 4; q++) {
+        String[] items = getCustomRingAppItems();
+
+        for (int q = 0; q < items.length; q++) {
             if (q != 0) {
                 summary += ", ";
             }
-            
+            summary += items[q];
+        }
+
+        return summary;
+    }
+
+    private String[] getCustomRingAppItems() {
+        ArrayList<String> items = new ArrayList<String>();
+        for (int q = 0; q < mMaxRingCustomApps; q++) {
             String uri = Settings.System.getString(getContentResolver(),
                     Settings.System.LOCKSCREEN_CUSTOM_RING_APP_ACTIVITIES[q]);
             if (uri != null) {
-                summary += mPicker.getFriendlyNameForUri(uri);
-            }
-            else {
-                summary += "<" + getResources().getString(R.string.pref_lockscreen_ring_custom_apps_notset) + ">";
+                items.add(mPicker.getFriendlyNameForUri(uri));
             }
         }
-        
-        return summary;
+        return items.toArray(new String[0]);
     }
 }
