@@ -84,20 +84,26 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
     private File wallpaperImage;
 
     private File wallpaperTemporary;
+    
+    private int mWhichApp = -1;
 
     private int mWhichApp = -1;
 
     private int mMaxRingCustomApps = Settings.System.LOCKSCREEN_CUSTOM_RING_APP_ACTIVITIES.length;
 
     enum LockscreenStyle{
+        Random,
         Slider,
         Rotary,
         RotaryRevamped,
         Lense,
+        Sense,
         Ring;
 
         static public LockscreenStyle getStyleById(int id){
             switch (id){
+                case 0:
+                    return Random;
                 case 1:
                     return Slider;
                 case 2:
@@ -107,6 +113,8 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
                 case 4:
                     return Lense;
                 case 5:
+                    return Sense;
+                case 6:
                     return Ring;
                 default:
                     return Ring;
@@ -119,6 +127,8 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
 
         static public int getIdByStyle(LockscreenStyle lockscreenstyle){
             switch (lockscreenstyle){
+                case Random:
+                    return 0;
                 case Slider:
                     return 1;
                 case Rotary:
@@ -127,8 +137,10 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
                     return 3;
                 case Lense:
                     return 4;
-                case Ring:
+                case Sense:
                     return 5;
+                case Ring:
+                    return 6;
                 default:
                     return 5;
             }
@@ -193,7 +205,8 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
         mLockscreenStylePref = (ListPreference) prefSet.findPreference(LOCKSCREEN_STYLE_PREF);
         mLockscreenStyle = LockscreenStyle.getStyleById(
                 Settings.System.getInt(getContentResolver(),
-                Settings.System.LOCKSCREEN_STYLE_PREF, 5));
+                Settings.System.LOCKSCREEN_STYLE_PREF, 6));
+
         mLockscreenStylePref.setValue(String.valueOf(LockscreenStyle.getIdByStyle(mLockscreenStyle)));
         mLockscreenStylePref.setOnPreferenceChangeListener(this);
 
@@ -319,6 +332,7 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
             return true;
         } else if (preference == mCustomAppActivityPref) {
             if (mLockscreenStyle == LockscreenStyle.Ring) {
+
                 final String[] items = getCustomRingAppItems();
 
                 if (items.length == 0) {
@@ -531,6 +545,15 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
             mCustomAppTogglePref.setEnabled(false);
         } else {
             mCustomAppTogglePref.setEnabled(true);
+        }
+        
+        // disable custom app icon style for ring - would be ugly in above if
+        // statement
+        if (lockscreenStyle == LockscreenStyle.Ring) {
+            mCustomIconStyle.setChecked(false);
+            mCustomIconStyle.setEnabled(false);
+        } else if (mCustomAppTogglePref.isChecked() == true){
+            mCustomIconStyle.setEnabled(true);
         }
 
         // disable custom app icon style for ring - would be ugly in above if

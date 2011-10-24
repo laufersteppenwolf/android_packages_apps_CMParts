@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- dx -->
+	<!-- GingerDX settings -->
+	<string name="gingerdx_settings_title">GingerDX postavke</string>
+	<string name="gingerdx_settings_summary">Postavke specifične za GingerDX</string>
+	<string name="pref_led_disabled_group_title">LED onemogućen u noći</string>
+	<string name="pref_led_disabled_title">...omogućeno</string>
+	<string name="pref_led_disabled_from_title">...od</string>
+	<string name="pref_led_disabled_to_title">...do</string>
+
+	<string name="flipping_down_title">Preokretanje uređaja...</string>
+	<string name="pref_flipping_down_mutes_ringer_title">...is ključuje zvonjavu</string>
+	<string name="pref_flipping_down_snoozes_alarm_title">...o gdađa zvonjavu alarma</string>
+	<string name="pref_flipping_down_snoozes_alarm_summary">Ni sam odgovaran ako dobijete otkaz!</string>
+
+	<string name="call_features_title">Mogućnosti poziva</string>
+	<string name="pref_call_me_louder_title">Call Me Louder</string>
+	<string name="pref_call_me_louder_summary">Glasnija zvonjava kad je telefon u torbi</string>
+	<string name="pref_back_button_ends_call_title">Tipka nazad završava poziv</string>
+	<string name="pref_ringer_loop_title">Petlja zvonjave</string>
+	<string name="pref_ringer_loop_summary">Ponovno i ponovno...</string>
+
+	<string name="other_features_title">Ostale mogućnosti</string>
+	<string name="pref_hide_avatar_message_title">Sakrij sličicu u SMS sadržaju</string>
+	<string name="pref_quick_copy_paste_title">Brzi kopiraj i zalijepi</string>
+	<string name="pref_transparent_status_bar_title">Prozirnos t statusne trake</string>
+	<string name="pref_transparent_status_bar_summary">Ponovno pokreni za primjenu</string>
+	<string name="pref_sense3_lockscreen_title">Sense 3 zaslon zaključavanja</string>
+	<string name="pref_sense3_lockscreen_summary">Samo osnovna funkcionalsnot</string>
+	<string name="pref_gingerdx_about_title">O GingerDX</string>
+	<string name="pref_gingerdx_about_default">GingerDX built v000 by doixanh@xda</string>
+
+	<string name="pref_custom_carrier_title">Tekst davatelja usluge</string>
+	<string name="pref_custom_carrier_summary">Samo na zaslonu zaključ./statusnoj traci</string>
+	<string name="carrier_label">Tekst davatelja uslige (prazno za isklj.)</string>
+	<string name="custom_carrier">Tekst davatelja usluge</string>
+	<string name="ok_button">Gotovo</string>
+	<string name="cancel_button">Poništi</string>
+</resources>

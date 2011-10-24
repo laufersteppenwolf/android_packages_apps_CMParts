@@ -735,4 +735,41 @@
     <string name="perm_enable_warning_message">Внимание!\nОтмена большинства разрешений может стать причиной сбоев в работе приложений. Если приложение с отменёнными разрешениями выдаёт ошибку, пожалуйста, предоставьте необходимые разрешения или не используйте приложение.\nПожалуйста, не посылайте сообщения об ошибках в CyanogenMod если приложение с отменёнными разрешениями не работает, как и следовало ожидать!</string>
     <string name="perm_enable_warning_title">Вы уверены?</string>
 
+<!-- dx -->
+    <!-- GingerDX settings -->
+    <string name="gingerdx_settings_title">GingerDX</string>
+    <string name="gingerdx_settings_summary">Опции GingerDX</string>
+    <string name="pref_led_disabled_group_title">LED-уведомления</string>
+    <string name="pref_led_disabled_title">Отключить LED-уведомления в период...</string>
+    <string name="pref_led_disabled_from_title">...от</string>
+    <string name="pref_led_disabled_to_title">...до</string>
+
+    <string name="flipping_down_title">Флип вниз...</string>
+    <string name="pref_flipping_down_mutes_ringer_title">...отключает звук входящего вызова</string>
+    <string name="pref_flipping_down_snoozes_alarm_title">...переносит будильник</string>
+    <string name="pref_flipping_down_snoozes_alarm_summary">Я не отвечаю за Ваше опоздание на работу...</string>
+
+    <string name="call_features_title">Функции звонка</string>
+    <string name="pref_call_me_louder_title">Call Me Louder</string>
+    <string name="pref_call_me_louder_summary">Увеличивает громкость звонка когда телефон в сумке</string>
+    <string name="pref_back_button_ends_call_title">Кнопка "Назад" завершает текущий вызов</string>
+    <string name="pref_ringer_loop_title">Повтор рингтона при вызове</string>
+    <string name="pref_ringer_loop_summary">Опять и опять...</string>
+
+    <string name="other_features_title">Другие возможности</string>
+    <string name="pref_hide_avatar_message_title">Спрятать аватар в SMS контенте</string>
+    <string name="pref_quick_copy_paste_title">Быстрое копирование / вставка</string>
+    <string name="pref_transparent_status_bar_title">Прозрачность панели уведомлений</string>
+    <string name="pref_transparent_status_bar_summary">Перезагрузите смартфон что бы изменения пришли в силу</string>
+    <string name="pref_sense3_lockscreen_title">Экран блокировки Sense 3</string>
+    <string name="pref_sense3_lockscreen_summary">Только базовый функционал</string>
+    <string name="pref_gingerdx_about_title">О прошивке</string>
+    <string name="pref_gingerdx_about_default">GingerDX built v000 by doixanh@xda</string>
+    
+    <string name="pref_custom_carrier_title">Текст оператора</string>
+    <string name="pref_custom_carrier_summary">Появляется в экране блокировки / панели уведомлений вместо названия оператора</string>
+    <string name="carrier_label">Текст оператора (очистите поле для отключения)</string>
+    <string name="custom_carrier">Текст оператора в экране блокировки / панели уведомлений</string>
+    <string name="ok_button">Готово</string>
+    <string name="cancel_button">Отмена</string>
 </resources>

@@ -671,4 +671,43 @@
     <string name="perm_enable_management_summary">Activer la gestion manuelle des permissions</string>
     <string name="perm_enable_warning_message">Attention!\nLa plupart du temps, interdire une permission provoque un mauvais fonctionnement de l\'application. Si l\'application révoquée force-close réactivez la permission ou n\'utilisez pas l\'application.\nN\'ENVOYEZ PAS de rapport de bug si l\'application en question ne fonctionne pas comme prévu !</string>
     <string name="perm_enable_warning_title">Etes-vous sûr ?</string>
+    
+        <!-- dx -->
+    <!-- GingerDX settings -->
+    <string name="gingerdx_settings_title">Configuration de GingerDX</string>
+    <string name="gingerdx_settings_summary">Changer options de GingerDX spécifiques</string>
+    <string name="pref_led_disabled_group_title">LED désactivée la nuit...</string>
+    <string name="pref_led_disabled_title">...activée</string>
+    <string name="pref_led_disabled_from_title">...de</string>
+    <string name="pref_led_disabled_to_title">...à</string>
+
+    <string name="flipping_down_title">Retournement...</string>
+    <string name="pref_flipping_down_mutes_ringer_title">...désactive la sonnerie</string>
+    <string name="pref_flipping_down_snoozes_alarm_title">...éteint l\'alarme</string>
+    <string name="pref_flipping_down_snoozes_alarm_summary">Aucune responsabilité étant renvoyée!</string>
+
+    <string name="call_features_title">Fonctions des appels</string>
+    <string name="pref_call_me_louder_title">Call Me Louder</string>
+    <string name="pref_call_me_louder_summary">Sonne plus fortement quand le téléphone est dans un sac</string>
+    <string name="pref_back_button_ends_call_title">Raccrocher grâce au bouton retour</string>
+    <string name="pref_ringer_loop_title">Sonnerie répété</string>
+    <string name="pref_ringer_loop_summary">Encore et encore et...</string>
+
+    <string name="other_features_title">Autres options</string>
+	<string name="pref_hide_avatar_message_title">Cacher avatar dans les SMS</string>
+	<string name="pref_quick_copy_paste_title">Copier rapide / Coller rapide</string>
+    <string name="pref_transparent_status_bar_title">Barre de notification transparente</string>
+    <string name="pref_transparent_status_bar_summary">Redémarrer pour appliquer les changements</string>
+    <string name="pref_sense3_lockscreen_title">Ecran de vérouillage Sense 3</string>
+    <string name="pref_sense3_lockscreen_summary">Fonction seulement basique</string>
+    <string name="pref_gingerdx_about_title">A propos de...</string>
+    <string name="pref_gingerdx_about_default">GingerDX built v000 by doixanh@xda</string>
+    
+    <string name="pref_custom_carrier_title">Texte d\'opérateur personnalisé</string>
+    <string name="pref_custom_carrier_summary">Apparait sur l\'écran de vérouillage et sur la barre de notification</string>
+    <string name="carrier_label">Texte d\'opérateur (blanc pour désactivée)</string>
+    <string name="custom_carrier">Texte d\'opérateur</string>
+    <string name="ok_button">Valider</string>
+    <string name="cancel_button">Annuler</string>
+
 </resources>
