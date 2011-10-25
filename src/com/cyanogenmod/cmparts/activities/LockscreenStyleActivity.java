@@ -87,8 +87,6 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
     
     private int mWhichApp = -1;
 
-    private int mWhichApp = -1;
-
     private int mMaxRingCustomApps = Settings.System.LOCKSCREEN_CUSTOM_RING_APP_ACTIVITIES.length;
 
     enum LockscreenStyle{

@@ -121,7 +121,9 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 	    mSmartDialer.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.SMART_DIALER, 1) == 1));
 
 	    mRecentAppsStatusBar = (CheckBoxPreference) prefSet.findPreference(RECENT_APPS_STATUS_BAR_PREF);
-	    mRecentAppsStatusBar.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.RECENT_APPS_STATUS_BAR, 1) == 1);
+	    if (mRecentAppsStatusBar != null) {
+    	    mRecentAppsStatusBar.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.RECENT_APPS_STATUS_BAR, 1) == 1);
+	    }
 
 //        mDoProfileScrolling = (CheckBoxPreference) prefSet.findPreference(DO_PROFILE_SCROLLING_PREF);
 //        if (mDoProfileScrolling != null)
@@ -171,9 +173,9 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         else if (preference == mSmartDialer) {
             Settings.System.putInt(getContentResolver(), Settings.System.SMART_DIALER, mSmartDialer.isChecked() ? 1 : 0);
         }
-        else if (preference == mRecentAppsStatusBar) {
-            Settings.System.putInt(getContentResolver(), Settings.System.RECENT_APPS_STATUS_BAR, mRecentAppsStatusBar.isChecked() ? 1 : 0);
-        }
+//      else if (preference == mRecentAppsStatusBar) {
+//          Settings.System.putInt(getContentResolver(), Settings.System.RECENT_APPS_STATUS_BAR, mRecentAppsStatusBar.isChecked() ? 1 : 0);
+//      }
 
 //        else if (preference == mDoProfileScrolling) {
 //            Settings.System.putInt(getContentResolver(), Settings.System.DO_PROFILE_SCROLLING, mDoProfileScrolling.isChecked() ? 1 : 0);
