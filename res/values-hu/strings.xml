@@ -684,78 +684,42 @@
     <string name="cpu_max_freq_summary">Maximum CPU frekvencia\nJelenleg: %s</string>
     <string name="cpu_set_on_boot">Használat bootoláskor</string>
     <string name="cpu_set_on_boot_summary">CPU beállítások visszaállítása bootoláskor</string>
+    
+    <!-- dx -->
+	<!-- GingerDX beállításai -->
+	<string name="gingerdx_settings_title">GingerDX beállításai</string>
+	<string name="gingerdx_settings_summary">GingerDX speciális beállításai</string>
+	<string name="pref_led_disabled_group_title">LED tiltása este...</string>
+	<string name="pref_led_disabled_title">...aktiválva</string>
+	<string name="pref_led_disabled_from_title">...ettől</string>
+	<string name="pref_led_disabled_to_title">...eddig</string>
 
-    <!-- Permissions Management Settings strings -->
-    <string name="perm_enable_management">Jogosultság kezelés</string>
-    <string name="perm_enable_management_summary">Alkalmazások jogosultság kezelése</string>
-    <string name="perm_enable_warning_message">Vigyázat!\nAlkalmazásoktól a jogosultságok visszavonása hibás működéshez vezethet. Hiba esetén engedélyezze a szükséges jogosultságokat vagy NE használja az alkalmazást!\nKérjük NE KÜLDJÖN hibajelentést a CyanogenMod csapatnak ha a visszavont jogosultságokkal rendelkező alkalmazás nem működik megfelelően!</string>
-    <string name="perm_enable_warning_title">Biztos benne?</string>
+	<string name="flipping_down_title">Telefon megfordítása...</string>
+	<string name="pref_flipping_down_mutes_ringer_title">...el némítja a csengést</string>
+	<string name="pref_flipping_down_snoozes_alarm_title">...s zundiba állítja az ébresztőt</string>
+	<string name="pref_flipping_down_snoozes_alarm_summary">Ne m az én hibám ha elalszol!</string>
 
-    <!-- Long Press Menu -->
-    <string name="long_press_menu_title">Menü gomb hosszú nyomása</string>
-    <string name="long_press_menu_summary">Menü gomb hosszú nyomásakor történő lehetőségek</string>
-    <string name="pref_user_defined_long_press_menu_title">Válasszon alkalmazást</string>
-    <string name="pref_long_press_menu_title">Viselkedés</string>
-    <string name="pref_long_press_menu_summary">Menü gomb hosszú nyomásakor mi történjen</string>
+	<string name="call_features_title">Hívás jellemzői</string>
+	<string name="pref_call_me_louder_title">Csörögj hangosabban</string>
+	<string name="pref_call_me_louder_summary">Hangosabb csengés ha a telefon táskában van</string>
+	<string name="pref_back_button_ends_call_title">Vissza gomb befejezi a hívást</string>
+	<string name="pref_ringer_loop_title">Csengőhang ismétlése</string>
+	<string name="pref_ringer_loop_summary">Újra és újra...</string>
 
-    <string name="pref_volume_wake_title">Ébresztés hangerő gombokra</string>
-    <string name="pref_volume_wake_summary">Hangerő fel/le gomb megnyomásakor a készülék alvó állapotból felébresztése</string>
+	<string name="other_features_title">Egyéb beállítások</string>
+	<string name="pref_hide_avatar_message_title">Névjegy képének rejtése SMS-szálaknál</string>
+	<string name="pref_quick_copy_paste_title">Gyors másolás / Gyors beillesztés</string>
+	<string name="pref_transparent_status_bar_title">Állapotso r átlátszósága</string>
+	<string name="pref_transparent_status_bar_summary">Újraind ítás szüséges érvényesítéshez!</string>
+	<string name="pref_sense3_lockscreen_title">Sense 3 Zárképernyő</string>
+	<string name="pref_sense3_lockscreen_summary">Csak alap funkciók!</string>
+	<string name="pref_gingerdx_about_title">Névjegy</string>
+	<string name="pref_gingerdx_about_default">GingerDX built v000 by doixanh@xda</string>
 
-    <!-- UI Settings : Haptic feedback -->
-    <string name="expanded_haptic_feedback_title">Rezgő visszajelzés</string>
-    <string name="expanded_haptic_feedback_summary">Rezgő visszajelzés ki/bekapcsolása</string>
-
-    <!-- User interface : Rotation -->
-    <string name="rotation_category_title">Kijelző forgatása</string>
-    <string name="pref_rotation_0_title">0 fok</string>
-    <string name="pref_rotation_90_title">90 fok</string>
-    <string name="pref_rotation_180_title">180 fok</string>
-    <string name="pref_rotation_270_title">270 fok</string>
-
-    <!-- User interface : Share menu for screenshots -->
-    <string name="pref_share_screenshot_title">Képmentés megosztása</string>
-    <string name="pref_share_screenshot_summary">Képmentés után mutassa a megosztási lehetőségeket</string>
-
-    <!-- Performance Settings : 16bpp Alpha -->
-    <string name="pref_use_16bpp_alpha_title">16bit-es átlátszóság</string>
-    <string name="pref_use_16bpp_alpha_summary">Használata növeli a görgetés teljesítményét, de megjelenítési hibák előfordulhatnak (úraindítás szükséges)</string>
-
-    <!-- User interface: Tablet tweaks -->
-    <string name="tablet_tweaks_title_head">Tábla finomhangolás</string>
-    <string name="tablet_tweaks_summary_head">Táblagépen használatos beállítások melyek telefonon is működnek</string>
-    <string name="tablet_tweaks_sb_bottom_title">Állapotsor alulra</string>
-    <string name="tablet_tweaks_sb_bottom_summary">Állapotsor alulra helyezése. Táblagépeken használatos képernyő-gombokkal (home, menü, vissza stb.)</string>
-    <string name="tablet_tweaks_status_bar_dead_zone_title">Holt zóna</string>
-    <string name="tablet_tweaks_status_bar_dead_zone_summary">Az alulra került állapotsornak csak a két széle lesz érintésérzékeny</string>
-    <string name="tablet_tweaks_soft_buttons_left_title">Szofveres gombok balra</string>
-    <string name="tablet_tweaks_soft_buttons_left_summary">Szofveres gombok elhelyezése az állapotsor bal felén</string>
-    <string name="tablet_tweaks_soft_button_list_title">Válasszon szoftveres gombokat</string>
-    <string name="tablet_tweaks_interface_head">Felület</string>
-    <string name="tablet_tweaks_disable_lockscreen_title">Zárképernyő kikapcsolása</string>
-    <string name="tablet_tweaks_disable_lockscreen_summary">Ha be van kapcsolva a zárképernyő nem lesz aktív sem újraindítás, sem felébresztés után</string>
-    <string name="tablet_tweaks_disable_fullscreen_title">Teljes képernyő tiltása</string>
-    <string name="tablet_tweaks_disable_fullscreen_summary">Felülvezérli a teljesképernyős módot, így az állapotsor mindig látható lesz</string>
-    <string name="tablet_tweaks_unhide_button_list_head">Megjelenítendő gomb</string>
-    <string name="tablet_tweaks_unhide_button_list_title">Válassza ki a megjelenítendő gombot</string>
-    <string name="tablet_tweaks_extend_pm_title">Kiterjesztett bekapcsolási menü</string>
-    <string name="tablet_tweaks_extend_pm_summary">Adja hozzá a home/vissza/menü gombokat a bekapcsolási menühöz</string>
-    <string name="tablet_tweaks_extend_pm_list_title">Válasszon bekapcsolásmenü gombokat</string>
-    <string name="tablet_tweaks_reverse_volume_behavior_title">Hangerő beállítások viselkedése</string>
-    <string name="tablet_tweaks_reverse_volume_behavior_summary_off">A hangerőgomb működése alaphelyzetben van. Nyomja le hangerő váltáshoz, hosszan pedig a felhasználói beállításhoz</string>
-    <string name="tablet_tweaks_reverse_volume_behavior_summary_on">Hangerőgomok átállítva. Nyomja le a felhasználói művelethez, hosszan pedig hangerő váltáshoz</string>
-    <string name="tablet_tweaks_input_head">Hangerőgombok felülvezérlése</string>
-    <string name="tablet_tweaks_long_volp_action_title">Hang fel hosszan nyomva</string>
-    <string name="tablet_tweaks_long_volp_action_summary">Társítja a home/vissza/menü stb. akciót a hangerő gomb hosszú lenyomsához. A kéernyő működése korlátozza</string>
-    <string name="tablet_tweaks_long_volm_action_title">Hang le gomb hosszan nyomva</string>
-    <string name="tablet_tweaks_vol_both_action_title">Mindkét hangerőgomb</string>
-    <string name="tablet_tweaks_vol_both_action_summary">Figyelem: több készüléken a hangerőgomb mindkét felének lenyomása és a bekapcsológomb együtt a gyári beállítások visszaállítására szolgál</string>
-    <string name="tablet_tweaks_long_vol_both_action_title">Mindkét hangerőgomb hosszan lenyomva</string>
-    <string name="tablet_tweaks_extend_pm_list_head">Bekapcsolásmenü gombok</string>
-    <string name="tablet_tweaks_soft_buttons_list_head">Szoftveres gombok</string>
-    <string name="tablet_soft_buttons_home_title">Home</string>
-    <string name="tablet_soft_buttons_menu_title">Menü</string>
-    <string name="tablet_soft_buttons_back_title">Vissza</string>
-    <string name="tablet_soft_buttons_search_title">Keresés</string>
-    <string name="tablet_soft_buttons_quick_na_title">Rövid figyelmeztetések</string>
-
+	<string name="pref_custom_carrier_title">Egyedi Zárképernyő szöveg</string>
+	<string name="pref_custom_carrier_summary">A Zárképernyőn / Állapotsoron jelenik meg</string>
+	<string name="carrier_label">Saját szöveg (hagyd üresen a tiltáshoz!)</string>
+	<string name="custom_carrier">Saját szöveg</string>
+	<string name="ok_button">Kész</string>
+	<string name="cancel_button">Mégse</string>
 </resources>

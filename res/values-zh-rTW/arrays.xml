@@ -268,6 +268,7 @@
         <item>撥輪</item>
         <item>撥輪（改）</item>
         <item>透鏡</item>
+        <item>環</item>
         <item>飛環</item>
     </string-array>
 
@@ -277,7 +278,7 @@
         <item>滑桿</item>
         <item>撥輪</item>
         <item>撥輪（改）</item>
-        <item>飛環</item>
+        <item>環</item>
     </string-array>
 
     <!-- skipping untranslatable /resources:0/string-array:name=pref_in_call_style_values -->
