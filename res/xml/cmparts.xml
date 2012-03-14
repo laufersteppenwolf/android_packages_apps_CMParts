@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- GingerDX Settings -->
+    <PreferenceScreen android:key="gingerdx_settings"
+        android:title="@string/gingerdx_settings_title" android:summary="@string/gingerdx_settings_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.cmparts"
+            android:targetClass="com.cyanogenmod.cmparts.activities.GingerDXActivity" />
+    </PreferenceScreen>
+
     <!-- Application Settings -->
     <PreferenceScreen android:key="application_settings"
         android:title="@string/application_settings_title_head"
