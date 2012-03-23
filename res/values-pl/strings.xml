@@ -787,8 +787,8 @@
     <string name="pref_back_button_ends_call_title">Klawisz wstecz kończy połączenie</string>
     <string name="pref_ringer_loop_title">Zapętlenie dzwonka</string>
     <string name="pref_ringer_loop_summary">...i jeszcze jeden i jeszcze raz ...</string>
-    <string name="pref_smart_dialer_title">Smart dialer</string>
-    <string name="pref_smart_dialer_summary">Sugestie kontaktu podczas wybierania numeru</string>
+    <!--<string name="pref_smart_dialer_title">Smart dialer</string>
+    <string name="pref_smart_dialer_summary">Sugestie kontaktu podczas wybierania numeru</string>-->
     <string name="other_features_title">Inne funkcje</string>
     <string name="pref_hide_avatar_message_title">Ukrywaj awatar w treści SMS-ów</string>
     <string name="pref_quick_copy_paste_title">Szybkie kopiowanie / Szybkie wklejanie</string>
@@ -799,7 +799,7 @@
     <string name="pref_recent_apps_status_bar_title">Ostatnio uruchomione aplikacje w belce statusu</string>
     <string name="pref_recent_apps_status_bar_summary">Wyświetla max. 16 aplikacji</string>
     <string name="pref_gingerdx_about_title">O...</string>
-    <string name="pref_gingerdx_about_default">GingerDX built v000 by doixanh@xda</string>
+    <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
     <string name="pref_custom_carrier_title">Własna nazwa operatora</string>
     <string name="pref_custom_carrier_summary">Pojawia się podczas blokady ekranu / na belce statusu</string>
     <string name="carrier_label">Własna nazwa operatora (puste pole wyłącza opcję)</string>

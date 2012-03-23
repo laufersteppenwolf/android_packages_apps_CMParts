@@ -37,7 +37,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private static final String RINGER_LOOP_PREF = "pref_ringer_loop";
     private static final String ABOUT_PREF = "pref_gingerdx_about";
     private static final String SENSE3_LOCKSCREEN_PREF = "pref_sense3_lockscreen";
-    private static final String SMART_DIALER_PREF = "pref_smart_dialer";
+//  private static final String SMART_DIALER_PREF = "pref_smart_dialer";
     private static final String RECENT_APPS_STATUS_BAR_PREF = "pref_recent_apps_status_bar";
 
     static Context mContext;
@@ -117,8 +117,8 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 	    mSense3Lockscreen = (CheckBoxPreference) prefSet.findPreference(SENSE3_LOCKSCREEN_PREF);
 	    mSense3Lockscreen.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.USE_SENSE3_LOCKSCREEN, 0) == 1));
 
-	    mSmartDialer = (CheckBoxPreference) prefSet.findPreference(SMART_DIALER_PREF);
-	    mSmartDialer.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.SMART_DIALER, 1) == 1));
+	    /*mSmartDialer = (CheckBoxPreference) prefSet.findPreference(SMART_DIALER_PREF);
+	    mSmartDialer.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.SMART_DIALER, 1) == 1));*/
 
 	    mRecentAppsStatusBar = (CheckBoxPreference) prefSet.findPreference(RECENT_APPS_STATUS_BAR_PREF);
 	    if (mRecentAppsStatusBar != null) {
@@ -170,9 +170,9 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         else if (preference == mSense3Lockscreen) {
             Settings.System.putInt(getContentResolver(), Settings.System.USE_SENSE3_LOCKSCREEN, mSense3Lockscreen.isChecked() ? 1 : 0);
         }
-        else if (preference == mSmartDialer) {
+        /*else if (preference == mSmartDialer) {
             Settings.System.putInt(getContentResolver(), Settings.System.SMART_DIALER, mSmartDialer.isChecked() ? 1 : 0);
-        }
+        }*/
 //      else if (preference == mRecentAppsStatusBar) {
 //          Settings.System.putInt(getContentResolver(), Settings.System.RECENT_APPS_STATUS_BAR, mRecentAppsStatusBar.isChecked() ? 1 : 0);
 //      }
