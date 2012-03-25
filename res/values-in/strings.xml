@@ -29,7 +29,7 @@
 	<string name="pref_sense3_lockscreen_title">Layar kunci Sense 3</string>
 	<string name="pref_sense3_lockscreen_summary">Dengan fungsi dasar</string>
 	<string name="pref_gingerdx_about_title">Tentang</string>
-	<string name="pref_gingerdx_about_default">GingerDX versi v000 oleh doixanh@xda</string>
+	<string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
 
 	<string name="pref_custom_carrier_title">Tulisan operator</string>
 	<string name="pref_custom_carrier_summary">Muncul di layar terkunci atau statusbar</string>

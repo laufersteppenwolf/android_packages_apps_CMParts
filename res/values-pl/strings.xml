@@ -796,8 +796,8 @@
     <string name="pref_transparent_status_bar_summary">Uruchom ponownie telefon, by zobaczyć efekt</string>
     <string name="pref_sense3_lockscreen_title">Sense 3 Lockscreen</string>
     <string name="pref_sense3_lockscreen_summary">Tylko podstawowa funkcjonalność</string>
-    <string name="pref_recent_apps_status_bar_title">Ostatnio uruchomione aplikacje w belce statusu</string>
-    <string name="pref_recent_apps_status_bar_summary">Wyświetla max. 16 aplikacji</string>
+    <!--<string name="pref_recent_apps_status_bar_title">Ostatnio uruchomione aplikacje w belce statusu</string>
+    <string name="pref_recent_apps_status_bar_summary">Wyświetla max. 16 aplikacji</string>-->
     <string name="pref_gingerdx_about_title">O...</string>
     <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
     <string name="pref_custom_carrier_title">Własna nazwa operatora</string>

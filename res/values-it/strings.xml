@@ -810,7 +810,7 @@
 	<string name="pref_sense3_lockscreen_title">Sense 3 Lockscreen</string>
 	<string name="pref_sense3_lockscreen_summary">Solo funzioni di base</string>
 	<string name="pref_gingerdx_about_title">About</string>
-	<string name="pref_gingerdx_about_default">GingerDX built v000 by doixanh@xda</string>
+	<string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
 	<string name="pref_custom_carrier_title">Testo operatore personalizzato</string>
 	<string name="pref_custom_carrier_summary">Mostra nella lockscreen/statusbar</string>
 	<string name="carrier_label">Testo operatore (vuoto per disabilitare)</string>

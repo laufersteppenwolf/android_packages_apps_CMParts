@@ -760,7 +760,7 @@
     <string name="perm_enable_warning_message">Attention!\nLa plupart du temps, interdire une permission provoque un mauvais fonctionnement de l\'application. Si l\'application révoquée force-close réactivez la permission ou n\'utilisez pas l\'application.\nN\'ENVOYEZ PAS de rapport de bug si l\'application en question ne fonctionne pas comme prévu !</string>
     <string name="perm_enable_warning_title">Etes-vous sûr ?</string>
     
-        <!-- dx -->
+    <!-- dx -->
     <!-- GingerDX settings -->
     <string name="gingerdx_settings_title">Configuration de GingerDX</string>
     <string name="gingerdx_settings_summary">Changer options de GingerDX spécifiques</string>
@@ -789,7 +789,7 @@
     <string name="pref_sense3_lockscreen_title">Ecran de vérouillage Sense 3</string>
     <string name="pref_sense3_lockscreen_summary">Fonction seulement basique</string>
     <string name="pref_gingerdx_about_title">A propos de...</string>
-    <string name="pref_gingerdx_about_default">GingerDX built v000 by doixanh@xda</string>
+    <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
     
     <string name="pref_custom_carrier_title">Texte d\'opérateur personnalisé</string>
     <string name="pref_custom_carrier_summary">Apparait sur l\'écran de vérouillage et sur la barre de notification</string>

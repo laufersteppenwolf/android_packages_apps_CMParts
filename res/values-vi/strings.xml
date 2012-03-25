@@ -29,7 +29,7 @@
     <string name="pref_sense3_lockscreen_title">Khóa màn hình Sense 3</string>
     <string name="pref_sense3_lockscreen_summary">Đang trong quá trình phát triển</string>
     <string name="pref_gingerdx_about_title">Giới thiệu</string>
-    <string name="pref_gingerdx_about_default">GingerDX built v000 by doixanh@xda</string>
+    <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
     
     <string name="pref_custom_carrier_title">Đặt tên nhà mạng</string>
     <string name="pref_custom_carrier_summary">Chỉ trong khóa màn hình / thanh trạng thái</string>

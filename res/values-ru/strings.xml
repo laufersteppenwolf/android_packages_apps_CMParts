@@ -844,7 +844,7 @@
     <string name="pref_sense3_lockscreen_title">Экран блокировки Sense 3</string>
     <string name="pref_sense3_lockscreen_summary">Только базовый функционал</string>
     <string name="pref_gingerdx_about_title">О прошивке</string>
-    <string name="pref_gingerdx_about_default">GingerDX built v000 by doixanh@xda</string>
+    <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
     
     <string name="pref_custom_carrier_title">Текст оператора</string>
     <string name="pref_custom_carrier_summary">Появляется в экране блокировки / панели уведомлений вместо названия оператора</string>

@@ -29,7 +29,7 @@
 	<string name="pref_sense3_lockscreen_title">Οθόνη κλειδώματος Sense 3</string>
 	<string name="pref_sense3_lockscreen_summary">Μόνο βασική λειτουργία</string>
 	<string name="pref_gingerdx_about_title">Σχετικά</string>
-	<string name="pref_gingerdx_about_default">GingerDX έκδοση v000 από τον doixanh@xda</string>
+	<string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
 
 	<string name="pref_custom_carrier_title">Προσαρμοσμένο όνομα παρόχου</string>
 	<string name="pref_custom_carrier_summary">Εμφανίζεται σε οθόνη κλειδώματος/γραμμή κατάστασης</string>
