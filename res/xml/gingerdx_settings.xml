@@ -53,6 +53,9 @@
 		<CheckBoxPreference android:key="pref_sense3_lockscreen"
 		    android:title="@string/pref_sense3_lockscreen_title"
 		    android:summary="@string/pref_sense3_lockscreen_summary" />
+		<CheckBoxPreference android:key="pref_center_clock_status_bar"
+		    android:title="@string/pref_center_clock_status_bar_title"
+		    android:summary="@string/pref_center_clock_status_bar_summary" />
 		<!--<CheckBoxPreference android:key="pref_recent_apps_status_bar"
 		    android:title="@string/pref_recent_apps_status_bar_title"
 		    android:summary="@string/pref_recent_apps_status_bar_summary" / -->

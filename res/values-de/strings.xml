@@ -831,6 +831,8 @@
 	<string name="pref_transparent_status_bar_summary">Neustart um Änderungen wirksam zu machen</string>
 	<string name="pref_sense3_lockscreen_title">Sense 3 Lockscreen</string>
 	<string name="pref_sense3_lockscreen_summary">Nur einfache Funktionalität</string>
+    <string name="pref_center_clock_status_bar_title">Uhrzeit mittig im Statusbar</string>
+    <string name="pref_center_clock_status_bar_summary">Anstelle rechts</string>
 	<string name="pref_gingerdx_about_title">Über</string>
 	<string name="pref_gingerdx_about_default">GingerDX von B.Jay und eagleeyetom</string>
 

@@ -39,6 +39,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private static final String SENSE3_LOCKSCREEN_PREF = "pref_sense3_lockscreen";
 //  private static final String SMART_DIALER_PREF = "pref_smart_dialer";
 //  private static final String RECENT_APPS_STATUS_BAR_PREF = "pref_recent_apps_status_bar";
+    private static final String CENTER_CLOCK_STATUS_BAR_PREF = "pref_center_clock_status_bar";
 
     static Context mContext;
 
@@ -51,13 +52,14 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private CheckBoxPreference mBackButtonEndsCall;
     private CheckBoxPreference mHideAvatarMessage;
     private CheckBoxPreference mQuickCopyPaste;
-//    private CheckBoxPreference mDoProfileScrolling;
-//    private CheckBoxPreference mDoProfileFlinging;
+//  private CheckBoxPreference mDoProfileScrolling;
+//  private CheckBoxPreference mDoProfileFlinging;
     private CheckBoxPreference mCallMeLouder;
     private CheckBoxPreference mRingerLoop;
     private CheckBoxPreference mSense3Lockscreen;
     private CheckBoxPreference mSmartDialer;
     private CheckBoxPreference mRecentAppsStatusBar;
+    private CheckBoxPreference mCenterClockStatusBar;
 	private Preference mAbout;    
 
     @Override
@@ -125,12 +127,17 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     	    mRecentAppsStatusBar.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.RECENT_APPS_STATUS_BAR, 1) == 1);
 	    }*/
 
-//        mDoProfileScrolling = (CheckBoxPreference) prefSet.findPreference(DO_PROFILE_SCROLLING_PREF);
-//        if (mDoProfileScrolling != null)
+	    mCenterClockStatusBar = (CheckBoxPreference) prefSet.findPreference(CENTER_CLOCK_STATUS_BAR_PREF);
+	    if (mCenterClockStatusBar != null) {
+    	    mCenterClockStatusBar.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.CENTER_CLOCK_STATUS_BAR, 0) == 1);
+	    }
+
+//      mDoProfileScrolling = (CheckBoxPreference) prefSet.findPreference(DO_PROFILE_SCROLLING_PREF);
+//      if (mDoProfileScrolling != null)
 //		    mDoProfileScrolling.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.DO_PROFILE_SCROLLING, 0) == 1);
 
-//        mDoProfileFlinging = (CheckBoxPreference) prefSet.findPreference(DO_PROFILE_FLINGING_PREF);
-//        if (mDoProfileFlinging != null)
+//      mDoProfileFlinging = (CheckBoxPreference) prefSet.findPreference(DO_PROFILE_FLINGING_PREF);
+//      if (mDoProfileFlinging != null)
 //		    mDoProfileFlinging.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.DO_PROFILE_FLINGING, 0) == 1);
     }
         
@@ -173,6 +180,9 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         /*else if (preference == mSmartDialer) {
             Settings.System.putInt(getContentResolver(), Settings.System.SMART_DIALER, mSmartDialer.isChecked() ? 1 : 0);
         }*/
+        else if (preference == mCenterClockStatusBar) {
+            Settings.System.putInt(getContentResolver(), Settings.System.CENTER_CLOCK_STATUS_BAR, mCenterClockStatusBar.isChecked() ? 1 : 0);
+        }
 //      else if (preference == mRecentAppsStatusBar) {
 //          Settings.System.putInt(getContentResolver(), Settings.System.RECENT_APPS_STATUS_BAR, mRecentAppsStatusBar.isChecked() ? 1 : 0);
 //      }
