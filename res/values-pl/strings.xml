@@ -798,8 +798,8 @@
     <string name="pref_sense3_lockscreen_summary">Tylko podstawowa funkcjonalność</string>
     <!--<string name="pref_recent_apps_status_bar_title">Ostatnio uruchomione aplikacje w belce statusu</string>
     <string name="pref_recent_apps_status_bar_summary">Wyświetla max. 16 aplikacji</string>-->
-    <string name="pref_center_clock_status_bar_title">Center clock on status bar</string>
-    <string name="pref_center_clock_status_bar_summary">Instead of on the right</string>
+    <string name="pref_center_clock_status_bar_title">Zegar na środku belki statusu</string>
+    <string name="pref_center_clock_status_bar_summary">Zamiast po prawej stronie</string>
     <string name="pref_gingerdx_about_title">O...</string>
     <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
     <string name="pref_custom_carrier_title">Własna nazwa operatora</string>
