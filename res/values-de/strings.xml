@@ -453,9 +453,9 @@
     <string name="pref_heapsize_title">Größe VM-Heaps</string>
     <string name="pref_heapsize_summary">Maximale Speichernutzung pro VM-Heap (Neustart erforderlich)</string>
 
-    <!-- Performance : Disable bootanimation -->
+    <!-- Performance : Disable bootanimation
     <string name="pref_disable_bootanimation_title">Boot-Animation deakt.</string>
-    <string name="pref_disable_bootanimation_summary">Boot-Animation zur Beschleunigung des Systemstarts deaktivieren</string>
+    <string name="pref_disable_bootanimation_summary">Boot-Animation zur Beschleunigung des Systemstarts deaktivieren</string> -->
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Home-App im Speicher</string>
@@ -821,8 +821,6 @@
 	<string name="pref_back_button_ends_call_title">Zurück-Taste beendet Anruf</string>
 	<string name="pref_ringer_loop_title">Rufton wiederholung</string>
 	<string name="pref_ringer_loop_summary">In einer Endlosschleife</string>
-    <!--<string name="pref_smart_dialer_title">Intelligente Wählfunktion</string>
-    <string name="pref_smart_dialer_summary">Zeigt Wahlvorschläge</string>-->
 
 	<string name="other_features_title">Weitere Funktionen</string>
 	<string name="pref_hide_avatar_message_title">Avatar in SMS Nachrichten verbergen</string>
@@ -831,8 +829,8 @@
 	<string name="pref_transparent_status_bar_summary">Neustart um Änderungen wirksam zu machen</string>
 	<string name="pref_sense3_lockscreen_title">Sense 3 Lockscreen</string>
 	<string name="pref_sense3_lockscreen_summary">Nur einfache Funktionalität</string>
-    <string name="pref_center_clock_status_bar_title">Uhrzeit mittig im Statusbar</string>
-    <string name="pref_center_clock_status_bar_summary">Anstelle rechts</string>
+    <string name="pref_center_clock_status_bar_title">Uhr mittig im Statusbar</string>
+    <string name="pref_center_clock_status_bar_summary">Anstelle rechts. Benötigt Neustart.</string>
 	<string name="pref_gingerdx_about_title">Über</string>
 	<string name="pref_gingerdx_about_default">GingerDX von B.Jay und eagleeyetom</string>
 
@@ -844,3 +842,4 @@
 	<string name="cancel_button">Abbruch</string>
 
 </resources>
+
