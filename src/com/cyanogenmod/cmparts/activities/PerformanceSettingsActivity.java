@@ -172,9 +172,9 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
                 SystemProperties.get(HEAPSIZE_PROP, HEAPSIZE_DEFAULT)));
         mHeapsizePref.setOnPreferenceChangeListener(this);
 
-        mDisableBootanimPref = (CheckBoxPreference) prefSet.findPreference(DISABLE_BOOTANIMATION_PREF);
-        String disableBootanimation = SystemProperties.get(DISABLE_BOOTANIMATION_PERSIST_PROP, DISABLE_BOOTANIMATION_DEFAULT);
-        mDisableBootanimPref.setChecked("1".equals(disableBootanimation));
+        //mDisableBootanimPref = (CheckBoxPreference) prefSet.findPreference(DISABLE_BOOTANIMATION_PREF);
+        //String disableBootanimation = SystemProperties.get(DISABLE_BOOTANIMATION_PERSIST_PROP, DISABLE_BOOTANIMATION_DEFAULT);
+        //mDisableBootanimPref.setChecked("1".equals(disableBootanimation));
 
         mLockHomePref = (CheckBoxPreference) prefSet.findPreference(LOCK_HOME_PREF);
         mLockHomePref.setChecked(Settings.System.getInt(getContentResolver(),
@@ -224,11 +224,11 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
             return true;
         }
 
-        if (preference == mDisableBootanimPref) {
-            SystemProperties.set(DISABLE_BOOTANIMATION_PERSIST_PROP,
-                    mDisableBootanimPref.isChecked() ? "1" : "0");
-            return true;
-        }
+        //if (preference == mDisableBootanimPref) {
+        //    SystemProperties.set(DISABLE_BOOTANIMATION_PERSIST_PROP,
+        //            mDisableBootanimPref.isChecked() ? "1" : "0");
+        //    return true;
+        //}
 
         if (preference == mLockHomePref) {
             Settings.System.putInt(getContentResolver(),
