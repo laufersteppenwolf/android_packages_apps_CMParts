@@ -28,6 +28,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private static final String FLIPPING_DOWN_MUTES_RINGER_PREF = "pref_flipping_mutes_ringer";
     private static final String FLIPPING_DOWN_SNOOZES_ALARM_PREF = "pref_flipping_snoozes_alarm";
 	private static final String BACK_BUTTON_ENDS_CALL_PREF = "pref_back_button_ends_call";
+	private static final String MENU_BUTTON_ANSWERS_CALL_PREF = "pref_menu_button_answers_call";
 	private static final String TRANSPARENT_STATUS_BAR_PREF = "pref_transparent_status_bar";
 	private static final String HIDE_AVATAR_MESSAGE_PREF = "pref_hide_avatar_message";
 	private static final String QUICK_COPY_PASTE_PREF = "pref_quick_copy_paste";
@@ -50,6 +51,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private CheckBoxPreference mFlippingDownMutesRinger;
     private CheckBoxPreference mFlippingDownSnoozesAlarm;
     private CheckBoxPreference mBackButtonEndsCall;
+    private CheckBoxPreference mMenuButtonAnswersCall;
     private CheckBoxPreference mHideAvatarMessage;
     private CheckBoxPreference mQuickCopyPaste;
 //  private CheckBoxPreference mDoProfileScrolling;
@@ -94,6 +96,9 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 
         mBackButtonEndsCall = (CheckBoxPreference) prefSet.findPreference(BACK_BUTTON_ENDS_CALL_PREF);
         mBackButtonEndsCall.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.BACK_BUTTON_ENDS_CALL, 0) == 1);
+
+	mMenuButtonAnswersCall = (CheckBoxPreference) prefSet.findPreference(MENU_BUTTON_ANSWERS_CALL_PREF);
+        mMenuButtonAnswersCall.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.MENU_BUTTON_ANSWERS_CALL, 0) == 1);
 
 		mHideAvatarMessage = (CheckBoxPreference) prefSet.findPreference(HIDE_AVATAR_MESSAGE_PREF);
 		mHideAvatarMessage.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.HIDE_AVATAR_MESSAGE, 0) == 1);
@@ -158,6 +163,10 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         }
         else if (preference == mBackButtonEndsCall) {
             Settings.System.putInt(getContentResolver(), Settings.System.BACK_BUTTON_ENDS_CALL, mBackButtonEndsCall.isChecked() ? 1 : 0);
+            return true;
+        }
+	else if (preference == mMenuButtonAnswersCall) {
+            Settings.System.putInt(getContentResolver(), Settings.System.MENU_BUTTON_ANSWERS_CALL, mMenuButtonAnswersCall.isChecked() ? 1 : 0);
             return true;
         }
         else if (preference == mHideAvatarMessage) {
