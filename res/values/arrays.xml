@@ -109,6 +109,7 @@
 		<item>Theme</item>
 		<item>Black</item>
 		<item>Blue</item>
+		<item>ICS Blue</item>
 		<item>Gray</item>
 		<item>Green</item>
 		<item>Red</item>
@@ -121,6 +122,7 @@
 		<item>theme</item>
 		<item>black</item>
 		<item>blue</item>
+		<item>#33B5E5</item>
 		<item>gray</item>
 		<item>green</item>
 		<item>red</item>

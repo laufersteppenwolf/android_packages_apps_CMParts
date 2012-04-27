@@ -38,6 +38,8 @@
 
     <string name="pref_electron_beam_animation_on">Animacja włączenia ekranu</string>
     <string name="pref_electron_beam_animation_off">Animacja wyłączenia ekranu</string>
+<string name="pref_rotation_animation_title">Animacja obracania ekranu</string>
+    <string name="pref_rotation_animation_summary">Wymaga ponownego uruchomienia</string>
 
     <!-- User interface: Tablet tweaks -->
     <string name="tablet_tweaks_title_head">Usprawnienia dla tabletów</string>
@@ -98,6 +100,8 @@
     <string name="ui_status_bar_clock_summary">Zegar na pasku stanu zostanie ukryty, kiedy wyłączone</string>
     <string name="ui_status_bar_battery_title">Styl stanu akumulatora</string>
     <string name="ui_status_bar_battery_summary">Wygląd ikony stanu akumulatora</string>
+    <string name="ui_status_bar_battery_color_title">Kolor stylu Belka Statusu</string>
+    <string name="ui_status_bar_battery_color_summary">Wybierz kolor dla stylu Belka Statusu</string>
     <string name="ui_status_bar_compact_carrier_title">Pomniejszona etykieta operatora</string>
     <string name="ui_status_bar_compact_carrier_summary">Użyj alternatywnego układu powiadomień z pomniejszoną etykietą operatora</string>
     <string name="ui_status_bar_carrier_label_title">Typ etykiety operatora</string>
@@ -147,6 +151,15 @@
     <string name="pref_lockscreen_security_screenoff_lock_delay">Opóźnienie po wyłączeniu ekranu</string>
     <string name="pref_lockscreen_security_timeout_lock_delay_summary">Czas opóźnienia blokady po automatycznym wygaszeniu ekranu</string>
     <string name="pref_lockscreen_security_screenoff_lock_delay_summary">Czas opóźnienia blokady po ręcznym wyłączeniu ekranu</string>
+    <string name="pref_lockscreen_slide_title">Suwak blokady</string>
+    <string name="pref_lockscreen_slide_delay_note_title">UWAGA</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">Nawet gdy włączony, niezabezpieczony suwak blokady pojawi się tylko wtedy, gdy opóźnienie ekranu blokady jest dłuższe, niż opóźnienie suwaka blokady</string>
+    <string name="pref_lockscreen_slide_delay_title">Włącz opóźnienie suwaka blokady</string>
+    <string name="pref_lockscreen_slide_delay_summary">Pokazuje suwak blokady z oddzielnym opóźnieniem, zanim pokaże się ekran blokady</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">Opóźnienie limitu czasu ekranu</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">Opóźnienie wyłączenia ekranu</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Jak długo czekać zanim aktywować suwak blokady gdy limit czasu ekranu zostanie przekroczony</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Jak długo czekać zanim aktywować suwak blokady gdy ekran jest wyłączony</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Wybierz kolor</string>
@@ -264,6 +277,7 @@
     <string name="pref_lockscreen_widget_layout_entry_default">Domyślny</string>
     <string name="pref_lockscreen_widget_layout_entry_hidden">Ukryty</string>
     <string name="pref_lockscreen_widget_layout_entry_centered">Wycentrowany</string>
+    <string name="pref_lockscreen_widget_layout_entry_right">Po prawej</string>
     <string name="pref_lockscreen_music_controls_title">Sterowanie muzyką</string>
     <string name="pref_lockscreen_music_controls_summary">Wyświetlaj sterowanie muzyką na ekranie blokady</string>
     <string name="pref_lockscreen_now_playing_title">Tytuł utworu</string>
@@ -288,13 +302,20 @@
     <string name="pref_lockscreen_quick_unlock_control_summary">Nie trzeba wciskać OK podczas wprowadzania pinu lub hasła. Usuwanie traktowane jest jako nieudana próba.</string>
     <string name="lockscreen_style_options_title">Opcje stylu</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Skrót do aplikacji</string>
-    <string name="pref_lockscreen_custom_app_toggle_summary">Pokazuje dodatkowy suwak w przypadku stylu suwaka lub ikonę w przypadku stylu obrotowego</string>
+    <string name="pref_lockscreen_custom_app_toggle_tab_summary">Pokazuje dodatkowy zestaw suwaków do uruchomienia własnych aplikacji</string>
+    <string name="pref_lockscreen_custom_app_toggle_rotary_summary">Pokazuje "dołeczek" do uruchomienia własnej aplikacji</string>
+    <string name="pref_lockscreen_custom_app_toggle_ring_summary">Pokazuje trzeci pierścień, który uruchamia do czterech aplikacji</string>
     <string name="pref_lockscreen_custom_app_activity_title">Własna aplikacja</string>
-    <string name="pref_lockscreen_custom_icon_style_title">Ikona wiadomości dla własnej aplikacji</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_set">Wybierz skrót do ustawienia</string>
+    <string name="pref_lockscreen_ring_custom_apps_dialog_title_unset">Wybierz skrót do odłączenia</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_cancel">Anuluj</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_add">Dodaj</string>
     <string name="pref_lockscreen_ring_custom_apps_dialog_remove">Usuń</string>
-    <string name="pref_lockscreen_custom_icon_style_summary">Używa ikony wiadomości zamiast ikony CyanogenMOD</string>
+    <string name="pref_lockscreen_ring_custom_apps_notset">Nie ustawione</string>
+    <string name="pref_lockscreen_ring_unlock_middle_title">Odblokowywanie środkowym pierścieniem</string>
+    <string name="pref_lockscreen_ring_unlock_middle_summary">Zamień pierścień odblokowywania z pierścieniem aplikacji</string>
+    <string name="pref_lockscreen_ring_minimal_title">Pierścień minimalistyczny</string>
+    <string name="pref_lockscreen_ring_minimal_summary">Jeden pierścień na środku do odblokowywania</string>
     <string name="pref_lockscreen_custom_background_title">Wybierz tło</string>
     <string name="pref_lockscreen_custom_background_dialog_title">Wybierz tło</string>
     <string name="pref_lockscreen_custom_background_summary">Wybierz obraz lub kolor jako tło ekranu blokady</string>
@@ -303,6 +324,8 @@
     <string name="pref_lockscreen_custom_background_summary_default">Aktualnie : Domyślne</string>
     <string name="pref_lockscreen_background_result_successful">Tło zostało zmienione</string>
     <string name="pref_lockscreen_background_result_not_successful">Tło nie zostało zmienione</string>
+    <string name="pref_lockscreen_custom_icon_style_title">Używa ikony aplikacji</string>
+    <string name="pref_lockscreen_custom_icon_style_summary">Używa ikony wiadomości zamiast ikony CyanogenMOD</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Przeciągnij w dół, by odblokować</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">Przeciągnięcie w dół odblokowuje ekran. Przeciągnięcie w prawo uruchamia wybraną aplikację</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Ukryj strzałki</string>
@@ -317,6 +340,12 @@
     <string name="pref_rotary_style_summary">Wybierz styl obrotowego koła</string>
     <string name="rotary_style_entry_normal">Normalny</string>
     <string name="rotary_style_entry_revamped">Odnowiony</string>
+    <string name="pref_ringlock_style_title">Styl pierścienia</string>
+    <string name="pref_ringlock_style_summary">Wybierz styl pierścieni</string>
+    <string name="ringlock_style_entry_bubbles">Bąbelki</string>
+    <string name="ringlock_style_entry_revamped">Odnowiony</string>
+    <string name="ringlock_style_entry_holo">Holo</string>
+    <string name="ringlock_style_entry_blade">Blade</string>
     <string name="pref_in_call_style_title">Styl połączenia przychodzącego</string>
     <string name="pref_in_call_style_summary">Wybierz styl ekranu połączenia przychodzącego</string>
     <string name="incall_style_entry_tabs">Suwak</string>
@@ -329,6 +358,19 @@
     <string name="pref_cambtn_music_controls_summary">Odtwórz/zatrzymaj muzykę przytrzymując przycisk aparatu, kiedy ekran jest wyłączony</string>
     <string name="lockscreen_widgets_note_title">Uwaga</string>
     <string name="lockscreen_widgets_note_summary">Wybór stylu soczewka powoduje ukrycie wszystkich widżetów oprócz sterowania muzyką. Poniższe ustawienia nie są jednak zmieniane, by umożliwić łatwe przechodzenie między stylami</string>
+<string name="lockscreen_calendar_title">Kalendarz na ekranie blokady</string>
+    <string name="pref_lockscreen_calendar_alarm_title">Pokaż następne wydarzenie</string>
+    <string name="pref_lockscreen_calendar_alarm_summary">Wyświetla nazwę i czas następnego wydarzenia</string>
+    <string name="pref_lockscreen_calendars_title">Kalendarze wydarzeń</string>
+    <string name="pref_lockscreen_calendars_summary">Znajdź wydarzenia w tych kalendarzach</string>
+    <string name="pref_lockscreen_calendar_reminders_only_title">Tylko przypomnienia</string>
+    <string name="pref_lockscreen_calendar_reminders_only_summary">Znajdź tylko wydarzenia z przypomnieniem</string>
+    <string name="pref_lockscreen_calendar_lookahead_title">Przegląd wydarzeń</string>
+    <string name="pref_lockscreen_calendar_lookahead_summary">Jak daleko w przyszłość ma sięgać przegląd</string>
+    <string name="pref_lockscreen_calendar_show_location_title">Pokazuj miejsca wydarzeń</string>
+    <string name="pref_lockscreen_calendar_show_location_summary">Pokazuj miejsce wydarzenia pod nazwą</string>
+    <string name="pref_lockscreen_calendar_show_description_title">Pokazuj opis wydarzenia</string>
+    <string name="pref_lockscreen_calendar_show_description_summary">Pokazuj opis wydarzenia pod nazwą</string>
 
     <!-- Input Settings -->
     <string name="input_settings_title">Ustawienia wprowadzania</string>
@@ -427,6 +469,14 @@
     <string name="pref_use_16bpp_alpha_title">Użyj 16 bitowej przeźroczystości</string>
     <string name="pref_use_16bpp_alpha_summary">Włączenie 16 bitowej przeźroczystości może poprawić wydajność przewijania, ale może spowodować wizualne artefakty (wymagane ponowne uruchomienie)</string>
 
+    <!-- Performance Settings : Scrolling Cache -->
+    <string name="pref_scrollingcache_title">Cache przewijania</string>
+    <string name="pref_scrollingcache_summary">Użycie pamięci podręcznej przewijania może podnieść wydajność kosztem pamięci</string>
+    <string name="pref_scrollingcache_force_enable">Wymuszenie włączenia</string>
+    <string name="pref_scrollingcache_default_enable">Domyślnie włączone</string>
+    <string name="pref_scrollingcache_default_disable">Domyślnie wyłączone</string>
+    <string name="pref_scrollingcache_force_disable">Wymuszenie wyłączenia</string>
+
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Zezwól na oczyszczanie pamięci z zasobów</string>
     <string name="pref_purgeable_assets_summary">System może zwolnić więcej pamięci RAM zajmowanej przez bitmapy (wymagane ponowne uruchomienie)</string>
@@ -434,6 +484,7 @@
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">VM heap size</string>
     <string name="pref_heapsize_summary">Maksymalna ilość pamięci przeznaczona na maszynę wirtualną (wymagane ponowne uruchomienie)</string>
+
     <!-- Performance : Disable bootanimation -->
     <string name="pref_disable_bootanimation_title">Wyłącz animację przy uruchamianiu</string>
     <string name="pref_disable_bootanimation_summary">Nie pokazuj animacji, aby przyspieszyć uruchamianie.</string>
@@ -565,6 +616,8 @@
     <string name="cm_sound_mode_soundVibrate">Dźwięk+Wibracja</string>
     <string name="pref_flash_mode_title">Latarka</string>
     <string name="pref_flash_mode_summary">Dostosuj siłę</string>
+    <string name="pref_mobiledatanetwork_mode_title">Automatyczny przełącznik Internetu 2G/3G</string>
+    <string name="pref_mobiledatanetwork_mode_summary">Przełącznik trybu Internetu 2G/3G</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Automatyczna jasność</string>
@@ -666,6 +719,8 @@
     <string name="user_defined_key1">Przycisk użytkownika 1</string>
     <string name="user_defined_key2">Przycisk użytkownika 2</string>
     <string name="user_defined_key3">Przycisk użytkownika 3</string>
+    <string name="user_defined_envelope_key">Klucz koperty</string>
+    <string name="user_defined_explorer_key">Klucz zwiadowcy</string>
     <string name="user_defined_not_set">Nie ustawiono</string>
 
     <!-- Lockscreen gesture strings -->
@@ -785,6 +840,7 @@
     <string name="pref_call_me_louder_title">Call Me Louder</string>
     <string name="pref_call_me_louder_summary">Głośniejszy dzwonek gdy telefon znajduje się w torbie</string>
     <string name="pref_back_button_ends_call_title">Klawisz wstecz kończy połączenie</string>
+    <string name="pref_menu_button_answers_call_title">Klawisz menu odbiera połączenie</string>
     <string name="pref_ringer_loop_title">Zapętlenie dzwonka</string>
     <string name="pref_ringer_loop_summary">...i jeszcze jeden i jeszcze raz ...</string>
     <!--<string name="pref_smart_dialer_title">Smart dialer</string>
@@ -799,7 +855,7 @@
     <!--<string name="pref_recent_apps_status_bar_title">Ostatnio uruchomione aplikacje w belce statusu</string>
     <string name="pref_recent_apps_status_bar_summary">Wyświetla max. 16 aplikacji</string>-->
     <string name="pref_center_clock_status_bar_title">Zegar na środku belki statusu</string>
-    <string name="pref_center_clock_status_bar_summary">Zamiast po prawej stronie</string>
+    <string name="pref_center_clock_status_bar_summary">Zamiast po prawej stronie. Wymaga restartu.</string>
     <string name="pref_gingerdx_about_title">O...</string>
     <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
     <string name="pref_custom_carrier_title">Własna nazwa operatora</string>
