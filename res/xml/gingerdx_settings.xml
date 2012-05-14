@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--	<CheckBoxPreference android:key="pref_do_profile_scrolling"-->
+<!--	    android:title="Profile scrolling"/>-->
+<!--	<CheckBoxPreference android:key="pref_do_profile_flinging"-->
+<!--	    android:title="Profile flinging"/>-->
+
+	<PreferenceCategory android:key="flipping_category" android:title="@string/flipping_down_title">
+		<CheckBoxPreference android:key="pref_flipping_mutes_ringer" android:title="@string/pref_flipping_down_mutes_ringer_title"/>
+		<CheckBoxPreference android:key="pref_flipping_snoozes_alarm" android:title="@string/pref_flipping_down_snoozes_alarm_title"
+			android:summary="@string/pref_flipping_down_snoozes_alarm_summary"/>
+	</PreferenceCategory>
+
+	<PreferenceCategory android:key="led_disabled_category" android:title="@string/pref_led_disabled_group_title">
+		<CheckBoxPreference android:key="pref_led_disabled"
+		    android:title="@string/pref_led_disabled_title"/>
+		<ListPreference android:key="pref_led_disabled_from" android:dialogTitle="@string/pref_led_disabled_from_title"
+		    android:title="@string/pref_led_disabled_from_title" 
+		    android:entries="@array/entries_led_disabled_from" android:entryValues="@array/values_led_disabled_from" />
+		<ListPreference android:key="pref_led_disabled_to" android:dialogTitle="@string/pref_led_disabled_to_title"
+		    android:title="@string/pref_led_disabled_to_title" 
+		    android:entries="@array/entries_led_disabled_to" android:entryValues="@array/values_led_disabled_to" />
+	</PreferenceCategory>
+
+
+	<PreferenceCategory android:key="call_category" android:title="@string/call_features_title">
+		<CheckBoxPreference android:key="pref_back_button_ends_call"
+		    android:title="@string/pref_back_button_ends_call_title"/>
+		<CheckBoxPreference android:key="pref_menu_button_answers_call"
+		    android:title="@string/pref_menu_button_answers_call_title"/>
+		<CheckBoxPreference android:key="pref_call_me_louder"
+		    android:title="@string/pref_call_me_louder_title" android:summary="@string/pref_call_me_louder_summary"/>
+		<CheckBoxPreference android:key="pref_ringer_loop"
+		    android:title="@string/pref_ringer_loop_title" android:summary="@string/pref_ringer_loop_summary"/>
+		<PreferenceScreen android:key="custom_carrier_menu"
+		    android:title="@string/pref_custom_carrier_title"
+		    android:summary="@string/pref_custom_carrier_summary">
+		    <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.cyanogenmod.cmparts"
+                android:targetClass="com.cyanogenmod.cmparts.activities.CustomCarrier" />
+		</PreferenceScreen>		    
+		<!--<CheckBoxPreference android:key="pref_smart_dialer"
+		    android:title="@string/pref_smart_dialer_title" android:summary="@string/pref_smart_dialer_summary"/>-->
+	</PreferenceCategory>
+
+	<PreferenceCategory android:key="other_category" android:title="@string/other_features_title">
+		<CheckBoxPreference android:key="pref_hide_avatar_message"
+		    android:title="@string/pref_hide_avatar_message_title"/>
+		<CheckBoxPreference android:key="pref_quick_copy_paste"
+		    android:title="@string/pref_quick_copy_paste_title"/>
+		<ListPreference android:key="pref_transparent_status_bar" android:dialogTitle="@string/pref_transparent_status_bar_title"
+		    android:title="@string/pref_transparent_status_bar_title" android:summary="@string/pref_transparent_status_bar_summary"
+		    android:entries="@array/entries_transparent_status_bar" android:entryValues="@array/values_transparent_status_bar" />
+		<CheckBoxPreference android:key="pref_sense3_lockscreen"
+		    android:title="@string/pref_sense3_lockscreen_title"
+		    android:summary="@string/pref_sense3_lockscreen_summary" />
+		<CheckBoxPreference android:key="pref_center_clock_status_bar"
+		    android:title="@string/pref_center_clock_status_bar_title"
+		    android:summary="@string/pref_center_clock_status_bar_summary" />
+		<!--<CheckBoxPreference android:key="pref_recent_apps_status_bar"
+		    android:title="@string/pref_recent_apps_status_bar_title"
+		    android:summary="@string/pref_recent_apps_status_bar_summary" / -->
+        <Preference android:key="pref_gingerdx_about"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/pref_gingerdx_about_title"
+                android:summary="@string/pref_gingerdx_about_default"/>
+	</PreferenceCategory>
+	
+	
+
+</PreferenceScreen>

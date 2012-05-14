@@ -782,4 +782,48 @@
     <string name="perm_enable_management_summary">Attiva la gestione delle autorizzazioni</string>
     <string name="perm_enable_warning_message">Attenzione!\nRevocare una o più autorizzazioni può causare il malfunzionamento dell\'applicazione. Se un\'applicazione, alla quale sono state revocate delle autorizzazioni, viene interrotta forzatamente è consigliabile concedere le dovute autorizzazioni o non utilizzare l\'applicazione.\nNon inviare segnalazioni di errori a Cyanogenmod se un\'applicazione alla quale sono state revocate delle autorizzazioni non funziona correttamente!</string>
     <string name="perm_enable_warning_title">Sei sicuro?</string>
+
+<!-- dx -->
+	<!-- GingerDX settings -->
+	<string name="gingerdx_settings_title">Impostazioni GingerDX</string>
+	<string name="gingerdx_settings_summary">Cambio impostazioni specifiche di GingerDX</string>
+	<string name="pref_led_disabled_group_title">Disabilitazione LED durante la notte...</string>
+	<string name="pref_led_disabled_title">Attivata</string>
+	<string name="pref_led_disabled_from_title">Dalle</string>
+	<string name="pref_led_disabled_to_title">Alle</string>
+
+	<string name="flipping_down_title">Capovolgimento</string>
+	<string name="pref_flipping_down_mutes_ringer_title">Silenzia la suoneria</string>
+	<string name="pref_flipping_down_snoozes_alarm_title">Posticipa sveglia</string>
+	<string name="pref_flipping_down_snoozes_alarm_summary">Nessuna responsabilità per licenziamenti!</string>
+
+	<string name="call_features_title">Impostazioni Chiamate</string>
+	<string name="pref_call_me_louder_title">Call Me Louder</string>
+	<string name="pref_call_me_louder_summary">Incrementa il volume della suoneria quando il cellulare è in borsa</string>
+	<string name="pref_back_button_ends_call_title">Termina chiamata con il tasto indietro</string>
+	<string name="pref_ringer_loop_title">Ripetizione suoneria</string>
+	<string name="pref_ringer_loop_summary">Continua</string>
+	<string name="pref_smart_dialer_title">Smart dialer</string>
+	<string name="pref_smart_dialer_summary">Visualizza suggerimenti durante la digitazione</string>
+
+	<string name="other_features_title">Altre impostazioni</string>
+	<string name="pref_hide_avatar_message_title">Nascondi avatar negli SMS</string>
+	<string name="pref_quick_copy_paste_title">Copia/Incolla rapido</string>
+	<string name="pref_transparent_status_bar_title">Trasparenza barra di stato</string>
+	<string name="pref_transparent_status_bar_summary">È necessario riavviare per rendere effettive le modifiche</string>
+	<string name="pref_sense3_lockscreen_title">Sense 3 Lockscreen</string>
+	<string name="pref_sense3_lockscreen_summary">Solo funzionalità di base</string>
+	<string name="pref_recent_apps_status_bar_title">Applicazioni recenti sulla barra di stato</string>
+	<string name="pref_recent_apps_status_bar_summary">Massimo 16 applicazioni</string>
+	<string name="pref_gingerdx_about_title">About</string>
+	<string name="pref_gingerdx_about_default">GingerDX built v000 by B.Jay and eagleeyetom@xda</string>
+
+	<string name="pref_custom_carrier_title">Testo operatore personalizzato</string>
+	<string name="pref_custom_carrier_summary">Visibile su lockscreen/barra di stato</string>
+	<string name="carrier_label">Testo operatore (vuoto per disabilitare)</string>
+	<string name="custom_carrier">Testo operatore</string>
+	<string name="ok_button">Applica</string>
+	<string name="cancel_button">Annulla</string>
+
+	
 </resources>

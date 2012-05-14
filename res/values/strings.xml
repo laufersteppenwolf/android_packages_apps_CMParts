@@ -100,6 +100,8 @@
     <string name="ui_status_bar_clock_summary">Status bar clock will be hidden, if disabled</string>
     <string name="ui_status_bar_battery_title">Battery status style</string>
     <string name="ui_status_bar_battery_summary">Display style of battery status</string>
+	<string name="ui_status_bar_battery_color_title">Status bar battery color</string>
+	<string name="ui_status_bar_battery_color_summary">Color to use for the status bar battery style</string>
     <string name="ui_status_bar_compact_carrier_title">Compact carrier label</string>
     <string name="ui_status_bar_compact_carrier_summary">Use alternate notification dropdown layout with mini carrier label</string>
     <string name="ui_status_bar_carrier_label_title">Carrier label type</string>
@@ -483,9 +485,9 @@
     <string name="pref_heapsize_title">VM heap size</string>
     <string name="pref_heapsize_summary">Maximum amount of memory per VM heap (requires reboot)</string>
 
-    <!-- Performance : Disable bootanimation -->
+    <!-- Performance : Disable bootanimation
     <string name="pref_disable_bootanimation_title">Disable boot animation</string>
-    <string name="pref_disable_bootanimation_summary">Don\'t show the boot animation for faster boot</string>
+    <string name="pref_disable_bootanimation_summary">Don\'t show the boot animation for faster boot</string> -->
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Lock home in memory</string>
@@ -821,4 +823,46 @@
     <string name="perm_enable_management_summary">Enable application permissions management</string>
     <string name="perm_enable_warning_message">Warning!\nRevoking most permissions will most likely cause applications to malfunction. If an application with revoked permissions force-closes please grant the expected permissions or don\'t use the application.\nPlease DO NOT send bug reports to Cyanogenmod if an application with revoked permissions is not working as expected!</string>
     <string name="perm_enable_warning_title">Are you sure?</string>
+
+    <!-- dx -->
+    <!-- GingerDX settings -->
+    <string name="gingerdx_settings_title">GingerDX settings</string>
+    <string name="gingerdx_settings_summary">Change GingerDX-specific options</string>
+
+    <string name="flipping_down_title">Flipping down...</string>
+    <string name="pref_flipping_down_mutes_ringer_title">...mutes ringer</string>
+    <string name="pref_flipping_down_snoozes_alarm_title">...snoozes alarm</string>
+    <string name="pref_flipping_down_snoozes_alarm_summary">No responsibility for being fired!</string>
+
+    <string name="pref_led_disabled_group_title">LED disabled in night...</string>
+    <string name="pref_led_disabled_title">...activated</string>
+    <string name="pref_led_disabled_from_title">...from</string>
+    <string name="pref_led_disabled_to_title">...to</string>
+
+    <string name="call_features_title">Call features</string>
+    <string name="pref_back_button_ends_call_title">Back button ends call</string>
+    <string name="pref_menu_button_answers_call_title">Menu button answers call</string>
+    <string name="pref_call_me_louder_title">Call Me Louder</string>
+    <string name="pref_call_me_louder_summary">Louder ringer when phone is inside bags</string>
+    <string name="pref_ringer_loop_title">Loop ringtone</string>
+    <string name="pref_ringer_loop_summary">Again and again and...</string>
+    <string name="pref_custom_carrier_title">Custom carrier text</string>
+    <string name="pref_custom_carrier_summary">Appears on lockscreen/statusbar</string>
+    <string name="carrier_label">Carrier text (empty to disable)</string>
+    <string name="custom_carrier">Carrier text</string>
+    <string name="ok_button">Done</string>
+    <string name="cancel_button">Cancel</string>
+
+    <string name="other_features_title">Other features</string>
+	<string name="pref_hide_avatar_message_title">Hide avatar in SMS content</string>
+	<string name="pref_quick_copy_paste_title">Quick copy / Quick paste</string>
+    <string name="pref_transparent_status_bar_title">Status bar transparency</string>
+    <string name="pref_transparent_status_bar_summary">Reboot to apply changes</string>
+    <string name="pref_sense3_lockscreen_title">Sense 3 Lockscreen</string>
+    <string name="pref_sense3_lockscreen_summary">Only basic functionality</string>
+    <string name="pref_center_clock_status_bar_title">Center clock on status bar</string>
+    <string name="pref_center_clock_status_bar_summary">Instead of on the right. Requires reboot.</string>
+    <string name="pref_gingerdx_about_title">About</string>
+    <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
 </resources>
+
