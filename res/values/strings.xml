@@ -854,8 +854,8 @@
     <string name="cancel_button">Cancel</string>
 
     <string name="other_features_title">Other features</string>
-	<string name="pref_hide_avatar_message_title">Hide avatar in SMS content</string>
-	<string name="pref_quick_copy_paste_title">Quick copy / Quick paste</string>
+    <string name="pref_hide_avatar_message_title">Hide avatar in SMS content</string>
+    <string name="pref_quick_copy_paste_title">Quick copy / Quick paste</string>
     <string name="pref_transparent_status_bar_title">Status bar transparency</string>
     <string name="pref_transparent_status_bar_summary">Reboot to apply changes</string>
     <string name="pref_sense3_lockscreen_title">Sense 3 Lockscreen</string>
@@ -863,6 +863,6 @@
     <string name="pref_center_clock_status_bar_title">Center clock on status bar</string>
     <string name="pref_center_clock_status_bar_summary">Instead of on the right. Requires reboot.</string>
     <string name="pref_gingerdx_about_title">About</string>
-    <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
+    <string name="pref_gingerdx_about_default">GingerDX by B.Jay, eagleeyetom and djnilse</string>
 </resources>
 
