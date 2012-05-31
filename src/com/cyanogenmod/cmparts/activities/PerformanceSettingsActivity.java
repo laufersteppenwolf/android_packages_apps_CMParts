@@ -17,6 +17,7 @@
 package com.cyanogenmod.cmparts.activities;
 
 import com.cyanogenmod.cmparts.R;
+import com.cyanogenmod.cmparts.activities.CPUActivity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -30,7 +31,11 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 /**
  * Performance Settings
@@ -74,10 +79,10 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
     private static final String USE_16BPP_ALPHA_PROP = "persist.sys.use_16bpp_alpha";
 
     private static final String SCROLLINGCACHE_PREF = "pref_scrollingcache";
-
+	
     private static final String SCROLLINGCACHE_PERSIST_PROP = "persist.sys.scrollingcache";
-
-    private static final String SCROLLINGCACHE_DEFAULT = "1";
+	
+    private static final String SCROLLINGCACHE_DEFAULT = "2";
 
     private static final String PURGEABLE_ASSETS_PREF = "pref_purgeable_assets";
 
@@ -99,6 +104,14 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private static final int LOCK_MMS_DEFAULT = 0;
 
+    public static final String KSM_RUN_FILE = "/sys/kernel/mm/ksm/run";
+
+    public static final String KSM_PREF = "pref_ksm";
+
+    public static final String KSM_PREF_DISABLED = "0";
+
+    public static final String KSM_PREF_ENABLED = "1";
+
     private ListPreference mCompcachePref;
 
     private CheckBoxPreference mJitPref;
@@ -113,11 +126,15 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private CheckBoxPreference mDisableBootanimPref;
 
+    private CheckBoxPreference mEnableBootSoundPref;
+
     private CheckBoxPreference mLockHomePref;
 
     private CheckBoxPreference mLockMmsPref;
 
     private ListPreference mHeapsizePref;
+
+    private CheckBoxPreference mKSMPref;
 
     private AlertDialog alertDialog;
 
@@ -158,7 +175,7 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         String use16bppAlpha = SystemProperties.get(USE_16BPP_ALPHA_PROP, "0");
         mUse16bppAlphaPref.setChecked("1".equals(use16bppAlpha));
 
-        mScrollingCachePref = (ListPreference) prefSet.findPreference(SCROLLINGCACHE_PREF);
+	mScrollingCachePref = (ListPreference) prefSet.findPreference(SCROLLINGCACHE_PREF);
         mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
                 SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP, SCROLLINGCACHE_DEFAULT)));
         mScrollingCachePref.setOnPreferenceChangeListener(this);
@@ -171,6 +188,13 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         mHeapsizePref.setValue(SystemProperties.get(HEAPSIZE_PERSIST_PROP,
                 SystemProperties.get(HEAPSIZE_PROP, HEAPSIZE_DEFAULT)));
         mHeapsizePref.setOnPreferenceChangeListener(this);
+
+        mKSMPref = (CheckBoxPreference) prefSet.findPreference(KSM_PREF);
+        if (CPUActivity.fileExists(KSM_RUN_FILE)) {
+            mKSMPref.setChecked(KSM_PREF_ENABLED.equals(CPUActivity.readOneLine(KSM_RUN_FILE)));
+        } else {
+            prefSet.removePreference(mKSMPref);
+        }            
 
         //mDisableBootanimPref = (CheckBoxPreference) prefSet.findPreference(DISABLE_BOOTANIMATION_PREF);
         //String disableBootanimation = SystemProperties.get(DISABLE_BOOTANIMATION_PERSIST_PROP, DISABLE_BOOTANIMATION_DEFAULT);
@@ -224,6 +248,11 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
             return true;
         }
 
+        if (preference == mKSMPref) {
+            CPUActivity.writeOneLine(KSM_RUN_FILE, mKSMPref.isChecked() ? "1" : "0");
+            return true;
+        }
+
         //if (preference == mDisableBootanimPref) {
         //    SystemProperties.set(DISABLE_BOOTANIMATION_PERSIST_PROP,
         //            mDisableBootanimPref.isChecked() ? "1" : "0");
@@ -246,7 +275,7 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mScrollingCachePref) {
+	if (preference == mScrollingCachePref) {
             if (newValue != null) {
                 SystemProperties.set(SCROLLINGCACHE_PERSIST_PROP, (String)newValue);
                 return true;
