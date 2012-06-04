@@ -117,7 +117,7 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
     private File wallpaperImage;
 
     private File wallpaperTemporary;
-
+    
     private int mWhichApp = -1;
 
     private int mMaxRingCustomApps = Settings.System.LOCKSCREEN_CUSTOM_RING_APP_ACTIVITIES.length;
@@ -142,6 +142,7 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
         mLockscreenStyle = LockscreenStyle.getStyleById(
                 Settings.System.getInt(getContentResolver(),
                 Settings.System.LOCKSCREEN_STYLE_PREF, LockscreenStyle.getIdByStyle(LockscreenStyle.Ring)));
+
         mLockscreenStylePref.setValue(String.valueOf(LockscreenStyle.getIdByStyle(mLockscreenStyle)));
         mLockscreenStylePref.setOnPreferenceChangeListener(this);
 
@@ -314,6 +315,7 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
             return true;
         } else if (preference == mCustomAppActivityPref) {
             if (mLockscreenStyle == LockscreenStyle.Ring) {
+
                 final String[] items = getCustomRingAppItems();
 
                 if (items.length == 0) {
@@ -604,6 +606,15 @@ public class LockscreenStyleActivity extends PreferenceActivity implements
             if (!enabled && pref instanceof CheckBoxPreference) {
                 ((CheckBoxPreference) pref).setChecked(false);
             }
+        }
+        
+        // disable custom app icon style for ring - would be ugly in above if
+        // statement
+        if (lockscreenStyle == LockscreenStyle.Ring) {
+            mCustomIconStyle.setChecked(false);
+            mCustomIconStyle.setEnabled(false);
+        } else if (mCustomAppTogglePref.isChecked() == true){
+            mCustomIconStyle.setEnabled(true);
         }
 
         mCategoryStyleInCall.removeAll();
