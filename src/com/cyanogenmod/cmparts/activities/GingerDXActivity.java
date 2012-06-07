@@ -41,6 +41,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 //  private static final String SMART_DIALER_PREF = "pref_smart_dialer";
 //  private static final String RECENT_APPS_STATUS_BAR_PREF = "pref_recent_apps_status_bar";
     private static final String CENTER_CLOCK_STATUS_BAR_PREF = "pref_center_clock_status_bar";
+    private static final String UPDATE_CHECK_HOUR_PREF = "pref_update_check_hour";
 
     static Context mContext;
 
@@ -48,6 +49,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private ListPreference mLedDisabledToPref;
     private CheckBoxPreference mLedDisabledPref;
     private ListPreference mTransparentStatusBarPref;
+    private ListPreference mUpdateCheckHourPref;
     private CheckBoxPreference mFlippingDownMutesRinger;
     private CheckBoxPreference mFlippingDownSnoozesAlarm;
     private CheckBoxPreference mBackButtonEndsCall;
@@ -97,7 +99,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         mBackButtonEndsCall = (CheckBoxPreference) prefSet.findPreference(BACK_BUTTON_ENDS_CALL_PREF);
         mBackButtonEndsCall.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.BACK_BUTTON_ENDS_CALL, 0) == 1);
 
-	mMenuButtonAnswersCall = (CheckBoxPreference) prefSet.findPreference(MENU_BUTTON_ANSWERS_CALL_PREF);
+		mMenuButtonAnswersCall = (CheckBoxPreference) prefSet.findPreference(MENU_BUTTON_ANSWERS_CALL_PREF);
         mMenuButtonAnswersCall.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.MENU_BUTTON_ANSWERS_CALL, 0) == 1);
 
 		mHideAvatarMessage = (CheckBoxPreference) prefSet.findPreference(HIDE_AVATAR_MESSAGE_PREF);
@@ -110,7 +112,12 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         mTransparentStatusBarPref.setValue(String.valueOf(Settings.System.getInt(mContext.getContentResolver(),
         	Settings.System.TRANSPARENT_STATUS_BAR, 0)));
         mTransparentStatusBarPref.setOnPreferenceChangeListener(this);
-
+	    
+	    mUpdateCheckHourPref = (ListPreference) prefSet.findPreference(UPDATE_CHECK_HOUR_PREF);
+	    mUpdateCheckHourPref.setValue(String.valueOf(Settings.System.getInt(mContext.getContentResolver(),
+			Settings.System.UPDATE_CHECK_HOUR, 0)));
+		mUpdateCheckHourPref.setOnPreferenceChangeListener(this);
+	    
 	    mCallMeLouder = (CheckBoxPreference) prefSet.findPreference(CALL_ME_LOUDER_PREF);
 	    mCallMeLouder.setChecked((Settings.System.getInt(getContentResolver(), Settings.System.CALL_ME_LOUDER, 0) == 1));
 
@@ -228,6 +235,11 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 	        if (preference == mTransparentStatusBarPref) {
 				int val = Integer.parseInt(String.valueOf(newValue));
             	Settings.System.putInt(mContext.getContentResolver(), Settings.System.TRANSPARENT_STATUS_BAR, val);
+            	mTransparentStatusBarPref.setValue(String.valueOf(val));
+            }
+            if (preference == mUpdateCheckHourPref) {
+				int val = Integer.parseInt(String.valueOf(newValue));
+            	Settings.System.putInt(mContext.getContentResolver(), Settings.System.UPDATE_CHECK_HOUR, val);
             	mTransparentStatusBarPref.setValue(String.valueOf(val));
             }
         }

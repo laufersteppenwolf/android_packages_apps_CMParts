@@ -45,6 +45,13 @@
 	</PreferenceCategory>
 
 	<PreferenceCategory android:key="other_category" android:title="@string/other_features_title">
+		<ListPreference 
+			android:key="pref_update_check_hour" 
+			android:dialogTitle="@string/pref_update_check_hour_title"
+		    android:title="@string/pref_update_check_hour_title" 
+		    android:summary="@string/pref_update_check_hour_summary"
+		    android:entries="@array/values_update_check_hour" 
+		    android:entryValues="@array/values_update_check_hour"/>
 		<CheckBoxPreference android:key="pref_hide_avatar_message"
 		    android:title="@string/pref_hide_avatar_message_title"/>
 		<CheckBoxPreference android:key="pref_quick_copy_paste"
