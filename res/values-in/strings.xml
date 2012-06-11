@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- dx -->
+	<!-- GingerDX settings -->
+	<string name="gingerdx_settings_title">Pengaturan GingerDX</string>
+	<string name="gingerdx_settings_summary">Ubah opsi GingerDX</string>
+	<string name="pref_led_disabled_group_title">LED dinonaktifkan di malam hari...</string>
+	<string name="pref_led_disabled_title">...diaktifkan</string>
+	<string name="pref_led_disabled_from_title">dari jam...</string>
+	<string name="pref_led_disabled_to_title">sampai...</string>
+
+	<string name="flipping_down_title">Membalikkan ke bawah...</string>
+	<string name="pref_flipping_down_mutes_ringer_title">...me matikan suara</string>
+	<string name="pref_flipping_down_snoozes_alarm_title">...m enunda alarm</string>
+	<string name="pref_flipping_down_snoozes_alarm_summary">Ti dak bertanggungjawab untuk dipecat!</string>
+
+	<string name="call_features_title">Opsi Panggilan</string>
+	<string name="pref_call_me_louder_title">Panggil lebih keras</string>
+	<string name="pref_call_me_louder_summary">Volume suara lebih keras ketika HP berada di tas</string>
+	<string name="pref_back_button_ends_call_title">Tombol kembali mengakhiri panggilan</string>
+	<string name="pref_ringer_loop_title">Ringtone berulang</string>
+	<string name="pref_ringer_loop_summary">Lagi dan lagi...</string>
+
+	<string name="other_features_title">Fitur lain</string>
+	<string name="pref_hide_avatar_message_title">Menghilangka n avatar pada konten SMS</string>
+	<string name="pref_quick_copy_paste_title">Pintasan Salin / Tempel </string>
+	<string name="pref_transparent_status_bar_title">Bilah status transparan</string>
+	<string name="pref_transparent_status_bar_summary">Mulai ulang ponsel untuk menerapkan pengaturan</string>
+	<string name="pref_sense3_lockscreen_title">Layar kunci Sense 3</string>
+	<string name="pref_sense3_lockscreen_summary">Dengan fungsi dasar</string>
+	<string name="pref_gingerdx_about_title">Tentang</string>
+	<string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
+
+	<string name="pref_custom_carrier_title">Tulisan operator</string>
+	<string name="pref_custom_carrier_summary">Muncul di layar terkunci atau statusbar</string>
+	<string name="carrier_label">Nama operator (kosongkan untuk menonaktifkan)</string>
+	<string name="custom_carrier">Nama operator</string>
+	<string name="ok_button">Selesai</string>
+	<string name="cancel_button">Batal</string>
+</resources>

@@ -263,12 +263,6 @@
 
     <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_gesture_action_entries -->
 
-    <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_style_entries -->
-
-    <!-- skipping untranslatable /resources:0/string-array:name=pref_lockscreen_style_values -->
-
-    <!-- skipping untranslatable /resources:0/string-array:name=pref_in_call_style_entries -->
-
     <!-- skipping untranslatable /resources:0/string-array:name=pref_in_call_style_values -->
 
     <string-array name="pref_lockscreen_background_entries">
