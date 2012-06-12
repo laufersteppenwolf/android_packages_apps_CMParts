@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+?<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->
     <string name="app_name">Настройки CyanogenMod</string>
@@ -824,7 +824,7 @@
     <string name="gingerdx_settings_title">Настройки GingerDX</string>
     <string name="gingerdx_settings_summary">Специфические для GingerDX опции</string>
 
-    <string name="flipping_down_title">Флип вниз...</string>
+    <string name="flipping_down_title">Переворот вниз...</string>
     <string name="pref_flipping_down_mutes_ringer_title">...отключает звук входящего вызова</string>
     <string name="pref_flipping_down_snoozes_alarm_title">...отключает будильник</string>
     <string name="pref_flipping_down_snoozes_alarm_summary">Я не несу ответственность за ваше опоздание на работу!</string>
@@ -835,21 +835,22 @@
     <string name="pref_led_disabled_to_title">...по</string>
 
     <string name="call_features_title">Возможности телефонных функций</string>
-    <string name="pref_back_button_ends_call_title">Назад кнопка отключает звонок</string>
+    <string name="pref_back_button_ends_call_title">кнопка Назад отменяет вызов</string>
+    <string name="pref_menu_button_answers_call_title">кнопка Меню отвечает на вызов</string>
     <string name="pref_call_me_louder_title">Звони мне громче</string>
     <string name="pref_call_me_louder_summary">Звонок громче когда телефон внутри сумки</string>
     <string name="pref_ringer_loop_title">Повторять рингтон</string>
     <string name="pref_ringer_loop_summary">Опять и опять, и опять...</string>
     <string name="pref_custom_carrier_title">Свой текст оператора</string>
     <string name="pref_custom_carrier_summary">Показывается на экране блокировки/статусбаре</string>
-    <string name="carrier_label">Текст оператора (отчистить для отключения)</string>
+    <string name="carrier_label">Текст оператора (очистить для отключения)</string>
     <string name="custom_carrier">Текст оператора</string>
     <string name="ok_button">Готово</string>
     <string name="cancel_button">Отменить</string>
 
     <string name="other_features_title">Другие возможности</string>
 	<string name="pref_hide_avatar_message_title">Скрыть аватар в сообщениях</string>
-	<string name="pref_quick_copy_paste_title">Быстрый копи/паст</string>
+	<string name="pref_quick_copy_paste_title">Быстрое копирование/вставка</string>
     <string name="pref_transparent_status_bar_title">Прозрачность статусбара</string>
     <string name="pref_transparent_status_bar_summary">Перезагрузитесь для применения изменений</string>
     <string name="pref_sense3_lockscreen_title">Sense 3 экран блокировки</string>
@@ -857,6 +858,6 @@
     <string name="pref_center_clock_status_bar_title">Часы в центре статусбара</string>
     <string name="pref_center_clock_status_bar_summary">Перезагрузитесь для применения изменений</string>
     <string name="pref_gingerdx_about_title">О прошивке</string>
-    <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
+    <string name="pref_gingerdx_about_default">GingerDX by Team GingerDX</string>
 </resources>
 
