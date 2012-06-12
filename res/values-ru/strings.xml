@@ -1,4 +1,4 @@
-?<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->
     <string name="app_name">Настройки CyanogenMod</string>
@@ -502,7 +502,6 @@
     <string name="pref_move_all_apps_title">Разрешить перемещение</string>
     <string name="pref_move_all_apps_summary">Разрешить перемещение любых приложений на внешнюю память</string>
 
-
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">Внутренняя память</string>
     <string name="pref_switch_storage_summary_on">Использование расширенной внутренней памяти для приложений и медиа (требуется перезагрузка)</string>
@@ -546,7 +545,6 @@
     <string name="pref_render_effect_calibrated_cool">Калиброванный (N1) Холодный</string>
     <string name="pref_render_effect_red">красный</string>
 
-
     <!--  Widget Types -->
     <string name="widget_render_effect_night">Ночь</string>
     <string name="widget_render_effect_terminal">Терм</string>
@@ -558,7 +556,6 @@
     <string name="widget_render_effect_calibrated">Кал</string>
     <string name="widget_render_effect_calibrated_red">Кал Красноватый</string>
     <string name="widget_render_effect_calibrated_cool">Кал Холодный</string>
-
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Кнопки в панели уведомлений</string>
@@ -664,7 +661,7 @@
     <string name="sound_vibrate_in_call_summary_off">Не вибрировать при уведомлениях во время разговора</string>
     <string name="sound_vibrate_in_call_summary_on">Вибрировать при уведомлениях</string>
     <string name="sound_lock_volume_keys_title">Блок. клавиш громкости</string>
-<string name="sound_lock_volume_keys_summary">Предотвращает снижение громкости до беззвучного режима случайным нажатием клавиши громкости</string>
+    <string name="sound_lock_volume_keys_summary">Предотвращает снижение громкости до беззвучного режима случайным нажатием клавиши громкости</string>
     <string name="sound_camera_shutter_disable_title">Отключить звук камеры</string>
     <string name="sound_camera_shutter_disable_summary_on">Звук камеры выключен</string>
     <string name="sound_camera_shutter_disable_summary_off">Звук камеры включен</string>
@@ -849,8 +846,8 @@
     <string name="cancel_button">Отменить</string>
 
     <string name="other_features_title">Другие возможности</string>
-	<string name="pref_hide_avatar_message_title">Скрыть аватар в сообщениях</string>
-	<string name="pref_quick_copy_paste_title">Быстрое копирование/вставка</string>
+    <string name="pref_hide_avatar_message_title">Скрыть аватар в сообщениях</string>
+    <string name="pref_quick_copy_paste_title">Быстрое копирование/вставка</string>
     <string name="pref_transparent_status_bar_title">Прозрачность статусбара</string>
     <string name="pref_transparent_status_bar_summary">Перезагрузитесь для применения изменений</string>
     <string name="pref_sense3_lockscreen_title">Sense 3 экран блокировки</string>
@@ -860,4 +857,3 @@
     <string name="pref_gingerdx_about_title">О прошивке</string>
     <string name="pref_gingerdx_about_default">GingerDX by Team GingerDX</string>
 </resources>
-
