@@ -29,6 +29,8 @@
 		    android:title="@string/pref_back_button_ends_call_title"/>
 		<CheckBoxPreference android:key="pref_menu_button_answers_call"
 		    android:title="@string/pref_menu_button_answers_call_title"/>
+		<CheckBoxPreference android:key="pref_pick_up_to_call"
+		    android:title="@string/pref_pick_up_to_call_title" android:summary="@string/pref_pick_up_to_call_summary"/>
 		<CheckBoxPreference android:key="pref_call_me_louder"
 		    android:title="@string/pref_call_me_louder_title" android:summary="@string/pref_call_me_louder_summary"/>
 		<CheckBoxPreference android:key="pref_ringer_loop"

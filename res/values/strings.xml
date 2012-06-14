@@ -847,6 +847,8 @@
     <string name="call_features_title">Call features</string>
     <string name="pref_back_button_ends_call_title">Back button ends call</string>
     <string name="pref_menu_button_answers_call_title">Menu button answers call</string>
+    <string name="pref_pick_up_to_call_title">Pick up to call</string>
+    <string name="pref_pick_up_to_call_summary">Picking up the phone calls the number in dialer</string>
     <string name="pref_call_me_louder_title">Call Me Louder</string>
     <string name="pref_call_me_louder_summary">Louder ringer when phone is inside bags</string>
     <string name="pref_ringer_loop_title">Loop ringtone</string>

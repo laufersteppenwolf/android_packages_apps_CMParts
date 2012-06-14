@@ -42,6 +42,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 //  private static final String RECENT_APPS_STATUS_BAR_PREF = "pref_recent_apps_status_bar";
     private static final String CENTER_CLOCK_STATUS_BAR_PREF = "pref_center_clock_status_bar";
     private static final String UPDATE_CHECK_HOUR_PREF = "pref_update_check_hour";
+    private static final String PICK_UP_TO_CALL_PREF = "pref_pick_up_to_call";
 
     static Context mContext;
 
@@ -54,6 +55,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private CheckBoxPreference mFlippingDownSnoozesAlarm;
     private CheckBoxPreference mBackButtonEndsCall;
     private CheckBoxPreference mMenuButtonAnswersCall;
+    private CheckBoxPreference mPickUpToCall;
     private CheckBoxPreference mHideAvatarMessage;
     private CheckBoxPreference mQuickCopyPaste;
 //  private CheckBoxPreference mDoProfileScrolling;
@@ -101,6 +103,9 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 
 		mMenuButtonAnswersCall = (CheckBoxPreference) prefSet.findPreference(MENU_BUTTON_ANSWERS_CALL_PREF);
         mMenuButtonAnswersCall.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.MENU_BUTTON_ANSWERS_CALL, 0) == 1);
+        
+        mPickUpToCall = (CheckBoxPreference) prefSet.findPreference(PICK_UP_TO_CALL_PREF);
+        mPickUpToCall.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.PICK_UP_TO_CALL, 0) == 1);
 
 		mHideAvatarMessage = (CheckBoxPreference) prefSet.findPreference(HIDE_AVATAR_MESSAGE_PREF);
 		mHideAvatarMessage.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.HIDE_AVATAR_MESSAGE, 0) == 1);
@@ -172,8 +177,12 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
             Settings.System.putInt(getContentResolver(), Settings.System.BACK_BUTTON_ENDS_CALL, mBackButtonEndsCall.isChecked() ? 1 : 0);
             return true;
         }
-	else if (preference == mMenuButtonAnswersCall) {
+		else if (preference == mMenuButtonAnswersCall) {
             Settings.System.putInt(getContentResolver(), Settings.System.MENU_BUTTON_ANSWERS_CALL, mMenuButtonAnswersCall.isChecked() ? 1 : 0);
+            return true;
+        }
+        else if (preference == mPickUpToCall) {
+            Settings.System.putInt(getContentResolver(), Settings.System.PICK_UP_TO_CALL, mPickUpToCall.isChecked() ? 1 : 0);
             return true;
         }
         else if (preference == mHideAvatarMessage) {
