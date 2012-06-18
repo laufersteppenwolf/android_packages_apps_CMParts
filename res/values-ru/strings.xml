@@ -100,6 +100,8 @@
     <string name="ui_status_bar_clock_summary">Часы в строке состояния будут скрыты, если отключено</string>
     <string name="ui_status_bar_battery_title">Стиль батареи</string>
     <string name="ui_status_bar_battery_summary">Стиль отображения заряда аккумулятора</string>
+    <string name="ui_status_bar_battery_color_title">Цвет батареи</string>
+    <string name="ui_status_bar_battery_color_summary">Цвет, используемый для батареи в строке состояния</string>
     <string name="ui_status_bar_compact_carrier_title">Компактное имя оператора</string>
     <string name="ui_status_bar_compact_carrier_summary">Использовать альтернативный стиль панели уведомления с маленьким именем оператора</string>
     <string name="ui_status_bar_carrier_label_title">Тип имени оператора</string>
@@ -238,12 +240,13 @@
     <string name="trackball_color_entry_amber">Жёлтый</string>
 
     <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_category">Использовать настройки категории</string>
     <string name="trackball_force_mode_application">Исп. настройки приложений</string>
     <string name="trackball_force_mode_off">Принудит. выкл. светодиода</string>
     <string name="trackball_force_mode_events">Принудит. вкл. светодиода для событий</string>
     <string name="trackball_force_mode_on">Принудит. вкл. светодиода</string>
 
-    <!--Trackball Settings : Warning dialog -->
+    <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">Внимание: может вызвать разрядку батареи</string>
     <string name="notification_battery_warning">Эта настройка увеличивает разряд батареи примерно на 3% в час. Если вы заметили, что батарея разряжается быстрее, виновата эта опция. Не включайте, если не хотите быстрой разрядки.</string>
 
@@ -458,6 +461,10 @@
     <!-- Performance Settings : Dithering -->
     <string name="pref_use_dithering_title">Сглаживание поверхностей</string>
     <string name="pref_use_dithering_summary">Сглаживание поверхностей улучшает качество изображения за счет производительности (требуется перезагрузка)</string>
+
+    <!-- Performance Settings : KSM -->
+    <string name="pref_ksm_title">Kernel samepage merging</string>
+    <string name="pref_ksm_summary">KSM уменьшает требования физической памяти и улучшает производительность</string>
 
     <!-- Performance Settings : 16bpp Alpha -->
     <string name="pref_use_16bpp_alpha_title">16-битная прозрачность</string>
@@ -801,6 +808,7 @@
     <string name="cpu_settings_title">Настройки ЦП</string>
     <string name="cpu_title">Настройки ЦП</string>
     <string name="cpu_summary">Настройки режимов и частот</string>
+    <string name="cpu_cur_freq_title">Текущая частота ЦП</string>
     <string name="cpu_governors_title">Доступные режимы</string>
     <string name="cpu_governors_summary">Список доступных режимов\nВыбранный: %S</string>
     <string name="cpu_min_freq_title">Минимальная частота ЦП</string>
@@ -846,6 +854,8 @@
     <string name="cancel_button">Отменить</string>
 
     <string name="other_features_title">Другие возможности</string>
+    <string name="pref_update_check_hour_title">Час для проверки обновления</string>
+    <string name="pref_update_check_hour_summary">Установить час для проверки обновления</string>
     <string name="pref_hide_avatar_message_title">Скрыть аватар в сообщениях</string>
     <string name="pref_quick_copy_paste_title">Быстрое копирование/вставка</string>
     <string name="pref_transparent_status_bar_title">Прозрачность статусбара</string>
