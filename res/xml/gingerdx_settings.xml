@@ -75,6 +75,24 @@
                 android:title="@string/pref_gingerdx_about_title"
                 android:summary="@string/pref_gingerdx_about_default"/>
 	</PreferenceCategory>
+	<PreferenceCategory android:title="Alarm settings">
+		<CheckBoxPreference android:key="pref_achep_alarm_increasing_volume_enabled"
+		    android:title="Increasing volume"/>	
+		<CheckBoxPreference android:key="pref_achep_alarm_math_questions_enabled"
+		    android:title="Math quiz" android:summary="Solve a math quiz to stop the Alarm"/>
+		<ListPreference 
+			android:key="pref_achep_alarm_flip_action" 
+		    android:title="Flip actions" 
+		    android:summary="Flip to snooze/dismiss/nothing alarm"
+		    android:entries="@array/achep_alarm_flip_actions" 
+		    android:entryValues="@array/achep_alarm_flip_actions_values"/>
+		<ListPreference 
+			android:key="pref_achep_alarm_shake_action" 
+		    android:title="Shake actions" 
+		    android:summary="Shake to snooze/dismiss/nothing alarm"
+		    android:entries="@array/achep_alarm_shake_actions" 
+		    android:entryValues="@array/achep_alarm_shake_actions_values"/>
+	</PreferenceCategory>
 	
 	
 
