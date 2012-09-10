@@ -90,8 +90,8 @@
 			android:key="pref_achep_alarm_shake_action" 
 		    android:title="Shake actions" 
 		    android:summary="Shake to snooze/dismiss/nothing alarm"
-		    android:entries="@array/achep_alarm_shake_actions" 
-		    android:entryValues="@array/achep_alarm_shake_actions_values"/>
+		    android:entries="@array/achep_alarm_flip_actions" 
+		    android:entryValues="@array/achep_alarm_flip_actions_values"/>
 	</PreferenceCategory>
 	
 	
