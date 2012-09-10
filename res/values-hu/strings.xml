@@ -804,6 +804,45 @@
     <string name="tablet_soft_buttons_menu_title">Menü</string>
     <string name="tablet_soft_buttons_back_title">Vissza</string>
     <string name="tablet_soft_buttons_search_title">Keresés</string>
-    <string name="tablet_soft_buttons_quick_na_title">Gyors értesítések</string>
+
+    <string name="tablet_soft_buttons_quick_na_title">Rövid figyelmeztetések</string>
+  
+    <!-- dx -->
+	<!-- GingerDX beállításai -->
+	<string name="gingerdx_settings_title">GingerDX beállításai</string>
+	<string name="gingerdx_settings_summary">GingerDX speciális beállításai</string>
+	<string name="pref_led_disabled_group_title">LED tiltása este...</string>
+	<string name="pref_led_disabled_title">...aktiválva</string>
+	<string name="pref_led_disabled_from_title">...ettől</string>
+	<string name="pref_led_disabled_to_title">...eddig</string>
+
+	<string name="flipping_down_title">Telefon megfordítása...</string>
+	<string name="pref_flipping_down_mutes_ringer_title">...el némítja a csengést</string>
+	<string name="pref_flipping_down_snoozes_alarm_title">...s zundiba állítja az ébresztőt</string>
+	<string name="pref_flipping_down_snoozes_alarm_summary">Ne m az én hibám ha elalszol!</string>
+
+	<string name="call_features_title">Hívás jellemzői</string>
+	<string name="pref_call_me_louder_title">Csörögj hangosabban</string>
+	<string name="pref_call_me_louder_summary">Hangosabb csengés ha a telefon táskában van</string>
+	<string name="pref_back_button_ends_call_title">Vissza gomb befejezi a hívást</string>
+	<string name="pref_ringer_loop_title">Csengőhang ismétlése</string>
+	<string name="pref_ringer_loop_summary">Újra és újra...</string>
+
+	<string name="other_features_title">Egyéb beállítások</string>
+	<string name="pref_hide_avatar_message_title">Névjegy képének rejtése SMS-szálaknál</string>
+	<string name="pref_quick_copy_paste_title">Gyors másolás / Gyors beillesztés</string>
+	<string name="pref_transparent_status_bar_title">Állapotso r átlátszósága</string>
+	<string name="pref_transparent_status_bar_summary">Újraind ítás szüséges érvényesítéshez!</string>
+	<string name="pref_sense3_lockscreen_title">Sense 3 Zárképernyő</string>
+	<string name="pref_sense3_lockscreen_summary">Csak alap funkciók!</string>
+	<string name="pref_gingerdx_about_title">Névjegy</string>
+	<string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
+
+	<string name="pref_custom_carrier_title">Egyedi Zárképernyő szöveg</string>
+	<string name="pref_custom_carrier_summary">A Zárképernyőn / Állapotsoron jelenik meg</string>
+	<string name="carrier_label">Saját szöveg (hagyd üresen a tiltáshoz!)</string>
+	<string name="custom_carrier">Saját szöveg</string>
+	<string name="ok_button">Kész</string>
+	<string name="cancel_button">Mégse</string>
 
 </resources>

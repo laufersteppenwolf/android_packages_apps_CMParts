@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Generic -->    
+    <!-- Generic -->
     <string name="app_name">Настройки CyanogenMod</string>
 
     <!--  Primary Screen Settings -->
@@ -100,6 +100,8 @@
     <string name="ui_status_bar_clock_summary">Часы в строке состояния будут скрыты, если отключено</string>
     <string name="ui_status_bar_battery_title">Стиль батареи</string>
     <string name="ui_status_bar_battery_summary">Стиль отображения заряда аккумулятора</string>
+    <string name="ui_status_bar_battery_color_title">Цвет батареи</string>
+    <string name="ui_status_bar_battery_color_summary">Цвет, используемый для батареи в строке состояния</string>
     <string name="ui_status_bar_compact_carrier_title">Компактное имя оператора</string>
     <string name="ui_status_bar_compact_carrier_summary">Использовать альтернативный стиль панели уведомления с маленьким именем оператора</string>
     <string name="ui_status_bar_carrier_label_title">Тип имени оператора</string>
@@ -238,12 +240,13 @@
     <string name="trackball_color_entry_amber">Жёлтый</string>
 
     <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_category">Использовать настройки категории</string>
     <string name="trackball_force_mode_application">Исп. настройки приложений</string>
     <string name="trackball_force_mode_off">Принудит. выкл. светодиода</string>
     <string name="trackball_force_mode_events">Принудит. вкл. светодиода для событий</string>
     <string name="trackball_force_mode_on">Принудит. вкл. светодиода</string>
 
-    <!--Trackball Settings : Warning dialog -->
+    <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">Внимание: может вызвать разрядку батареи</string>
     <string name="notification_battery_warning">Эта настройка увеличивает разряд батареи примерно на 3% в час. Если вы заметили, что батарея разряжается быстрее, виновата эта опция. Не включайте, если не хотите быстрой разрядки.</string>
 
@@ -459,6 +462,10 @@
     <string name="pref_use_dithering_title">Сглаживание поверхностей</string>
     <string name="pref_use_dithering_summary">Сглаживание поверхностей улучшает качество изображения за счет производительности (требуется перезагрузка)</string>
 
+    <!-- Performance Settings : KSM -->
+    <string name="pref_ksm_title">Kernel samepage merging</string>
+    <string name="pref_ksm_summary">KSM уменьшает требования физической памяти и улучшает производительность</string>
+
     <!-- Performance Settings : 16bpp Alpha -->
     <string name="pref_use_16bpp_alpha_title">16-битная прозрачность</string>
     <string name="pref_use_16bpp_alpha_summary">Использование 16-битной прозрачности может улучшить скорость прокрутки, но возможно появление визуальных артефактов (требуется перезагрузка)</string>
@@ -501,7 +508,6 @@
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Разрешить перемещение</string>
     <string name="pref_move_all_apps_summary">Разрешить перемещение любых приложений на внешнюю память</string>
-
 
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">Внутренняя память</string>
@@ -546,7 +552,6 @@
     <string name="pref_render_effect_calibrated_cool">Калиброванный (N1) Холодный</string>
     <string name="pref_render_effect_red">красный</string>
 
-
     <!--  Widget Types -->
     <string name="widget_render_effect_night">Ночь</string>
     <string name="widget_render_effect_terminal">Терм</string>
@@ -558,7 +563,6 @@
     <string name="widget_render_effect_calibrated">Кал</string>
     <string name="widget_render_effect_calibrated_red">Кал Красноватый</string>
     <string name="widget_render_effect_calibrated_cool">Кал Холодный</string>
-
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Кнопки в панели уведомлений</string>
@@ -664,7 +668,7 @@
     <string name="sound_vibrate_in_call_summary_off">Не вибрировать при уведомлениях во время разговора</string>
     <string name="sound_vibrate_in_call_summary_on">Вибрировать при уведомлениях</string>
     <string name="sound_lock_volume_keys_title">Блок. клавиш громкости</string>
-<string name="sound_lock_volume_keys_summary">Предотвращает снижение громкости до беззвучного режима случайным нажатием клавиши громкости</string>
+    <string name="sound_lock_volume_keys_summary">Предотвращает снижение громкости до беззвучного режима случайным нажатием клавиши громкости</string>
     <string name="sound_camera_shutter_disable_title">Отключить звук камеры</string>
     <string name="sound_camera_shutter_disable_summary_on">Звук камеры выключен</string>
     <string name="sound_camera_shutter_disable_summary_off">Звук камеры включен</string>
@@ -804,6 +808,7 @@
     <string name="cpu_settings_title">Настройки ЦП</string>
     <string name="cpu_title">Настройки ЦП</string>
     <string name="cpu_summary">Настройки режимов и частот</string>
+    <string name="cpu_cur_freq_title">Текущая частота ЦП</string>
     <string name="cpu_governors_title">Доступные режимы</string>
     <string name="cpu_governors_summary">Список доступных режимов\nВыбранный: %S</string>
     <string name="cpu_min_freq_title">Минимальная частота ЦП</string>
@@ -819,4 +824,46 @@
     <string name="perm_enable_warning_message">Внимание!\nОтмена большинства разрешений может стать причиной сбоев в работе приложений. Если приложение с отменёнными разрешениями выдаёт ошибку, пожалуйста, предоставьте необходимые разрешения или не используйте приложение.\nПожалуйста, не посылайте сообщения об ошибках в CyanogenMod если приложение с отменёнными разрешениями не работает, как и следовало ожидать!</string>
     <string name="perm_enable_warning_title">Вы уверены?</string>
 
+    <!-- dx -->
+    <!-- GingerDX settings -->
+    <string name="gingerdx_settings_title">Настройки GingerDX</string>
+    <string name="gingerdx_settings_summary">Специфические для GingerDX опции</string>
+
+    <string name="flipping_down_title">Переворот вниз...</string>
+    <string name="pref_flipping_down_mutes_ringer_title">...отключает звук входящего вызова</string>
+    <string name="pref_flipping_down_snoozes_alarm_title">...отключает будильник</string>
+    <string name="pref_flipping_down_snoozes_alarm_summary">Я не несу ответственность за ваше опоздание на работу!</string>
+
+    <string name="pref_led_disabled_group_title">LED отключен ночью...</string>
+    <string name="pref_led_disabled_title">...включено</string>
+    <string name="pref_led_disabled_from_title">...с</string>
+    <string name="pref_led_disabled_to_title">...по</string>
+
+    <string name="call_features_title">Возможности телефонных функций</string>
+    <string name="pref_back_button_ends_call_title">кнопка Назад отменяет вызов</string>
+    <string name="pref_menu_button_answers_call_title">кнопка Меню отвечает на вызов</string>
+    <string name="pref_call_me_louder_title">Звони мне громче</string>
+    <string name="pref_call_me_louder_summary">Звонок громче когда телефон внутри сумки</string>
+    <string name="pref_ringer_loop_title">Повторять рингтон</string>
+    <string name="pref_ringer_loop_summary">Опять и опять, и опять...</string>
+    <string name="pref_custom_carrier_title">Свой текст оператора</string>
+    <string name="pref_custom_carrier_summary">Показывается на экране блокировки/статусбаре</string>
+    <string name="carrier_label">Текст оператора (очистить для отключения)</string>
+    <string name="custom_carrier">Текст оператора</string>
+    <string name="ok_button">Готово</string>
+    <string name="cancel_button">Отменить</string>
+
+    <string name="other_features_title">Другие возможности</string>
+    <string name="pref_update_check_hour_title">Час для проверки обновления</string>
+    <string name="pref_update_check_hour_summary">Установить час для проверки обновления</string>
+    <string name="pref_hide_avatar_message_title">Скрыть аватар в сообщениях</string>
+    <string name="pref_quick_copy_paste_title">Быстрое копирование/вставка</string>
+    <string name="pref_transparent_status_bar_title">Прозрачность статусбара</string>
+    <string name="pref_transparent_status_bar_summary">Перезагрузитесь для применения изменений</string>
+    <string name="pref_sense3_lockscreen_title">Sense 3 экран блокировки</string>
+    <string name="pref_sense3_lockscreen_summary">Только базовый функционал</string>
+    <string name="pref_center_clock_status_bar_title">Часы в центре статусбара</string>
+    <string name="pref_center_clock_status_bar_summary">Перезагрузитесь для применения изменений</string>
+    <string name="pref_gingerdx_about_title">О прошивке</string>
+    <string name="pref_gingerdx_about_default">GingerDX by Team GingerDX</string>
 </resources>
