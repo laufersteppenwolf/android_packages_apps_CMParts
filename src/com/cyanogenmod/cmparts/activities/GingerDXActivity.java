@@ -277,10 +277,12 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 	        if (preference == mAlarmShakeActionPref) {
 				int val = Integer.parseInt(String.valueOf(newValue));
             	Settings.System.putInt(mContext.getContentResolver(), Settings.System.ACHEP_ALARM_SHAKE_ACTION, val);
+            	mAlarmShakeActionPref.setValue(String.valueOf(val));
             }
 	        if (preference == mAlarmFlipActionPref) {
 				int val = Integer.parseInt(String.valueOf(newValue));
             	Settings.System.putInt(mContext.getContentResolver(), Settings.System.ACHEP_ALARM_FLIP_ACTION, val);
+            	mAlarmFlipActionPref.setValue(String.valueOf(val));
             }
 	        if (preference == mLedDisabledFromPref) {
 				int val = Integer.parseInt(String.valueOf(newValue));
