@@ -26,7 +26,6 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private static final String LED_DISABLED_TO_PREF = "pref_led_disabled_to";
 
     private static final String FLIPPING_DOWN_MUTES_RINGER_PREF = "pref_flipping_mutes_ringer";
-    private static final String FLIPPING_DOWN_SNOOZES_ALARM_PREF = "pref_flipping_snoozes_alarm";
 	private static final String BACK_BUTTON_ENDS_CALL_PREF = "pref_back_button_ends_call";
 	private static final String MENU_BUTTON_ANSWERS_CALL_PREF = "pref_menu_button_answers_call";
 	private static final String TRANSPARENT_STATUS_BAR_PREF = "pref_transparent_status_bar";
@@ -66,7 +65,6 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private ListPreference mTransparentStatusBarPref;
     private ListPreference mUpdateCheckHourPref;
     private CheckBoxPreference mFlippingDownMutesRinger;
-    private CheckBoxPreference mFlippingDownSnoozesAlarm;
     private CheckBoxPreference mBackButtonEndsCall;
     private CheckBoxPreference mMenuButtonAnswersCall;
     private CheckBoxPreference mPickUpToCall;
@@ -126,9 +124,6 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
                     
         mFlippingDownMutesRinger = (CheckBoxPreference) prefSet.findPreference(FLIPPING_DOWN_MUTES_RINGER_PREF);
         mFlippingDownMutesRinger.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.FLIPPING_DOWN_MUTES_RINGER, 1) == 1);
-
-        mFlippingDownSnoozesAlarm = (CheckBoxPreference) prefSet.findPreference(FLIPPING_DOWN_SNOOZES_ALARM_PREF);
-        mFlippingDownSnoozesAlarm.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.FLIPPING_DOWN_SNOOZES_ALARM, 1) == 1);
 
         mBackButtonEndsCall = (CheckBoxPreference) prefSet.findPreference(BACK_BUTTON_ENDS_CALL_PREF);
         mBackButtonEndsCall.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.BACK_BUTTON_ENDS_CALL, 0) == 1);
@@ -210,10 +205,6 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         }
         else if (preference == mFlippingDownMutesRinger) {
             Settings.System.putInt(getContentResolver(), Settings.System.FLIPPING_DOWN_MUTES_RINGER, mFlippingDownMutesRinger.isChecked() ? 1 : 0);
-            return true;
-        }
-        else if (preference == mFlippingDownSnoozesAlarm) {
-            Settings.System.putInt(getContentResolver(), Settings.System.FLIPPING_DOWN_SNOOZES_ALARM, mFlippingDownSnoozesAlarm.isChecked() ? 1 : 0);
             return true;
         }
         else if (preference == mBackButtonEndsCall) {
