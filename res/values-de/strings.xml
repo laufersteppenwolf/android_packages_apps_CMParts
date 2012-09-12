@@ -834,7 +834,7 @@
     <string name="pref_center_clock_status_bar_title">Uhr mittig im Statusbar</string>
     <string name="pref_center_clock_status_bar_summary">Anstelle rechts. Benötigt Neustart.</string>
     <string name="pref_gingerdx_about_title">Über</string>
-    <string name="pref_gingerdx_about_default">GingerDX von Team GingerDX</string>
+    <string name="pref_gingerdx_about_default">GingerDX von TeamFun</string>
 
     <string name="pref_custom_carrier_title">Angepasster Betreiber Text</string>
     <string name="pref_custom_carrier_summary">In Lockscreen/Statuszeile anzeigen</string>

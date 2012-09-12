@@ -343,4 +343,9 @@
         <item>6</item>
     </string-array>
 
+    <string-array name="achep_alarm_flip_actions" translatable="true">
+        <item>Nieaktywne</item>
+        <item>Drzemka</item>
+        <item>Wyłącz</item>
+    </string-array>
 </resources>

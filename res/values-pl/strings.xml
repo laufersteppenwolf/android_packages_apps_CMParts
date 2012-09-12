@@ -832,10 +832,10 @@
     <string name="pref_led_disabled_title">...aktywne</string>
     <string name="pref_led_disabled_from_title">...od</string>
     <string name="pref_led_disabled_to_title">...do</string>
-    <string name="flipping_down_title">Obrócenie telefonu</string>
-    <string name="pref_flipping_down_mutes_ringer_title">...wycisza dzwonek</string>
-    <string name="pref_flipping_down_snoozes_alarm_title">...aktywuje drzemkę budzika</string>
-    <string name="pref_flipping_down_snoozes_alarm_summary">Jeśli Cię wyleją, to nie moja wina!</string>
+    <!--string name="flipping_down_title">Obrócenie telefonu</string-->
+    <string name="pref_flipping_down_mutes_ringer_title">Obrócenie telefonu wycisza dzwonek</string>
+    <!--string name="pref_flipping_down_snoozes_alarm_title">...aktywuje drzemkę budzika</string>
+    <string name="pref_flipping_down_snoozes_alarm_summary">Jeśli Cię wyleją, to nie moja wina!</string-->
     <string name="call_features_title">Ustawienia połączeń</string>
     <string name="pref_call_me_louder_title">Call Me Louder</string>
     <string name="pref_call_me_louder_summary">Głośniejszy dzwonek gdy telefon znajduje się w torbie</string>
@@ -857,11 +857,39 @@
     <string name="pref_center_clock_status_bar_title">Zegar na środku belki statusu</string>
     <string name="pref_center_clock_status_bar_summary">Zamiast po prawej stronie. Wymaga restartu.</string>
     <string name="pref_gingerdx_about_title">O...</string>
-    <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
+    <string name="pref_gingerdx_about_default">GingerDX by TeamFun</string>
     <string name="pref_custom_carrier_title">Własna nazwa operatora</string>
     <string name="pref_custom_carrier_summary">Pojawia się podczas blokady ekranu / na belce statusu</string>
     <string name="carrier_label">Własna nazwa operatora (puste pole wyłącza opcję)</string>
     <string name="custom_carrier">Własna nazwa operatora</string>
     <string name="ok_button">Potwierdź</string>
     <string name="cancel_button">Anuluj</string>
+
+    <string name="alarm_settings_title">Ustawienia budzika</string>
+    <string name="pref_achep_alarm_math_questions_title">Quiz matematyczny</string>
+    <string name="pref_achep_alarm_math_questions_summary">Rozwiąż równanie aby wyłączyć budzik</string>
+    <string name="pref_achep_alarm_flip_action_title">Obrócenie telefonu</string>
+    <string name="pref_achep_alarm_flip_action_summary">Aktywuję drzemkę / wyłącza budzik</string>
+    <string name="pref_achep_alarm_shake_action_title">Potrząśnięcie telefonem</string>
+    <string name="pref_achep_alarm_shake_action_summary">Aktywuję drzemkę / wyłącza budzik</string>
+    <string name="pref_achep_alarm_increasing_volume_title">Narastająca głośność</string>
+
+    <string name="pref_update_check_hour_title">Godzina sprawdzania...</string>
+    <string name="pref_update_check_hour_summary">...czy jest dostępna aktualizacja</string>
+    <string name="pref_pick_up_to_call_title">Podnieś by zadzwonić</string>
+    <string name="pref_pick_up_to_call_summary">Przyłożenie telefonu do ucha wybiera numer</string>
+
+    <string name="pref_ultra_brightness_title">Ultra-jasność</string>
+    <string name="pref_ultra_brightness_summary">Podnosi jasność ekranu (może zwiększyć zużycie baterii)</string>
+
+    <!-- A2SD Settings strings -->
+    <string name="a2sd_settings_title">Ustawienia A2SD (ext)</string>
+    <string name="a2sd_title">Ustawienia A2SD (ext)</string>
+    <string name="a2sd_summary">Ustawienia przenoszenia aplikacji na kartę SD (ext)</string>    
+    <string name="a2sd_mode_summary">Lista trybów A2SD\nObecnie zainstalowanych: %S</string>
+    <string name="a2sd_modes_title">Dostępne tryby (wymaga restartu)</string>
+    <string name="a2sd_info_title">Informacje o A2SD</string>
+    <string name="a2sd_dialog">Informacje o A2SD</string>
+    <string name="a2sd_loading">Ładowanie informacji o A2SD\u2026</string>
+    <string name="a2sd_error">Problem podczas ładowania informacji o A2SD\u2026</string> 
 </resources>

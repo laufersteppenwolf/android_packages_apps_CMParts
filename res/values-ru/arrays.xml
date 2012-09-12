@@ -244,4 +244,9 @@
         <item>Вкл.</item>
     </string-array>
 
+    <string-array name="achep_alarm_flip_actions">
+        <item>Отключено</item>
+        <item>Перенести</item>
+        <item>Отключить</item>
+    </string-array>
 </resources>

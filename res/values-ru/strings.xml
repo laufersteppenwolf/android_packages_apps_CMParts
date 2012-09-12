@@ -865,5 +865,14 @@
     <string name="pref_center_clock_status_bar_title">Часы в центре статусбара</string>
     <string name="pref_center_clock_status_bar_summary">Перезагрузитесь для применения изменений</string>
     <string name="pref_gingerdx_about_title">О прошивке</string>
-    <string name="pref_gingerdx_about_default">GingerDX by Team GingerDX</string>
+    <string name="pref_gingerdx_about_default">GingerDX by TeamFun</string>
+
+    <string name="alarm_settings_title">Настройки будильника</string>
+    <string name="pref_achep_alarm_math_questions_title">Математические задачки</string>
+    <string name="pref_achep_alarm_math_questions_summary">Необходимо решить простой пример для отключения будильника</string>
+    <string name="pref_achep_alarm_flip_action_title">Действие при перевороте</string>
+    <string name="pref_achep_alarm_flip_action_summary">Перевернуть для переноса / отключения будильника</string>
+    <string name="pref_achep_alarm_shake_action_title">Действие при встряхивании</string>
+    <string name="pref_achep_alarm_shake_action_summary">Встряхнуть телефон для переноса / отключения будильника</string>
+    <string name="pref_achep_alarm_increasing_volume_title">Нарастающая громкость</string>
 </resources>

@@ -29,7 +29,7 @@
 	<string name="pref_sense3_lockscreen_title">Sense 3 zaslon zaključavanja</string>
 	<string name="pref_sense3_lockscreen_summary">Samo osnovna funkcionalsnot</string>
 	<string name="pref_gingerdx_about_title">O GingerDX</string>
-	<string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
+	<string name="pref_gingerdx_about_default">GingerDX by TeamFun</string>
 
 	<string name="pref_custom_carrier_title">Tekst davatelja usluge</string>
 	<string name="pref_custom_carrier_summary">Samo na zaslonu zaključ./statusnoj traci</string>

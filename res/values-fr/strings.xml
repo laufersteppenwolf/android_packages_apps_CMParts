@@ -795,7 +795,7 @@
     <string name="pref_sense3_lockscreen_title">Ecran de vérouillage Sense 3</string>
     <string name="pref_sense3_lockscreen_summary">Fonction seulement basique</string>
     <string name="pref_gingerdx_about_title">A propos de...</string>
-    <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
+    <string name="pref_gingerdx_about_default">GingerDX by TeamFun</string>
     
     <string name="pref_custom_carrier_title">Texte d\'opérateur personnalisé</string>
     <string name="pref_custom_carrier_summary">Apparait sur l\'écran de vérouillage et sur la barre de notification</string>

@@ -836,7 +836,7 @@
 	<string name="pref_sense3_lockscreen_title">Sense 3 Zárképernyő</string>
 	<string name="pref_sense3_lockscreen_summary">Csak alap funkciók!</string>
 	<string name="pref_gingerdx_about_title">Névjegy</string>
-	<string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
+	<string name="pref_gingerdx_about_default">GingerDX by TeamFun</string>
 
 	<string name="pref_custom_carrier_title">Egyedi Zárképernyő szöveg</string>
 	<string name="pref_custom_carrier_summary">A Zárképernyőn / Állapotsoron jelenik meg</string>

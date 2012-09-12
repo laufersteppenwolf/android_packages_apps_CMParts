@@ -845,10 +845,10 @@
     <string name="gingerdx_settings_title">GingerDX settings</string>
     <string name="gingerdx_settings_summary">Change GingerDX-specific options</string>
 
-    <string name="flipping_down_title">Flipping down...</string>
-    <string name="pref_flipping_down_mutes_ringer_title">...mutes ringer</string>
-    <string name="pref_flipping_down_snoozes_alarm_title">...snoozes alarm</string>
-    <string name="pref_flipping_down_snoozes_alarm_summary">No responsibility for being fired!</string>
+    <!--string name="flipping_down_title">Flipping down...</string-->
+    <string name="pref_flipping_down_mutes_ringer_title">Flippin down mutes the ringer</string>
+    <!--string name="pref_flipping_down_snoozes_alarm_title">...snoozes alarm</string-->
+    <!--string name="pref_flipping_down_snoozes_alarm_summary">No responsibility for being fired!</string-->
 
     <string name="pref_led_disabled_group_title">LED disabled in night...</string>
     <string name="pref_led_disabled_title">...activated</string>
@@ -887,6 +887,17 @@
     <string name="pref_center_clock_status_bar_title">Center clock on status bar</string>
     <string name="pref_center_clock_status_bar_summary">Instead of on the right. Requires reboot.</string>
     <string name="pref_gingerdx_about_title">About</string>
-    <string name="pref_gingerdx_about_default">GingerDX by B.Jay, eagleeyetom and djnilse</string>
+    <string name="pref_gingerdx_about_default">GingerDX by TeamFun</string>
+    
+    <string name="alarm_settings_title">Alarm settings</string>
+    <string name="pref_achep_alarm_math_questions_title">Math quiz</string>
+    <string name="pref_achep_alarm_math_questions_summary">Solve a math quiz to stop the Alarm</string>
+    <string name="pref_achep_alarm_flip_action_title">Flip action</string>
+    <string name="pref_achep_alarm_flip_action_summary">Flip to snooze / dismiss the alarm</string>
+    <string name="pref_achep_alarm_shake_action_title">Shake action</string>
+    <string name="pref_achep_alarm_shake_action_summary">Shake to snooze / dismiss the alarm</string>
+    <string name="pref_achep_alarm_increasing_volume_title">Increasing volume</string>
+    
+
 </resources>
 

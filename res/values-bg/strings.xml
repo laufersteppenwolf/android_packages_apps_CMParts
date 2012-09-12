@@ -33,7 +33,7 @@
     <string name="pref_recent_apps_status_bar_title">Последно отворените програми - в статус бара</string>
     <string name="pref_recent_apps_status_bar_summary">Покажи най-много 16 приложения</string>
     <string name="pref_gingerdx_about_title">Относно</string>
-    <string name="pref_gingerdx_about_default">GingerDX built v000 by B.Jay and eagleeyetom@xda</string>
+    <string name="pref_gingerdx_about_default">GingerDX built v000 by TeamFun@xda</string>
     
     <string name="pref_custom_carrier_title">Поръчков статус на оператора</string>
     <string name="pref_custom_carrier_summary">Появява се на локсрийна/статус бара</string>

@@ -709,7 +709,7 @@
     <!--<string name="pref_recent_apps_status_bar_title">Apps recentes na barra de notificações</string>
     <string name="pref_recent_apps_status_bar_summary">Mostra no máximo 16 apps</string>-->
     <string name="pref_gingerdx_about_title">Acerca de...</string>
-    <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
+    <string name="pref_gingerdx_about_default">GingerDX by TeamFun</string>
     
     <string name="pref_custom_carrier_title">Texto de operadora alternativo</string>
     <string name="pref_custom_carrier_summary">Aparece no bloqueio de ecrã/barra de notificações</string>

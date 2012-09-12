@@ -29,7 +29,7 @@
     <string name="pref_sense3_lockscreen_title">Khóa màn hình Sense 3</string>
     <string name="pref_sense3_lockscreen_summary">Đang trong quá trình phát triển</string>
     <string name="pref_gingerdx_about_title">Giới thiệu</string>
-    <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
+    <string name="pref_gingerdx_about_default">GingerDX by TeamFun</string>
     
     <string name="pref_custom_carrier_title">Đặt tên nhà mạng</string>
     <string name="pref_custom_carrier_summary">Chỉ trong khóa màn hình / thanh trạng thái</string>
@@ -38,4 +38,13 @@
     <string name="ok_button">Xác nhận </string>
     <string name="cancel_button">Hủy</string>
 
+ <string name="alarm_settings_title">Cài đặt chuông báo</string>
+
+    <string name="pref_achep_alarm_math_questions_title">Câu hỏi toán học</string>
+    <string name="pref_achep_alarm_math_questions_summary">Trả lời câu hỏi toán để dừng chuông</string>
+    <string name="pref_achep_alarm_flip_action_title">Úp máy</string>
+    <string name="pref_achep_alarm_flip_action_summary">Úp máy để lùi chuông hoặc tắt chuông</string>
+    <string name="pref_achep_alarm_shake_action_title">Lắc máy</string>
+    <string name="pref_achep_alarm_shake_action_summary">Lắc máy để lùi chuông hoặc tắt chuông</string>
+    <string name="pref_achep_alarm_increasing_volume_title">Âm lượng tăng dần</string>
 </resources>

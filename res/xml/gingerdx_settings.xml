@@ -6,23 +6,7 @@
 <!--	<CheckBoxPreference android:key="pref_do_profile_flinging"-->
 <!--	    android:title="Profile flinging"/>-->
 
-	<PreferenceCategory android:key="flipping_category" android:title="@string/flipping_down_title">
-		<CheckBoxPreference android:key="pref_flipping_mutes_ringer" android:title="@string/pref_flipping_down_mutes_ringer_title"/>
-		<CheckBoxPreference android:key="pref_flipping_snoozes_alarm" android:title="@string/pref_flipping_down_snoozes_alarm_title"
-			android:summary="@string/pref_flipping_down_snoozes_alarm_summary"/>
-	</PreferenceCategory>
-
-	<PreferenceCategory android:key="led_disabled_category" android:title="@string/pref_led_disabled_group_title">
-		<CheckBoxPreference android:key="pref_led_disabled"
-		    android:title="@string/pref_led_disabled_title"/>
-		<ListPreference android:key="pref_led_disabled_from" android:dialogTitle="@string/pref_led_disabled_from_title"
-		    android:title="@string/pref_led_disabled_from_title" 
-		    android:entries="@array/entries_led_disabled_from" android:entryValues="@array/values_led_disabled_from" />
-		<ListPreference android:key="pref_led_disabled_to" android:dialogTitle="@string/pref_led_disabled_to_title"
-		    android:title="@string/pref_led_disabled_to_title" 
-		    android:entries="@array/entries_led_disabled_to" android:entryValues="@array/values_led_disabled_to" />
-	</PreferenceCategory>
-
+<!-- Call options -->
 
 	<PreferenceCategory android:key="call_category" android:title="@string/call_features_title">
 		<CheckBoxPreference android:key="pref_back_button_ends_call"
@@ -41,10 +25,46 @@
 		    <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.cyanogenmod.cmparts"
                 android:targetClass="com.cyanogenmod.cmparts.activities.CustomCarrier" />
-		</PreferenceScreen>		    
+		</PreferenceScreen>
+<CheckBoxPreference android:key="pref_flipping_mutes_ringer" android:title="@string/pref_flipping_down_mutes_ringer_title"/>		    
 		<!--<CheckBoxPreference android:key="pref_smart_dialer"
 		    android:title="@string/pref_smart_dialer_title" android:summary="@string/pref_smart_dialer_summary"/>-->
 	</PreferenceCategory>
+
+<!-- AChep -->
+	<PreferenceCategory android:title="@string/alarm_settings_title">
+		<CheckBoxPreference android:key="pref_achep_alarm_increasing_volume_enabled"
+		    android:title="@string/pref_achep_alarm_increasing_volume_title"/>	
+		<CheckBoxPreference android:key="pref_achep_alarm_math_questions_enabled"
+		    android:title="@string/pref_achep_alarm_math_questions_title" android:summary="@string/pref_achep_alarm_math_questions_summary"/>
+		<ListPreference 
+			android:key="pref_achep_alarm_flip_action" 
+		    android:title="@string/pref_achep_alarm_flip_action_title" 
+		    android:summary="@string/pref_achep_alarm_flip_action_summary"
+		    android:entries="@array/achep_alarm_flip_actions" 
+		    android:entryValues="@array/achep_alarm_flip_actions_values"/>
+		<ListPreference 
+			android:key="pref_achep_alarm_shake_action" 
+		    android:title="@string/pref_achep_alarm_shake_action_title" 
+		    android:summary="@string/pref_achep_alarm_shake_action_summary"
+		    android:entries="@array/achep_alarm_flip_actions" 
+		    android:entryValues="@array/achep_alarm_flip_actions_values"/>
+	</PreferenceCategory>
+
+<!-- LED -->
+
+	<PreferenceCategory android:key="led_disabled_category" android:title="@string/pref_led_disabled_group_title">
+		<CheckBoxPreference android:key="pref_led_disabled"
+		    android:title="@string/pref_led_disabled_title"/>
+		<ListPreference android:key="pref_led_disabled_from" android:dialogTitle="@string/pref_led_disabled_from_title"
+		    android:title="@string/pref_led_disabled_from_title" 
+		    android:entries="@array/entries_led_disabled_from" android:entryValues="@array/values_led_disabled_from" />
+		<ListPreference android:key="pref_led_disabled_to" android:dialogTitle="@string/pref_led_disabled_to_title"
+		    android:title="@string/pref_led_disabled_to_title" 
+		    android:entries="@array/entries_led_disabled_to" android:entryValues="@array/values_led_disabled_to" />
+	</PreferenceCategory>
+
+<!-- Other options -->
 
 	<PreferenceCategory android:key="other_category" android:title="@string/other_features_title">
 		<ListPreference 
@@ -74,26 +94,9 @@
                 style="?android:preferenceInformationStyle"
                 android:title="@string/pref_gingerdx_about_title"
                 android:summary="@string/pref_gingerdx_about_default"/>
-	</PreferenceCategory>
-	<PreferenceCategory android:title="Alarm settings">
-		<CheckBoxPreference android:key="pref_achep_alarm_increasing_volume_enabled"
-		    android:title="Increasing volume"/>	
-		<CheckBoxPreference android:key="pref_achep_alarm_math_questions_enabled"
-		    android:title="Math quiz" android:summary="Solve a math quiz to stop the Alarm"/>
-		<ListPreference 
-			android:key="pref_achep_alarm_flip_action" 
-		    android:title="Flip actions" 
-		    android:summary="Flip to snooze/dismiss/nothing alarm"
-		    android:entries="@array/achep_alarm_flip_actions" 
-		    android:entryValues="@array/achep_alarm_flip_actions_values"/>
-		<ListPreference 
-			android:key="pref_achep_alarm_shake_action" 
-		    android:title="Shake actions" 
-		    android:summary="Shake to snooze/dismiss/nothing alarm"
-		    android:entries="@array/achep_alarm_flip_actions" 
-		    android:entryValues="@array/achep_alarm_flip_actions_values"/>
-	</PreferenceCategory>
-	
-	
+	</PreferenceCategory>		
+		<!--CheckBoxPreference android:key="pref_flipping_snoozes_alarm" android:title="@string/pref_flipping_down_snoozes_alarm_title"
+			android:summary="@string/pref_flipping_down_snoozes_alarm_summary"/>
+	</PreferenceCategory-->
 
 </PreferenceScreen>
