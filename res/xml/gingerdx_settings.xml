@@ -100,6 +100,8 @@
 	</PreferenceCategory-->
 <!-- AChep -->
 	<PreferenceCategory android:title="@string/jb_category">
+		<Preference 
+		    android:title="@string/jb_info" android:enabled="false" android:selectable="false"/>	
 		<CheckBoxPreference android:key="pref_achep_jb_status_bar"
 		    android:title="@string/jb_status_bar"/>	
 		<CheckBoxPreference android:key="pref_achep_jb_status_bar_notification"
