@@ -98,5 +98,13 @@
 		<!--CheckBoxPreference android:key="pref_flipping_snoozes_alarm" android:title="@string/pref_flipping_down_snoozes_alarm_title"
 			android:summary="@string/pref_flipping_down_snoozes_alarm_summary"/>
 	</PreferenceCategory-->
+<!-- AChep -->
+	<PreferenceCategory android:title="@string/jb_category">
+		<CheckBoxPreference android:key="pref_achep_jb_status_bar"
+		    android:title="@string/jb_status_bar"/>	
+		<CheckBoxPreference android:key="pref_achep_jb_status_bar_notification"
+		    android:title="@string/jb_status_bar_notification" />
+	</PreferenceCategory>
+
 
 </PreferenceScreen>
