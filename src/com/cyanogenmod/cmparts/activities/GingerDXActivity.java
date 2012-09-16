@@ -49,6 +49,9 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private static final String ACHEP_ALARM_SHAKE_ACTION_PREF = "pref_achep_alarm_shake_action";
     private static final String ACHEP_ALARM_MATH_QUESTIONS_ENABLED_PREF = "pref_achep_alarm_math_questions_enabled";
     private static final String ACHEP_ALARM_INCREASING_VOLUME_ENABLED_PREF = "pref_achep_alarm_increasing_volume_enabled";
+    // Jellychep
+    private static final String ACHEP_JB_STATUS_BAR_PREF = "pref_achep_jb_status_bar";
+    private static final String ACHEP_JB_STATUS_BAR_NOTIFICATION_PREF = "pref_achep_jb_status_bar_notification";
     
 
     static Context mContext;
@@ -58,6 +61,9 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private ListPreference mAlarmFlipActionPref;
     private CheckBoxPreference mAlarmIncreasingVolume;
     private CheckBoxPreference mAlarmMathQuestions;
+    // Jellychep
+    private CheckBoxPreference mJellyStatusbar;
+    private CheckBoxPreference mJellyStatusbarNotification;
 
     private ListPreference mLedDisabledFromPref;
     private ListPreference mLedDisabledToPref;
@@ -95,17 +101,20 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         mAlarmShakeActionPref = (ListPreference) prefSet.findPreference(ACHEP_ALARM_SHAKE_ACTION_PREF);
         mAlarmShakeActionPref.setValue(String.valueOf(Settings.System.getInt(mContext.getContentResolver(),
         	Settings.System.ACHEP_ALARM_SHAKE_ACTION, 0)));
-        mAlarmShakeActionPref.setOnPreferenceChangeListener(this);
-        
+        mAlarmShakeActionPref.setOnPreferenceChangeListener(this);        
         mAlarmFlipActionPref = (ListPreference) prefSet.findPreference(ACHEP_ALARM_FLIP_ACTION_PREF);
         mAlarmFlipActionPref.setValue(String.valueOf(Settings.System.getInt(mContext.getContentResolver(),
         	Settings.System.ACHEP_ALARM_FLIP_ACTION, 0)));
-        mAlarmFlipActionPref.setOnPreferenceChangeListener(this);
-        
+        mAlarmFlipActionPref.setOnPreferenceChangeListener(this);        
         mAlarmMathQuestions = (CheckBoxPreference) prefSet.findPreference(ACHEP_ALARM_MATH_QUESTIONS_ENABLED_PREF);
-        mAlarmMathQuestions.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_ALARM_MATH_QUESTIONS_ENABLED, 0) == 1);
         mAlarmIncreasingVolume = (CheckBoxPreference) prefSet.findPreference(ACHEP_ALARM_INCREASING_VOLUME_ENABLED_PREF);
+        mAlarmMathQuestions.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_ALARM_MATH_QUESTIONS_ENABLED, 0) == 1);
         mAlarmIncreasingVolume.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_ALARM_INCREASING_VOLUME_ENABLED, 0) == 1);
+        // Jellychep
+        mJellyStatusbar = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_PREF);
+        mJellyStatusbarNotification = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_NOTIFICATION_PREF);
+        mJellyStatusbar.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR, 0) == 1);
+        mJellyStatusbarNotification.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION, 0) == 1);
         
         
         
@@ -187,7 +196,17 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) { 
-    	if (preference == mAlarmMathQuestions) {
+    	if (preference == mJellyStatusbar) {
+            Settings.System.putInt(getContentResolver(),
+                Settings.System.ACHEP_JB_STATUS_BAR, mJellyStatusbar.isChecked() ? 1 : 0);
+            return true;
+        }
+        else if (preference == mJellyStatusbarNotification) {
+            Settings.System.putInt(getContentResolver(),
+                Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION, mJellyStatusbarNotification.isChecked() ? 1 : 0);
+            return true;
+        }
+        else if (preference == mAlarmMathQuestions) {
             Settings.System.putInt(getContentResolver(),
                 Settings.System.ACHEP_ALARM_MATH_QUESTIONS_ENABLED, mAlarmMathQuestions.isChecked() ? 1 : 0);
             return true;
