@@ -898,6 +898,10 @@
     <string name="pref_achep_alarm_shake_action_summary">Shake to snooze / dismiss the alarm</string>
     <string name="pref_achep_alarm_increasing_volume_title">Increasing volume</string>
     
+    <string name="jb_category">Jelly Beans</string>
+    <string name="jb_info">Reboot is required!</string>
+    <string name="jb_status_bar">Status Bar</string>
+    <string name="jb_status_bar_notification">Notifications</string>
 
 </resources>
 
