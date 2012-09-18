@@ -879,6 +879,11 @@
     <string name="pref_pick_up_to_call_title">Podnieś by zadzwonić</string>
     <string name="pref_pick_up_to_call_summary">Przyłożenie telefonu do ucha wybiera numer</string>
 
+    <string name="jb_category">Styl Jellybean</string>
+    <string name="jb_info">Wymaga restartu!</string>
+    <string name="jb_status_bar">Belka statusu</string>
+    <string name="jb_status_bar_notification">Powiadomienia</string>
+
     <string name="pref_ultra_brightness_title">Ultra-jasność</string>
     <string name="pref_ultra_brightness_summary">Podnosi jasność ekranu (może zwiększyć zużycie baterii)</string>
 
