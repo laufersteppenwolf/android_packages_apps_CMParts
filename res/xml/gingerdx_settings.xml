@@ -53,12 +53,17 @@
 
 <!-- AChep's Jellybean -->
 	<PreferenceCategory android:title="@string/jb_category">
+	<PreferenceScreen android:title="@string/gdx_jelly_screen1" android:summary="@string/gdx_jelly_screen2">		
 		<Preference 
-		    android:title="@string/jb_info" android:enabled="false" android:selectable="false"/>	
+		    android:summary="@string/gdx_jelly_screen_information" android:enabled="false" />	
 		<CheckBoxPreference android:key="pref_achep_jb_status_bar"
-		    android:title="@string/jb_status_bar"/>	
+		    android:title="@string/gdx_jelly_screen_status_bar"/>	
 		<CheckBoxPreference android:key="pref_achep_jb_status_bar_notification"
-		    android:title="@string/jb_status_bar_notification" />
+		    android:title="@string/gdx_jelly_screen_status_bar_notification" />
+		<CheckBoxPreference android:key="pref_achep_jb_status_bar_notification_bigger"
+		    android:title="@string/gdx_jelly_screen_status_bar_notification_bigger1"
+		    android:summary="@string/gdx_jelly_screen_status_bar_notification_bigger2" />
+	</PreferenceScreen>
 	</PreferenceCategory>
 
 <!-- LED -->
