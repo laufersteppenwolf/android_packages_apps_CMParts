@@ -52,6 +52,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     // Jellychep
     private static final String ACHEP_JB_STATUS_BAR_PREF = "pref_achep_jb_status_bar";
     private static final String ACHEP_JB_STATUS_BAR_NOTIFICATION_PREF = "pref_achep_jb_status_bar_notification";
+    private static final String ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER_PREF = "pref_achep_jb_status_bar_notification_bigger";
     
 
     static Context mContext;
@@ -64,6 +65,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     // Jellychep
     private CheckBoxPreference mJellyStatusbar;
     private CheckBoxPreference mJellyStatusbarNotification;
+    private CheckBoxPreference mJellyStatusbarNotificationBigger;
 
     private ListPreference mLedDisabledFromPref;
     private ListPreference mLedDisabledToPref;
@@ -113,9 +115,11 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         // Jellychep
         mJellyStatusbar = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_PREF);
         mJellyStatusbarNotification = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_NOTIFICATION_PREF);
+        mJellyStatusbarNotificationBigger = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER_PREF);
         mJellyStatusbar.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR, 0) == 1);
         mJellyStatusbarNotification.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION, 0) == 1);
-        
+        mJellyStatusbarNotificationBigger.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER, 0) == 1);
+        updatePrefJellyStatusbarNotification(mJellyStatusbarNotification.isChecked());
         
         
         mLedDisabledPref = (CheckBoxPreference) prefSet.findPreference(LED_DISABLED_PREF);
@@ -202,8 +206,14 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
             return true;
         }
         else if (preference == mJellyStatusbarNotification) {
+            updatePrefJellyStatusbarNotification(mJellyStatusbarNotification.isChecked());
             Settings.System.putInt(getContentResolver(),
                 Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION, mJellyStatusbarNotification.isChecked() ? 1 : 0);
+            return true;
+        }
+        else if (preference == mJellyStatusbarNotificationBigger) {
+            Settings.System.putInt(getContentResolver(),
+                Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER, mJellyStatusbarNotificationBigger.isChecked() ? 1 : 0);
             return true;
         }
         else if (preference == mAlarmMathQuestions) {
@@ -317,5 +327,11 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         }
         return false;
     }
+
+   // Additional preferrrrrrrrrrs
+   private void updatePrefJellyStatusbarNotification(checked boolean){
+   	mJellyStatusbarNotificationBigger.setEnabled(checked);
+   }
+
 
 }
