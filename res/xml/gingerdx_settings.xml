@@ -56,7 +56,7 @@
 	<PreferenceScreen android:title="@string/gdx_jelly_screen1" android:summary="@string/gdx_jelly_screen2">	
 		<Preference android:title="@string/gdx_jelly_screen_information1"
 		    android:summary="@string/gdx_jelly_screen_information2" android:enabled="false" />	
-	<PreferenceCategory android:title="@string/gdx_jelly_screen_status_bar">	
+	<PreferenceCategory android:title="@string/gdx_jelly_screen_status_bar_category">	
 		<CheckBoxPreference android:key="pref_achep_jb_status_bar"
 		    android:title="@string/gdx_jelly_screen_status_bar"/>	
 		<CheckBoxPreference android:key="pref_achep_jb_status_bar_notification"
