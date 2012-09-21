@@ -877,9 +877,9 @@
     <string name="pref_achep_alarm_increasing_volume_title">Нарастающая громкость</string>
     
     <string name="gdx_jelly_screen2">Выпадающая панель, уведомления и т.д.</string>
-    <string name="gdx_jelly_screen_information">Для применения изменения необходима перезагрузка!\n\n Это не настоящие Jelly Bean UI элементы, просто небольшие модификации.\n2012 © AChep'</string>
+    <string name="gdx_jelly_screen_information">Для применения изменения необходима перезагрузка!\n\n Это не настоящие Jelly Bean UI элементы, просто небольшие модификации.\n2012 © AChep\'</string>
     <string name="gdx_jelly_screen_status_bar">Выпадающая панель</string>
     <string name="gdx_jelly_screen_status_bar_notification">Уведомления</string>
     <string name="gdx_jelly_screen_status_bar_notification_bigger1">Большие уведомления</string>
-    <string name="gdx_jelly_screen_status_bar_notification_bigger2">Это експериментальная возможность! Остерегайтесь акул!'</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger2">Это експериментальная возможность! Остерегайтесь акул!\'</string>
 </resources>

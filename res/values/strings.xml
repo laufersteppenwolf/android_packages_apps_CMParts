@@ -901,11 +901,11 @@
     <string name="jb_category">Jelly Beans</string>
     <string name="gdx_jelly_screen1">Jelly Beans</string>
     <string name="gdx_jelly_screen2">Status bar, notifications etc.</string>
-    <string name="gdx_jelly_screen_information">To applying settings reboot is required!\n\n It isn't real Jelly Bean UI elements, just small mods.\n2012 © AChep'</string>
+    <string name="gdx_jelly_screen_information">To applying settings reboot is required!\n\n It isn\'t real Jelly Bean UI elements, just small mods.\n2012 © AChep\'</string>
     <string name="gdx_jelly_screen_status_bar">Status bar panel</string>
     <string name="gdx_jelly_screen_status_bar_notification">Notifications</string>
     <string name="gdx_jelly_screen_status_bar_notification_bigger1">Bigger notifications</string>
-    <string name="gdx_jelly_screen_status_bar_notification_bigger2">It's experimental feature! Beware of sharks!'</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger2">It\'s experimental feature! Beware of sharks!\'</string>
 
 </resources>
 

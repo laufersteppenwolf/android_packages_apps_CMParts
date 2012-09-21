@@ -329,7 +329,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     }
 
    // Additional preferrrrrrrrrrs
-   private void updatePrefJellyStatusbarNotification(checked boolean){
+   private void updatePrefJellyStatusbarNotification(boolean checked){
    	mJellyStatusbarNotificationBigger.setEnabled(checked);
    }
 
