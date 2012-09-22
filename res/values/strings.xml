@@ -866,6 +866,7 @@
     <string name="gdx_call_screen_other_carrier2">Appears on lockscreen/statusbar</string>
 	
 	<!-- Alarm -->
+    <string name="alarm_settings_summary">Math quiz, flip/shake actions, increasing volume etc.</string>
     <string name="gdx_alarm_screen1">Alarm</string>
     <string name="gdx_alarm_screen2">Math quiz, flip/shake actions, increasing volume</string>
     <string name="gdx_alarm_screen_mathquiz1">Math quiz</string>
@@ -873,7 +874,7 @@
     <string name="gdx_alarm_screen_flip1">Flip action</string>
     <string name="gdx_alarm_screen_flip2">Flip to snooze / dismiss the alarm</string>
     <string name="gdx_alarm_screen_shake1">Shake action</string>
-    <string name="gdx_alarm_screen_shake1">Shake to snooze / dismiss the alarm</string>
+    <string name="gdx_alarm_screen_shake2">Shake to snooze / dismiss the alarm</string>
     <string name="gdx_alarm_screen_increasing">Increasing volume</string>
     
 	<!-- Jelly Bean -->
@@ -920,6 +921,8 @@
     <string name="gdx_carrier_carrier">Carrier text</string>
     <string name="gdx_carrier_btn_save">Save</string>
     <string name="gdx_carrier_btn_cancel">Cancel</string>
+
+    <string name="title_toggle_ultra_brightness">Toggle Ultra-Brightness</string>
 
 </resources>
 

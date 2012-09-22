@@ -857,7 +857,7 @@
     <string name="gdx_alarm_screen_flip1">Действия при перевороте</string>
     <string name="gdx_alarm_screen_flip2">Перевернуть для переноса / отключения будильника</string>
     <string name="gdx_alarm_screen_shake1">Действие при встряхивании</string>
-    <string name="gdx_alarm_screen_shake1">Встряхнуть телефон для переноса / отключения будильника</string>
+    <string name="gdx_alarm_screen_shake2">Встряхнуть телефон для переноса / отключения будильника</string>
     <string name="gdx_alarm_screen_increasing">Нарастающая громкость</string>
     
 	<!-- Jelly Bean -->
@@ -904,4 +904,6 @@
     <string name="gdx_carrier_carrier">Текст оператора</string>
     <string name="gdx_carrier_btn_save">Сохранить</string>
     <string name="gdx_carrier_btn_cancel">Отменить</string>
+
+    <string name="title_toggle_ultra_brightness">Ультра-Яркость</string>
 </resources>
