@@ -133,51 +133,61 @@
 
     <!-- Other options -->
 
-    <PreferenceCategory
-        android:key="other_category"
-        android:title="@string/other_features_title" >
-        <ListPreference
-            android:dialogTitle="@string/pref_update_check_hour_title"
-            android:entries="@array/values_update_check_hour"
-            android:entryValues="@array/values_update_check_hour"
-            android:key="pref_update_check_hour"
-            android:summary="@string/pref_update_check_hour_summary"
-            android:title="@string/pref_update_check_hour_title" />
-
+    <PreferenceScreen
+        android:title="@string/gdx_other_screen1"
+        android:summary="@string/gdx_other_screen2" >
+        <PreferenceCategory android:title="@string/gdx_other_screen_userinterface" >
         <CheckBoxPreference
-            android:key="pref_hide_avatar_message"
-            android:title="@string/pref_hide_avatar_message_title" />
-        <CheckBoxPreference
-            android:key="pref_quick_copy_paste"
-            android:title="@string/pref_quick_copy_paste_title" />
-
+            android:key="pref_center_clock_status_bar"
+            android:summary="@string/gdx_other_screen_status_bar_centerclock2"
+            android:title="@string/gdx_other_screen_status_bar_centerclock1" />
         <ListPreference
-            android:dialogTitle="@string/pref_transparent_status_bar_title"
+            android:dialogTitle="@string/gdx_other_screen_status_bar_transparency1"
             android:entries="@array/entries_transparent_status_bar"
             android:entryValues="@array/values_transparent_status_bar"
             android:key="pref_transparent_status_bar"
-            android:summary="@string/pref_transparent_status_bar_summary"
-            android:title="@string/pref_transparent_status_bar_title" />
-
+            android:summary="@string/gdx_other_screen_status_bar_transparency2"
+            android:title="@string/gdx_other_screen_status_bar_transparency1" />
         <CheckBoxPreference
             android:key="pref_sense3_lockscreen"
-            android:summary="@string/pref_sense3_lockscreen_summary"
-            android:title="@string/pref_sense3_lockscreen_title" />
+            android:summary="@string/gdx_other_screen_senselock2"
+            android:title="@string/gdx_other_screen_senselock1" />
         <CheckBoxPreference
-            android:key="pref_center_clock_status_bar"
-            android:summary="@string/pref_center_clock_status_bar_summary"
-            android:title="@string/pref_center_clock_status_bar_title" />
+            android:key="pref_hide_avatar_message"
+            android:title="@string/gdx_other_screen_hidemsgavatar" />
+		
+		</PreferenceCategory>
+        <PreferenceCategory android:title="@string/gdx_call_screen_other" >
+        <CheckBoxPreference
+            android:key="pref_ultra_brightness"
+            android:title="@string/gdx_other_screen_ultrabrightness1"
+            android:summary="@string/gdx_other_screen_ultrabrightness2" />
+        <CheckBoxPreference
+            android:key="pref_quick_copy_paste"
+            android:title="@string/gdx_other_screen_copypaste" />
+        <ListPreference
+            android:dialogTitle="@string/gdx_other_screen_updates1"
+            android:entries="@array/values_update_check_hour"
+            android:entryValues="@array/values_update_check_hour"
+            android:key="pref_update_check_hour"
+            android:summary="@string/gdx_other_screen_updates2"
+            android:title="@string/gdx_other_screen_updates1" />
+		
+        <Preference
+            style="?android:preferenceInformationStyle"
+            android:key="pref_gingerdx_about"
+            android:summary="@string/gdx_other_screen_about2"
+            android:title="@string/gdx_other_screen_about1" />
+		</PreferenceCategory>
+
+
+
         <!--
             <CheckBoxPreference android:key="pref_recent_apps_status_bar"
 		    android:title="@string/pref_recent_apps_status_bar_title"
 		    android:summary="@string/pref_recent_apps_status_bar_summary" /
         -->
-        <Preference
-            style="?android:preferenceInformationStyle"
-            android:key="pref_gingerdx_about"
-            android:summary="@string/pref_gingerdx_about_default"
-            android:title="@string/pref_gingerdx_about_title" />
-    </PreferenceCategory>
+    </PreferenceScreen>
     <!--
     CheckBoxPreference android:key="pref_flipping_snoozes_alarm" android:title="@string/pref_flipping_down_snoozes_alarm_title"
 			android:summary="@string/pref_flipping_down_snoozes_alarm_summary"/>

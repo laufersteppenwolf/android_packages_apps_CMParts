@@ -840,54 +840,9 @@
     <string name="perm_enable_warning_message">Warning!\nRevoking most permissions will most likely cause applications to malfunction. If an application with revoked permissions force-closes please grant the expected permissions or don\'t use the application.\nPlease DO NOT send bug reports to Cyanogenmod if an application with revoked permissions is not working as expected!</string>
     <string name="perm_enable_warning_title">Are you sure?</string>
 
-    <!-- dx -->
     <!-- GingerDX settings -->
     <string name="gingerdx_settings_title">GingerDX settings</string>
     <string name="gingerdx_settings_summary">Change GingerDX-specific options</string>
-
-    <!--string name="flipping_down_title">Flipping down...</string-->
-    <string name="pref_flipping_down_mutes_ringer_title">Flippin down mutes the ringer</string>
-    <!--string name="pref_flipping_down_snoozes_alarm_title">...snoozes alarm</string-->
-    <!--string name="pref_flipping_down_snoozes_alarm_summary">No responsibility for being fired!</string-->
-
-    <string name="pref_led_disabled_group_title">LED disabled in night...</string>
-    <string name="pref_led_disabled_title">...activated</string>
-    <string name="pref_led_disabled_from_title">...from</string>
-    <string name="pref_led_disabled_to_title">...to</string>
-
-    <!-- User interface : Ultra Brightness -->
-    <string name="pref_ultra_brightness_title">Ultra brightness</string>
-    <string name="pref_ultra_brightness_summary">Increases the brightness level (may increase battery consumption)</string>
-
-    <string name="call_features_title">Call features</string>
-    <string name="pref_back_button_ends_call_title">Back button ends call</string>
-    <string name="pref_menu_button_answers_call_title">Menu button answers call</string>
-    <string name="pref_pick_up_to_call_title">Pick up to call</string>
-    <string name="pref_pick_up_to_call_summary">Picking up the phone calls the number in dialer</string>
-    <string name="pref_call_me_louder_title">Call Me Louder</string>
-    <string name="pref_call_me_louder_summary">Louder ringer when phone is inside bags</string>
-    <string name="pref_ringer_loop_title">Loop ringtone</string>
-    <string name="pref_ringer_loop_summary">Again and again and...</string>
-    <string name="pref_custom_carrier_title">Custom carrier text</string>
-    <string name="pref_custom_carrier_summary">Appears on lockscreen/statusbar</string>
-    <string name="carrier_label">Carrier text (empty to disable)</string>
-    <string name="custom_carrier">Carrier text</string>
-    <string name="ok_button">Done</string>
-    <string name="cancel_button">Cancel</string>
-
-    <string name="other_features_title">Other features</string>
-    <string name="pref_update_check_hour_title">Check-for-update hour</string>
-    <string name="pref_update_check_hour_summary">Set hour for update-check</string>
-    <string name="pref_hide_avatar_message_title">Hide avatar in SMS content</string>
-    <string name="pref_quick_copy_paste_title">Quick copy / Quick paste</string>
-    <string name="pref_transparent_status_bar_title">Status bar transparency</string>
-    <string name="pref_transparent_status_bar_summary">Reboot to apply changes</string>
-    <string name="pref_sense3_lockscreen_title">Sense 3 Lockscreen</string>
-    <string name="pref_sense3_lockscreen_summary">Only basic functionality</string>
-    <string name="pref_center_clock_status_bar_title">Center clock on status bar</string>
-    <string name="pref_center_clock_status_bar_summary">Instead of on the right. Requires reboot.</string>
-    <string name="pref_gingerdx_about_title">About</string>
-    <string name="pref_gingerdx_about_default">GingerDX by TeamFun</string>
     
 	<!-- Call -->
     <string name="gdx_call_screen1">Call features</string>
@@ -910,6 +865,27 @@
     <string name="gdx_call_screen_other_carrier1">Custom carrier text</string>
     <string name="gdx_call_screen_other_carrier2">Appears on lockscreen/statusbar</string>
 	
+	<!-- Alarm -->
+    <string name="gdx_alarm_screen1">Alarm</string>
+    <string name="gdx_alarm_screen2">Math quiz, flip/shake actions, increasing volume</string>
+    <string name="gdx_alarm_screen_mathquiz1">Math quiz</string>
+    <string name="gdx_alarm_screen_mathquiz2">Solve a math quiz to stop the Alarm</string>
+    <string name="gdx_alarm_screen_flip1">Flip action</string>
+    <string name="gdx_alarm_screen_flip2">Flip to snooze / dismiss the alarm</string>
+    <string name="gdx_alarm_screen_shake1">Shake action</string>
+    <string name="gdx_alarm_screen_shake1">Shake to snooze / dismiss the alarm</string>
+    <string name="gdx_alarm_screen_increasing">Increasing volume</string>
+    
+	<!-- Jelly Bean -->
+    <string name="gdx_jelly_screen1">Jelly Beans</string>
+    <string name="gdx_jelly_screen2">Status bar, notifications etc.</string>
+    <string name="gdx_jelly_screen_status_bar_category">STATUS BAR</string>
+    <string name="gdx_jelly_screen_information1">Notes</string>
+    <string name="gdx_jelly_screen_information2">To applying settings reboot is required!\n\n2012 © AChep@xda (artemchep@gmail.com)</string>
+    <string name="gdx_jelly_screen_status_bar">Status bar panel</string>
+    <string name="gdx_jelly_screen_status_bar_notification">Notifications</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger1">Bigger notifications</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger2">It\'s experimental feature!</string>
 	
 	<!-- LED -->
     <string name="gdx_led_screen1">LED</string>
@@ -920,27 +896,30 @@
     <string name="gdx_led_screen_to1">To</string>
     <string name="gdx_led_screen_to2">When LED will be enabled</string>
 	
-	<!-- Alarm -->
-    <string name="alarm_settings_title">Alarm</string>
-    <string name="alarm_settings_summary">Math quiz, flip/shake actions, increasing volume</string>
-    <string name="pref_achep_alarm_math_questions_title">Math quiz</string>
-    <string name="pref_achep_alarm_math_questions_summary">Solve a math quiz to stop the Alarm</string>
-    <string name="pref_achep_alarm_flip_action_title">Flip action</string>
-    <string name="pref_achep_alarm_flip_action_summary">Flip to snooze / dismiss the alarm</string>
-    <string name="pref_achep_alarm_shake_action_title">Shake action</string>
-    <string name="pref_achep_alarm_shake_action_summary">Shake to snooze / dismiss the alarm</string>
-    <string name="pref_achep_alarm_increasing_volume_title">Increasing volume</string>
-    
-	<!-- Jelly Bean -->
-    <string name="gdx_jelly_screen1">Jelly Beans</string>
-    <string name="gdx_jelly_screen2">Status bar, notifications etc.</string>
-    <string name="gdx_jelly_screen_status_bar_category">STATUS BAR</string>
-    <string name="gdx_jelly_screen_information1">Notes</string>
-    <string name="gdx_jelly_screen_information2">To applying settings reboot is required!\n\n2012 © AChep</string>
-    <string name="gdx_jelly_screen_status_bar">Status bar panel</string>
-    <string name="gdx_jelly_screen_status_bar_notification">Notifications</string>
-    <string name="gdx_jelly_screen_status_bar_notification_bigger1">Bigger notifications</string>
-    <string name="gdx_jelly_screen_status_bar_notification_bigger2">It\'s experimental feature!</string>
+	<!-- Other -->
+    <string name="gdx_other_screen1">Other</string>
+    <string name="gdx_other_screen2">Ultra brightness, Sense 3 lockscreen, center clock etc.</string>
+    <string name="gdx_other_screen_userinterface">User Interface</string>
+    <string name="gdx_other_screen_status_bar_centerclock1">Center clock on status bar</string>
+    <string name="gdx_other_screen_status_bar_centerclock2">Instead of on the right. Requires reboot.</string>
+    <string name="gdx_other_screen_status_bar_transparency1">Status bar transparency</string>
+    <string name="gdx_other_screen_status_bar_transparency2">Reboot to apply changes</string>
+    <string name="gdx_other_screen_senselock1">Sense 3 Lockscreen</string>
+    <string name="gdx_other_screen_senselock2">Only basic functionality</string>
+    <string name="gdx_other_screen_hidemsgavatar">Hide avatar in SMS content</string>
+    <string name="gdx_other_screen_ultrabrightness1">Ultra brightness</string>
+    <string name="gdx_other_screen_ultrabrightness2">Increases the brightness level (may increase battery consumption)</string>
+    <string name="gdx_other_screen_copypaste">Quick copy / paste</string>
+    <string name="gdx_other_screen_updates1">Check-for-update hour</string>
+    <string name="gdx_other_screen_updates2">Set hour for update-check</string>
+    <string name="gdx_other_screen_about1">About</string>
+    <string name="gdx_other_screen_about2">GingerDX by TeamFun</string>
+	
+	<!-- Custom carrier label -->
+    <string name="gdx_carrier_note">Empty to disable</string>
+    <string name="gdx_carrier_carrier">Carrier text</string>
+    <string name="gdx_carrier_btn_save">Save</string>
+    <string name="gdx_carrier_btn_cancel">Cancel</string>
 
 </resources>
 

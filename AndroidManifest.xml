@@ -340,14 +340,14 @@
         <service android:enabled="true" android:name=".services.RenderFXService" />
         <service android:enabled="true" android:name=".services.BatteryService" />
 
-        <!-- dx -->
+        <!-- GingerDX -->
         <activity android:name=".activities.GingerDXActivity" android:label="@string/gingerdx_settings_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="com.cyanogenmod.cmparts.SHORTCUT"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activities.CustomCarrier" android:label="@string/custom_carrier" android:theme="@android:style/Theme.Dialog">
+        <activity android:name=".activities.CustomCarrier" android:label="@string/gdx_carrier_carrier" android:theme="@android:style/Theme.Dialog">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.cyanogenmod.cmparts.SHORTCUT" />

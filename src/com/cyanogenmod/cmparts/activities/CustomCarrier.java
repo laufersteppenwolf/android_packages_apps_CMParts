@@ -17,42 +17,25 @@ import android.app.Dialog;
  * Dialog to set custom carrier text
  */
  
-public class CustomCarrier extends Activity {
+public class CustomCarrier extends Activity implements View.OnClickListener {
     private final static String TAG = "CustomCarrier";
 
     private EditText mCarrierTextField;
-    private Button mOKButton;
-    private Button mCancelButton;
+    private Button mSaveButton;
     
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-
-		// set the view and get fields
+		
         setContentView(R.layout.carrier);
-        mCarrierTextField = (EditText)findViewById(R.id.carrier);
 
-		// ok button
-        mOKButton = (Button)findViewById(R.id.ok_button);
-        mOKButton.setOnClickListener(new View.OnClickListener() {
-        	@Override
-            public void onClick(View v) {
-				// put carrier text back to the db
-				Settings.System.putString(getContentResolver(), Settings.System.CUSTOM_CARRIER_TEXT, mCarrierTextField.getText().toString());
-				finish();
-            }
-		});
+		// Initialize buttons
+        mSaveButton = (Button)findViewById(R.id.ok_button);
+        mSaveButton.setOnClickListener(this);
+        final Button cancelButton = (Button) findViewById(R.id.cancel_button);
+        cancelButton.setOnClickListener(this);
 
-		// cancel
-        mCancelButton = (Button)findViewById(R.id.cancel_button);
-        mCancelButton.setOnClickListener(new View.OnClickListener() {
-        	@Override
-            public void onClick(View v) {
-            	// nothing, just close
-				finish();
-            }
-		});
-
-		// get carrier text from database
+		// Initialize Edit Text
+        mCarrierTextField = (EditText) findViewById(R.id.carrier);
 		mCarrierTextField.setText(Settings.System.getString(getContentResolver(), Settings.System.CUSTOM_CARRIER_TEXT));
     }
 
@@ -65,5 +48,13 @@ public class CustomCarrier extends Activity {
     protected void onPrepareDialog(int id, Dialog dialog) {
         super.onPrepareDialog(id, dialog);
     }
+	
+	@Override
+    public void onClick(View v) {
+		if (v == mSaveButton )
+			Settings.System.putString(getContentResolver(), Settings.System.CUSTOM_CARRIER_TEXT, mCarrierTextField.getText().toString());
+		finish();
+    }
+	
 }
 

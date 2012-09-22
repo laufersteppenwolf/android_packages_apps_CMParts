@@ -53,6 +53,11 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private static final String ACHEP_JB_STATUS_BAR_PREF = "pref_achep_jb_status_bar";
     private static final String ACHEP_JB_STATUS_BAR_NOTIFICATION_PREF = "pref_achep_jb_status_bar_notification";
     private static final String ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER_PREF = "pref_achep_jb_status_bar_notification_bigger";
+	// Ultra-brightness	
+    private static final String ULTRA_BRIGHTNESS_PREF = "pref_ultra_brightness";
+    private static final String ULTRA_BRIGHTNESS_PROP = "sys.ultrabrightness";
+    private static final String ULTRA_BRIGHTNESS_PERSIST_PROP = "persist.sys.ultrabrightness";
+    private static final int ULTRA_BRIGHTNESS_DEFAULT = 0;
     
 
     static Context mContext;
@@ -66,6 +71,8 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private CheckBoxPreference mJellyStatusbar;
     private CheckBoxPreference mJellyStatusbarNotification;
     private CheckBoxPreference mJellyStatusbarNotificationBigger;
+	// Ultra brightess	
+    private CheckBoxPreference mUltraBrightnessPref;
 
     private ListPreference mLedDisabledFromPref;
     private ListPreference mLedDisabledToPref;
@@ -122,6 +129,10 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         mJellyStatusbarNotificationBigger.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER, 0) == 1);
         updatePrefJellyStatusbarNotification(mJellyStatusbarNotification.isChecked());
         
+		
+        /* Ultra brightness */
+        mUltraBrightnessPref = (CheckBoxPreference) prefSet.findPreference(ULTRA_BRIGHTNESS_PREF);
+		mUltraBrightnessPref.setChecked(SystemProperties.getInt(ULTRA_BRIGHTNESS_PERSIST_PROP, ULTRA_BRIGHTNESS_DEFAULT) == 0);
         
 		// LED
         mLedDisabledPref = (CheckBoxPreference) prefSet.findPreference(LED_DISABLED_PREF);
@@ -201,7 +212,21 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) { 
-    	if (preference == mJellyStatusbar) {
+		if (preference == mUltraBrightnessPref) {
+            value = mUltraBrightnessPref.isChecked();
+            if (value==true) {
+            	SystemProperties.set(ULTRA_BRIGHTNESS_PERSIST_PROP, "1");
+            	writeOneLine("/sys/devices/platform/i2c-adapter/i2c-0/0-0036/mode", "i2c_pwm");
+                Settings.System.putInt(getContentResolver(),
+                    Settings.System.ACHEP_ULTRA_BRIGHTNESS, 1);
+            }
+            else {
+            	SystemProperties.set(ULTRA_BRIGHTNESS_PERSIST_PROP, "0");
+            	writeOneLine("/sys/devices/platform/i2c-adapter/i2c-0/0-0036/mode", "i2c_pwm_als");
+                Settings.System.putInt(getContentResolver(),
+                    Settings.System.ACHEP_ULTRA_BRIGHTNESS, 0);
+            }
+        } else if (preference == mJellyStatusbar) {
             Settings.System.putInt(getContentResolver(),
                 Settings.System.ACHEP_JB_STATUS_BAR, mJellyStatusbar.isChecked() ? 1 : 0);
             return true;

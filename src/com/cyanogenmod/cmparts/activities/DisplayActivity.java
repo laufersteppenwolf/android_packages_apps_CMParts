@@ -61,14 +61,6 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
     private static final String ROTATION_180_PREF = "pref_rotation_180";
     private static final String ROTATION_270_PREF = "pref_rotation_270";
     
-    private static final String ULTRA_BRIGHTNESS = "pref_ultra_brightness";
-
-    private static final String ULTRABRIGHTNESS_PROP = "sys.ultrabrightness";
-
-    private static final String ULTRABRIGHTNESS_PERSIST_PROP = "persist.sys.ultrabrightness";
-
-    private static final int ULTRABRIGHTNESS_DEFAULT = 0;
-    
     private static final String TAG = "DisplayActivitySettings";
     
     private static final String ROTATE_180_PREF = "pref_rotate_180";
@@ -82,8 +74,6 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
 
     private CheckBoxPreference mElectronBeamAnimationOff;
     
-    private CheckBoxPreference mUltraBrightnessPref;
-
     private CheckBoxPreference mRotationAnimationPref;
 
     private CheckBoxPreference mRotation0Pref;
@@ -143,13 +133,6 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
         mRotation90Pref.setChecked((mode & 1) != 0);
         mRotation180Pref.setChecked((mode & 2) != 0);
         mRotation270Pref.setChecked((mode & 4) != 0);
-
-        /* Ultra brightness */
-        mUltraBrightnessPref = (CheckBoxPreference) prefSet.findPreference(ULTRA_BRIGHTNESS);
-        if (SystemProperties.getInt(ULTRABRIGHTNESS_PERSIST_PROP, ULTRABRIGHTNESS_DEFAULT) == 0)
-			mUltraBrightnessPref.setChecked(false);
-		else
-			mUltraBrightnessPref.setChecked(true);
     }
 
     /** Whether backlight settings are supported or not */
@@ -179,18 +162,6 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
             value = mElectronBeamAnimationOff.isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.ELECTRON_BEAM_ANIMATION_OFF, value ? 1 : 0);
-        }
-        
-        if (preference == mUltraBrightnessPref) {
-            value = mUltraBrightnessPref.isChecked();
-            if (value==true) {
-            	SystemProperties.set(ULTRABRIGHTNESS_PERSIST_PROP, "1");
-            	writeOneLine("/sys/devices/platform/i2c-adapter/i2c-0/0-0036/mode", "i2c_pwm");
-            }
-            else {
-            	SystemProperties.set(ULTRABRIGHTNESS_PERSIST_PROP, "0");
-            	writeOneLine("/sys/devices/platform/i2c-adapter/i2c-0/0-0036/mode", "i2c_pwm_als");
-            }
         }
 
         if (preference == mRotationAnimationPref) {
