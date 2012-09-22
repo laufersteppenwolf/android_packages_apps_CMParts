@@ -17,6 +17,7 @@ import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.util.Log;
 import android.provider.CmSystem;
+import android.os.SystemProperties;
 
 public class GingerDXActivity extends PreferenceActivity implements OnPreferenceChangeListener {
 	private final String TAG="gingerdx";
@@ -213,16 +214,16 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) { 
 		if (preference == mUltraBrightnessPref) {
-            value = mUltraBrightnessPref.isChecked();
+            boolean value = mUltraBrightnessPref.isChecked();
             if (value==true) {
             	SystemProperties.set(ULTRA_BRIGHTNESS_PERSIST_PROP, "1");
-            	writeOneLine("/sys/devices/platform/i2c-adapter/i2c-0/0-0036/mode", "i2c_pwm");
+            	DisplayActivity.writeOneLine("/sys/devices/platform/i2c-adapter/i2c-0/0-0036/mode", "i2c_pwm");
                 Settings.System.putInt(getContentResolver(),
                     Settings.System.ACHEP_ULTRA_BRIGHTNESS, 1);
             }
             else {
             	SystemProperties.set(ULTRA_BRIGHTNESS_PERSIST_PROP, "0");
-            	writeOneLine("/sys/devices/platform/i2c-adapter/i2c-0/0-0036/mode", "i2c_pwm_als");
+            	DisplayActivity.writeOneLine("/sys/devices/platform/i2c-adapter/i2c-0/0-0036/mode", "i2c_pwm_als");
                 Settings.System.putInt(getContentResolver(),
                     Settings.System.ACHEP_ULTRA_BRIGHTNESS, 0);
             }

@@ -30,7 +30,6 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
-import android.os.SystemProperties;
 
 import android.os.SystemProperties;
 import android.util.Log;
