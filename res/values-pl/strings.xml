@@ -824,46 +824,7 @@
     <string name="perm_enable_warning_message">Uwaga!\nOdwołanie większości uprawnień prawdopodobnie spowoduje błędne działanie aplikacji. Jeśli wymuszane jest zamknięcie aplikacji, której odebrano uprawnienia, należy zapewnić jej oczekiwane przywileje lub zaprzestać jej użytkowania.\nProsimy o nie zgłaszanie błędów, jeśli aplikacja z odebranymi prawami nie działa jak powinna!</string>
     <string name="perm_enable_warning_title">Czy jesteś pewien?</string>
 
-    <!-- dx -->
-    <!-- GingerDX settings -->
-    <string name="gingerdx_settings_title">Ustawienia GingerDX</string>
-    <string name="gingerdx_settings_summary">Unikalne ustawienia GingerDX</string>
-    <string name="other_features_title">Inne funkcje</string>
-    <string name="pref_hide_avatar_message_title">Ukrywaj awatar w treści SMS-ów</string>
-    <string name="pref_quick_copy_paste_title">Szybkie kopiowanie / Szybkie wklejanie</string>
-    <string name="pref_transparent_status_bar_title">Przeźroczystość belki statusu</string>
-    <string name="pref_transparent_status_bar_summary">Uruchom ponownie telefon, by zobaczyć efekt</string>
-    <string name="pref_sense3_lockscreen_title">Sense 3 Lockscreen</string>
-    <string name="pref_sense3_lockscreen_summary">Tylko podstawowa funkcjonalność</string>
-    <string name="pref_center_clock_status_bar_title">Zegar na środku belki statusu</string>
-    <string name="pref_center_clock_status_bar_summary">Zamiast po prawej stronie. Wymaga restartu.</string>
-    <string name="pref_gingerdx_about_title">O...</string>
-    <string name="pref_gingerdx_about_default">GingerDX by TeamFun</string>
-    <string name="ok_button">Potwierdź</string>
-    <string name="cancel_button">Anuluj</string>
-
-    <string name="alarm_settings_title">Ustawienia budzika</string>
-    <string name="pref_achep_alarm_math_questions_title">Quiz matematyczny</string>
-    <string name="pref_achep_alarm_math_questions_summary">Rozwiąż równanie aby wyłączyć budzik</string>
-    <string name="pref_achep_alarm_flip_action_title">Obrócenie telefonu</string>
-    <string name="pref_achep_alarm_flip_action_summary">Aktywuję drzemkę / wyłącza budzik</string>
-    <string name="pref_achep_alarm_shake_action_title">Potrząśnięcie telefonem</string>
-    <string name="pref_achep_alarm_shake_action_summary">Aktywuję drzemkę / wyłącza budzik</string>
-    <string name="pref_achep_alarm_increasing_volume_title">Narastająca głośność</string>
-
-    <string name="pref_update_check_hour_title">Godzina sprawdzania...</string>
-    <string name="pref_update_check_hour_summary">...czy jest dostępna aktualizacja</string>
-    <string name="pref_pick_up_to_call_title">Podnieś by zadzwonić</string>
-    <string name="pref_pick_up_to_call_summary">Przyłożenie telefonu do ucha wybiera numer</string>
-
-    <string name="jb_category">Styl Jellybean</string>
-    <string name="jb_info">Wymaga restartu!</string>
-    <string name="jb_status_bar">Belka statusu</string>
-    <string name="jb_status_bar_notification">Powiadomienia</string>
-
-    <string name="pref_ultra_brightness_title">Ultra-jasność</string>
-    <string name="pref_ultra_brightness_summary">Podnosi jasność ekranu (może zwiększyć zużycie baterii)</string>
-
+    
     <!-- A2SD Settings strings -->
     <string name="a2sd_settings_title">Ustawienia A2SD (ext)</string>
     <string name="a2sd_title">Ustawienia A2SD (ext)</string>
@@ -875,6 +836,11 @@
     <string name="a2sd_loading">Ładowanie informacji o A2SD\u2026</string>
     <string name="a2sd_error">Problem podczas ładowania informacji o A2SD\u2026</string>
 
+<!-- dx -->
+    <!-- GingerDX settings -->
+    <string name="gingerdx_settings_title">Ustawienia GingerDX</string>
+    <string name="gingerdx_settings_summary">Unikalne ustawienia GingerDX</string>
+    
 <!-- Call -->
     <string name="gdx_call_screen1">Ustawienia połączeń</string>
     <string name="gdx_call_screen2">Call-me-lounder, zapętlony dzwonek, własna nazwa operatora itp.</string>
@@ -897,6 +863,30 @@
     <string name="gdx_call_screen_other_carrier2">Pojawia się na ekranie blokady/belce statusu</string>
 
 
+	<!--Alarm -->
+    <string name="alarm_settings_summary">Quiz matematyczny, potrząśnięcie/obrócenie, narastająca głośność itp.</string>
+    <string name="dx_alarm_screen1">Ustawienia budzika</string>
+    <string name="gdx_alarm_screen2">Quiz matematyczny, potrząśnięcie/obrócenie, narastająca głośność itp.</string>
+    <string name="gdx_alarm_screen_mathquiz1">Quiz matematyczny</string>
+    <string name="gdx_alarm_screen_mathquiz2">Rozwiąż równanie aby wyłączyć budzik</string>
+    <string name="gdx_alarm_screen_flip1">Obrócenie telefonu</string>
+    <string name="gdx_alarm_screen_flip2">Aktywuję drzemkę / wyłącza budzik</string>
+    <string name="gdx_alarm_screen_shake1">Potrząśnięcie telefonem</string>
+    <string name="gdx_alarm_screen_shake2">Aktywuję drzemkę / wyłącza budzik</string>
+    <string name="gdx_alarm_screen_increasing">Narastająca głośność</string>
+
+
+<!-- Jelly Bean -->
+    <string name="gdx_jelly_screen1">Jelly Beans</string>
+    <string name="gdx_jelly_screen2">Belka statusu, powiadomienia itp.</string>
+    <string name="gdx_jelly_screen_status_bar_category">STATUS BAR</string>
+    <string name="gdx_jelly_screen_information1">Uwagi</string>
+    <string name="gdx_jelly_screen_information2">Po wybraniu wymagany jest restart telefonu!\n\n2012 © AChep</string>
+    <string name="gdx_jelly_screen_status_bar">Belka statusu</string>
+    <string name="gdx_jelly_screen_status_bar_notification">Powiadomienia</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger1">Większe powiadomienia</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger2">EKSPERYMENTALNE!</string>
+
 	<!-- LED -->
     <string name="gdx_led_screen1">LED</string>
     <string name="gdx_led_screen2">Możliwość wyłączenia diody LED w nocy</string>
@@ -907,15 +897,26 @@
     <string name="gdx_led_screen_to2">..której</string>
 
     
-	<!-- Jelly Bean -->
-    <string name="gdx_jelly_screen1">Jelly Beans</string>
-    <string name="gdx_jelly_screen2">Belka statusu, powiadomienia itp.</string>
-    <string name="gdx_jelly_screen_status_bar_category">STATUS BAR</string>
-    <string name="gdx_jelly_screen_information1">Uwagi</string>
-    <string name="gdx_jelly_screen_information2">Po wybraniu wymagany jest restart telefonu!\n\n2012 © AChep</string>
-    <string name="gdx_jelly_screen_status_bar">Belka statusu</string>
-    <string name="gdx_jelly_screen_status_bar_notification">Powiadomienia</string>
-    <string name="gdx_jelly_screen_status_bar_notification_bigger1">Większe powiadomienia</string>
-    <string name="gdx_jelly_screen_status_bar_notification_bigger2">EKSPERYMENTALNE!</string>
+	<!-- Other -->	
+
+    <string name="gdx_other_screen1">Inne funkcje</string>
+    <string name="gdx_other_screen2">Ultra brightness, Sense 3 lockscreen, wyśrodkowany zegar etc.</string>
+    <string name="gdx_other_screen_hidemsgavatar">Ukrywaj awatar w treści SMS-ów</string>
+    <string name="gdx_other_screen_copypaste">Szybkie kopiowanie / Szybkie wklejanie</string>
+    <string name="gdx_other_screen_status_bar_transparency1">Przeźroczystość belki statusu</string>
+    <string name="gdx_other_screen_status_bar_transparency2">Uruchom ponownie telefon, by zobaczyć efekt</string>
+    <string name="gdx_other_screen_senselock1">Sense 3 Lockscreen</string>
+    <string name="gdx_other_screen_senselock2">Tylko podstawowa funkcjonalność</string>
+    <string name="gdx_other_screen_status_bar_centerclock1">Zegar na środku belki statusu</string>
+    <string name="gdx_other_screen_status_bar_centerclock2">Zamiast po prawej stronie. Wymaga restartu.</string>
+    <string name="gdx_other_screen_about1">O...</string>
+    <string name="gdx_other_screen_about2">GingerDX by TeamFun</string>
+    <string name="gdx_carrier_btn_save">Potwierdź</string>
+    <string name="gdx_carrier_btn_cancel">Anuluj</string>
+    <string name="gdx_other_screen_updates1">Godzina sprawdzania...</string>
+    <string name="gdx_other_screen_updates2">...czy jest dostępna aktualizacja</string>
+    <string name="gdx_other_screen_ultrabrightness1">Ultra-jasność</string>
+    <string name="gdx_other_screen_ultrabrightness2">Podnosi jasność ekranu (może zwiększyć zużycie baterii)</string>
+
  
 </resources>
