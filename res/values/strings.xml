@@ -889,7 +889,40 @@
     <string name="pref_gingerdx_about_title">About</string>
     <string name="pref_gingerdx_about_default">GingerDX by TeamFun</string>
     
-    <string name="alarm_settings_title">Alarm settings</string>
+	<!-- Call -->
+    <string name="gdx_call_screen1">Call features</string>
+    <string name="gdx_call_screen2">Call me lounder, loop ringtone, custon carrier label etc.</string>
+    <string name="gdx_call_screen_sound">Sound</string>
+    <string name="gdx_call_screen_sound_pickup1">Pick up to call</string>
+    <string name="gdx_call_screen_sound_pickup2">Picking up the phone calls the number in dialer</string>
+    <string name="gdx_call_screen_sound_lounder1">Call Me Louder</string>
+    <string name="gdx_call_screen_sound_lounder2">Louder ringer when phone is inside bags</string>
+    <string name="gdx_call_screen_sound_loop1">Loop ringtone</string>
+    <string name="gdx_call_screen_sound_loop2">Again and again and...</string>
+    <string name="gdx_call_screen_sound_flipdown1">Flip down</string>
+    <string name="gdx_call_screen_sound_flipdown2">Flippin down mutes the ringer</string>
+    <string name="gdx_call_screen_buttons">Buttons</string>
+    <string name="gdx_call_screen_buttons_back1">Back</string>
+    <string name="gdx_call_screen_buttons_back2">Pressing back button ends call</string>
+    <string name="gdx_call_screen_buttons_menu1">Menu</string>
+    <string name="gdx_call_screen_buttons_menu2">Pressing back button answers call</string>
+    <string name="gdx_call_screen_other">Other</string>
+    <string name="gdx_call_screen_other_carrier1">Custom carrier text</string>
+    <string name="gdx_call_screen_other_carrier2">Appears on lockscreen/statusbar</string>
+	
+	
+	<!-- LED -->
+    <string name="gdx_jelly_screen1">LED</string>
+    <string name="gdx_jelly_screen2">Options to disable LED at the night</string>
+    <string name="gdx_jelly_screen_enabled">Disable LED</string>
+    <string name="gdx_jelly_screen_from1">From</string>
+    <string name="gdx_jelly_screen_from2">When LED will be disabled</string>
+    <string name="gdx_jelly_screen_to1">To</string>
+    <string name="gdx_jelly_screen_to2">When LED will be enabled</string>
+	
+	<!-- Alarm -->
+    <string name="alarm_settings_title">Alarm</string>
+    <string name="alarm_settings_summary">Math quiz, flip/shake actions, increasing volume</string>
     <string name="pref_achep_alarm_math_questions_title">Math quiz</string>
     <string name="pref_achep_alarm_math_questions_summary">Solve a math quiz to stop the Alarm</string>
     <string name="pref_achep_alarm_flip_action_title">Flip action</string>
@@ -898,7 +931,7 @@
     <string name="pref_achep_alarm_shake_action_summary">Shake to snooze / dismiss the alarm</string>
     <string name="pref_achep_alarm_increasing_volume_title">Increasing volume</string>
     
-    <string name="jb_category">Jelly Beans</string>
+	<!-- Jelly Bean -->
     <string name="gdx_jelly_screen1">Jelly Beans</string>
     <string name="gdx_jelly_screen2">Status bar, notifications etc.</string>
     <string name="gdx_jelly_screen_status_bar_category">STATUS BAR</string>
@@ -907,7 +940,7 @@
     <string name="gdx_jelly_screen_status_bar">Status bar panel</string>
     <string name="gdx_jelly_screen_status_bar_notification">Notifications</string>
     <string name="gdx_jelly_screen_status_bar_notification_bigger1">Bigger notifications</string>
-    <string name="gdx_jelly_screen_status_bar_notification_bigger2">It\'s experimental feature!</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger2">It's experimental feature!</string>
 
 </resources>
 

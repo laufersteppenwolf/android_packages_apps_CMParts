@@ -878,9 +878,40 @@
     
     <string name="gdx_jelly_screen2">Выпадающая панель, уведомления и т.д.</string>
     <string name="gdx_jelly_screen_information1">Примечание</string>
-    <string name="gdx_jelly_screen_information2">Для применения изменения необходима перезагрузка!\n\n2012 © AChep</string>
+    <string name="gdx_jelly_screen_information2">Для применения внесенных изменений необходима перезагрузка!\n\n2012 © AChep</string>
     <string name="gdx_jelly_screen_status_bar">Выпадающая панель</string>
     <string name="gdx_jelly_screen_status_bar_notification">Уведомления</string>
     <string name="gdx_jelly_screen_status_bar_notification_bigger1">Большие уведомления</string>
-    <string name="gdx_jelly_screen_status_bar_notification_bigger2">Это експериментальная возможность!</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger2">Это экспериментальная возможность!</string>
+	
+	<!-- Call -->
+    <string name="gdx_call_screen1">Возможности вызова</string>
+    <string name="gdx_call_screen2">Звони мне громче, повторять рингтон, свой текст оператора и т.д.</string>
+    <string name="gdx_call_screen_sound">Звук</string>
+    <string name="gdx_call_screen_sound_pickup1">Поднять для звонка</string>
+    <string name="gdx_call_screen_sound_pickup2">Поднятие телефона вызывает введенный номер в звонилке</string>
+    <string name="gdx_call_screen_sound_lounder1">Звони мне громче</string>
+    <string name="gdx_call_screen_sound_lounder2">Звонок громче, когда телефон внутри сумки</string>
+    <string name="gdx_call_screen_sound_loop1">Повторять рингтон</string>
+    <string name="gdx_call_screen_sound_loop2">Опять, опять и опять...</string>
+    <string name="gdx_call_screen_sound_flipdown1">Поворот вниз</string>
+    <string name="gdx_call_screen_sound_flipdown2">Переворот вниз отклюяает звук входящего звонка</string>
+    <string name="gdx_call_screen_buttons">Кнопки</string>
+    <string name="gdx_call_screen_buttons_back1">Назад</string>
+    <string name="gdx_call_screen_buttons_back2">Нажатие кнопки Назад завершает текущий вызов</string>
+    <string name="gdx_call_screen_buttons_menu1">Меню</string>
+    <string name="gdx_call_screen_buttons_menu2">Нажатие кнопки Меню принимает текущий вызов</string>
+    <string name="gdx_call_screen_other">Прочее</string>
+    <string name="gdx_call_screen_other_carrier1">Свой текст оператора</string>
+    <string name="gdx_call_screen_other_carrier2">Показывается на экране блокировки/статусбаре</string>
+	
+	
+	<!-- LED -->
+    <string name="gdx_jelly_screen1">LED</string>
+    <string name="gdx_jelly_screen2">Опции для отключения LED ночью</string>
+    <string name="gdx_jelly_screen_enabled">Отключить LED</string>
+    <string name="gdx_jelly_screen_from1">С</string>
+    <string name="gdx_jelly_screen_from2">Когда LED будет отключен</string>
+    <string name="gdx_jelly_screen_to1">По</string>
+    <string name="gdx_jelly_screen_to2">Когда LED будет включен</string>
 </resources>

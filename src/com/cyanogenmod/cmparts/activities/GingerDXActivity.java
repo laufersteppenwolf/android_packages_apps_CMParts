@@ -99,7 +99,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         
         PreferenceScreen prefSet = getPreferenceScreen();
         
-        // AChep's alarm options
+        // Alarm
         mAlarmShakeActionPref = (ListPreference) prefSet.findPreference(ACHEP_ALARM_SHAKE_ACTION_PREF);
         mAlarmShakeActionPref.setValue(String.valueOf(Settings.System.getInt(mContext.getContentResolver(),
         	Settings.System.ACHEP_ALARM_SHAKE_ACTION, 0)));
@@ -112,7 +112,8 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         mAlarmIncreasingVolume = (CheckBoxPreference) prefSet.findPreference(ACHEP_ALARM_INCREASING_VOLUME_ENABLED_PREF);
         mAlarmMathQuestions.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_ALARM_MATH_QUESTIONS_ENABLED, 0) == 1);
         mAlarmIncreasingVolume.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_ALARM_INCREASING_VOLUME_ENABLED, 0) == 1);
-        // Jellychep
+       
+	   // Jelly Beans
         mJellyStatusbar = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_PREF);
         mJellyStatusbarNotification = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_NOTIFICATION_PREF);
         mJellyStatusbarNotificationBigger = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER_PREF);
@@ -122,18 +123,18 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         updatePrefJellyStatusbarNotification(mJellyStatusbarNotification.isChecked());
         
         
+		// LED
         mLedDisabledPref = (CheckBoxPreference) prefSet.findPreference(LED_DISABLED_PREF);
-        mLedDisabledPref.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.NOTIFICATION_LIGHT_DISABLED, 0) == 1);
-        
+        mLedDisabledPref.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.NOTIFICATION_LIGHT_DISABLED, 0) == 1);        
         mLedDisabledFromPref = (ListPreference) prefSet.findPreference(LED_DISABLED_FROM_PREF);
         mLedDisabledFromPref.setValue(String.valueOf(Settings.System.getInt(mContext.getContentResolver(),
         	Settings.System.NOTIFICATION_LIGHT_DISABLED_START, 23)));
-        mLedDisabledFromPref.setOnPreferenceChangeListener(this);
-            
+        mLedDisabledFromPref.setOnPreferenceChangeListener(this);            
         mLedDisabledToPref = (ListPreference) prefSet.findPreference(LED_DISABLED_FROM_PREF);
         mLedDisabledToPref.setValue(String.valueOf(Settings.System.getInt(mContext.getContentResolver(),
         	Settings.System.NOTIFICATION_LIGHT_DISABLED_END, 6)));
         mLedDisabledToPref.setOnPreferenceChangeListener(this);
+        updatePrefLedDisabled(mLedDisabledPref.isChecked());
                     
         mFlippingDownMutesRinger = (CheckBoxPreference) prefSet.findPreference(FLIPPING_DOWN_MUTES_RINGER_PREF);
         mFlippingDownMutesRinger.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.FLIPPING_DOWN_MUTES_RINGER, 1) == 1);
@@ -228,6 +229,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         }
         else
         if (preference == mLedDisabledPref) {
+            updatePrefLedDisabled(mLedDisabledPref.isChecked());
             Settings.System.putInt(getContentResolver(),
                 Settings.System.NOTIFICATION_LIGHT_DISABLED, mLedDisabledPref.isChecked() ? 1 : 0);
             return true;
@@ -328,9 +330,13 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         return false;
     }
 
-   // Additional preferrrrrrrrrrs
+   // Additional funny voids
    private void updatePrefJellyStatusbarNotification(boolean checked){
-   	mJellyStatusbarNotificationBigger.setEnabled(checked);
+      mJellyStatusbarNotificationBigger.setEnabled(checked);
+   }
+   private void updatePrefLedDisabled(boolean checked){
+      mLedDisabledFromPref.setEnabled(checked);
+      mLedDisabledToPref.setEnabled(checked);
    }
 
 
