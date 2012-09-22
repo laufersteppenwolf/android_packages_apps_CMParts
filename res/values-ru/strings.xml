@@ -907,11 +907,11 @@
 	
 	
 	<!-- LED -->
-    <string name="gdx_jelly_screen1">LED</string>
-    <string name="gdx_jelly_screen2">Опции для отключения LED ночью</string>
-    <string name="gdx_jelly_screen_enabled">Отключить LED</string>
-    <string name="gdx_jelly_screen_from1">С</string>
-    <string name="gdx_jelly_screen_from2">Когда LED будет отключен</string>
-    <string name="gdx_jelly_screen_to1">По</string>
-    <string name="gdx_jelly_screen_to2">Когда LED будет включен</string>
+    <string name="gdx_led_screen1">LED</string>
+    <string name="gdx_led_screen2">Опции для отключения LED ночью</string>
+    <string name="gdx_led_screen_enabled">Отключить LED</string>
+    <string name="gdx_led_screen_from1">С</string>
+    <string name="gdx_led_screen_from2">Когда LED будет отключен</string>
+    <string name="gdx_led_screen_to1">По</string>
+    <string name="gdx_led_screen_to2">Когда LED будет включен</string>
 </resources>

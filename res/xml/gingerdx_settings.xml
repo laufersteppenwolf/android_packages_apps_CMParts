@@ -27,8 +27,8 @@
                 android:title="@string/gdx_call_screen_sound_loop1" />
             <CheckBoxPreference
                 android:key="pref_flipping_mutes_ringer"
-                android:summary="@stringgdx_call_screen_sound_flipdown2"
-                android:title="@stringgdx_call_screen_sound_flipdown1" />
+                android:summary="@string/gdx_call_screen_sound_flipdown2"
+                android:title="@string/gdx_call_screen_sound_flipdown1" />
         </PreferenceCategory>
         <PreferenceCategory android:title="@string/gdx_call_screen_buttons" >
             <CheckBoxPreference
@@ -110,7 +110,7 @@
 
     <PreferenceScreen
         android:title="@string/gdx_led_screen1"
-        android:title="@string/gdx_led_screen2" >
+        android:summary="@string/gdx_led_screen2" >
         <CheckBoxPreference
             android:key="pref_led_disabled"
             android:title="@string/gdx_led_screen_enabled" />

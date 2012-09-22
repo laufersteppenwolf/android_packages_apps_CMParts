@@ -912,13 +912,13 @@
 	
 	
 	<!-- LED -->
-    <string name="gdx_jelly_screen1">LED</string>
-    <string name="gdx_jelly_screen2">Options to disable LED at the night</string>
-    <string name="gdx_jelly_screen_enabled">Disable LED</string>
-    <string name="gdx_jelly_screen_from1">From</string>
-    <string name="gdx_jelly_screen_from2">When LED will be disabled</string>
-    <string name="gdx_jelly_screen_to1">To</string>
-    <string name="gdx_jelly_screen_to2">When LED will be enabled</string>
+    <string name="gdx_led_screen1">LED</string>
+    <string name="gdx_led_screen2">Options to disable LED at the night</string>
+    <string name="gdx_led_screen_enabled">Disable LED</string>
+    <string name="gdx_led_screen_from1">From</string>
+    <string name="gdx_led_screen_from2">When LED will be disabled</string>
+    <string name="gdx_led_screen_to1">To</string>
+    <string name="gdx_led_screen_to2">When LED will be enabled</string>
 	
 	<!-- Alarm -->
     <string name="alarm_settings_title">Alarm</string>
@@ -940,7 +940,7 @@
     <string name="gdx_jelly_screen_status_bar">Status bar panel</string>
     <string name="gdx_jelly_screen_status_bar_notification">Notifications</string>
     <string name="gdx_jelly_screen_status_bar_notification_bigger1">Bigger notifications</string>
-    <string name="gdx_jelly_screen_status_bar_notification_bigger2">It's experimental feature!</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger2">It\'s experimental feature!</string>
 
 </resources>
 
