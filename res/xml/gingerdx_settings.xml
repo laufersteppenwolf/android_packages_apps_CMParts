@@ -59,28 +59,28 @@
 
     <!-- AChep -->
     <PreferenceScreen
-        android:summary="@string/alarm_settings_summary"
-        android:title="@string/alarm_settings_title" >
+        android:summary="@string/gdx_alarm_screen2"
+        android:title="@string/gdx_alarm_screen1" >
         <CheckBoxPreference
             android:key="pref_achep_alarm_increasing_volume_enabled"
-            android:title="@string/pref_achep_alarm_increasing_volume_title" />
+            android:title="@string/gdx_alarm_screen_increasing" />
         <CheckBoxPreference
             android:key="pref_achep_alarm_math_questions_enabled"
-            android:summary="@string/pref_achep_alarm_math_questions_summary"
-            android:title="@string/pref_achep_alarm_math_questions_title" />
+            android:summary="@string/gdx_alarm_screen_mathquiz2"
+            android:title="@string/gdx_alarm_screen_mathquiz1" />
 
         <ListPreference
             android:entries="@array/achep_alarm_flip_actions"
             android:entryValues="@array/achep_alarm_flip_actions_values"
             android:key="pref_achep_alarm_flip_action"
-            android:summary="@string/pref_achep_alarm_flip_action_summary"
-            android:title="@string/pref_achep_alarm_flip_action_title" />
+            android:summary="@string/gdx_alarm_screen_flip2"
+            android:title="@string/gdx_alarm_screen_flip1" />
         <ListPreference
             android:entries="@array/achep_alarm_flip_actions"
             android:entryValues="@array/achep_alarm_flip_actions_values"
             android:key="pref_achep_alarm_shake_action"
-            android:summary="@string/pref_achep_alarm_shake_action_summary"
-            android:title="@string/pref_achep_alarm_shake_action_title" />
+            android:summary="@string/gdx_alarm_screen_shake2"
+            android:title="@string/gdx_alarm_screen_shake1" />
     </PreferenceScreen>
 
     <!-- AChep's Jellybean -->

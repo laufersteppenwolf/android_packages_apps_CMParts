@@ -866,9 +866,8 @@
     <string name="gdx_call_screen_other_carrier2">Appears on lockscreen/statusbar</string>
 	
 	<!-- Alarm -->
-    <string name="alarm_settings_summary">Math quiz, flip/shake actions, increasing volume etc.</string>
     <string name="gdx_alarm_screen1">Alarm</string>
-    <string name="gdx_alarm_screen2">Math quiz, flip/shake actions, increasing volume</string>
+    <string name="gdx_alarm_screen2">Math quiz, flip/shake actions, increasing volume etc.</string>
     <string name="gdx_alarm_screen_mathquiz1">Math quiz</string>
     <string name="gdx_alarm_screen_mathquiz2">Solve a math quiz to stop the Alarm</string>
     <string name="gdx_alarm_screen_flip1">Flip action</string>
