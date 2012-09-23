@@ -14,6 +14,7 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
+import android.database.ContentObserver;
 import android.provider.Settings;
 import android.util.Log;
 import android.provider.CmSystem;
@@ -54,6 +55,8 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private static final String ACHEP_JB_STATUS_BAR_PREF = "pref_achep_jb_status_bar";
     private static final String ACHEP_JB_STATUS_BAR_NOTIFICATION_PREF = "pref_achep_jb_status_bar_notification";
     private static final String ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER_PREF = "pref_achep_jb_status_bar_notification_bigger";
+	// Additional options
+    private static final String ACHEP_STATUS_BAR_HAS_SOFT_BUTTONS_PREF = "pref_achep_has_soft_buttons";
 	// Ultra-brightness	
     private static final String ULTRA_BRIGHTNESS_PREF = "pref_ultra_brightness";
     private static final String ULTRA_BRIGHTNESS_PROP = "sys.ultrabrightness";
@@ -62,6 +65,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     
 
     static Context mContext;
+	private SettingsObserver mSettingsObserver;
     
     // AChep's alarm options
     private ListPreference mAlarmShakeActionPref;
@@ -72,6 +76,8 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private CheckBoxPreference mJellyStatusbar;
     private CheckBoxPreference mJellyStatusbarNotification;
     private CheckBoxPreference mJellyStatusbarNotificationBigger;
+	// Additional options
+    private CheckBoxPreference mStatusBarHasSoftButtons;
 	// Ultra brightess	
     private CheckBoxPreference mUltraBrightnessPref;
 
@@ -128,12 +134,22 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         mJellyStatusbar.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR, 0) == 1);
         mJellyStatusbarNotification.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION, 0) == 1);
         mJellyStatusbarNotificationBigger.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER, 0) == 1);
-        updatePrefJellyStatusbarNotification(mJellyStatusbarNotification.isChecked());
+        updateJellyStatusbarNotificationPref(mJellyStatusbarNotification.isChecked());
         
+		// Additional options
+		mStatusBarHasSoftButtons = (CheckBoxPreference) prefSet.findPreference(ACHEP_STATUS_BAR_HAS_SOFT_BUTTONS_PREF);
+        mStatusBarHasSoftButtons.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_STATUS_BAR_HAS_SOFT_BUTTONS, 0) == 1);
 		
         /* Ultra brightness */
         mUltraBrightnessPref = (CheckBoxPreference) prefSet.findPreference(ULTRA_BRIGHTNESS_PREF);
-		mUltraBrightnessPref.setChecked(SystemProperties.getInt(ULTRA_BRIGHTNESS_PERSIST_PROP, ULTRA_BRIGHTNESS_DEFAULT) == 0);
+		updateUltraBrightnessPrefState();
+		getApplicationContext().getContentResolver().registerContentObserver(
+				  Settings.System.ACHEP_ULTRA_BRIGHTNESS, 
+				  true, new ContentObserver(new Handler()) {
+				    public void onChange(boolean selfChange) {
+						updateUltraBrightnessPrefState();
+				    }
+				});
         
 		// LED
         mLedDisabledPref = (CheckBoxPreference) prefSet.findPreference(LED_DISABLED_PREF);
@@ -146,7 +162,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         mLedDisabledToPref.setValue(String.valueOf(Settings.System.getInt(mContext.getContentResolver(),
         	Settings.System.NOTIFICATION_LIGHT_DISABLED_END, 6)));
         mLedDisabledToPref.setOnPreferenceChangeListener(this);
-        updatePrefLedDisabled(mLedDisabledPref.isChecked());
+        updateLedDisabledPref(mLedDisabledPref.isChecked());
                     
         mFlippingDownMutesRinger = (CheckBoxPreference) prefSet.findPreference(FLIPPING_DOWN_MUTES_RINGER_PREF);
         mFlippingDownMutesRinger.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.FLIPPING_DOWN_MUTES_RINGER, 1) == 1);
@@ -209,6 +225,15 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 //      mDoProfileFlinging = (CheckBoxPreference) prefSet.findPreference(DO_PROFILE_FLINGING_PREF);
 //      if (mDoProfileFlinging != null)
 //		    mDoProfileFlinging.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.DO_PROFILE_FLINGING, 0) == 1);
+
+        mSettingsObserver = new SettingsObserver(new Handler());
+        mSettingsObserver.observe();
+    }
+	
+	@Override
+	public void onDestroy() {
+		super.onDestroy();
+        mSettingsObserver.deserve();
     }
         
     @Override
@@ -227,13 +252,17 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
                 Settings.System.putInt(getContentResolver(),
                     Settings.System.ACHEP_ULTRA_BRIGHTNESS, 0);
             }
+        } else if (preference == mStatusBarHasSoftButtons) {
+            Settings.System.putInt(getContentResolver(),
+                Settings.System.ACHEP_STATUS_BAR_HAS_SOFT_BUTTONS, mStatusBarHasSoftButtons.isChecked() ? 1 : 0);
+            return true;
         } else if (preference == mJellyStatusbar) {
             Settings.System.putInt(getContentResolver(),
                 Settings.System.ACHEP_JB_STATUS_BAR, mJellyStatusbar.isChecked() ? 1 : 0);
             return true;
         }
         else if (preference == mJellyStatusbarNotification) {
-            updatePrefJellyStatusbarNotification(mJellyStatusbarNotification.isChecked());
+            updateJellyStatusbarNotificationPref(mJellyStatusbarNotification.isChecked());
             Settings.System.putInt(getContentResolver(),
                 Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION, mJellyStatusbarNotification.isChecked() ? 1 : 0);
             return true;
@@ -255,7 +284,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         }
         else
         if (preference == mLedDisabledPref) {
-            updatePrefLedDisabled(mLedDisabledPref.isChecked());
+            updateLedDisabledPref(mLedDisabledPref.isChecked());
             Settings.System.putInt(getContentResolver(),
                 Settings.System.NOTIFICATION_LIGHT_DISABLED, mLedDisabledPref.isChecked() ? 1 : 0);
             return true;
@@ -357,13 +386,37 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     }
 
    // Additional funny voids
-   private void updatePrefJellyStatusbarNotification(boolean checked){
+   private void updateJellyStatusbarNotificationPref(boolean checked){
       mJellyStatusbarNotificationBigger.setEnabled(checked);
    }
-   private void updatePrefLedDisabled(boolean checked){
-      mLedDisabledFromPref.setEnabled(checked);
+   private void updateLedDisabledPref(boolean checked){
       mLedDisabledToPref.setEnabled(checked);
+      mLedDisabledFromPref.setEnabled(checked);
+   } 
+	
+   private void updateUltraBrightnessPrefState(){
+		mUltraBrightnessPref.setChecked(SystemProperties.getInt(ULTRA_BRIGHTNESS_PERSIST_PROP, ULTRA_BRIGHTNESS_DEFAULT) == 1);
    }
 
+   class SettingsObserver extends ContentObserver {
+        SettingsObserver(Handler handler) {
+            super(handler);
+        }
 
+        void observe() {
+            ContentResolver resolver = mContext.getContentResolver();
+            resolver.registerContentObserver(
+                    Settings.System.getUriFor(Settings.ACHEP_ULTRA_BRIGHTNESS), false, this);
+        }
+        void deserve() {
+            ContentResolver resolver = mContext.getContentResolver();
+            resolver.unregisterContentObserver(this);
+        }
+
+        @Override
+        public void onChange(boolean selfChange) {
+            updateUltraBrightnessPrefState();
+        }
+    }
+   
 }

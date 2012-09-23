@@ -149,6 +149,10 @@
             android:summary="@string/gdx_other_screen_status_bar_transparency2"
             android:title="@string/gdx_other_screen_status_bar_transparency1" />
         <CheckBoxPreference
+            android:key="pref_achep_has_soft_buttons"
+            android:summary="@string/gdx_other_screen_sbbuttons2"
+            android:title="@string/gdx_other_screen_sbbuttons1" />
+        <CheckBoxPreference
             android:key="pref_sense3_lockscreen"
             android:summary="@string/gdx_other_screen_senselock2"
             android:title="@string/gdx_other_screen_senselock1" />

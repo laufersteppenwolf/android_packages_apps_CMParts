@@ -890,6 +890,8 @@
     <string name="gdx_other_screen_status_bar_transparency2">Необходима перезагрузка!</string>
     <string name="gdx_other_screen_senselock1">Sense 3 Экран блокировки</string>
     <string name="gdx_other_screen_senselock2">Только базовый функционал!</string>
+    <string name="gdx_other_screen_sbbuttons1">Софт кнопки</string>
+    <string name="gdx_other_screen_sbbuttons2">Искуственные кнопки на панели состояния</string>
     <string name="gdx_other_screen_hidemsgavatar">Скрыть аватар в сообщениях</string>
     <string name="gdx_other_screen_ultrabrightness1">Ультра-яркость</string>
     <string name="gdx_other_screen_ultrabrightness2">Может повлиять на скорость разряда батареи</string>

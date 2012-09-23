@@ -906,6 +906,8 @@
     <string name="gdx_other_screen_status_bar_transparency2">Reboot to apply changes</string>
     <string name="gdx_other_screen_senselock1">Sense 3 Lockscreen</string>
     <string name="gdx_other_screen_senselock2">Only basic functionality</string>
+    <string name="gdx_other_screen_sbbuttons1">Soft buttons</string>
+    <string name="gdx_other_screen_sbbuttons2">Soft buttons on the status bar</string>
     <string name="gdx_other_screen_hidemsgavatar">Hide avatar in SMS content</string>
     <string name="gdx_other_screen_ultrabrightness1">Ultra brightness</string>
     <string name="gdx_other_screen_ultrabrightness2">Increases the brightness level (may increase battery consumption)</string>
