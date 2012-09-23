@@ -15,6 +15,8 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
 import android.database.ContentObserver;
+import android.content.ContentResolver;
+import android.os.Handler;
 import android.provider.Settings;
 import android.util.Log;
 import android.provider.CmSystem;
@@ -143,7 +145,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         /* Ultra brightness */
         mUltraBrightnessPref = (CheckBoxPreference) prefSet.findPreference(ULTRA_BRIGHTNESS_PREF);
 		updateUltraBrightnessPrefState();
-		getApplicationContext().getContentResolver().registerContentObserver(
+		getContentResolver().registerContentObserver(
 				  Settings.System.ACHEP_ULTRA_BRIGHTNESS, 
 				  true, new ContentObserver(new Handler()) {
 				    public void onChange(boolean selfChange) {
@@ -406,7 +408,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         void observe() {
             ContentResolver resolver = mContext.getContentResolver();
             resolver.registerContentObserver(
-                    Settings.System.getUriFor(Settings.ACHEP_ULTRA_BRIGHTNESS), false, this);
+                    Settings.System.getUriFor(Settings.System.ACHEP_ULTRA_BRIGHTNESS), false, this);
         }
         void deserve() {
             ContentResolver resolver = mContext.getContentResolver();
