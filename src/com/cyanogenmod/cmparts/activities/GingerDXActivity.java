@@ -57,8 +57,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private static final String ACHEP_JB_STATUS_BAR_PREF = "pref_achep_jb_status_bar";
     private static final String ACHEP_JB_STATUS_BAR_NOTIFICATION_PREF = "pref_achep_jb_status_bar_notification";
     private static final String ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER_PREF = "pref_achep_jb_status_bar_notification_bigger";
-	// Additional options
-    private static final String ACHEP_STATUS_BAR_HAS_SOFT_BUTTONS_PREF = "pref_achep_has_soft_buttons";
+    private static final String ACHEP_JB_STATUS_BAR_SOFT_BUTTONS_PREF = "pref_achep_jb_status_bar_soft_buttons";
 	// Ultra-brightness	
     private static final String ULTRA_BRIGHTNESS_PREF = "pref_ultra_brightness";
     private static final String ULTRA_BRIGHTNESS_PROP = "sys.ultrabrightness";
@@ -78,8 +77,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private CheckBoxPreference mJellyStatusbar;
     private CheckBoxPreference mJellyStatusbarNotification;
     private CheckBoxPreference mJellyStatusbarNotificationBigger;
-	// Additional options
-    private CheckBoxPreference mStatusBarHasSoftButtons;
+    private CheckBoxPreference mJellyStatusBarSoftButtons;
 	// Ultra brightess	
     private CheckBoxPreference mUltraBrightnessPref;
 
@@ -139,8 +137,8 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         updateJellyStatusbarNotificationPref(mJellyStatusbarNotification.isChecked());
         
 		// Additional options
-		mStatusBarHasSoftButtons = (CheckBoxPreference) prefSet.findPreference(ACHEP_STATUS_BAR_HAS_SOFT_BUTTONS_PREF);
-        mStatusBarHasSoftButtons.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_STATUS_BAR_HAS_SOFT_BUTTONS, 0) == 1);
+		mJellyStatusBarSoftButtons = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_SOFT_BUTTONS_PREF);
+        mJellyStatusBarSoftButtons.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR_SOFT_BUTTONS, 0) == 1);
 		
         /* Ultra brightness */
         mUltraBrightnessPref = (CheckBoxPreference) prefSet.findPreference(ULTRA_BRIGHTNESS_PREF);
@@ -247,9 +245,9 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
                 Settings.System.putInt(getContentResolver(),
                     Settings.System.ACHEP_ULTRA_BRIGHTNESS, 0);
             }
-        } else if (preference == mStatusBarHasSoftButtons) {
+        } else if (preference == mJellyStatusBarSoftButtons) {
             Settings.System.putInt(getContentResolver(),
-                Settings.System.ACHEP_STATUS_BAR_HAS_SOFT_BUTTONS, mStatusBarHasSoftButtons.isChecked() ? 1 : 0);
+                Settings.System.ACHEP_JB_STATUS_BAR_SOFT_BUTTONS, mJellyStatusBarSoftButtons.isChecked() ? 1 : 0);
             return true;
         } else if (preference == mJellyStatusbar) {
             Settings.System.putInt(getContentResolver(),
