@@ -145,13 +145,6 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         /* Ultra brightness */
         mUltraBrightnessPref = (CheckBoxPreference) prefSet.findPreference(ULTRA_BRIGHTNESS_PREF);
 		updateUltraBrightnessPrefState();
-		getContentResolver().registerContentObserver(
-				  Settings.System.ACHEP_ULTRA_BRIGHTNESS, 
-				  true, new ContentObserver(new Handler()) {
-				    public void onChange(boolean selfChange) {
-						updateUltraBrightnessPrefState();
-				    }
-				});
         
 		// LED
         mLedDisabledPref = (CheckBoxPreference) prefSet.findPreference(LED_DISABLED_PREF);
