@@ -680,36 +680,36 @@
     <!-- GingerDX settings -->
     <string name="gingerdx_settings_title">Definições GingerDX</string>
     <string name="gingerdx_settings_summary">Alterar opções específicas do GingerDX</string>
-    <string name="pref_led_disabled_group_title">LED desactivado a noite...</string>
-    <string name="pref_led_disabled_title">...activar</string>
-    <string name="pref_led_disabled_from_title">...desde as</string>
-    <string name="pref_led_disabled_to_title">...até as</string>
+    <string name="gdx_led_screen2">LED desactivado a noite...</string>
+    <string name="gdx_led_screen_enabled">...activar</string>
+    <string name="gdx_led_screen_from1">...desde as</string>
+    <string name="gdx_led_screen_to1">...até as</string>
 
     <string name="flipping_down_title">Flipping down...</string>
     <string name="pref_flipping_down_mutes_ringer_title">...silencia o toque</string>
     <string name="pref_flipping_down_snoozes_alarm_title">...repete o alarme</string>
     <string name="pref_flipping_down_snoozes_alarm_summary">Não me responsabilizo se for despedido!</string>
 
-    <string name="call_features_title">Funcionalidades de chamada</string>
-    <string name="pref_call_me_louder_title">Call Me Louder</string>
-    <string name="pref_call_me_louder_summary">Aumenta o volume do toque de chamada, quando dentro de uma mala</string>
-    <string name="pref_back_button_ends_call_title">Botão de voltar termina a chamada</string>
-    <string name="pref_ringer_loop_title">Repetir toque de chamada</string>
-    <string name="pref_ringer_loop_summary">Outra e mais outra vez...</string>
+    <string name="gdx_call_screen1">Funcionalidades de chamada</string>
+    <string name="gdx_call_screen_sound_lounder1">Call Me Louder</string>
+    <string name="gdx_call_screen_sound_lounder2">Aumenta o volume do toque de chamada, quando dentro de uma mala</string>
+    <string name="gdx_call_screen_buttons_back2">Botão de voltar termina a chamada</string>
+    <string name="gdx_call_screen_sound_loop1">Repetir toque de chamada</string>
+    <string name="gdx_call_screen_sound_loop2">Outra e mais outra vez...</string>
     <!--<string name="pref_smart_dialer_title">Smart dialer</string>
     <string name="pref_smart_dialer_summary">Sugere contactos da lista ao marcar</string>-->
 
-    <string name="other_features_title">Outras funcionalidades</string>
-	<string name="pref_hide_avatar_message_title">Esconder avatar nas SMS\'s</string>
-	<string name="pref_quick_copy_paste_title">Copy/Paste rápido</string>
-    <string name="pref_transparent_status_bar_title">Transparêcia na barra de notificações</string>
-    <string name="pref_transparent_status_bar_summary">Reiniciar para aplicar alterações</string>
-    <string name="pref_sense3_lockscreen_title">Bloqueio de ecrã Sense 3</string>
-    <string name="pref_sense3_lockscreen_summary">Somente função básica</string>
+    <string name="gdx_other_screen1">Outras funcionalidades</string>
+	<string name="gdx_other_screen_hidemsgavatar">Esconder avatar nas SMS\'s</string>
+	<string name="gdx_other_screen_copypaste">Copy/Paste rápido</string>
+    <string name="gdx_other_screen_status_bar_transparency1">Transparêcia na barra de notificações</string>
+    <string name="gdx_other_screen_status_bar_transparency2">Reiniciar para aplicar alterações</string>
+    <string name="gdx_other_screen_senselock1">Bloqueio de ecrã Sense 3</string>
+    <string name="gdx_other_screen_senselock2">Somente função básica</string>
     <!--<string name="pref_recent_apps_status_bar_title">Apps recentes na barra de notificações</string>
     <string name="pref_recent_apps_status_bar_summary">Mostra no máximo 16 apps</string>-->
-    <string name="pref_gingerdx_about_title">Acerca de...</string>
-    <string name="pref_gingerdx_about_default">GingerDX by TeamFun</string>
+    <string name="gdx_other_screen_about1">Acerca de...</string>
+    <string name="gdx_other_screen_about2">GingerDX by TeamFun</string>
     
     <string name="pref_custom_carrier_title">Texto de operadora alternativo</string>
     <string name="pref_custom_carrier_summary">Aparece no bloqueio de ecrã/barra de notificações</string>

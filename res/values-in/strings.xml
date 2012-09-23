@@ -4,32 +4,32 @@
 	<!-- GingerDX settings -->
 	<string name="gingerdx_settings_title">Pengaturan GingerDX</string>
 	<string name="gingerdx_settings_summary">Ubah opsi GingerDX</string>
-	<string name="pref_led_disabled_group_title">LED dinonaktifkan di malam hari...</string>
-	<string name="pref_led_disabled_title">...diaktifkan</string>
-	<string name="pref_led_disabled_from_title">dari jam...</string>
-	<string name="pref_led_disabled_to_title">sampai...</string>
+	<string name="gdx_led_screen2">LED dinonaktifkan di malam hari...</string>
+	<string name="gdx_led_screen_enabled">...diaktifkan</string>
+	<string name="gdx_led_screen_from1">dari jam...</string>
+	<string name="gdx_led_screen_to1">sampai...</string>
 
 	<string name="flipping_down_title">Membalikkan ke bawah...</string>
 	<string name="pref_flipping_down_mutes_ringer_title">...me matikan suara</string>
 	<string name="pref_flipping_down_snoozes_alarm_title">...m enunda alarm</string>
 	<string name="pref_flipping_down_snoozes_alarm_summary">Ti dak bertanggungjawab untuk dipecat!</string>
 
-	<string name="call_features_title">Opsi Panggilan</string>
-	<string name="pref_call_me_louder_title">Panggil lebih keras</string>
-	<string name="pref_call_me_louder_summary">Volume suara lebih keras ketika HP berada di tas</string>
-	<string name="pref_back_button_ends_call_title">Tombol kembali mengakhiri panggilan</string>
-	<string name="pref_ringer_loop_title">Ringtone berulang</string>
-	<string name="pref_ringer_loop_summary">Lagi dan lagi...</string>
+	<string name="gdx_call_screen1">Opsi Panggilan</string>
+	<string name="gdx_call_screen_sound_lounder1">Panggil lebih keras</string>
+	<string name="gdx_call_screen_sound_lounder2">Volume suara lebih keras ketika HP berada di tas</string>
+	<string name="gdx_call_screen_buttons_back2">Tombol kembali mengakhiri panggilan</string>
+	<string name="gdx_call_screen_sound_loop1">Ringtone berulang</string>
+	<string name="gdx_call_screen_sound_loop2">Lagi dan lagi...</string>
 
-	<string name="other_features_title">Fitur lain</string>
-	<string name="pref_hide_avatar_message_title">Menghilangka n avatar pada konten SMS</string>
-	<string name="pref_quick_copy_paste_title">Pintasan Salin / Tempel </string>
-	<string name="pref_transparent_status_bar_title">Bilah status transparan</string>
-	<string name="pref_transparent_status_bar_summary">Mulai ulang ponsel untuk menerapkan pengaturan</string>
-	<string name="pref_sense3_lockscreen_title">Layar kunci Sense 3</string>
-	<string name="pref_sense3_lockscreen_summary">Dengan fungsi dasar</string>
-	<string name="pref_gingerdx_about_title">Tentang</string>
-	<string name="pref_gingerdx_about_default">GingerDX by TeamFun</string>
+	<string name="gdx_other_screen1">Fitur lain</string>
+	<string name="gdx_other_screen_hidemsgavatar">Menghilangka n avatar pada konten SMS</string>
+	<string name="gdx_other_screen_copypaste">Pintasan Salin / Tempel </string>
+	<string name="gdx_other_screen_status_bar_transparency1">Bilah status transparan</string>
+	<string name="gdx_other_screen_status_bar_transparency2">Mulai ulang ponsel untuk menerapkan pengaturan</string>
+	<string name="gdx_other_screen_senselock1">Layar kunci Sense 3</string>
+	<string name="gdx_other_screen_senselock2">Dengan fungsi dasar</string>
+	<string name="gdx_other_screen_about1">Tentang</string>
+	<string name="gdx_other_screen_about2">GingerDX by TeamFun</string>
 
 	<string name="pref_custom_carrier_title">Tulisan operator</string>
 	<string name="pref_custom_carrier_summary">Muncul di layar terkunci atau statusbar</string>

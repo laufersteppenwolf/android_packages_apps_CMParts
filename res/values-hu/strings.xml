@@ -811,32 +811,32 @@
 	<!-- GingerDX beállításai -->
 	<string name="gingerdx_settings_title">GingerDX beállításai</string>
 	<string name="gingerdx_settings_summary">GingerDX speciális beállításai</string>
-	<string name="pref_led_disabled_group_title">LED tiltása este...</string>
-	<string name="pref_led_disabled_title">...aktiválva</string>
-	<string name="pref_led_disabled_from_title">...ettől</string>
-	<string name="pref_led_disabled_to_title">...eddig</string>
+	<string name="gdx_led_screen2">LED tiltása este...</string>
+	<string name="gdx_led_screen_enabled">...aktiválva</string>
+	<string name="gdx_led_screen_from1">...ettől</string>
+	<string name="gdx_led_screen_to1">...eddig</string>
 
 	<string name="flipping_down_title">Telefon megfordítása...</string>
 	<string name="pref_flipping_down_mutes_ringer_title">...el némítja a csengést</string>
 	<string name="pref_flipping_down_snoozes_alarm_title">...s zundiba állítja az ébresztőt</string>
 	<string name="pref_flipping_down_snoozes_alarm_summary">Ne m az én hibám ha elalszol!</string>
 
-	<string name="call_features_title">Hívás jellemzői</string>
-	<string name="pref_call_me_louder_title">Csörögj hangosabban</string>
-	<string name="pref_call_me_louder_summary">Hangosabb csengés ha a telefon táskában van</string>
-	<string name="pref_back_button_ends_call_title">Vissza gomb befejezi a hívást</string>
-	<string name="pref_ringer_loop_title">Csengőhang ismétlése</string>
-	<string name="pref_ringer_loop_summary">Újra és újra...</string>
+	<string name="gdx_call_screen1">Hívás jellemzői</string>
+	<string name="gdx_call_screen_sound_lounder1">Csörögj hangosabban</string>
+	<string name="gdx_call_screen_sound_lounder2">Hangosabb csengés ha a telefon táskában van</string>
+	<string name="gdx_call_screen_buttons_back2">Vissza gomb befejezi a hívást</string>
+	<string name="gdx_call_screen_sound_loop1">Csengőhang ismétlése</string>
+	<string name="gdx_call_screen_sound_loop2">Újra és újra...</string>
 
-	<string name="other_features_title">Egyéb beállítások</string>
-	<string name="pref_hide_avatar_message_title">Névjegy képének rejtése SMS-szálaknál</string>
-	<string name="pref_quick_copy_paste_title">Gyors másolás / Gyors beillesztés</string>
-	<string name="pref_transparent_status_bar_title">Állapotso r átlátszósága</string>
-	<string name="pref_transparent_status_bar_summary">Újraind ítás szüséges érvényesítéshez!</string>
-	<string name="pref_sense3_lockscreen_title">Sense 3 Zárképernyő</string>
-	<string name="pref_sense3_lockscreen_summary">Csak alap funkciók!</string>
-	<string name="pref_gingerdx_about_title">Névjegy</string>
-	<string name="pref_gingerdx_about_default">GingerDX by TeamFun</string>
+	<string name="gdx_other_screen1">Egyéb beállítások</string>
+	<string name="gdx_other_screen_hidemsgavatar">Névjegy képének rejtése SMS-szálaknál</string>
+	<string name="gdx_other_screen_copypaste">Gyors másolás / Gyors beillesztés</string>
+	<string name="gdx_other_screen_status_bar_transparency1">Állapotso r átlátszósága</string>
+	<string name="gdx_other_screen_status_bar_transparency2">Újraind ítás szüséges érvényesítéshez!</string>
+	<string name="gdx_other_screen_senselock1">Sense 3 Zárképernyő</string>
+	<string name="gdx_other_screen_senselock2">Csak alap funkciók!</string>
+	<string name="gdx_other_screen_about1">Névjegy</string>
+	<string name="gdx_other_screen_about2">GingerDX by TeamFun</string>
 
 	<string name="pref_custom_carrier_title">Egyedi Zárképernyő szöveg</string>
 	<string name="pref_custom_carrier_summary">A Zárképernyőn / Állapotsoron jelenik meg</string>
