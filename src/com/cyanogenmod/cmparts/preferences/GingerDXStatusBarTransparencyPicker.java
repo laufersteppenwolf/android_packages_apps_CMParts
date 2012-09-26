@@ -28,7 +28,6 @@ public final class GingerDXStatusBarTransparencyPicker extends DialogPreference 
 
 	@Override
 	protected View onCreateDialogView() {
-		this.value = getPersistedInt(default_v);
 		View view = ((LayoutInflater) getContext()
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(R.layout.gingerdx_preference_transparency_picker, null);
 
@@ -56,6 +55,7 @@ public final class GingerDXStatusBarTransparencyPicker extends DialogPreference 
 	}
 
 	public void onProgressChanged(SeekBar seek, int value, boolean fromTouch) {
+		mValue = value;
 		mTextView.setText(Integer.toString(value));
 	}
 
