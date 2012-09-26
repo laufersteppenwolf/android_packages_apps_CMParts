@@ -39,6 +39,11 @@ public final class GingerDXStatusBarTransparencyPicker extends DialogPreference 
 		
 		mTextView = (TextView) view.findViewById(R.id.value);
 		mTextView.setText(Integer.toString(mValue));
+		
+		TextView textMaxLabel = (TextView) view.findViewById(R.id.max);
+		textMaxLabel.setText("255");
+		TextView textMinLabel = (TextView) view.findViewById(R.id.min);
+		textMinLabel.setText("0");
 		return view;
 	}
 
