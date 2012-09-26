@@ -824,6 +824,12 @@
     <string name="perm_enable_warning_message">Uwaga!\nOdwołanie większości uprawnień prawdopodobnie spowoduje błędne działanie aplikacji. Jeśli wymuszane jest zamknięcie aplikacji, której odebrano uprawnienia, należy zapewnić jej oczekiwane przywileje lub zaprzestać jej użytkowania.\nProsimy o nie zgłaszanie błędów, jeśli aplikacja z odebranymi prawami nie działa jak powinna!</string>
     <string name="perm_enable_warning_title">Czy jesteś pewien?</string>
 
+
+<string name="pref_ksm_title">Kernel Samepage Merging</string>
+<string name="pref_ksm_summary">Obniża zużycie pamięci fizycznej i podnosi wydajność</string>
+<string name="title_toggle_ultra_brightness">Ultra-jasność</string>
+
+
     
     <!-- A2SD Settings strings -->
     <string name="a2sd_settings_title">Ustawienia A2SD (ext)</string>
