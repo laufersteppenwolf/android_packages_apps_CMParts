@@ -145,11 +145,7 @@
             android:key="pref_center_clock_status_bar"
             android:summary="@string/gdx_other_screen_status_bar_centerclock2"
             android:title="@string/gdx_other_screen_status_bar_centerclock1" />
-        <ListPreference
-            android:dialogTitle="@string/gdx_other_screen_status_bar_transparency1"
-            android:entries="@array/entries_transparent_status_bar"
-            android:entryValues="@array/values_transparent_status_bar"
-            android:key="pref_transparent_status_bar"
+        <com.cyanogenmod.cmparts.preferences.GingerDXStatusBarTransparencyPicker
             android:summary="@string/gdx_other_screen_status_bar_transparency2"
             android:title="@string/gdx_other_screen_status_bar_transparency1" />
         <CheckBoxPreference
