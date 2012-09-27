@@ -901,7 +901,7 @@
     <string name="gdx_other_screen2">Ultra brightness, Sense 3 lockscreen, center clock etc.</string>
     <string name="gdx_other_screen_userinterface">User Interface</string>
     <string name="gdx_other_screen_status_bar_centerclock1">Center clock on status bar</string>
-    <string name="gdx_other_screen_status_bar_centerclock2">Instead of on the right. Requires reboot.</string>
+    <string name="gdx_other_screen_status_bar_centerclock2">Instead of on the right</string>
     <string name="gdx_other_screen_status_bar_transparency1">Status bar transparency</string>
     <string name="gdx_other_screen_status_bar_transparency2">Reboot to apply changes</string>
     <string name="gdx_other_screen_senselock1">Sense 3 Lockscreen</string>

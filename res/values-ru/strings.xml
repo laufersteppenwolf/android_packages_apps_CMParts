@@ -887,7 +887,7 @@
     <string name="gdx_other_screen2">Ультра-яркость, Sense 3 экран блокировки, часы по центру и т.д.</string>
     <string name="gdx_other_screen_userinterface">Пользовательский интерфейс</string>
     <string name="gdx_other_screen_status_bar_centerclock1">Часы по центру</string>
-    <string name="gdx_other_screen_status_bar_centerclock2">Часы по центру панели состояния. Необходима перезагрузка!</string>
+    <string name="gdx_other_screen_status_bar_centerclock2">Часы по центру панели состояния</string>
     <string name="gdx_other_screen_status_bar_transparency1">Прозрачность статусбара</string>
     <string name="gdx_other_screen_status_bar_transparency2">Необходима перезагрузка!</string>
     <string name="gdx_other_screen_senselock1">Sense 3 Экран блокировки</string>
