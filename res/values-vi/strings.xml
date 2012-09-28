@@ -38,13 +38,13 @@
     <string name="ok_button">Xác nhận </string>
     <string name="cancel_button">Hủy</string>
 
- <string name="alarm_settings_title">Cài đặt chuông báo</string>
+ <string name="gdx_alarm_screen1">Cài đặt chuông báo</string>
 
-    <string name="pref_achep_alarm_math_questions_title">Câu hỏi toán học</string>
-    <string name="pref_achep_alarm_math_questions_summary">Trả lời câu hỏi toán để dừng chuông</string>
-    <string name="pref_achep_alarm_flip_action_title">Úp máy</string>
-    <string name="pref_achep_alarm_flip_action_summary">Úp máy để lùi chuông hoặc tắt chuông</string>
-    <string name="pref_achep_alarm_shake_action_title">Lắc máy</string>
-    <string name="pref_achep_alarm_shake_action_summary">Lắc máy để lùi chuông hoặc tắt chuông</string>
-    <string name="pref_achep_alarm_increasing_volume_title">Âm lượng tăng dần</string>
+    <string name="gdx_alarm_screen_mathquiz1">Câu hỏi toán học</string>
+    <string name="gdx_alarm_screen_mathquiz2">Trả lời câu hỏi toán để dừng chuông</string>
+    <string name="gdx_alarm_screen_flip1">Úp máy</string>
+    <string name="gdx_alarm_screen_flip2">Úp máy để lùi chuông hoặc tắt chuông</string>
+    <string name="gdx_alarm_screen_shake1">Lắc máy</string>
+    <string name="gdx_alarm_screen_shake2">Lắc máy để lùi chuông hoặc tắt chuông</string>
+    <string name="gdx_alarm_screen_increasing">Âm lượng tăng dần</string>
 </resources>

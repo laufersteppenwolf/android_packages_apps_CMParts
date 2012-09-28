@@ -766,8 +766,42 @@
     <string name="perm_enable_warning_message">Attention!\nLa plupart du temps, interdire une permission provoque un mauvais fonctionnement de l\'application. Si l\'application révoquée force-close réactivez la permission ou n\'utilisez pas l\'application.\nN\'ENVOYEZ PAS de rapport de bug si l\'application en question ne fonctionne pas comme prévu !</string>
     <string name="perm_enable_warning_title">Etes-vous sûr ?</string>
     
+    <!-- dx -->
     <!-- GingerDX settings -->
     <string name="gingerdx_settings_title">Configuration de GingerDX</string>
     <string name="gingerdx_settings_summary">Changer options de GingerDX spécifiques</string>
+    <string name="gdx_led_screen2">LED désactivée la nuit...</string>
+    <string name="gdx_led_screen_enabled">...activée</string>
+    <string name="gdx_led_screen_from1">...de</string>
+    <string name="gdx_led_screen_to1">...à</string>
+
+    <string name="flipping_down_title">Retournement...</string>
+    <string name="pref_flipping_down_mutes_ringer_title">...désactive la sonnerie</string>
+    <string name="pref_flipping_down_snoozes_alarm_title">...éteint l\'alarme</string>
+    <string name="pref_flipping_down_snoozes_alarm_summary">Aucune responsabilité étant renvoyée!</string>
+
+    <string name="gdx_call_screen1">Fonctions des appels</string>
+    <string name="gdx_call_screen_sound_lounder1">Call Me Louder</string>
+    <string name="gdx_call_screen_sound_lounder2">Sonne plus fortement quand le téléphone est dans un sac</string>
+    <string name="gdx_call_screen_buttons_back2">Raccrocher grâce au bouton retour</string>
+    <string name="gdx_call_screen_sound_loop1">Sonnerie répété</string>
+    <string name="gdx_call_screen_sound_loop2">Encore et encore et...</string>
+
+    <string name="gdx_other_screen1">Autres options</string>
+	<string name="gdx_other_screen_hidemsgavatar">Cacher avatar dans les SMS</string>
+	<string name="gdx_other_screen_copypaste">Copier rapide / Coller rapide</string>
+    <string name="gdx_other_screen_status_bar_transparency1">Barre de notification transparente</string>
+    <string name="gdx_other_screen_status_bar_transparency2">Redémarrer pour appliquer les changements</string>
+    <string name="gdx_other_screen_senselock1">Ecran de vérouillage Sense 3</string>
+    <string name="gdx_other_screen_senselock2">Fonction seulement basique</string>
+    <string name="gdx_other_screen_about1">A propos de...</string>
+    <string name="pref_gingerdx_about_default">GingerDX by B.Jay and eagleeyetom</string>
+    
+    <string name="gdx_carrier_carrier">Texte d\'opérateur personnalisé</string>
+    <string name="gdx_carrier_note">Apparait sur l\'écran de vérouillage et sur la barre de notification</string>
+    <string name="carrier_label">Texte d\'opérateur (blanc pour désactivée)</string>
+    <string name="custom_carrier">Texte d\'opérateur</string>
+    <string name="ok_button">Valider</string>
+    <string name="gdx_carrier_btn_cancel">Annuler</string>
 
 </resources>
