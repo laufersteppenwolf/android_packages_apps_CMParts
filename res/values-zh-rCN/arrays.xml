@@ -16,7 +16,11 @@
  -->
 
 <resources>
-
+    <string-array name="achep_alarm_flip_actions" translatable="true">
+        <item>禁用</item>
+        <item>打盹</item>
+        <item>解除</item>
+    </string-array>
     <string-array name="entries_recent_apps_num">
         <item>8</item>
         <item>12</item>
