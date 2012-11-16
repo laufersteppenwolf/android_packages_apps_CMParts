@@ -463,7 +463,11 @@
     <string name="pref_use_dithering_title">Enable surface dithering</string>
     <string name="pref_use_dithering_summary">Dithering surfaces improves image quality at the cost of performance (requires reboot)</string>
 
-    <!-- Performance Settings : 16bpp Alpha -->
+    <!-- Performance Settings : KSM -->
+    <string name="pref_ksm_title">Kernel samepage merging</string>
+    <string name="pref_ksm_summary">KSM reduces physical memory requirements and improves performance</string>
+
+<!-- Performance Settings : 16bpp Alpha -->
     <string name="pref_use_16bpp_alpha_title">Use 16bit transparency</string>
     <string name="pref_use_16bpp_alpha_summary">Using 16bit transparency can improve scrolling performance, but may cause visual artifacts (requires reboot)</string>
 
@@ -483,9 +487,9 @@
     <string name="pref_heapsize_title">VM heap size</string>
     <string name="pref_heapsize_summary">Maximum amount of memory per VM heap (requires reboot)</string>
 
-    <!-- Performance : Disable bootanimation -->
+    <!-- Performance : Disable bootanimation
     <string name="pref_disable_bootanimation_title">Disable boot animation</string>
-    <string name="pref_disable_bootanimation_summary">Don\'t show the boot animation for faster boot</string>
+    <string name="pref_disable_bootanimation_summary">Don\'t show the boot animation for faster boot</string> -->
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">Lock home in memory</string>
@@ -807,6 +811,7 @@
     <string name="cpu_settings_title">CPU settings</string>
     <string name="cpu_title">CPU settings</string>
     <string name="cpu_summary">Governor and clock settings</string>
+    <string name="cpu_cur_freq_title">Current CPU frequency</string>
     <string name="cpu_governors_title">Available governors</string>
     <string name="cpu_governors_summary">List of available governors\nCurrently selected: %S</string>
     <string name="cpu_min_freq_title">Min CPU frequency</string>
@@ -816,9 +821,107 @@
     <string name="cpu_set_on_boot">Set on boot</string>
     <string name="cpu_set_on_boot_summary">Restore CPU settings on boot</string>
 
+    <!-- A2SD Settings strings -->
+    <string name="a2sd_settings_title">A2SD (ext) settings</string>
+    <string name="a2sd_title">A2SD (ext) settings</string>
+    <string name="a2sd_summary">App to SD card (ext) settings</string>    
+    <string name="a2sd_mode_summary">List of A2SD modes\nCurrently installed: %S</string>
+    <string name="a2sd_modes_title">Available modes (requires reboot)</string>
+    <string name="a2sd_info_title">A2SD Information</string>
+    <string name="a2sd_dialog">A2SD Information</string>
+    <string name="a2sd_loading">Loading A2SD information\u2026</string>
+    <string name="a2sd_error">Error loading A2SD information\u2026</string> 
+    
     <!-- Permissions Management Settings strings -->
     <string name="perm_enable_management">Permission management</string>
     <string name="perm_enable_management_summary">Enable application permissions management</string>
     <string name="perm_enable_warning_message">Warning!\nRevoking most permissions will most likely cause applications to malfunction. If an application with revoked permissions force-closes please grant the expected permissions or don\'t use the application.\nPlease DO NOT send bug reports to Cyanogenmod if an application with revoked permissions is not working as expected!</string>
     <string name="perm_enable_warning_title">Are you sure?</string>
+
+    <!-- GingerDX settings -->
+    <string name="gingerdx_settings_title">GingerDX settings</string>
+    <string name="gingerdx_settings_summary">Change GingerDX-specific options</string>
+    
+	<!-- Call -->
+    <string name="gdx_call_screen1">Call features</string>
+    <string name="gdx_call_screen2">Call me lounder, loop ringtone, custon carrier label etc.</string>
+    <string name="gdx_call_screen_sound">Sound</string>
+    <string name="gdx_call_screen_sound_pickup1">Pick up to call</string>
+    <string name="gdx_call_screen_sound_pickup2">Picking up the phone calls the number in dialer</string>
+    <string name="gdx_call_screen_sound_lounder1">Call Me Louder</string>
+    <string name="gdx_call_screen_sound_lounder2">Louder ringer when phone is inside bags</string>
+    <string name="gdx_call_screen_sound_loop1">Loop ringtone</string>
+    <string name="gdx_call_screen_sound_loop2">Again and again and...</string>
+    <string name="gdx_call_screen_sound_flipdown1">Flip down</string>
+    <string name="gdx_call_screen_sound_flipdown2">Flippin down mutes the ringer</string>
+    <string name="gdx_call_screen_buttons">Buttons</string>
+    <string name="gdx_call_screen_buttons_back1">Back</string>
+    <string name="gdx_call_screen_buttons_back2">Pressing back button ends call</string>
+    <string name="gdx_call_screen_buttons_menu1">Menu</string>
+    <string name="gdx_call_screen_buttons_menu2">Pressing back button answers call</string>
+    <string name="gdx_call_screen_other">Other</string>
+    <string name="gdx_call_screen_other_carrier1">Custom carrier text</string>
+    <string name="gdx_call_screen_other_carrier2">Appears on lockscreen/statusbar</string>
+	
+	<!-- Alarm -->
+    <string name="gdx_alarm_screen1">Alarm</string>
+    <string name="gdx_alarm_screen2">Math quiz, flip/shake actions, increasing volume etc.</string>
+    <string name="gdx_alarm_screen_mathquiz1">Math quiz</string>
+    <string name="gdx_alarm_screen_mathquiz2">Solve a math quiz to stop the Alarm</string>
+    <string name="gdx_alarm_screen_flip1">Flip action</string>
+    <string name="gdx_alarm_screen_flip2">Flip to snooze / dismiss the alarm</string>
+    <string name="gdx_alarm_screen_shake1">Shake action</string>
+    <string name="gdx_alarm_screen_shake2">Shake to snooze / dismiss the alarm</string>
+    <string name="gdx_alarm_screen_increasing">Increasing volume</string>
+    
+	<!-- Jelly Bean -->
+    <string name="gdx_jelly_screen1">Jelly Beans</string>
+    <string name="gdx_jelly_screen2">Status bar, notifications etc.</string>
+    <string name="gdx_jelly_screen_status_bar_category">STATUS BAR</string>
+    <string name="gdx_jelly_screen_information1">Notes</string>
+    <string name="gdx_jelly_screen_information2">To applying settings reboot is required!\n\n2012 © AChep@xda (artemchep@gmail.com)</string>
+    <string name="gdx_jelly_screen_status_bar">Status bar panel</string>
+    <string name="gdx_jelly_screen_sbbuttons1">Soft buttons</string>
+    <string name="gdx_jelly_screen_sbbuttons2">Soft buttons at bottom of the screen</string>
+    <string name="gdx_jelly_screen_status_bar_notification">Notifications</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger1">Bigger notifications</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger2">It\'s experimental feature!</string>
+	
+	<!-- LED -->
+    <string name="gdx_led_screen1">LED</string>
+    <string name="gdx_led_screen2">Options to disable LED at the night</string>
+    <string name="gdx_led_screen_enabled">Disable LED</string>
+    <string name="gdx_led_screen_from1">From</string>
+    <string name="gdx_led_screen_from2">When LED will be disabled</string>
+    <string name="gdx_led_screen_to1">To</string>
+    <string name="gdx_led_screen_to2">When LED will be enabled</string>
+	
+	<!-- Other -->
+    <string name="gdx_other_screen1">Other</string>
+    <string name="gdx_other_screen2">Ultra brightness, Sense 3 lockscreen, center clock etc.</string>
+    <string name="gdx_other_screen_userinterface">User Interface</string>
+    <string name="gdx_other_screen_status_bar_centerclock1">Center clock on status bar</string>
+    <string name="gdx_other_screen_status_bar_centerclock2">Instead of on the right</string>
+    <string name="gdx_other_screen_status_bar_transparency1">Status bar transparency</string>
+    <string name="gdx_other_screen_status_bar_transparency2">Reboot to apply changes</string>
+    <string name="gdx_other_screen_senselock1">Sense 3 Lockscreen</string>
+    <string name="gdx_other_screen_senselock2">Only basic functionality</string>
+    <string name="gdx_other_screen_hidemsgavatar">Hide avatar in SMS content</string>
+    <string name="gdx_other_screen_ultrabrightness1">Ultra brightness</string>
+    <string name="gdx_other_screen_ultrabrightness2">Increases the brightness level (may increase battery consumption)</string>
+    <string name="gdx_other_screen_copypaste">Quick copy / paste</string>
+    <string name="gdx_other_screen_updates1">Check-for-update hour</string>
+    <string name="gdx_other_screen_updates2">Set hour for update-check</string>
+    <string name="gdx_other_screen_about1">About</string>
+    <string name="gdx_other_screen_about2">GingerDX by TeamFun</string>
+	
+	<!-- Custom carrier label -->
+    <string name="gdx_carrier_note">Empty to disable</string>
+    <string name="gdx_carrier_carrier">Carrier text</string>
+    <string name="gdx_carrier_btn_save">Save</string>
+    <string name="gdx_carrier_btn_cancel">Cancel</string>
+
+    <string name="title_toggle_ultra_brightness">Toggle Ultra-Brightness</string>
+
 </resources>
+
