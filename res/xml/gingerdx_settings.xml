@@ -95,7 +95,11 @@
         <PreferenceCategory android:title="@string/gdx_jelly_screen_status_bar_category" >
             <CheckBoxPreference
                 android:key="pref_achep_jb_status_bar"
-                android:title="@string/gdx_jelly_screen_status_bar" /><!--
+                android:title="@string/gdx_jelly_screen_status_bar" />
+            <com.cyanogenmod.cmparts.preferences.GingerDXJBStatusBarPanelTransparencyPicker
+                android:key="pref_achep_jb_status_bar_panel_background_transparency"
+                android:summary="@string/gdx_jelly_screen_status_bar_panel_transparency2"
+                android:title="@string/gdx_jelly_screen_status_bar_panel_transparency1" /><!--
 			<CheckBoxPreference
 				android:key="pref_achep_jb_status_bar_soft_buttons"
 				android:summary="@string/gdx_jelly_screen_sbbuttons2"

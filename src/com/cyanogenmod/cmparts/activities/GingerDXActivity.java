@@ -1,6 +1,7 @@
 package com.cyanogenmod.cmparts.activities;
 
 import com.cyanogenmod.cmparts.R;
+import com.cyanogenmod.cmparts.preferences;
 
 import android.content.Context;
 
@@ -55,6 +56,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private static final String ACHEP_ALARM_INCREASING_VOLUME_ENABLED_PREF = "pref_achep_alarm_increasing_volume_enabled";
     // Jellychep
     private static final String ACHEP_JB_STATUS_BAR_PREF = "pref_achep_jb_status_bar";
+    private static final String ACHEP_JB_STATUS_BAR_PANEL_BACKGROUND_TRANSPARENCY_PREF = "pref_achep_jb_status_bar_panel_background_transparency";
     private static final String ACHEP_JB_STATUS_BAR_NOTIFICATION_PREF = "pref_achep_jb_status_bar_notification";
     private static final String ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER_PREF = "pref_achep_jb_status_bar_notification_bigger";
   ///  private static final String ACHEP_JB_STATUS_BAR_SOFT_BUTTONS_PREF = "pref_achep_jb_status_bar_soft_buttons";
@@ -75,6 +77,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private CheckBoxPreference mAlarmMathQuestions;
     // Jellychep
     private CheckBoxPreference mJellyStatusbar;
+    private GingerDXTransparencyPickerBase mJellyStatusbarPanelTransparency;
     private CheckBoxPreference mJellyStatusbarNotification;
     private CheckBoxPreference mJellyStatusbarNotificationBigger;
  ///   private CheckBoxPreference mJellyStatusBarSoftButtons;
@@ -131,7 +134,9 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         mJellyStatusbar = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_PREF);
         mJellyStatusbarNotification = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_NOTIFICATION_PREF);
         mJellyStatusbarNotificationBigger = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER_PREF);
+        mJellyStatusbarPanelTransparency = (GingerDXTransparencyPickerBase) prefSet.findPreference(ACHEP_JB_STATUS_BAR_PANEL_BACKGROUND_TRANSPARENCY_PREF);
         mJellyStatusbar.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR, 0) == 1);
+        updateJellyStatusbarPanelTransparencyPref(mJellyStatusbar.isChecked());
         mJellyStatusbarNotification.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION, 0) == 1);
         mJellyStatusbarNotificationBigger.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER, 0) == 1);
         updateJellyStatusbarNotificationPref(mJellyStatusbarNotification.isChecked());
@@ -247,6 +252,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         } else*/ if (preference == mJellyStatusbar) {
             Settings.System.putInt(getContentResolver(),
                 Settings.System.ACHEP_JB_STATUS_BAR, mJellyStatusbar.isChecked() ? 1 : 0);
+            updateJellyStatusbarPanelTransparencyPref(mJellyStatusbar.isChecked());
             return true;
         }
         else if (preference == mJellyStatusbarNotification) {
@@ -371,6 +377,9 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
    // Additional funny voids
    private void updateJellyStatusbarNotificationPref(boolean checked){
       mJellyStatusbarNotificationBigger.setEnabled(checked);
+   }
+   private void updateJellyStatusbarPanelTransparencyPref(boolean checked){
+      mJellyStatusbarPanelTransparency.setEnabled(checked);
    }
    private void updateLedDisabledPref(boolean checked){
       mLedDisabledToPref.setEnabled(checked);

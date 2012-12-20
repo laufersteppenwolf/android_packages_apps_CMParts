@@ -883,6 +883,8 @@
     <string name="gdx_jelly_screen_status_bar">Status bar panel</string>
     <string name="gdx_jelly_screen_sbbuttons1">Soft buttons</string>
     <string name="gdx_jelly_screen_sbbuttons2">Soft buttons at bottom of the screen</string>
+    <string name="gdx_jelly_screen_status_bar_panel_transparency1">Status bar panel transparency</string>
+    <string name="gdx_jelly_screen_status_bar_panel_transparency2">Set transparency of the Jelly Bean status bar panel</string>
     <string name="gdx_jelly_screen_status_bar_notification">Notifications</string>
     <string name="gdx_jelly_screen_status_bar_notification_bigger1">Bigger notifications</string>
     <string name="gdx_jelly_screen_status_bar_notification_bigger2">It\'s experimental feature!</string>
