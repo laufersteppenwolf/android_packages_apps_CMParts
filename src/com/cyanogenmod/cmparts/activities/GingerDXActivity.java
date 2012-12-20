@@ -77,7 +77,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private CheckBoxPreference mAlarmMathQuestions;
     // Jellychep
     private CheckBoxPreference mJellyStatusbar;
-    private GingerDXJBStatusBarPanelTransparencyPicker mJellyStatusbarPanelTransparency;
+    private GingerDXTransparencyPickerBase mJellyStatusbarPanelTransparency;
     private CheckBoxPreference mJellyStatusbarNotification;
     private CheckBoxPreference mJellyStatusbarNotificationBigger;
  ///   private CheckBoxPreference mJellyStatusBarSoftButtons;
@@ -134,7 +134,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         mJellyStatusbar = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_PREF);
         mJellyStatusbarNotification = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_NOTIFICATION_PREF);
         mJellyStatusbarNotificationBigger = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER_PREF);
-        mJellyStatusbarPanelTransparency = (GingerDXJBStatusBarPanelTransparencyPicker) prefSet.findPreference(ACHEP_JB_STATUS_BAR_PANEL_BACKGROUND_TRANSPARENCY_PREF);
+        mJellyStatusbarPanelTransparency = (GingerDXTransparencyPickerBase) prefSet.findPreference(ACHEP_JB_STATUS_BAR_PANEL_BACKGROUND_TRANSPARENCY_PREF);
         mJellyStatusbar.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR, 0) == 1);
         updateJellyStatusbarPanelTransparencyPref(mJellyStatusbar.isChecked());
         mJellyStatusbarNotification.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION, 0) == 1);
