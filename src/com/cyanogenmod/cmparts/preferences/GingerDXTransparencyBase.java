@@ -12,7 +12,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 
-public final class GingerDXTransparencyPickerBase extends DialogPreference implements
+public class GingerDXTransparencyPickerBase extends DialogPreference implements
 		OnSeekBarChangeListener {
 	
 	private static final int MAX = 255;
