@@ -72,6 +72,8 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
     private CheckBoxPreference mStatusBarHeadset;
 
     private EditTextPreference mStatusBarCarrierLabelCustom;
+	
+	private boolean mJellyStatusBar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -80,6 +82,8 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
         setTitle(R.string.ui_status_bar_title);
         addPreferencesFromResource(R.xml.ui_status_bar);
 
+		mJellyStatusBar = Settings.System.getInt(getContentResolver(),
+                Settings.System.ACHEP_JB_STATUS_BAR, 0) == 1;
         PreferenceScreen prefSet = getPreferenceScreen();
 
         mStatusBarClock = (CheckBoxPreference) prefSet.findPreference(PREF_STATUS_BAR_CLOCK);
@@ -98,6 +102,10 @@ public class UIStatusBarActivity extends PreferenceActivity implements OnPrefere
                 Settings.System.STATUS_BAR_BRIGHTNESS_TOGGLE, 0) == 1));
         mStatusBarHeadset.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_HEADSET, 1) == 1));
+				
+		if (mJellyStatusBar){
+			mStatusBarCompactCarrier.setEnabled(false);
+		}
 
         try {
             if (Settings.System.getInt(getContentResolver(), 

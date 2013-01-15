@@ -6,7 +6,11 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
@@ -23,12 +27,7 @@
                 <action android:name="android.app.NotificationManager.ACTION_NOTIFY" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".intents.BootReceiver" android:enabled="true">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-        <activity android:name=".activities.MainActivity" android:label="@string/app_name">
+         <activity android:name=".activities.MainActivity" android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT" />
@@ -208,6 +207,18 @@
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
+        <activity android:name=".activities.A2SDActivity"
+            android:label="@string/a2sd_settings_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.A2SDInfo"
+            android:label="@string/a2sd_info_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
         <activity android:name=".activities.HapticTweaksActivity"
             android:label="@string/haptic_title">
             <intent-filter>
@@ -320,7 +331,28 @@
                 android:resource="@xml/appwidget_info" />
         </receiver>
 
+        <receiver android:name=".intents.CPUReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
         <service android:enabled="true" android:name=".services.RenderFXService" />
         <service android:enabled="true" android:name=".services.BatteryService" />
+
+        <!-- GingerDX -->
+        <activity android:name=".activities.GingerDXActivity" android:label="@string/gingerdx_settings_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.cyanogenmod.cmparts.SHORTCUT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.CustomCarrier" android:label="@string/gdx_carrier_carrier" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.cyanogenmod.cmparts.SHORTCUT" />
+            </intent-filter>
+        </activity>
+        
     </application>
 </manifest>
