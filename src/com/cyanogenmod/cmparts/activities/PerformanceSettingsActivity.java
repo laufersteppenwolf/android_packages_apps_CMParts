@@ -90,11 +90,11 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private static final String PURGEABLE_ASSETS_DEFAULT = "0";
 
-    //private static final String DISABLE_BOOTANIMATION_PREF = "pref_disable_bootanimation";
+    private static final String DISABLE_BOOTANIMATION_PREF = "pref_disable_bootanimation";
 
-    //private static final String DISABLE_BOOTANIMATION_PERSIST_PROP = "persist.sys.nobootanimation";
+    private static final String DISABLE_BOOTANIMATION_PERSIST_PROP = "persist.sys.nobootanimation";
 
-    //private static final String DISABLE_BOOTANIMATION_DEFAULT = "0";
+    private static final String DISABLE_BOOTANIMATION_DEFAULT = "0";
 
     private static final String LOCK_HOME_PREF = "pref_lock_home";
 
