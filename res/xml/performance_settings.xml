@@ -50,9 +50,9 @@
             android:title="@string/pref_ksm_title"
             android:summary="@string/pref_ksm_summary" />
 
-<!-- <CheckBoxPreference android:key="pref_disable_bootanimation"
+        <CheckBoxPreference android:key="pref_disable_bootanimation"
             android:title="@string/pref_disable_bootanimation_title"
-            android:summary="@string/pref_disable_bootanimation_summary" /> -->
+            android:summary="@string/pref_disable_bootanimation_summary" />
 
         <CheckBoxPreference android:key="pref_lock_home"
             android:title="@string/pref_lock_home_title"
