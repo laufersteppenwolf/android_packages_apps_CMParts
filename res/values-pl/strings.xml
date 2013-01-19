@@ -889,6 +889,8 @@
     <string name="gdx_jelly_screen_information1">Uwagi</string>
     <string name="gdx_jelly_screen_information2">Po wybraniu wymagany jest restart telefonu!\n\n2012 © AChep</string>
     <string name="gdx_jelly_screen_status_bar">Belka statusu</string>
+    <string name="gdx_jelly_screen_status_bar_panel_transparency1">Przeźroczystość belki statusu</string>
+    <string name="gdx_jelly_screen_status_bar_panel_transparency2">Ustaw przeźroczystość Jelly Bean\'owej belki statusu</string>
     <string name="gdx_jelly_screen_status_bar_notification">Powiadomienia</string>
     <string name="gdx_jelly_screen_status_bar_notification_bigger1">Większe powiadomienia</string>
     <string name="gdx_jelly_screen_status_bar_notification_bigger2">EKSPERYMENTALNE!</string>
