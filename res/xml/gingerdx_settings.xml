@@ -6,6 +6,16 @@
     <!-- <CheckBoxPreference android:key="pref_do_profile_flinging" -->
     <!-- android:title="Profile flinging"/> -->
 
+	
+	<!-- PIE Controls -->
+	<PreferenceScreen
+			android:title="@string/pie_controls_title" 
+			android:summary="@string/pie_controls_summary">
+			<intent
+				android:action="android.intent.action.MAIN"
+				android:targetClass="com.cyanogenmod.cmparts.activities.UIPieActivity"
+				android:targetPackage="com.cyanogenmod.cmparts" />
+	</PreferenceScreen>
 
     <!-- Call options -->
 
@@ -183,9 +193,7 @@
             android:summary="@string/gdx_other_screen_about2"
             android:title="@string/gdx_other_screen_about1" />
 		</PreferenceCategory>
-
-
-
+		
         <!--
             <CheckBoxPreference android:key="pref_recent_apps_status_bar"
 		    android:title="@string/pref_recent_apps_status_bar_title"
