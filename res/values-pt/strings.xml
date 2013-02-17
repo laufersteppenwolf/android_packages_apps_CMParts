@@ -10,7 +10,7 @@
     <string name="display_settings_title_head">Exibição</string>
     <string name="display_settings_title_subhead">Configurações de exibição</string>
     <string name="display_settings_summary_head">Animações, girar e intervalos de exibição</string>
-	<string name="display_settings_summary_head_nobacklight">Animações de tela, rotação</string>
+    <string name="display_settings_summary_head_nobacklight">Animações de tela, rotação</string>
     <string name="input_settings_title_head">Entrada</string>
     <string name="input_settings_title_subhead">Configurações de entrada</string>
     <string name="input_settings_summary_head">Comportamento, botões e retorno de toque</string>
@@ -26,7 +26,7 @@
     <string name="sound_settings_title_subhead">Configurações de Som</string>
     <string name="sound_settings_summary_head">Volume do som, foco do audio, horas de silêncio</string>
     <string name="system_settings_title_head">Sistema</string>
-	<string name="system_settings_title_subhead">Configurações do Sistema</string>
+    <string name="system_settings_title_subhead">Configurações do Sistema</string>
     <string name="system_settings_summary_head">Relatório de mudanças do Sistema, estado e notificações de atualização</string>
 
     <!--  Update Notifications -->
@@ -35,10 +35,10 @@
 
     <!-- User interface -->
     <string name="ui_title">Interface de usuário</string>
-	
-	<string name="pref_electron_beam_animation_on">Animação ao acender</string>
+    
+    <string name="pref_electron_beam_animation_on">Animação ao acender</string>
     <string name="pref_electron_beam_animation_off">Animação ao desligar</string>
-	<string name="pref_rotation_animation_title">Animação ao rotacionar</string>
+    <string name="pref_rotation_animation_title">Animação ao rotacionar</string>
     <string name="pref_rotation_animation_summary">Requer reinício</string>
 
     <!-- User interface: Tablet tweaks -->
@@ -197,7 +197,7 @@
     <string name="trackball_category_screen">Gerenciar categorias</string>
     <string name="trackball_category_add_title">Adicionar categoria</string>
     <string name="trackball_category_add_summary">Adicionar uma categoria à lista</string>
-	<string name="trackball_category_add_error_title">ERRO</string>
+    <string name="trackball_category_add_error_title">ERRO</string>
     <string name="trackball_category_add_error_summary">O nome da categoria não pode conter \'=\'</string>
     <string name="trackball_category_remove_title">Remover categoria</string>
     <string name="trackball_category_remove_summary">Remover uma categoria da lista</string>
@@ -469,7 +469,7 @@
     <string name="pref_ksm_title">Kernel samepage merging</string>
     <string name="pref_ksm_summary">KSM reduz os requisitos de memória física e melhora o desempenho</string>
 
-<!-- Performance Settings : 16bpp Alpha -->
+    <!-- Performance Settings : 16bpp Alpha -->
     <string name="pref_use_16bpp_alpha_title">Usar transparência 16bit</string>
     <string name="pref_use_16bpp_alpha_summary">Usando transparência 16bit pode melhorar o desempenho de rolagem, mas pode causar artefatos visuais (requer reinício)</string>
 
@@ -540,7 +540,7 @@
 
     <string name="widget_name">Widget RenderFX</string>
     <string name="renderfx_temp">RenderFX</string>
-	<string name="pref_widget_options_category_title">Opções gerais</string>
+    <string name="pref_widget_options_category_title">Opções gerais</string>
     <string name="prefs_render_effect">Efeito de renderização</string>
     <string name="notify_render_effect">Efeito de renderização ligado</string>
     <string name="add_widget">Adicionar widget</string>
@@ -746,7 +746,7 @@
     <string name="gestures_toggle_sound">Alternar som</string>
     <string name="gestures_shortcut_or_activity">Atalho ou atividade</string>
     <string name="gestures_flashlight">Lanterna</string>
-	<string name="gestures_next">Próxima música</string>
+    <string name="gestures_next">Próxima música</string>
     <string name="gestures_previous">Música anterior</string>
     <string name="gestures_playpause">Tocar/Pausar música</string>
     <string name="pref_lockscreen_disable_unlock_tab">Desativar trava deslizante</string>
@@ -844,7 +844,7 @@
     <string name="gingerdx_settings_title">Definições GingerDX</string>
     <string name="gingerdx_settings_summary">Alterar opções específicas da GingerDX</string>
     
-	<!-- Call -->
+    <!-- Call -->
     <string name="gdx_call_screen1">Funcionalidades de chamada</string>
     <string name="gdx_call_screen2">Toque de chamada mais alto, repetir toque de chamada, texto de operadora alternativo, etc</string>
     <string name="gdx_call_screen_sound">Som</string>
@@ -865,7 +865,7 @@
     <string name="gdx_call_screen_other_carrier1">Texto da operadora alternativo</string>
     <string name="gdx_call_screen_other_carrier2">Aparece na tela de bloqueio/barra de notificações</string>
 	
-	<!-- Alarm -->
+    <!-- Alarm -->
     <string name="gdx_alarm_screen1">Alarme</string>
     <string name="gdx_alarm_screen2">Problema matemático, ações ao virar/sacudir, aumentar volume, etc</string>
     <string name="gdx_alarm_screen_mathquiz1">Problema matemático</string>
@@ -876,7 +876,7 @@
     <string name="gdx_alarm_screen_shake2">Sacudir ativa o modo soneca/silencia o alarme</string>
     <string name="gdx_alarm_screen_increasing">Aumentar o volume</string>
     
-	<!-- Jelly Bean -->
+    <!-- Jelly Bean -->
     <string name="gdx_jelly_screen1">Jelly Beans</string>
     <string name="gdx_jelly_screen2">Barra de notificações, painel de notificações, etc</string>
     <string name="gdx_jelly_screen_status_bar_category">BARRA DE NOTIFICAÇÕES</string>
@@ -891,7 +891,7 @@
     <string name="gdx_jelly_screen_status_bar_notification_bigger1">Notificações maiores</string>
     <string name="gdx_jelly_screen_status_bar_notification_bigger2">Este é um recurso experimental!</string>
 	
-	<!-- LED -->
+    <!-- LED -->
     <string name="gdx_led_screen1">LED</string>
     <string name="gdx_led_screen2">LED desativado a noite</string>
     <string name="gdx_led_screen_enabled">Activar</string>
@@ -900,7 +900,7 @@
     <string name="gdx_led_screen_to1">Até as</string>
     <string name="gdx_led_screen_to2">Quando o LED será ativado</string>
 	
-	<!-- Other -->
+    <!-- Other -->
     <string name="gdx_other_screen1">Outras funcionalidades</string>
     <string name="gdx_other_screen2">Ultra brilho, tela de bloqueio Sense 3, horário no centro, etc</string>
     <string name="gdx_other_screen_userinterface">Interface de usuário</string>
@@ -919,7 +919,7 @@
     <string name="gdx_other_screen_about1">Sobre…</string>
     <string name="gdx_other_screen_about2">GingerDX por TeamFun</string>
 	
-	<!-- Custom carrier label -->
+    <!-- Custom carrier label -->
     <string name="gdx_carrier_note">Vazio para desativar</string>
     <string name="gdx_carrier_carrier">Texto da operadora</string>
     <string name="gdx_carrier_btn_save">Salvar</string>
