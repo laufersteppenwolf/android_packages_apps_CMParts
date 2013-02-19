@@ -968,7 +968,7 @@
     <string name="pie_clock_color_summary">Change clock color overlay</string>
     <string name="pie_outline_color_title">Change outline color</string>
     <string name="pie_outline_color_summary">Change outline color overlay</string>
-    <string name="piecontrol_notice_summary">NavigationBar is enable.\n\nDisable navigationbar if you want using PIE.</string>
+    <string name="piecontrol_notice_summary">NavigationBar is enabled.\n\nDisable the navigationbar if you want to use PIE.</string>
     <string name="pie_gap_title">Pie gap</string>
     <string name="pie_gap_summary">Adjust the gap in between pie elements</string>
     <string name="pie_gap_closed">Closed</string>
