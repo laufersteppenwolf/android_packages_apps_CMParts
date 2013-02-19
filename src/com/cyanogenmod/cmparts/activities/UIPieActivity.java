@@ -37,8 +37,6 @@ import com.cyanogenmod.cmparts.activities.ColorPickerDialog.OnColorChangedListen
 
 public class UIPieActivity extends PreferenceActivity implements OnPreferenceChangeListener {
 
-    private static final String PREF_SQUADZONE = "squadkeys";
-
     private static final String PIE_GRAVITY = "pie_gravity";
     private static final String PIE_MODE = "pie_mode";
     private static final String PIE_SIZE = "pie_size";
@@ -52,12 +50,9 @@ public class UIPieActivity extends PreferenceActivity implements OnPreferenceCha
     private static final String PIE_ENABLE_COLOR = "pie_enable_color";
     private static final String PIE_TRIGGER = "pie_trigger";
     private static final String PIE_GAP = "pie_gap";
-    private static final String PIE_INPUT_CONTROL = "input_pie_key";
-    private static final String PIE_ENABLE_CONTROL = "pie_enable_control";
 
     static Context mContext;
 
-    private Preference mSquadzone;
     private Preference mPieButtonColor;
     private Preference mPieBackgroundButtonColor;
     private Preference mPieChoiceButtonColor;
@@ -69,28 +64,22 @@ public class UIPieActivity extends PreferenceActivity implements OnPreferenceCha
     private ListPreference mPieSize;
     private ListPreference mPieGravity;
     private CheckBoxPreference mPieEnableColor;
-    private CheckBoxPreference mPieEnableControl;
     private boolean mNavBarEnabled;
-    private ListPreference mPieTrigger;	
-    private ListPreference mPieGap;
+    private ListPreference mPieTrigger;
+    private ListPreference mPieGap;  
 
     private AlertDialog alertDialog;
-
-    private PreferenceScreen mPieInputControl;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setTitle(R.string.ui_graphicss_title);
+        setTitle("Graphics");
         addPreferencesFromResource(R.xml.ui_piecontrol);
 
 		mContext = this.getBaseContext();
 
         PreferenceScreen prefSet = getPreferenceScreen();
-
-        mSquadzone = (Preference) prefSet.findPreference(PREF_SQUADZONE);
-        mSquadzone.setSummary("CyanMobile");
 
         mPieButtonColor = (Preference) prefSet.findPreference(PIE_BUTTON_COLOR);
         mPieButtonColor.setOnPreferenceChangeListener(this);
@@ -109,7 +98,7 @@ public class UIPieActivity extends PreferenceActivity implements OnPreferenceCha
 
         mPieClockColor = (Preference) prefSet.findPreference(PIE_CLOCK_COLOR);
         mPieClockColor.setOnPreferenceChangeListener(this);
-
+        
         mPieOutlineColor = (Preference) prefSet.findPreference(PIE_OUTLINE_COLOR);
         mPieOutlineColor.setOnPreferenceChangeListener(this);
 
@@ -134,11 +123,7 @@ public class UIPieActivity extends PreferenceActivity implements OnPreferenceCha
         mPieEnableColor = (CheckBoxPreference) prefSet.findPreference(PIE_ENABLE_COLOR);
         mPieEnableColor.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.PIE_ENABLE_COLOR, 0) == 1));
-
-        mPieEnableControl = (CheckBoxPreference) prefSet.findPreference(PIE_ENABLE_CONTROL);
-        mPieEnableControl.setChecked((Settings.System.getInt(getContentResolver(),
-                Settings.System.PIE_CONTROL_ENABLE, 1) == 1));
-
+                
         mPieTrigger = (ListPreference) prefSet.findPreference(PIE_TRIGGER);
         String pieTrigger = Settings.System.getString(getContentResolver(),
                 Settings.System.PIE_TRIGGER);
@@ -150,8 +135,6 @@ public class UIPieActivity extends PreferenceActivity implements OnPreferenceCha
                 Settings.System.PIE_GAP, 1);
         mPieGap.setValue(String.valueOf(pieGap));
         mPieGap.setOnPreferenceChangeListener(this);
-
-        mPieInputControl = (PreferenceScreen) prefSet.findPreference(PIE_INPUT_CONTROL);
 
         if (mNavBarEnabled) {
            // Set up the warning
@@ -177,12 +160,8 @@ public class UIPieActivity extends PreferenceActivity implements OnPreferenceCha
        mPieOutlineColor.setEnabled(!mNavBarEnabled);
        mPieMode.setEnabled(!mNavBarEnabled);
        mPieSize.setEnabled(!mNavBarEnabled);
-       mPieTrigger.setEnabled(!mNavBarEnabled);
-       mPieGap.setEnabled(!mNavBarEnabled);
        mPieGravity.setEnabled(!mNavBarEnabled);
        mPieEnableColor.setEnabled(!mNavBarEnabled);
-       mPieEnableControl.setEnabled(!mNavBarEnabled);
-       mPieInputControl.setEnabled(!mNavBarEnabled);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -240,24 +219,20 @@ public class UIPieActivity extends PreferenceActivity implements OnPreferenceCha
             ColorPickerDialog cp = new ColorPickerDialog(this, mPieClockColorListener, getPieClockColor());
             cp.show();
 	    return true;
-        } else if (preference == mPieOutlineColor) {
-            ColorPickerDialog cp = new ColorPickerDialog(this, mPieOutlineColorListener, getPieOutlineColor());
-            cp.show();
-	    return true;
+	    } else if (preference == mPieOutlineColor) {
+			ColorPickerDialog cp = new ColorPickerDialog(this, mPieOutlineColorListener, getPieOutlineColor());
+			cp.show();
+		return true;
         } else if (preference == mPieEnableColor) {
             Settings.System.putInt(getContentResolver(), Settings.System.PIE_ENABLE_COLOR,
                     mPieEnableColor.isChecked() ? 1 : 0);
-	    return true;
-        } else if (preference == mPieEnableControl) {
-            Settings.System.putInt(getContentResolver(), Settings.System.PIE_CONTROL_ENABLE,
-                    mPieEnableControl.isChecked() ? 1 : 0);
 	    return true;
 	}
         return false;
     }
 
     private int defValuesColor() {
-        return getResources().getInteger(com.android.internal.R.color.holo_blue_light);
+        return getResources().getInteger(R.color.holo_blue_light);
     }
 
     private int getPieButtonColor() {
@@ -313,13 +288,13 @@ public class UIPieActivity extends PreferenceActivity implements OnPreferenceCha
             return defValuesColor();
         }
     }
-
+    
     private int getPieOutlineColor() {
-        try {
-            return Settings.System.getInt(getContentResolver(), Settings.System.PIE_OUTLINE_COLOR);
-        }
-        catch (SettingNotFoundException e) {
-            return defValuesColor();
+		try {
+			return Settings.System.getInt(getContentResolver(), Settings.System.PIE_OUTLINE_COLOR);
+		}	
+		catch (SettingNotFoundException e) {
+			return defValuesColor();	
         }
     }
 
@@ -370,8 +345,8 @@ public class UIPieActivity extends PreferenceActivity implements OnPreferenceCha
             public void colorUpdate(int color) {
             }
     };
-
-    ColorPickerDialog.OnColorChangedListener mPieOutlineColorListener =  new ColorPickerDialog.OnColorChangedListener() {
+    
+    ColorPickerDialog.OnColorChangedListener mPieOutlineColorListener = new ColorPickerDialog.OnColorChangedListener() {
             public void colorChanged(int color) {
                 Settings.System.putInt(getContentResolver(), Settings.System.PIE_OUTLINE_COLOR, color);
             }
