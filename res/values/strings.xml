@@ -846,7 +846,7 @@
     
 	<!-- Call -->
     <string name="gdx_call_screen1">Call features</string>
-    <string name="gdx_call_screen2">Call me lounder, loop ringtone, custon carrier label etc.</string>
+    <string name="gdx_call_screen2">Call me lounder, loop ringtone, custom carrier label etc.</string>
     <string name="gdx_call_screen_sound">Sound</string>
     <string name="gdx_call_screen_sound_pickup1">Pick up to call</string>
     <string name="gdx_call_screen_sound_pickup2">Picking up the phone calls the number in dialer</string>
