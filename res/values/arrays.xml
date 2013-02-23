@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 
+<!--
  * Copyright (C) 2007 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +13,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- -->
+-->
 
 <resources>
 
@@ -27,30 +27,23 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-    
-    
-    
-    
     <string-array name="entries_recent_apps_num" translatable="false">
         <item>8</item>
         <item>12</item>
         <item>15</item>
     </string-array>
-
     <string-array name="entries_scrollingcache" translatable="false">
         <item>@string/pref_scrollingcache_force_enable</item>
         <item>@string/pref_scrollingcache_default_enable</item>
         <item>@string/pref_scrollingcache_default_disable</item>
         <item>@string/pref_scrollingcache_force_disable</item>
     </string-array>
-
     <string-array name="values_scrollingcache" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
     </string-array>
-
     <string-array name="entries_heapsize">
         <item>12m</item>
         <item>16m</item>
@@ -58,7 +51,6 @@
         <item>32m</item>
         <item>48m</item>
     </string-array>
-
     <string-array name="values_heapsize" translatable="false">
         <item>12m</item>
         <item>16m</item>
@@ -66,69 +58,58 @@
         <item>32m</item>
         <item>48m</item>
     </string-array>
-
     <string-array name="entries_install_location">
         <item>Automatic</item>
         <item>Internal</item>
         <item>External</item>
     </string-array>
-
     <string-array name="values_install_location" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-
     <string-array name="entries_status_bar_carrier_label" translatable="false">
-	<item>@string/ui_status_bar_carrier_label_use_default</item>
-	<item>@string/ui_status_bar_carrier_label_use_spn</item>
-	<item>@string/ui_status_bar_carrier_label_use_plmn</item>
-	<item>@string/ui_status_bar_carrier_label_use_custom</item>
+        <item>@string/ui_status_bar_carrier_label_use_default</item>
+        <item>@string/ui_status_bar_carrier_label_use_spn</item>
+        <item>@string/ui_status_bar_carrier_label_use_plmn</item>
+        <item>@string/ui_status_bar_carrier_label_use_custom</item>
     </string-array>
-
     <string-array name="values_status_bar_carrier_label" translatable="false">
-	<item>0</item>
-	<item>1</item>
-	<item>2</item>
-	<item>3</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
     </string-array>
-
     <string-array name="entries_status_bar_am_pm">
         <item>Normal</item>
         <item>Small</item>
         <item>None (Default)</item>
     </string-array>
-
     <string-array name="values_status_bar_am_pm" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-
     <string-array name="entries_status_bar_battery">
         <item>Icon (Default)</item>
         <item>Percentage</item>
         <item>Hidden</item>
     </string-array>
-
     <string-array name="values_status_bar_battery" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-
-     <string-array name="entries_status_bar_signal" translatable="false">
+    <string-array name="entries_status_bar_signal" translatable="false">
         <item>@string/ui_status_bar_cm_signal_text_show_bars</item>
         <item>@string/ui_status_bar_cm_signal_text_show_text</item>
         <item>@string/ui_status_bar_cm_signal_text_show_text_dbm</item>
-     </string-array>
-
-     <string-array name="values_status_bar_signal" translatable="false">
+    </string-array>
+    <string-array name="values_status_bar_signal" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-
     <string-array name="entries_render_effect" translatable="false">
         <item>@string/pref_render_effect_none</item>
         <item>@string/pref_render_effect_night</item>
@@ -142,7 +123,6 @@
         <item>@string/pref_render_effect_calibrated_cool</item>
         <item>@string/pref_render_effect_red</item>
     </string-array>
-
     <string-array name="values_render_effect" translatable="false">
         <item>0</item>
         <item>1</item>
@@ -156,7 +136,6 @@
         <item>9</item>
         <item>10</item>
     </string-array>
-
     <string-array name="render_entries" translatable="false">
         <item>@string/pref_render_effect_night</item>
         <item>@string/pref_render_effect_green</item>
@@ -169,7 +148,6 @@
         <item>@string/pref_render_effect_calibrated_cool</item>
         <item>@string/pref_render_effect_red</item>
     </string-array>
-
     <string-array name="render_values" translatable="false">
         <item>1</item>
         <item>2</item>
@@ -182,19 +160,16 @@
         <item>9</item>
         <item>10</item>
     </string-array>
-
     <string-array name="haptic_feedback_entries">
         <item>Global Settings</item>
         <item>On</item>
         <item>Off</item>
     </string-array>
-
     <string-array name="haptic_feedback_values" translatable="false">
         <item>2</item>
         <item>1</item>
         <item>0</item>
     </string-array>
-
     <string-array name="entries_trackball_colors" translatable="false">
         <item>@string/trackball_color_entry_use_app</item>
         <item>@string/trackball_color_entry_green</item>
@@ -209,7 +184,6 @@
         <item>@string/trackball_color_entry_light_blue</item>
         <item>@string/trackball_color_entry_random</item>
     </string-array>
-
     <string-array name="pref_trackball_colors_values" translatable="false">
         <item>default</item>
         <item>green</item>
@@ -224,19 +198,16 @@
         <item>#add8e6</item>
         <item>random</item>
     </string-array>
-
     <string-array name="entries_dual_led_colors" translatable="false">
         <item>@string/trackball_color_entry_use_app</item>
         <item>@string/trackball_color_entry_green</item>
         <item>@string/trackball_color_entry_amber</item>
     </string-array>
-
     <string-array name="values_dual_led_colors" translatable="false">
         <item>default</item>
         <item>green</item>
         <item>red</item>
     </string-array>
-
     <string-array name="pref_trackball_blink_rate_entries">
         <item>Use application setting</item>
         <item>2 (Fast)</item>
@@ -245,7 +216,6 @@
         <item>5</item>
         <item>6 (Slow)</item>
     </string-array>
-
     <string-array name="pref_trackball_blink_rate_values" translatable="false">
         <item>default</item>
         <item>2</item>
@@ -254,7 +224,6 @@
         <item>5</item>
         <item>6</item>
     </string-array>
-
     <string-array name="pref_trackball_force_mode_entries" translatable="false">
         <item>@string/trackball_force_mode_category</item>
         <item>@string/trackball_force_mode_application</item>
@@ -262,7 +231,6 @@
         <item>@string/trackball_force_mode_events</item>
         <item>@string/trackball_force_mode_on</item>
     </string-array>
-
     <string-array name="pref_trackball_force_mode_values" translatable="false">
         <item>category</item>
         <item>default</item>
@@ -270,20 +238,18 @@
         <item>forceeventon</item>
         <item>forceon</item>
     </string-array>
-
     <string-array name="pref_lockscreen_delay_entries">
         <item>Immediately</item>
         <item>1s</item>
         <item>5s</item>
         <item>10s</item>
-        <item>15s</item>  
+        <item>15s</item>
         <item>30s</item>
         <item>1m</item>
         <item>5m</item>
         <item>10m</item>
         <item>30m</item>
     </string-array>
-
     <string-array name="pref_lockscreen_delay_values" translatable="false">
         <item>0</item>
         <item>1000</item>
@@ -296,21 +262,18 @@
         <item>600000</item>
         <item>1800000</item>
     </string-array>
-
     <string-array name="pref_compcache_size_entries">
         <item>Disabled</item>
         <item>10%</item>
         <item>18%</item>
         <item>26%</item>
     </string-array>
-
     <string-array name="pref_compcache_size_values" translatable="false">
         <item>0</item>
         <item>10</item>
         <item>18</item>
         <item>26</item>
     </string-array>
-
     <string-array name="entries_light_filter_window">
         <item>2 s</item>
         <item>5 s</item>
@@ -319,7 +282,6 @@
         <item>30 s</item>
         <item>60 s</item>
     </string-array>
-
     <string-array name="values_light_filter_window" translatable="false">
         <item>2000</item>
         <item>5000</item>
@@ -328,7 +290,6 @@
         <item>30000</item>
         <item>60000</item>
     </string-array>
-
     <string-array name="entries_light_filter_reset">
         <item>Disabled</item>
         <item>400 lux</item>
@@ -342,7 +303,6 @@
         <item>2000 lux</item>
         <item>2500 lux</item>
     </string-array>
-
     <string-array name="values_light_filter_reset" translatable="false">
         <item>-1</item>
         <item>400</item>
@@ -356,7 +316,6 @@
         <item>2000</item>
         <item>2500</item>
     </string-array>
-
     <string-array name="entries_light_filter_interval">
         <item>0.5 s</item>
         <item>1 s</item>
@@ -364,7 +323,6 @@
         <item>5 s</item>
         <item>10 s</item>
     </string-array>
-
     <string-array name="values_light_filter_interval" translatable="false">
         <item>500</item>
         <item>1000</item>
@@ -372,7 +330,6 @@
         <item>5000</item>
         <item>10000</item>
     </string-array>
-
     <string-array name="entries_light_levels_dim">
         <item>1</item>
         <item>2</item>
@@ -391,7 +348,6 @@
         <item>24</item>
         <item>26</item>
     </string-array>
-
     <string-array name="values_light_levels_dim" translatable="false">
         <item>1</item>
         <item>2</item>
@@ -410,7 +366,6 @@
         <item>24</item>
         <item>26</item>
     </string-array>
-
     <string-array name="entries_light_decrease_hysteresis">
         <item>0 %</item>
         <item>10 %</item>
@@ -423,7 +378,6 @@
         <item>80 %</item>
         <item>90 %</item>
     </string-array>
-
     <string-array name="values_light_decrease_hysteresis" translatable="false">
         <item>0</item>
         <item>10</item>
@@ -436,7 +390,6 @@
         <item>80</item>
         <item>90</item>
     </string-array>
-
     <string-array name="entries_sound_attenuation">
         <item>0 dB</item>
         <item>4 dB</item>
@@ -444,7 +397,6 @@
         <item>8 dB</item>
         <item>10 dB</item>
     </string-array>
-
     <string-array name="values_sound_attenuation" translatable="false">
         <item>0</item>
         <item>4</item>
@@ -452,18 +404,15 @@
         <item>8</item>
         <item>10</item>
     </string-array>
-
     <string-array name="entries_sound_limitvol">
         <item>Attenuated system setting</item>
         <item>Music volume (default)</item>
     </string-array>
-
     <string-array name="values_sound_limitvol" translatable="false">
         <item>0</item>
         <item>1</item>
     </string-array>
-
-   <string-array name="entries_brightness_widget" formatted="false" translatable="false">
+    <string-array name="entries_brightness_widget" formatted="false" translatable="false">
         <item>@string/cm_brightness_mode_auto</item>
         <item>@string/cm_brightness_mode_dim</item>
         <item>25%</item>
@@ -471,8 +420,7 @@
         <item>75%</item>
         <item>100%</item>
     </string-array>
-
-   <string-array name="values_brightness_widget" translatable="false">
+    <string-array name="values_brightness_widget" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -480,63 +428,52 @@
         <item>4</item>
         <item>5</item>
     </string-array>
-
     <string-array name="entries_network_widget">
-        <item>2G/3G+2G</item>  
-        <item>2G/3G Only</item>   
+        <item>2G/3G+2G</item>
+        <item>2G/3G Only</item>
         <item>2G/3G Only/3G+2G</item>
     </string-array>
-
     <string-array name="values_network_widget" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-
     <string-array name="entries_screentimeout_widget">
         <item>15s/1m/5m</item>
         <item>30s/2m/5m</item>
     </string-array>
-
     <string-array name="values_screentimeout_widget" translatable="false">
         <item>0</item>
         <item>1</item>
     </string-array>
-
     <string-array name="entries_ring_widget" translatable="false">
         <item>@string/cm_sound_mode_silent</item>
         <item>@string/cm_sound_mode_vibrate</item>
         <item>@string/cm_sound_mode_sound</item>
         <item>@string/cm_sound_mode_soundVibrate</item>
     </string-array>
-
     <string-array name="values_ring_widget" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
     </string-array>
-
     <string-array name="entries_flash_widget">
         <item>Normal</item>
         <item>High / Death Ray</item>
     </string-array>
-
     <string-array name="values_flash_widget" translatable="false">
         <item>0</item>
         <item>1</item>
     </string-array>
-
     <string-array name="entries_mobiledatanetwork_widget">
         <item>Off</item>
         <item>On</item>
     </string-array>
-
     <string-array name="values_mobiledatanetwork_widget" translatable="false">
         <item>0</item>
         <item>1</item>
     </string-array>
-
     <string-array name="pref_lockscreen_gestures_sensitivity_entries">
         <item>1 (broadest)</item>
         <item>2</item>
@@ -551,7 +488,6 @@
         <item>11</item>
         <item>12 (strictest)</item>
     </string-array>
-
     <string-array name="pref_lockscreen_gestures_sensitivity_values" translatable="false">
         <item>1</item>
         <item>2</item>
@@ -566,7 +502,6 @@
         <item>11</item>
         <item>12</item>
     </string-array>
-
     <string-array name="pref_lockscreen_gesture_action_entries" translatable="false">
         <item>@string/gestures_unlock_only</item>
         <item>@string/gestures_toggle_sound</item>
@@ -576,97 +511,82 @@
         <item>@string/gestures_playpause</item>
         <item>@string/gestures_flashlight</item>
     </string-array>
-
     <string-array name="pref_lockscreen_style_entries" translatable="false">
         <item>@string/lockscreen_style_entry_tabs</item>
         <item>@string/lockscreen_style_entry_rotary</item>
         <item>@string/lockscreen_style_entry_lense</item>
         <item>@string/lockscreen_style_entry_ring</item>
     </string-array>
-
     <string-array name="pref_lockscreen_style_values" translatable="false">
         <item>1</item>
         <item>2</item>
         <item>4</item>
         <item>5</item>
     </string-array>
-
     <string-array name="pref_rotary_style_entries" translatable="false">
         <item>@string/rotary_style_entry_normal</item>
         <item>@string/rotary_style_entry_revamped</item>
     </string-array>
-
     <string-array name="pref_rotary_style_values" translatable="false">
         <item>1</item>
         <item>2</item>
     </string-array>
-
     <string-array name="pref_ringlock_style_entries" translatable="false">
         <item>@string/ringlock_style_entry_bubbles</item>
         <item>@string/ringlock_style_entry_revamped</item>
         <item>@string/ringlock_style_entry_holo</item>
         <item>@string/ringlock_style_entry_blade</item>
     </string-array>
-
     <string-array name="pref_ringlock_style_values" translatable="false">
         <item>1</item>
         <item>2</item>
         <item>3</item>
         <item>4</item>
     </string-array>
-
     <string-array name="pref_in_call_style_entries" translatable="false">
         <item>@string/lockscreen_style_entry_tabs</item>
         <item>@string/lockscreen_style_entry_rotary</item>
         <item>@string/lockscreen_style_entry_ring</item>
     </string-array>
-
     <string-array name="pref_in_call_style_values" translatable="false">
         <item>1</item>
         <item>2</item>
         <item>4</item>
     </string-array>
-
     <string-array name="pref_lockscreen_background_entries">
         <item>Color fill</item>
         <item>Custom image</item>
         <item>Default wallpaper</item>
     </string-array>
-
     <string-array name="pref_lockscreen_background_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-
     <string-array name="pref_lockscreen_widget_layout_entries" translatable="false">
         <item>@string/pref_lockscreen_widget_layout_entry_default</item>
         <item>@string/pref_lockscreen_widget_layout_entry_hidden</item>
         <item>@string/pref_lockscreen_widget_layout_entry_centered</item>
         <item>@string/pref_lockscreen_widget_layout_entry_right</item>
     </string-array>
-
     <string-array name="pref_lockscreen_widget_layout_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
     </string-array>
-
     <string-array name="pref_lockscreen_music_headset_entries">
         <item>Disabled</item>
         <item>Wired Headset</item>
         <item>Bluetooth A2DP Headset</item>
         <item>Both</item>
     </string-array>
-
     <string-array name="pref_lockscreen_music_headset_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
     </string-array>
-
     <string-array name="pref_lockscreen_calendar_lookahead_entries">
         <item>3 hours</item>
         <item>6 hours</item>
@@ -675,7 +595,6 @@
         <item>3 days</item>
         <item>1 week</item>
     </string-array>
-
     <string-array name="pref_lockscreen_calendar_lookahead_values" translatable="false">
         <item>10800000</item>
         <item>21600000</item>
@@ -684,33 +603,28 @@
         <item>259200000</item>
         <item>604800000</item>
     </string-array>
-
     <string-array name="pref_lockscreen_calendar_show_event_metadata_entries">
         <item>Do not show</item>
         <item>Show first line</item>
         <item>Show all</item>
     </string-array>
-
     <string-array name="pref_lockscreen_calendar_show_event_metadata_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-
     <string-array name="pref_overscroll_effect_entries">
         <item>None</item>
         <item>Edge Glow</item>
         <item>Bounce and Glow</item>
         <item>Bounce</item>
     </string-array>
-
     <string-array name="pref_overscroll_effect_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
     </string-array>
-
     <string-array name="entries_overscroll_weight">
         <item>Extra Heavy</item>
         <item>Heavy</item>
@@ -718,7 +632,6 @@
         <item>Light</item>
         <item>Extra Light</item>
     </string-array>
-
     <string-array name="values_overscroll_weight" translatable="false">
         <item>1</item>
         <item>3</item>
@@ -726,31 +639,26 @@
         <item>7</item>
         <item>9</item>
     </string-array>
-
     <string-array name="phone_goggles_confirmation_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-
     <string-array name="phone_goggles_confirmation_entries" translatable="false">
         <item>@string/phone_goggles_confirmation_none</item>
         <item>@string/phone_goggles_confirmation_prompt</item>
         <item>@string/phone_goggles_confirmation_maths</item>
     </string-array>
-
     <string-array name="phone_goggles_maths_level_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-
     <string-array name="phone_goggles_maths_level_entries" translatable="false">
         <item>@string/phone_goggles_maths_level_easy</item>
         <item>@string/phone_goggles_maths_level_medium</item>
         <item>@string/phone_goggles_maths_level_hard</item>
     </string-array>
-
     <string-array name="entries_vol_actions">
         <item>None/Default</item>
         <item>Home</item>
@@ -765,7 +673,6 @@
         <item>Prev track</item>
         <item>Long press home</item>
     </string-array>
-
     <string-array name="values_vol_actions" translatable="false">
         <item>0</item>
         <item>1</item>
@@ -780,7 +687,6 @@
         <item>10</item>
         <item>11</item>
     </string-array>
-
     <string-array name="entries_unhide_button">
         <item>Home</item>
         <item>Menu</item>
@@ -790,7 +696,6 @@
         <item>Volume Up</item>
         <item>Volume Down</item>
     </string-array>
-
     <string-array name="values_unhide_button" translatable="false">
         <item>0</item>
         <item>1</item>
@@ -800,7 +705,6 @@
         <item>5</item>
         <item>6</item>
     </string-array>
-
     <string-array name="entries_long_press_menu">
         <item>None</item>
         <item>Soft keyboard</item>
@@ -808,7 +712,6 @@
         <item>Custom Application</item>
         <item>Toggle statusbar</item>
     </string-array>
-
     <string-array name="values_long_press_menu" translatable="false">
         <item>0</item>
         <item>1</item>
@@ -817,35 +720,31 @@
         <item>4</item>
     </string-array>
 
-	<!-- dx -->
+    <!-- dx -->
     <string-array name="values_led_disabled_from">
         <item>22</item>
         <item>23</item>
         <item>0</item>
         <item>1</item>
     </string-array>
-    
     <string-array name="entries_led_disabled_from">
         <item>10pm</item>
         <item>11pm</item>
         <item>12am</item>
         <item>1am</item>
     </string-array>
-    
     <string-array name="values_led_disabled_to">
         <item>6</item>
         <item>7</item>
         <item>8</item>
         <item>9</item>
     </string-array>
-    
     <string-array name="entries_led_disabled_to">
         <item>6am</item>
         <item>7am</item>
         <item>8am</item>
         <item>9am</item>
-    </string-array>  
-    
+    </string-array>
     <string-array name="values_update_check_hour">
         <item>0</item>
         <item>1</item>
@@ -871,22 +770,19 @@
         <item>21</item>
         <item>22</item>
         <item>23</item>
-    </string-array>   
-    
+    </string-array>
     <string-array name="values_transparent_status_bar">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
     </string-array>
-    
     <string-array name="entries_transparent_status_bar">
         <item>Disabled</item>
         <item>Theme</item>
         <item>Semi-transparent</item>
         <item>Gradient</item>
-    </string-array>    
-
+    </string-array>
     <string-array name="pref_lockscreen_style_entries_gdx">
         <item>Random</item>
         <item>Sliding Tab</item>
@@ -896,7 +792,6 @@
         <item>Sense</item>
         <item>Ring</item>
     </string-array>
-
     <string-array name="pref_lockscreen_style_values_gdx" translatable="false">
         <item>0</item>
         <item>1</item>
@@ -906,65 +801,56 @@
         <item>5</item>
         <item>6</item>
     </string-array>
-    
     <string-array name="entries_pie_gravity">
         <item>@string/pie_gravity_left</item>
         <item>@string/pie_gravity_top</item>
         <item>@string/pie_gravity_right</item>
         <item>@string/pie_gravity_bottom</item>
     </string-array>
-
     <string-array name="values_pie_gravity" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
     </string-array>
-
     <string-array name="entries_pie_size">
-		<item>@string/pie_size_small</item>
+        <item>@string/pie_size_small</item>
         <item>@string/pie_size_default</item>
         <item>@string/pie_size_medium</item>
         <item>@string/pie_size_large</item>
         <item>@string/pie_size_gigantic</item>
     </string-array>
-
     <string-array name="values_pie_size" translatable="false">
-		<item>0.6</item>
+        <item>0.6</item>
         <item>0.8</item>
         <item>1.0</item>
         <item>1.2</item>
         <item>1.4</item>
     </string-array>
-
     <string-array name="entries_pie_mode">
         <item>@string/pie_mode_bare</item>
         <item>@string/pie_mode_quick</item>
         <item>@string/pie_mode_default</item>
         <item>@string/pie_mode_slow</item>
     </string-array>
-
     <string-array name="values_pie_mode" translatable="false">
-		<item>-1</item>
+        <item>-1</item>
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-    
-    <string-array name="entries_pie_gap">	
+    <string-array name="entries_pie_gap">
         <item>@string/pie_gap_closed</item>
         <item>@string/pie_gap_small</item>
         <item>@string/pie_gap_big</item>
         <item>@string/pie_gap_huge</item>
     </string-array>
-
     <string-array name="values_pie_gap" translatable="false">
         <item>0</item>
-        <item>1</item>	
+        <item>1</item>
         <item>2</item>
         <item>3</item>
     </string-array>
-
     <string-array name="entries_pie_trigger">
         <item>@string/pie_trigger_disable</item>
         <item>@string/pie_trigger_small</item>
@@ -972,7 +858,6 @@
         <item>@string/pie_trigger_big</item>
         <item>@string/pie_trigger_huge</item>
     </string-array>
-
     <string-array name="values_pie_trigger" translatable="false">
         <item>0.0</item>
         <item>0.5</item>
@@ -980,7 +865,7 @@
         <item>2.0</item>
         <item>3.0</item>
     </string-array>
-	<string-array name="entries_pie_buttons_home">
+    <string-array name="entries_pie_buttons_home">
         <item>Back</item>
         <item>Home</item>
         <item>Recent</item>
@@ -992,7 +877,6 @@
         <item>Clear All</item>
         <item>Nothing</item>
     </string-array>
-
     <string-array name="values_pie_buttons_home">
         <item>0</item>
         <item>1</item>
@@ -1006,7 +890,6 @@
         <item>9</item>
         <item>10</item>
     </string-array>
-
     <string-array name="entries_pie_buttons_homes">
         <item>Back</item>
         <item>Home</item>
@@ -1020,7 +903,6 @@
         <item>Nothing</item>
         <item>Custom app</item>
     </string-array>
-
     <string-array name="values_pie_buttons_homes">
         <item>0</item>
         <item>1</item>
@@ -1035,4 +917,5 @@
         <item>10</item>
         <item>11</item>
     </string-array>
+
 </resources>
