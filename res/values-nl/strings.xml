@@ -796,8 +796,6 @@
     <string name="user_defined_explorer_key">Verkentoets</string>
     <string name="user_defined_not_set">Niets ingesteld</string>
 
-</resources>
-
     <!-- Performance Settings : KSM -->
     <string name="pref_ksm_title">Kernel samepage merging</string>
     <string name="pref_ksm_summary">KSM verminderd de eisen voor fysiek geheugen en verbeterd prestaties</string>
