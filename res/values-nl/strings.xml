@@ -1,19 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
--->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Generic -->
+    <string name="app_name">CyanogenMod instellingen</string>
 
     <!-- Hoofdmenu -->
     <string name="application_settings_title_head">Applicaties</string>
@@ -808,4 +796,107 @@
     <string name="user_defined_explorer_key">Verkentoets</string>
     <string name="user_defined_not_set">Niets ingesteld</string>
 
+</resources>
+
+    <!-- Performance Settings : KSM -->
+    <string name="pref_ksm_title">Kernel samepage merging</string>
+    <string name="pref_ksm_summary">KSM verminderd de eisen voor fysiek geheugen en verbeterd prestaties</string>
+
+    <!-- GingerDX settings -->
+    <string name="gingerdx_settings_title">GingerDX instellingen</string>
+    <string name="gingerdx_settings_summary">Verander opties die specefiek zijn voor GingerDX</string>
+
+    <!-- Call -->
+    <string name="gdx_call_screen1">Telefoon eigenschappen</string>
+    <string name="gdx_call_screen2">Bel me Luider, loop ringtone, Eigen label etc.</string>
+    <string name="gdx_call_screen_sound">Geluid</string>
+    <string name="gdx_call_screen_sound_pickup1">Raap op om te bellen</string>
+    <string name="gdx_call_screen_sound_pickup2">Oppakken van de telefoon belt het nummer in beeld</string>
+    <string name="gdx_call_screen_sound_lounder1">Bel me Luider</string>
+    <string name="gdx_call_screen_sound_lounder2">Luidere ringtone als de telefoon in een tas zit</string>
+    <string name="gdx_call_screen_sound_loop1">Loop ringtone</string>
+    <string name="gdx_call_screen_sound_loop2">Opnieuw en opnieuw en opnieuw...</string>
+    <string name="gdx_call_screen_sound_flipdown1">Draai Om</string>
+    <string name="gdx_call_screen_sound_flipdown2">Scherm naar beneden dempt ringtone</string>
+    <string name="gdx_call_screen_buttons">Knoppen</string>
+    <string name="gdx_call_screen_buttons_back1">Terug</string>
+    <string name="gdx_call_screen_buttons_back2">Op terug drukken eindigt gesprek</string>
+    <string name="gdx_call_screen_buttons_menu1">Menu</string>
+    <string name="gdx_call_screen_buttons_menu2">Op terug drukken om gesprek aan te nemen</string>
+    <string name="gdx_call_screen_other">Overig</string>
+    <string name="gdx_call_screen_other_carrier1">Eigen carrier text</string>
+    <string name="gdx_call_screen_other_carrier2">Staat op lockscreen/statusbalk</string>
+
+    <!-- Alarm -->
+    <string name="gdx_alarm_screen1">Alarm</string>
+    <string name="gdx_alarm_screen2">Rekentest, draaien/schudden, verhoog volume etc.</string>
+    <string name="gdx_alarm_screen_mathquiz1">Rekentest</string>
+    <string name="gdx_alarm_screen_mathquiz2">Los rekenvragen op om het alarm te stoppen</string>
+    <string name="gdx_alarm_screen_flip1">Omdraaien</string>
+    <string name="gdx_alarm_screen_flip2">Draai telefoon om om te snoozen / uit te schakelen</string>
+    <string name="gdx_alarm_screen_shake1">Schudden</string>
+    <string name="gdx_alarm_screen_shake2">Schud om te snoozen / uit te schakelen</string>
+    <string name="gdx_alarm_screen_increasing">Verhoog volume</string>
+
+    <!-- Jelly Bean -->
+    <string name="gdx_jelly_screen1">Jelly Beans</string>
+    <string name="gdx_jelly_screen2">Status balk, notificaties etc.</string>
+    <string name="gdx_jelly_screen_status_bar_category">STATUS BALK</string>
+    <string name="gdx_jelly_screen_information1">LET OP</string>
+    <string name="gdx_jelly_screen_information2">Om de instellingen toe te passen moet de telefoon herstart worden.\n\n2012 © AChep@xda (artemchep@gmail.com)</string>
+    <string name="gdx_jelly_screen_status_bar">Status balk paneel</string>
+    <string name="gdx_jelly_screen_sbbuttons1">Virtueele knoppen</string>
+    <string name="gdx_jelly_screen_sbbuttons2">Virtueele knoppen onderaan het scherm</string>
+    <string name="gdx_jelly_screen_status_bar_panel_transparency1">Status balk paneel transparantie</string>
+    <string name="gdx_jelly_screen_status_bar_panel_transparency2">Stel transparantie van het Jelly Bean status balk paneel in</string>
+    <string name="gdx_jelly_screen_status_bar_notification">Notificaties</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger1">Grotere notificaties</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger2">Het is een experimentele functie</string>
+
+    <!-- LED -->
+    <string name="gdx_led_screen1">LED</string>
+    <string name="gdx_led_screen2">Optie om de LED \'s nachts uit te schakelen</string>
+    <string name="gdx_led_screen_enabled">Schakel LED uit</string>
+    <string name="gdx_led_screen_from1">Vanaf</string>
+    <string name="gdx_led_screen_from2">Waneer de LED uitgeschakeld wordt.</string>
+    <string name="gdx_led_screen_to1">Tot</string>
+    <string name="gdx_led_screen_to2">Waneer de LED weer aan kan</string>
+
+    <!-- Other -->
+    <string name="gdx_other_screen1">Overig</string>
+    <string name="gdx_other_screen2">Extra helderheid, Sense 3 lockscreen, gecentreerde klok etc.</string>
+    <string name="gdx_other_screen_userinterface">User Interface</string>
+    <string name="gdx_other_screen_status_bar_centerclock1">Centreer klok in status balk</string>
+    <string name="gdx_other_screen_status_bar_centerclock2">In plaats van rechts</string>
+    <string name="gdx_other_screen_status_bar_transparency1">Status balk transparantie</string>
+    <string name="gdx_other_screen_status_bar_transparency2">Herstart om veranderingen to te passen</string>
+    <string name="gdx_other_screen_senselock1">Sense 3 Lockscreen</string>
+    <string name="gdx_other_screen_senselock2">Alleen basis functionaliteiten</string>
+    <string name="gdx_other_screen_hidemsgavatar">Verberg avatar in SMS</string>
+    <string name="gdx_other_screen_ultrabrightness1">Extra helderheid</string>
+    <string name="gdx_other_screen_ultrabrightness2">Verhoogd het helderheidsniveau (verhoogt mischien batterijverbruik)</string>
+    <string name="gdx_other_screen_copypaste">Snel kopieren / plakken</string>
+    <string name="gdx_other_screen_updates1">Check-voor-update moment</string>
+    <string name="gdx_other_screen_updates2">Stel uur in om voor updates te kijken.</string>
+    <string name="gdx_other_screen_about1">Over</string>
+    <string name="gdx_other_screen_about2">GingerDX door TeamFun</string>
+
+    <!-- Custom carrier label -->
+    <string name="gdx_carrier_note">Leeg om uit te schakelen</string>
+    <string name="gdx_carrier_carrier">Carrier tekst</string>
+    <string name="gdx_carrier_btn_save">Opslaan</string>
+    <string name="gdx_carrier_btn_cancel">Anuleer</string>
+
+    <string name="title_toggle_ultra_brightness">Schakel Extra-helderheid</string>
+
+    <!-- Pie controls -->
+    <string name="pie_controls_title">Pie instellingen</string>
+    <string name="pie_controls_summary">Instellingen voor Pie Navigatie</string>
+    <string name="pie_color_change_title">Pie kleur instellingen</string>
+
+    <string name="pie_gravity_title">Pie plaatsing</string>
+    <string name="pie_gravity_summary">Kies de locatie waar de Pie geplaatst wordt.</string>
+    <string name="pie_gravity_top">Top</string>
+    <string name="pie_gravity_bottom">Bodem</string>
+    <string name="pie_gravity_right">Rechts</string>
 </resources>
