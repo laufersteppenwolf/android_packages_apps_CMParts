@@ -948,7 +948,7 @@
     <string name="pie_mode_default">Normal (Standart)</string>
     <string name="pie_mode_slow">langsam</string>
     <string name="pie_size_title">Pie Größe</string>
-    <string name="pie_size_summary">Definiere Pie control's Größe</string>
+    <string name="pie_size_summary">Definiere Pie control\'s Größe</string>
     <string name="pie_size_small">klein</string>
     <string name="pie_size_medium">Medium</string>
     <string name="pie_size_default">@string/pie_mode_default</string>
