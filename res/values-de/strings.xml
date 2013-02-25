@@ -803,47 +803,6 @@
     <string name="perm_enable_warning_message">Warnung!\nDas Entziehen von Berechtigungen wird in den meisten Anwendungen Fehler verursachen. Wenn eine Anwendung mit entzogenen Berechtigungen abstürzt, müssen die benötigten Berechtigungen gestattet werden.\nBitte KEINE Bugreports an CyanogenMod senden, wenn eine Anwendung mit entzogenen Berechtigungen nicht wie erwartet funktioniert!</string>
     <string name="perm_enable_warning_title">Sicher?</string>
 
-    <!-- dx -->
-    <!-- GingerDX settings -->
-    <string name="gingerdx_settings_title">GingerDX Einstellungen</string>
-    <string name="gingerdx_settings_summary">GingerDX spezifische Optionen</string>
-    <string name="gdx_led_screen2">LED Abschaltung in der Nacht</string>
-    <string name="gdx_led_screen_enabled">Aktiviert</string>
-    <string name="gdx_led_screen_from1">Von...</string>
-    <string name="gdx_led_screen_to1">Bis...</string>
-
-    <string name="flipping_down_title">Kippen stellt...</string>
-    <string name="pref_flipping_down_mutes_ringer_title">...Alarm auf Still</string>
-    <string name="pref_flipping_down_snoozes_alarm_title">...Alarm auf Schlummer</string>
-    <string name="pref_flipping_down_snoozes_alarm_summary">Keine Haftung für daraus resultierende Kündigung!</string>
-
-    <string name="gdx_call_screen1">Anruf Funktionen</string>
-    <string name="gdx_call_screen_sound_lounder1">Anruflautstärke</string>
-    <string name="gdx_call_screen_sound_lounder2">Lauter Rufton wenn Telefon in der Tasche</string>
-    <string name="gdx_call_screen_buttons_back2">Zurück-Taste beendet Anruf</string>
-    <string name="gdx_call_screen_sound_loop1">Rufton wiederholung</string>
-    <string name="gdx_call_screen_sound_loop2">In einer Endlosschleife</string>
-
-    <string name="gdx_other_screen1">Weitere Funktionen</string>
-    <string name="gdx_other_screen_hidemsgavatar">Avatar in SMS Nachrichten verbergen</string>
-    <string name="gdx_other_screen_copypaste">Schnelles Kopieren/Einfügen</string>
-    <string name="gdx_other_screen_status_bar_transparency1">Transparenz der Statuszeile</string>
-    <string name="gdx_other_screen_status_bar_transparency2">Neustart um Änderungen wirksam zu machen</string>
-    <string name="gdx_other_screen_senselock1">Sense 3 Lockscreen</string>
-    <string name="gdx_other_screen_senselock2">Nur einfache Funktionalität</string>
-    <string name="gdx_other_screen_status_bar_centerclock1">Uhr mittig im Statusbar</string>
-    <string name="gdx_other_screen_status_bar_centerclock2">Anstelle rechts.</string>
-    <string name="gdx_other_screen_about1">Über</string>
-    <string name="pref_gingerdx_about_default">GingerDX von Team GingerDX</string>
-
-    <string name="gdx_carrier_carrier">Angepasster Betreiber Text</string>
-    <string name="gdx_carrier_note">In Lockscreen/Statuszeile anzeigen</string>
-    <string name="carrier_label">Betreiber Text (Leer für Standard)</string>
-    <string name="custom_carrier">Betreiber Text</string>
-    <string name="ok_button">Fertig</string>
-    <string name="gdx_carrier_btn_cancel">Abbruch</string>
-
-	
 	<!-- GingerDX settings -->
     <string name="gingerdx_settings_title">GingerDX Einstellungen</string>
     <string name="gingerdx_settings_summary">Ändere GingerDX-spezifische Einstellungen</string>
@@ -948,7 +907,7 @@
     <string name="pie_mode_default">Normal (Standart)</string>
     <string name="pie_mode_slow">langsam</string>
     <string name="pie_size_title">Pie Größe</string>
-    <string name="pie_size_summary">Definiere Pie control's Größe</string>
+    <string name="pie_size_summary">Definiere Pie control\'s Größe</string>
     <string name="pie_size_small">klein</string>
     <string name="pie_size_medium">Medium</string>
     <string name="pie_size_default">@string/pie_mode_default</string>
