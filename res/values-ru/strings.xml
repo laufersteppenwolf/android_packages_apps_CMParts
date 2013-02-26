@@ -902,7 +902,7 @@
     <string name="gdx_other_screen_status_bar_transparency1">Прозрачность статусбара</string>
     <string name="gdx_other_screen_status_bar_transparency2">Необходима перезагрузка!</string>
     <string name="gdx_other_screen_ringlock1">Ring Экран блокировки</string>
-    <string name="gdx_other_screen_senselock2">Только базовый функционал!</string>
+    <string name="gdx_other_screen_ringlock2">Только базовый функционал!</string>
     <string name="gdx_other_screen_senselock1">Sense 3 Экран блокировки</string>
     <string name="gdx_other_screen_senselock2">Только базовый функционал!</string>
     <string name="gdx_other_screen_hidemsgavatar">Скрыть аватар в сообщениях</string>
