@@ -309,7 +309,7 @@
     <string name="pref_lockscreen_quick_unlock_control_title">Schnelles Entsperren</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">PIN und Passwort ohne Bestätigung eingeben. Löschen gilt als Fehlversuch.</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Eigener App-Starter</string>
-		<!-- <string name="pref_lockscreen_custom_app_toggle_summary">Zeigt einen zweiten schiebbaren Tab bzw. rotierbaren Slider</string> -->
+    <string name="pref_lockscreen_custom_app_toggle_summary">Zeigt einen zweiten schiebbaren Tab bzw. rotierbaren Slider</string>
     <string name="pref_lockscreen_custom_app_activity_title">Verknüpfte Anwendung</string>
     <string name="pref_lockscreen_custom_icon_style_title">Anwendungssymbol für Anwendung</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Anwendungs-Icon statt CM-Icon für den App-Starter verwenden</string>
