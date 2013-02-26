@@ -9,7 +9,6 @@
     <string name="application_settings_summary_head">Anwendungen verschieben, Installationsort, Kommunikationsfilter</string>
     <string name="display_settings_title_head">Display</string>
     <string name="display_settings_title_subhead">Display-Einstellungen</string>
-    <string name="display_settings_summary_head">Display-Animationen, Rotation, Timeouts</string>
     <string name="input_settings_title_head">Eingabe</string>
     <string name="input_settings_title_subhead">Eingabe-Einstellungen</string>
     <string name="input_settings_summary_head">Eingabeverhalten, Tasten, Haptisches Feedback</string>
@@ -986,7 +985,7 @@
     <string name="pie_size_large">groß</string>
     <string name="pie_size_gigantic">gigantisch</string>
     <string name="pie_enable_color_title">Aktiviere Farbüberzug</string>
-    <string name="pie_enable_color_summary">Aktiviere/deaktiviere Pie Farbüberzug</string>
+    <string name="pie_enable_color_summary">Aktiviere/deaktiviere den Pie Farbüberzug</string>
     <string name="pie_button_color_title">Ändere Tastenfarbe</string>
     <string name="pie_button_color_summary">Ändere Tastenfarbenüberzug</string>
     <string name="pie_background_button_color_title">Ändere Hintergrundfarbe</string>
@@ -1015,8 +1014,6 @@
     <string name="pie_trigger_huge">@string/pie_gap_huge</string>
 	<string name="pie_trigger_disable">Deaktiviert</string>
     <string name="pie_trigger_default">Standart</string>
-	<string name="pie_enable_color_title">Aktiviere den Farbüberzug</string>
-    <string name="pie_enable_color_summary">Aktiviere/Deaktiviere den Pie Farbüberzug</string>
 
 	<string name="pref_pie_buttons_home_title">Pie Home Schaltfläche 1</string>
     <string name="pref_pie_buttons_home1_title">Pie Home Schaltfläche 2</string>
