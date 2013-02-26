@@ -908,6 +908,8 @@
     <string name="gdx_other_screen_status_bar_centerclock2">Instead of on the right</string>
     <string name="gdx_other_screen_status_bar_transparency1">Status bar transparency</string>
     <string name="gdx_other_screen_status_bar_transparency2">Reboot to apply changes</string>
+    <string name="gdx_other_screen_ringlock1">Ring Lockscreen</string>
+    <string name="gdx_other_screen_ringlock2">Only basic functionality</string>
     <string name="gdx_other_screen_senselock1">Sense 3 Lockscreen</string>
     <string name="gdx_other_screen_senselock2">Only basic functionality</string>
     <string name="gdx_other_screen_hidemsgavatar">Hide avatar in SMS content</string>

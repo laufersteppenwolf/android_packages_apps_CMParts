@@ -54,13 +54,18 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private static final String ACHEP_ALARM_SHAKE_ACTION_PREF = "pref_achep_alarm_shake_action";
     private static final String ACHEP_ALARM_MATH_QUESTIONS_ENABLED_PREF = "pref_achep_alarm_math_questions_enabled";
     private static final String ACHEP_ALARM_INCREASING_VOLUME_ENABLED_PREF = "pref_achep_alarm_increasing_volume_enabled";
+
     // Jellychep
     private static final String ACHEP_JB_STATUS_BAR_PREF = "pref_achep_jb_status_bar";
- ////   private static final String ACHEP_JB_STATUS_BAR_PANEL_BACKGROUND_TRANSPARENCY_PREF = "pref_achep_jb_status_bar_panel_background_transparency";
+    // private static final String ACHEP_JB_STATUS_BAR_PANEL_BACKGROUND_TRANSPARENCY_PREF = "pref_achep_jb_status_bar_panel_background_transparency";
     private static final String ACHEP_JB_STATUS_BAR_NOTIFICATION_PREF = "pref_achep_jb_status_bar_notification";
     private static final String ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER_PREF = "pref_achep_jb_status_bar_notification_bigger";
-  ///  private static final String ACHEP_JB_STATUS_BAR_SOFT_BUTTONS_PREF = "pref_achep_jb_status_bar_soft_buttons";
-	// Ultra-brightness	
+    // private static final String ACHEP_JB_STATUS_BAR_SOFT_BUTTONS_PREF = "pref_achep_jb_status_bar_soft_buttons";
+
+    // Ring locker
+    private static final String ACHEP_RING_LOCKSCREEN_PREF = "pref_achep_ring_lockscreen";
+
+    // Ultra-brightness	
     private static final String ULTRA_BRIGHTNESS_PREF = "pref_ultra_brightness";
     private static final String ULTRA_BRIGHTNESS_PROP = "sys.ultrabrightness";
     private static final String ULTRA_BRIGHTNESS_PERSIST_PROP = "persist.sys.ultrabrightness";
@@ -75,13 +80,18 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
     private ListPreference mAlarmFlipActionPref;
     private CheckBoxPreference mAlarmIncreasingVolume;
     private CheckBoxPreference mAlarmMathQuestions;
+
     // Jellychep
     private CheckBoxPreference mJellyStatusbar;
- ////   private GingerDXTransparencyPickerBase mJellyStatusbarPanelTransparency;
+    // private GingerDXTransparencyPickerBase mJellyStatusbarPanelTransparency;
     private CheckBoxPreference mJellyStatusbarNotification;
     private CheckBoxPreference mJellyStatusbarNotificationBigger;
- ///   private CheckBoxPreference mJellyStatusBarSoftButtons;
-	// Ultra brightess	
+    // private CheckBoxPreference mJellyStatusBarSoftButtons;
+
+    // Ring locker
+    private CheckBoxPreference mRingLockscreen;
+
+    // Ultra brightess	
     private CheckBoxPreference mUltraBrightnessPref;
 
     private ListPreference mLedDisabledFromPref;
@@ -134,17 +144,19 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         mJellyStatusbar = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_PREF);
         mJellyStatusbarNotification = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_NOTIFICATION_PREF);
         mJellyStatusbarNotificationBigger = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER_PREF);
-  ////      mJellyStatusbarPanelTransparency = (GingerDXTransparencyPickerBase) prefSet.findPreference(ACHEP_JB_STATUS_BAR_PANEL_BACKGROUND_TRANSPARENCY_PREF);
+  	// mJellyStatusbarPanelTransparency = (GingerDXTransparencyPickerBase) prefSet.findPreference(ACHEP_JB_STATUS_BAR_PANEL_BACKGROUND_TRANSPARENCY_PREF);
         mJellyStatusbar.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR, 0) == 1);
-  ////      updateJellyStatusbarPanelTransparencyPref(mJellyStatusbar.isChecked());
+ 	// updateJellyStatusbarPanelTransparencyPref(mJellyStatusbar.isChecked());
         mJellyStatusbarNotification.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION, 0) == 1);
         mJellyStatusbarNotificationBigger.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER, 0) == 1);
         updateJellyStatusbarNotificationPref(mJellyStatusbarNotification.isChecked());
         
-		// Additional options
-///		mJellyStatusBarSoftButtons = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_SOFT_BUTTONS_PREF);
-///        mJellyStatusBarSoftButtons.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR_SOFT_BUTTONS, 0) == 1);
+	// Additional options
+	// mJellyStatusBarSoftButtons = (CheckBoxPreference) prefSet.findPreference(ACHEP_JB_STATUS_BAR_SOFT_BUTTONS_PREF);
+	// mJellyStatusBarSoftButtons.setChecked(Settings.System.getInt(getContentResolver(), Settings.System.ACHEP_JB_STATUS_BAR_SOFT_BUTTONS, 0) == 1);
 		
+	mRingLockscreen = (CheckBoxPreference) prefSet.findPreference(ACHEP_RING_LOCKSCREEN_PREF);
+
         /* Ultra brightness */
         mUltraBrightnessPref = (CheckBoxPreference) prefSet.findPreference(ULTRA_BRIGHTNESS_PREF);
 		updateUltraBrightnessPrefState();
@@ -231,156 +243,123 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) { 
-		if (preference == mUltraBrightnessPref) {
-            boolean value = mUltraBrightnessPref.isChecked();
-            if (value==true) {
-            	SystemProperties.set(ULTRA_BRIGHTNESS_PERSIST_PROP, "1");
-            	DisplayActivity.writeOneLine("/sys/devices/platform/i2c-adapter/i2c-0/0-0036/mode", "i2c_pwm");
-                Settings.System.putInt(getContentResolver(),
-                    Settings.System.ACHEP_ULTRA_BRIGHTNESS, 1);
-            }
-            else {
-            	SystemProperties.set(ULTRA_BRIGHTNESS_PERSIST_PROP, "0");
-            	DisplayActivity.writeOneLine("/sys/devices/platform/i2c-adapter/i2c-0/0-0036/mode", "i2c_pwm_als");
-                Settings.System.putInt(getContentResolver(),
-                    Settings.System.ACHEP_ULTRA_BRIGHTNESS, 0);
-            }
+	boolean handled = true;
+	if (preference == mUltraBrightnessPref) {
+        	boolean value = mUltraBrightnessPref.isChecked();
+        	if (value==true) {
+        		SystemProperties.set(ULTRA_BRIGHTNESS_PERSIST_PROP, "1");
+            		DisplayActivity.writeOneLine("/sys/devices/platform/i2c-adapter/i2c-0/0-0036/mode", "i2c_pwm");
+                	Settings.System.putInt(getContentResolver(),
+                	    Settings.System.ACHEP_ULTRA_BRIGHTNESS, 1);
+            	} else {
+            		SystemProperties.set(ULTRA_BRIGHTNESS_PERSIST_PROP, "0");
+            		DisplayActivity.writeOneLine("/sys/devices/platform/i2c-adapter/i2c-0/0-0036/mode", "i2c_pwm_als");
+                	Settings.System.putInt(getContentResolver(),
+                	    Settings.System.ACHEP_ULTRA_BRIGHTNESS, 0);
+        	}
         } else/* if (preference == mJellyStatusBarSoftButtons) {
-            Settings.System.putInt(getContentResolver(),
-                Settings.System.ACHEP_JB_STATUS_BAR_SOFT_BUTTONS, mJellyStatusBarSoftButtons.isChecked() ? 1 : 0);
-            return true;
+            	Settings.System.putInt(getContentResolver(),
+            	    Settings.System.ACHEP_JB_STATUS_BAR_SOFT_BUTTONS, mJellyStatusBarSoftButtons.isChecked() ? 1 : 0);
+            	return true;
         } else*/ if (preference == mJellyStatusbar) {
-            Settings.System.putInt(getContentResolver(),
-                Settings.System.ACHEP_JB_STATUS_BAR, mJellyStatusbar.isChecked() ? 1 : 0);
-       ////     updateJellyStatusbarPanelTransparencyPref(mJellyStatusbar.isChecked());
-            return true;
-        }
-        else if (preference == mJellyStatusbarNotification) {
-            updateJellyStatusbarNotificationPref(mJellyStatusbarNotification.isChecked());
-            Settings.System.putInt(getContentResolver(),
-                Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION, mJellyStatusbarNotification.isChecked() ? 1 : 0);
-            return true;
-        }
-        else if (preference == mJellyStatusbarNotificationBigger) {
-            Settings.System.putInt(getContentResolver(),
-                Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER, mJellyStatusbarNotificationBigger.isChecked() ? 1 : 0);
-            return true;
-        }
-        else if (preference == mAlarmMathQuestions) {
-            Settings.System.putInt(getContentResolver(),
-                Settings.System.ACHEP_ALARM_MATH_QUESTIONS_ENABLED, mAlarmMathQuestions.isChecked() ? 1 : 0);
-            return true;
-        }
-        else if (preference == mAlarmIncreasingVolume) {
-            Settings.System.putInt(getContentResolver(),
-                Settings.System.ACHEP_ALARM_INCREASING_VOLUME_ENABLED, mAlarmIncreasingVolume.isChecked() ? 1 : 0);
-            return true;
-        }
-        else
-        if (preference == mLedDisabledPref) {
-            updateLedDisabledPref(mLedDisabledPref.isChecked());
-            Settings.System.putInt(getContentResolver(),
-                Settings.System.NOTIFICATION_LIGHT_DISABLED, mLedDisabledPref.isChecked() ? 1 : 0);
-            return true;
-        }
-        else if (preference == mFlippingDownMutesRinger) {
-            Settings.System.putInt(getContentResolver(), Settings.System.FLIPPING_DOWN_MUTES_RINGER, mFlippingDownMutesRinger.isChecked() ? 1 : 0);
-            return true;
-        }
-        else if (preference == mBackButtonEndsCall) {
-            Settings.System.putInt(getContentResolver(), Settings.System.BACK_BUTTON_ENDS_CALL, mBackButtonEndsCall.isChecked() ? 1 : 0);
-            return true;
-        }
-		else if (preference == mMenuButtonAnswersCall) {
-            Settings.System.putInt(getContentResolver(), Settings.System.MENU_BUTTON_ANSWERS_CALL, mMenuButtonAnswersCall.isChecked() ? 1 : 0);
-            return true;
-        }
-        else if (preference == mPickUpToCall) {
-            Settings.System.putInt(getContentResolver(), Settings.System.PICK_UP_TO_CALL, mPickUpToCall.isChecked() ? 1 : 0);
-            return true;
-        }
-        else if (preference == mHideAvatarMessage) {
-            Settings.System.putInt(getContentResolver(), Settings.System.HIDE_AVATAR_MESSAGE, mHideAvatarMessage.isChecked() ? 1 : 0);
-            return true;
-        }
-        else if (preference == mQuickCopyPaste) {
-            Settings.System.putInt(getContentResolver(), Settings.System.QUICK_COPY_PASTE, mQuickCopyPaste.isChecked() ? 1 : 0);
-            return true;
-        }
-        else if (preference == mCallMeLouder) {
-            Settings.System.putInt(getContentResolver(), Settings.System.CALL_ME_LOUDER, mCallMeLouder.isChecked() ? 1 : 0);
-        }
-        else if (preference == mRingerLoop) {
-            Settings.System.putInt(getContentResolver(), Settings.System.RINGER_LOOP, mRingerLoop.isChecked() ? 1 : 0);
-        }
-        else if (preference == mSense3Lockscreen) {
-            Settings.System.putInt(getContentResolver(), Settings.System.USE_SENSE3_LOCKSCREEN, mSense3Lockscreen.isChecked() ? 1 : 0);
-        }
-        /*else if (preference == mSmartDialer) {
-            Settings.System.putInt(getContentResolver(), Settings.System.SMART_DIALER, mSmartDialer.isChecked() ? 1 : 0);
-        }*/
-        else if (preference == mCenterClockStatusBar) {
-            Settings.System.putInt(getContentResolver(), Settings.System.CENTER_CLOCK_STATUS_BAR, mCenterClockStatusBar.isChecked() ? 1 : 0);
-        }
-//      else if (preference == mRecentAppsStatusBar) {
-//          Settings.System.putInt(getContentResolver(), Settings.System.RECENT_APPS_STATUS_BAR, mRecentAppsStatusBar.isChecked() ? 1 : 0);
-//      }
-
-//        else if (preference == mDoProfileScrolling) {
-//            Settings.System.putInt(getContentResolver(), Settings.System.DO_PROFILE_SCROLLING, mDoProfileScrolling.isChecked() ? 1 : 0);
-//            return true;
-//        }
-//        else if (preference == mDoProfileFlinging) {
-//            Settings.System.putInt(getContentResolver(), Settings.System.DO_PROFILE_FLINGING, mDoProfileFlinging.isChecked() ? 1 : 0);
-//            return true;
-//        }
-        else if (preference == mAbout) {
+            	Settings.System.putInt(getContentResolver(),
+            	    Settings.System.ACHEP_JB_STATUS_BAR, mJellyStatusbar.isChecked() ? 1 : 0);
+            	// updateJellyStatusbarPanelTransparencyPref(mJellyStatusbar.isChecked());
+        } else if (preference == mJellyStatusbarNotification) {
+            	updateJellyStatusbarNotificationPref(mJellyStatusbarNotification.isChecked());
+            	Settings.System.putInt(getContentResolver(),
+            	    Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION, mJellyStatusbarNotification.isChecked() ? 1 : 0);
+        } else if (preference == mRingLockscreen) {
+            	Settings.System.putInt(getContentResolver(),
+            	    Settings.System.ACHEP_RING_LOCKSCREEN, mRingLockscreen.isChecked() ? 1 : 0);
+        } else if (preference == mJellyStatusbarNotificationBigger) {
+            	Settings.System.putInt(getContentResolver(),
+            	    Settings.System.ACHEP_JB_STATUS_BAR_NOTIFICATION_BIGGER, mJellyStatusbarNotificationBigger.isChecked() ? 1 : 0);
+        } else if (preference == mAlarmMathQuestions) {
+            	Settings.System.putInt(getContentResolver(),
+            	    Settings.System.ACHEP_ALARM_MATH_QUESTIONS_ENABLED, mAlarmMathQuestions.isChecked() ? 1 : 0);
+        } else if (preference == mAlarmIncreasingVolume) {
+            	Settings.System.putInt(getContentResolver(),
+            	    Settings.System.ACHEP_ALARM_INCREASING_VOLUME_ENABLED, mAlarmIncreasingVolume.isChecked() ? 1 : 0);
+        } else if (preference == mLedDisabledPref) {
+            	updateLedDisabledPref(mLedDisabledPref.isChecked());
+            	Settings.System.putInt(getContentResolver(),
+            	    Settings.System.NOTIFICATION_LIGHT_DISABLED, mLedDisabledPref.isChecked() ? 1 : 0);
+        } else if (preference == mFlippingDownMutesRinger) {
+            	Settings.System.putInt(getContentResolver(), Settings.System.FLIPPING_DOWN_MUTES_RINGER, mFlippingDownMutesRinger.isChecked() ? 1 : 0);
+        } else if (preference == mBackButtonEndsCall) {
+            	Settings.System.putInt(getContentResolver(), Settings.System.BACK_BUTTON_ENDS_CALL, mBackButtonEndsCall.isChecked() ? 1 : 0);
+        } else if (preference == mMenuButtonAnswersCall) {
+            	Settings.System.putInt(getContentResolver(), Settings.System.MENU_BUTTON_ANSWERS_CALL, mMenuButtonAnswersCall.isChecked() ? 1 : 0);
+        } else if (preference == mPickUpToCall) {
+            	Settings.System.putInt(getContentResolver(), Settings.System.PICK_UP_TO_CALL, mPickUpToCall.isChecked() ? 1 : 0);
+        } else if (preference == mHideAvatarMessage) {
+            	Settings.System.putInt(getContentResolver(), Settings.System.HIDE_AVATAR_MESSAGE, mHideAvatarMessage.isChecked() ? 1 : 0);
+        } else if (preference == mQuickCopyPaste) {
+            	Settings.System.putInt(getContentResolver(), Settings.System.QUICK_COPY_PASTE, mQuickCopyPaste.isChecked() ? 1 : 0);
+        } else if (preference == mCallMeLouder) {
+            	Settings.System.putInt(getContentResolver(), Settings.System.CALL_ME_LOUDER, mCallMeLouder.isChecked() ? 1 : 0);
+        } else if (preference == mRingerLoop) {
+            	Settings.System.putInt(getContentResolver(), Settings.System.RINGER_LOOP, mRingerLoop.isChecked() ? 1 : 0);
+        } else if (preference == mSense3Lockscreen) {
+            	Settings.System.putInt(getContentResolver(), Settings.System.USE_SENSE3_LOCKSCREEN, mSense3Lockscreen.isChecked() ? 1 : 0);
+        }/*else if (preference == mSmartDialer) {
+            	Settings.System.putInt(getContentResolver(), Settings.System.SMART_DIALER, mSmartDialer.isChecked() ? 1 : 0);
+        }*/ else if (preference == mCenterClockStatusBar) {
+            	Settings.System.putInt(getContentResolver(), Settings.System.CENTER_CLOCK_STATUS_BAR, mCenterClockStatusBar.isChecked() ? 1 : 0);
+        }/* else if (preference == mRecentAppsStatusBar) {
+        	Settings.System.putInt(getContentResolver(), Settings.System.RECENT_APPS_STATUS_BAR, mRecentAppsStatusBar.isChecked() ? 1 : 0);
+        } else if (preference == mDoProfileScrolling) {
+        	Settings.System.putInt(getContentResolver(), Settings.System.DO_PROFILE_SCROLLING, mDoProfileScrolling.isChecked() ? 1 : 0);
+        } else if (preference == mDoProfileFlinging) {
+        	Settings.System.putInt(getContentResolver(), Settings.System.DO_PROFILE_FLINGING, mDoProfileFlinging.isChecked() ? 1 : 0);
+        } else if (preference == mAbout) {
         	// increase the number of clicks
-//        	int numSelected = Settings.System.getInt(getContentResolver(), Settings.System.ABOUT_CLICKED, 0);
-//        	Settings.System.putInt(getContentResolver(), Settings.System.ABOUT_CLICKED, numSelected + 1);
-        }
-        return false;
+        	int numSelected = Settings.System.getInt(getContentResolver(), Settings.System.ABOUT_CLICKED, 0);
+	       	Settings.System.putInt(getContentResolver(), Settings.System.ABOUT_CLICKED, numSelected + 1);
+        }*/ else {
+		handled = false;	
+	}
+        return handled;
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-    	if (newValue != null) {
-    	   	// we have a list preference change?
-	        if (preference == mAlarmShakeActionPref) {
-				int val = Integer.parseInt(String.valueOf(newValue));
-            	Settings.System.putInt(mContext.getContentResolver(), Settings.System.ACHEP_ALARM_SHAKE_ACTION, val);
-            	mAlarmShakeActionPref.setValue(String.valueOf(val));
-            }
-	        if (preference == mAlarmFlipActionPref) {
-				int val = Integer.parseInt(String.valueOf(newValue));
-            	Settings.System.putInt(mContext.getContentResolver(), Settings.System.ACHEP_ALARM_FLIP_ACTION, val);
-            	mAlarmFlipActionPref.setValue(String.valueOf(val));
-            }
-	        if (preference == mLedDisabledFromPref) {
-				int val = Integer.parseInt(String.valueOf(newValue));
-            	Settings.System.putInt(mContext.getContentResolver(), Settings.System.NOTIFICATION_LIGHT_DISABLED_START, val);
-            	mLedDisabledFromPref.setValue(String.valueOf(val));
-            }
-	        if (preference == mLedDisabledToPref) {
-				int val = Integer.parseInt(String.valueOf(newValue));
-            	Settings.System.putInt(mContext.getContentResolver(), Settings.System.NOTIFICATION_LIGHT_DISABLED_END, val);
-            	mLedDisabledToPref.setValue(String.valueOf(val));
-            }
-            if (preference == mUpdateCheckHourPref) {
-				int val = Integer.parseInt(String.valueOf(newValue));
-            	Settings.System.putInt(mContext.getContentResolver(), Settings.System.UPDATE_CHECK_HOUR, val);
-            	mUpdateCheckHourPref.setValue(String.valueOf(val));
-            }
-        }
+    	if (newValue == null) 
+		return false;
+    	// we have a list preference change?
+	if (preference == mAlarmShakeActionPref) {
+		int val = Integer.parseInt(String.valueOf(newValue));
+       		Settings.System.putInt(mContext.getContentResolver(), Settings.System.ACHEP_ALARM_SHAKE_ACTION, val);
+        	mAlarmShakeActionPref.setValue(String.valueOf(val));
+        } else if (preference == mAlarmFlipActionPref) {
+		int val = Integer.parseInt(String.valueOf(newValue));
+        	Settings.System.putInt(mContext.getContentResolver(), Settings.System.ACHEP_ALARM_FLIP_ACTION, val);
+        	mAlarmFlipActionPref.setValue(String.valueOf(val));
+        } else if (preference == mLedDisabledFromPref) {
+		int val = Integer.parseInt(String.valueOf(newValue));
+        	Settings.System.putInt(mContext.getContentResolver(), Settings.System.NOTIFICATION_LIGHT_DISABLED_START, val);
+        	mLedDisabledFromPref.setValue(String.valueOf(val));
+       	} else if (preference == mLedDisabledToPref) {
+		int val = Integer.parseInt(String.valueOf(newValue));
+        	Settings.System.putInt(mContext.getContentResolver(), Settings.System.NOTIFICATION_LIGHT_DISABLED_END, val);
+        	mLedDisabledToPref.setValue(String.valueOf(val));
+        } else if (preference == mUpdateCheckHourPref) {
+		int val = Integer.parseInt(String.valueOf(newValue));
+        	Settings.System.putInt(mContext.getContentResolver(), Settings.System.UPDATE_CHECK_HOUR, val);
+        	mUpdateCheckHourPref.setValue(String.valueOf(val));
+        }        
         return false;
     }
 
-   // Additional funny voids
+
    private void updateJellyStatusbarNotificationPref(boolean checked){
       mJellyStatusbarNotificationBigger.setEnabled(checked);
    }
-  //// private void updateJellyStatusbarPanelTransparencyPref(boolean checked){
-  ////    mJellyStatusbarPanelTransparency.setEnabled(checked);
-  //// }
+
+  /* private void updateJellyStatusbarPanelTransparencyPref(boolean checked){
+      mJellyStatusbarPanelTransparency.setEnabled(checked);
+   }*/
+
    private void updateLedDisabledPref(boolean checked){
       mLedDisabledToPref.setEnabled(checked);
       mLedDisabledFromPref.setEnabled(checked);

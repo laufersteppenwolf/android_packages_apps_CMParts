@@ -155,22 +155,26 @@
         android:title="@string/gdx_other_screen1"
         android:summary="@string/gdx_other_screen2" >
         <PreferenceCategory android:title="@string/gdx_other_screen_userinterface" >
-        <CheckBoxPreference
-            android:key="pref_center_clock_status_bar"
-            android:summary="@string/gdx_other_screen_status_bar_centerclock2"
-            android:title="@string/gdx_other_screen_status_bar_centerclock1" />
-        <com.cyanogenmod.cmparts.preferences.GingerDXStatusBarTransparencyPicker
-            android:summary="@string/gdx_other_screen_status_bar_transparency2"
-            android:title="@string/gdx_other_screen_status_bar_transparency1" />
-        <CheckBoxPreference
-            android:key="pref_sense3_lockscreen"
-            android:summary="@string/gdx_other_screen_senselock2"
-            android:title="@string/gdx_other_screen_senselock1" />
-        <CheckBoxPreference
-            android:key="pref_hide_avatar_message"
-            android:title="@string/gdx_other_screen_hidemsgavatar" />
+        	<CheckBoxPreference
+        	    android:key="pref_center_clock_status_bar"
+        	    android:summary="@string/gdx_other_screen_status_bar_centerclock2"
+        	    android:title="@string/gdx_other_screen_status_bar_centerclock1" />
+        	<com.cyanogenmod.cmparts.preferences.GingerDXStatusBarTransparencyPicker
+        	    android:summary="@string/gdx_other_screen_status_bar_transparency2"
+        	    android:title="@string/gdx_other_screen_status_bar_transparency1" />
+       		<CheckBoxPreference
+        	    android:key="pref_achep_ring_lockscreen"
+        	    android:summary="@string/gdx_other_screen_ringlock2"
+        	    android:title="@string/gdx_other_screen_ringlock1" />
+        	<CheckBoxPreference
+        	    android:key="pref_sense3_lockscreen"
+        	    android:summary="@string/gdx_other_screen_senselock2"
+        	    android:title="@string/gdx_other_screen_senselock1" />
+        	<CheckBoxPreference
+        	    android:key="pref_hide_avatar_message"
+        	    android:title="@string/gdx_other_screen_hidemsgavatar" />
 		
-		</PreferenceCategory>
+	</PreferenceCategory>
         <PreferenceCategory android:title="@string/gdx_call_screen_other" >
         <CheckBoxPreference
             android:key="pref_ultra_brightness"
