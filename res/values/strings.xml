@@ -881,7 +881,7 @@
     <string name="gdx_jelly_screen2">Status bar, notifications etc.</string>
     <string name="gdx_jelly_screen_status_bar_category">STATUS BAR</string>
     <string name="gdx_jelly_screen_information1">Notes</string>
-    <string name="gdx_jelly_screen_information2">To applying settings reboot is required!\n\n2012 © AChep@xda (artemchep@gmail.com)</string>
+    <string name="gdx_jelly_screen_information2">A reboot is required to apply settings!\n\n2012 © AChep@xda (artemchep@gmail.com)</string>
     <string name="gdx_jelly_screen_status_bar">Status bar panel</string>
     <string name="gdx_jelly_screen_sbbuttons1">Soft buttons</string>
     <string name="gdx_jelly_screen_sbbuttons2">Soft buttons at bottom of the screen</string>
@@ -889,7 +889,7 @@
     <string name="gdx_jelly_screen_status_bar_panel_transparency2">Set transparency of the Jelly Bean status bar panel</string>
     <string name="gdx_jelly_screen_status_bar_notification">Notifications</string>
     <string name="gdx_jelly_screen_status_bar_notification_bigger1">Bigger notifications</string>
-    <string name="gdx_jelly_screen_status_bar_notification_bigger2">It\'s experimental feature!</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger2">Experimental feature!</string>
 	
 	<!-- LED -->
     <string name="gdx_led_screen1">LED</string>
