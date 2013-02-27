@@ -916,11 +916,11 @@
     <string name="gdx_jelly_screen_status_bar_category">STATUSLEISTE</string>
     <string name="gdx_jelly_screen_information1">Anmerkungen</string>
     <string name="gdx_jelly_screen_information2">Zum Übernehmen dieser Einstellungen ist ein Neustart erforderlich!\n\n2012 © AChep@xda (artemchep@gmail.com)</string>
-    <string name="gdx_jelly_screen_status_bar">Statusleistenfeld</string>
+    <string name="gdx_jelly_screen_status_bar">Jelly Bean Statusleiste</string>
     <string name="gdx_jelly_screen_sbbuttons1">Soft buttons</string>
     <string name="gdx_jelly_screen_sbbuttons2">Soft buttons an der unteren Seite des Bildschirms</string>
-    <string name="gdx_jelly_screen_status_bar_panel_transparency1">Statusleistenfeld Transparenz</string>
-    <string name="gdx_jelly_screen_status_bar_panel_transparency2">Einstellung der Transparenz des Jelly Bean Statusleistenfeldes</string>
+    <string name="gdx_jelly_screen_status_bar_panel_transparency1">Statusleisten Transparenz</string>
+    <string name="gdx_jelly_screen_status_bar_panel_transparency2">Einstellung der Transparenz der Jelly Bean Statusleiste</string>
     <string name="gdx_jelly_screen_status_bar_notification">Benachrichtigungen</string>
     <string name="gdx_jelly_screen_status_bar_notification_bigger1">Größere Benachrichtigungen</string>
     <string name="gdx_jelly_screen_status_bar_notification_bigger2">Das ist eine experimentelle Funktion!</string>
