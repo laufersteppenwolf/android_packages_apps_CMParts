@@ -303,7 +303,7 @@
     <string name="lockscreen_style_options_title">Style-specific Options</string>
     <string name="pref_lockscreen_custom_app_toggle_title">Custom app starter</string>
     <string name="pref_lockscreen_custom_app_toggle_tab_summary">Shows a second set of sliders to launch a custom app</string>
-	<string name="pref_lockscreen_custom_app_toggle_tab_summary">Activate the ability to launch a custom app</string>
+	<string name="pref_lockscreen_custom_app_toggle_summary">Activate the ability to launch a custom app</string>
     <string name="pref_lockscreen_custom_app_toggle_rotary_summary">Shows a custom app dimple to launch a custom app</string>
     <string name="pref_lockscreen_custom_app_toggle_ring_summary">Shows a third ring to launch up to four custom apps</string>
     <string name="pref_lockscreen_custom_app_activity_title">Custom application</string>
