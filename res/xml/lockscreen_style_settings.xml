@@ -22,7 +22,7 @@
 
         <CheckBoxPreference android:key="pref_lockscreen_custom_app_toggle"
             android:title="@string/pref_lockscreen_custom_app_toggle_title"
-            android:summary="@string/pref_lockscreen_custom_app_toggle_summary" />
+            android:summary="@string/pref_lockscreen_custom_app_toggle_tab_summary" />
 
         <CheckBoxPreference android:key="pref_lockscreen_rotary_unlock_down_toggle"
             android:title="@string/pref_lockscreen_rotary_unlock_down_title"
