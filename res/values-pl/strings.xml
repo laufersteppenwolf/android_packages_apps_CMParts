@@ -930,34 +930,34 @@
     <string name="title_toggle_ultra_brightness">Ultra-jasność</string>
     
     <!-- Pie controls -->
-    <string name="pie_controls_title">Ustawienia kontroli ciasta (pie)</string>
-    <string name="pie_controls_summary">Ustawienia nawigacyjne ciasta.</string>
-    <string name="pie_color_change_title">Kontrola kolorów ciasta</string>
-    <string name="pie_gravity_title">Położenie ciasta</string>
-    <string name="pie_gravity_summary">Ustala położenie ciasta.</string>
+    <string name="pie_controls_title">Ustawienia PIE</string>
+    <string name="pie_controls_summary">Ustawienia nawigacyjne PIE.</string>
+    <string name="pie_color_change_title">Kontrola kolorów PIE</string>
+    <string name="pie_gravity_title">Położenie PIE</string>
+    <string name="pie_gravity_summary">Ustala położenie PIE.</string>
     <string name="pie_gravity_top">Na górze</string>
     <string name="pie_gravity_bottom">Na dole</string>
     <string name="pie_gravity_right">Po prawej</string>
     <string name="pie_gravity_left">Po lewej</string>
-    <string name="pie_mode_title">Styl ciasta</string>
+    <string name="pie_mode_title">Styl PIE</string>
     <string name="pie_mode_summary">Zarządzaj jak animacje i powiadomienia na pasku statusu będą obsługiwane.</string>
     <string name="pie_mode_bare">Bez niczego</string>
     <string name="pie_mode_quick">Szybko</string>
     <string name="pie_mode_default">Normalnie (domyślne)</string>
     <string name="pie_mode_slow">Powoli</string>
-    <string name="pie_size_title">Rozmiar ciasta</string>
-    <string name="pie_size_summary">Ustala rozmiar kontrolek ciasta</string>
+    <string name="pie_size_title">Rozmiar PIE</string>
+    <string name="pie_size_summary">Ustala rozmiar kontrolek PIE</string>
     <string name="pie_size_small">Małe</string>
     <string name="pie_size_medium">Średnie</string>
     <string name="pie_size_default">@string/pie_mode_default</string>
     <string name="pie_size_large">Duże</string>
     <string name="pie_size_gigantic">Gigantyczne</string>
     <string name="pie_enable_color_title">Włącz nałożenie koloru</string>
-    <string name="pie_enable_color_summary">Włącz/Wyłącz nałożenie się kolorów ciasta.</string>
+    <string name="pie_enable_color_summary">Włącz/Wyłącz nałożenie się kolorów PIE.</string>
     <string name="pie_button_color_title">Zmień kolor przycisku</string>
     <string name="pie_button_color_summary">Zmienia kolor przycisku.</string>
-    <string name="pie_enable_control_title">Włącz kontrolę ciastem</string>
-    <string name="pie_enable_control_summary">Włącza/Wyłącza kontrolę ciastem.</string>
+    <string name="pie_enable_control_title">Włącz kontrolę PIE</string>
+    <string name="pie_enable_control_summary">Włącza/Wyłącza kontrolę PIE.</string>
     <string name="pie_background_button_color_title">Zmień kolor tła</string>
     <string name="pie_background_button_color_summary">Zmienia kolor tła.</string>
     <string name="pie_choice_button_color_title">Zmień kolor wybranego przycisku</string>
@@ -972,20 +972,20 @@
     <string name="pie_outline_color_summary">Zmienia kolor obwódki przycisków.</string>
     <string name="piecontrol_notice_summary">NavigationBar jest włączony. Wyłącz go jeśli chcesz używać PIE.</string>
     <string name="pie_gap_title">Przestrzeń między elementami</string>
-    <string name="pie_gap_summary">Dostosuj przestrzeń między kawałkami ciasta.</string>
+    <string name="pie_gap_summary">Dostosuj przestrzeń między kawałkami PIE.</string>
     <string name="pie_gap_closed">Połączone</string>
     <string name="pie_gap_small">Małą (domyślne)</string>
     <string name="pie_gap_big">Duża</string>
     <string name="pie_gap_huge">Wielka</string>
     <string name="pie_trigger_title">Przestrzeń operacyjna</string>
-    <string name="pie_trigger_summary">Określa wielkość przestrzeni która po przeciągnięciu palcem aktywuję kontrolę ciastem.</string>
+    <string name="pie_trigger_summary">Określa wielkość przestrzeni która po przeciągnięciu palcem aktywuję kontrolę PIE.</string>
     <string name="pie_trigger_small">Mała</string>
     <string name="pie_trigger_big">@string/pie_gap_big</string>
     <string name="pie_trigger_huge">@string/pie_gap_huge</string>
     <string name="pie_trigger_disable">Wyłącz</string>
     <string name="pie_trigger_default">Domyślne</string>
     
-    <string name="pref_pie_buttons_home_title">Elementy ciasta</string>
+    <string name="pref_pie_buttons_home_title">Elementy PIE</string>
     <string name="pref_pie_buttons_home1_title">Element poziomu 1</string>
     <string name="pref_pie_buttons_home2_title">Element poziomu 2</string>
     <string name="pref_pie_buttons_home3_title">Element poziomu 3</string>
@@ -993,10 +993,10 @@
     <string name="pref_pie_buttons_home_summary">Wybierz czynność dla tego przycisku.</string>
     <string name="pref_pie_buttons_home_input_title">Wybierz czynność</string>
     <string name="pref_pie_buttons_home_level_toggle_title">Włącz poziomy </string>
-    <string name="pref_pie_buttons_home_level_toggle_summary">Włączanie/wyłączanie poziomów elementów ciasta.</string>
+    <string name="pref_pie_buttons_home_level_toggle_summary">Włączanie/wyłączanie poziomów elementów PIE.</string>
     <string name="pref_pie_buttons_home_app_toggle_title">Włącz wybraną aplikację w cieście</string>
-    <string name="pref_pie_buttons_home_app_toggle_summary">Włącza/wyłącza wybraną aplikację w cieście.</string>
-    <string name="pref_pie_buttons_search_title">Wyszukiwanie pie</string>
+    <string name="pref_pie_buttons_home_app_toggle_summary">Włącza/wyłącza wybraną aplikację w PIE.</string>
+    <string name="pref_pie_buttons_search_title">Wyszukiwanie PIE</string>
     <string name="pref_pie_buttons_search1_title">Szukanie poziomu 1</string>
     <string name="pref_pie_buttons_search2_title">Szukanie poziomu 2</string>
     <string name="pref_pie_buttons_search3_title">Szukanie poziomu 3</string>
@@ -1006,11 +1006,11 @@
     <string name="pref_pie_buttons_recent2_title">Niedawno wybrane poziomu 2</string>
     <string name="pref_pie_buttons_recent3_title">Niedawno wybrane poziomu 3</string>
     <string name="pref_pie_buttons_recent4_title">Niedawno wybrane poziomu 4</string>
-    <string name="pref_pie_buttons_menu_title">Menu pie</string>
-    <string name="pref_pie_buttons_menu1_title">Menu pie poziomu 1</string>
-    <string name="pref_pie_buttons_menu2_title">Menu pie poziomu 2</string>
-    <string name="pref_pie_buttons_menu3_title">Menu pie poziomu 3</string>
-    <string name="pref_pie_buttons_menu4_title">Menu pie poziomu 4</string>
+    <string name="pref_pie_buttons_menu_title">Menu PIE</string>
+    <string name="pref_pie_buttons_menu1_title">Menu PIE poziomu 1</string>
+    <string name="pref_pie_buttons_menu2_title">Menu PIE poziomu 2</string>
+    <string name="pref_pie_buttons_menu3_title">Menu PIE poziomu 3</string>
+    <string name="pref_pie_buttons_menu4_title">Menu PIE poziomu 4</string>
     <string name="pref_pie_buttons_back_title">Powrót w cieście</string>
     <string name="pref_pie_buttons_back1_title">Powrót w cieście poziomu 1</string>
     <string name="pref_pie_buttons_back2_title">Powrót w cieście poziomu 2</string>
@@ -1024,8 +1024,8 @@
     <string name="pie_item_controls_title">Zarządzanie elementami</string>
     
     <string name="pie_center_title">Wycentrowana pozycja</string>
-	<string name="pie_center_summary">Wyśrodkowuje ciasto niezależnie od wybranej pozycji.</string>
+	<string name="pie_center_summary">Wyśrodkowuje PIE niezależnie od wybranej pozycji.</string>
 
-    <string name="input_pie_key_title">Zarządzanie elementami pie</string>
+    <string name="input_pie_key_title">Zarządzanie elementami PIE</string>
     <string name="input_pie_key_summary">Wybierz czynność zarządzania elementami.</string>
 </resources>
