@@ -902,7 +902,7 @@
 	
 	<!-- Other -->
     <string name="gdx_other_screen1">Other</string>
-    <string name="gdx_other_screen2">Ultra brightness, Sense 3 lockscreen, center clock etc.</string>
+    <string name="gdx_other_screen2">Ultra brightness, lockscreens, center clock etc.</string>
     <string name="gdx_other_screen_userinterface">User Interface</string>
     <string name="gdx_other_screen_status_bar_centerclock1">Center clock on status bar</string>
     <string name="gdx_other_screen_status_bar_centerclock2">Instead of on the right</string>

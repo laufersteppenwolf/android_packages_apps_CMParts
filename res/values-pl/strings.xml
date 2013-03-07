@@ -902,7 +902,7 @@
 	
 	<!-- Other -->
     <string name="gdx_other_screen1">Inne funkcje</string>
-    <string name="gdx_other_screen2">Ultra brightness, Sense 3 lockscreen, wyśrodkowany zegar etc.</string>
+    <string name="gdx_other_screen2">Ultra brightness, ekrany blokady, wyśrodkowany zegar etc.</string>
     <string name="gdx_other_screen_userinterface">Interfejs użytkownika</string>
     <string name="gdx_other_screen_status_bar_centerclock1">Zegar na środku belki statusu</string>
     <string name="gdx_other_screen_status_bar_centerclock2">Zamiast po prawej stronie. Wymaga restartu.</string>
