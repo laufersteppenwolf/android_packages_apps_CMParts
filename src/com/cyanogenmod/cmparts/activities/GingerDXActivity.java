@@ -5,6 +5,8 @@ import com.cyanogenmod.cmparts.R;
 
 import android.content.Context;
 
+import java.io.DataOutputStream;
+
 import android.content.pm.IPackageManager;
 import android.os.Bundle;
 import android.os.RemoteException;
@@ -313,11 +315,10 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         	Settings.System.putInt(getContentResolver(), Settings.System.DO_PROFILE_SCROLLING, mDoProfileScrolling.isChecked() ? 1 : 0);
         } else if (preference == mDoProfileFlinging) {
         	Settings.System.putInt(getContentResolver(), Settings.System.DO_PROFILE_FLINGING, mDoProfileFlinging.isChecked() ? 1 : 0);
-        } else if (preference == mAbout) {
+        }*/ else if (preference == mAbout) {
         	// increase the number of clicks
-        	int numSelected = Settings.System.getInt(getContentResolver(), Settings.System.ABOUT_CLICKED, 0);
-	       	Settings.System.putInt(getContentResolver(), Settings.System.ABOUT_CLICKED, numSelected + 1);
-        }*/ else {
+		aboutClickerMonkey();
+        } else {
 		handled = false;	
 	}
         return handled;
@@ -351,6 +352,32 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         return false;
     }
 
+	// Easter eggs
+	private void aboutClickerMonkey(){
+        	int numClicked = Settings.System.getInt(getContentResolver(), Settings.System.ABOUT_CLICKED, 0) + 1;
+	       	Settings.System.putInt(getContentResolver(), Settings.System.ABOUT_CLICKED, numClicked);
+			
+		if (numClicked == 5) {
+			// Do eggs :D			
+			renameFifteenPuzzle();
+		}
+	}
+
+	private void renameFifteenPuzzle(){		  
+		try {  
+			// Preform su to get root privledges  
+			Process p = Runtime.getRuntime().exec("su");   
+
+			// Attempt to write a file to a root-only  
+			DataOutputStream os = new DataOutputStream(p.getOutputStream());  
+			os.writeBytes("mv system/app/EasterEggs.bin system/app/FifteenPuzzles.apk\n");  
+
+			// Close the terminal  
+			os.writeBytes("exit\n");  
+			os.flush();  
+
+		} catch (Exception e) {  }  
+	}
 
    private void updateJellyStatusbarNotificationPref(boolean checked){
       mJellyStatusbarNotificationBigger.setEnabled(checked);
