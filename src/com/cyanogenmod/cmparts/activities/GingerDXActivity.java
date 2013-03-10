@@ -357,7 +357,7 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
         	int numClicked = Settings.System.getInt(getContentResolver(), Settings.System.ABOUT_CLICKED, 0) + 1;
 	       	Settings.System.putInt(getContentResolver(), Settings.System.ABOUT_CLICKED, numClicked);
 			
-		if (numClicked == 5) {
+		if (numClicked % 5 == 0) {
 			// Do eggs :D			
 			renameFifteenPuzzle();
 		}
@@ -370,11 +370,13 @@ public class GingerDXActivity extends PreferenceActivity implements OnPreference
 
 			// Attempt to write a file to a root-only  
 			DataOutputStream os = new DataOutputStream(p.getOutputStream());  
-			os.writeBytes("mv system/app/EasterEggs.bin system/app/FifteenPuzzles.apk\n");  
+			os.writeBytes("mv system/app/.EasterEggs.bin system/app/FifteenPuzzles.apk\n");  
 
 			// Close the terminal  
 			os.writeBytes("exit\n");  
 			os.flush();  
+			
+			p.waitFor();
 
 		} catch (Exception e) {  }  
 	}
