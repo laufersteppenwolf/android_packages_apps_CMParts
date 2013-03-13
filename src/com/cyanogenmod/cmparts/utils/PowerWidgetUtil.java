@@ -37,6 +37,7 @@ public class PowerWidgetUtil {
     public static final String BUTTON_GPS = "toggleGPS";
     public static final String BUTTON_BLUETOOTH = "toggleBluetooth";
     public static final String BUTTON_BRIGHTNESS = "toggleBrightness";
+    public static final String BUTTON_ULTRA_BRIGHTNESS = "toggleUltraBrightness";
     public static final String BUTTON_SOUND = "toggleSound";
     public static final String BUTTON_SYNC = "toggleSync";
     public static final String BUTTON_WIFIAP = "toggleWifiAp";
@@ -63,6 +64,8 @@ public class PowerWidgetUtil {
                 BUTTON_BLUETOOTH, R.string.title_toggle_bluetooth, "com.android.systemui:drawable/stat_bluetooth_on"));
         BUTTONS.put(BUTTON_BRIGHTNESS, new PowerWidgetUtil.ButtonInfo(
                 BUTTON_BRIGHTNESS, R.string.title_toggle_brightness, "com.android.systemui:drawable/stat_brightness_on"));
+        BUTTONS.put(BUTTON_ULTRA_BRIGHTNESS, new PowerWidgetUtil.ButtonInfo(
+                BUTTON_ULTRA_BRIGHTNESS, R.string.title_toggle_ultra_brightness, "com.android.systemui:drawable/stat_ultra_brightness_on"));
         BUTTONS.put(BUTTON_FLASHLIGHT, new PowerWidgetUtil.ButtonInfo(
                 BUTTON_FLASHLIGHT, R.string.title_toggle_flashlight, "com.android.systemui:drawable/stat_flashlight_on"));
         BUTTONS.put(BUTTON_GPS, new PowerWidgetUtil.ButtonInfo(

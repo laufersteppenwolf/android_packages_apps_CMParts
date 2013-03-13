@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Generic -->    
+    <!-- Generic -->
     <string name="app_name">Настройки CyanogenMod</string>
 
     <!--  Primary Screen Settings -->
@@ -100,6 +100,8 @@
     <string name="ui_status_bar_clock_summary">Часы в строке состояния будут скрыты, если отключено</string>
     <string name="ui_status_bar_battery_title">Стиль батареи</string>
     <string name="ui_status_bar_battery_summary">Стиль отображения заряда аккумулятора</string>
+    <string name="ui_status_bar_battery_color_title">Цвет батареи</string>
+    <string name="ui_status_bar_battery_color_summary">Цвет, используемый для батареи в строке состояния</string>
     <string name="ui_status_bar_compact_carrier_title">Компактное имя оператора</string>
     <string name="ui_status_bar_compact_carrier_summary">Использовать альтернативный стиль панели уведомления с маленьким именем оператора</string>
     <string name="ui_status_bar_carrier_label_title">Тип имени оператора</string>
@@ -238,12 +240,13 @@
     <string name="trackball_color_entry_amber">Жёлтый</string>
 
     <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_category">Использовать настройки категории</string>
     <string name="trackball_force_mode_application">Исп. настройки приложений</string>
     <string name="trackball_force_mode_off">Принудит. выкл. светодиода</string>
     <string name="trackball_force_mode_events">Принудит. вкл. светодиода для событий</string>
     <string name="trackball_force_mode_on">Принудит. вкл. светодиода</string>
 
-    <!--Trackball Settings : Warning dialog -->
+    <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">Внимание: может вызвать разрядку батареи</string>
     <string name="notification_battery_warning">Эта настройка увеличивает разряд батареи примерно на 3% в час. Если вы заметили, что батарея разряжается быстрее, виновата эта опция. Не включайте, если не хотите быстрой разрядки.</string>
 
@@ -457,6 +460,10 @@
     <string name="pref_use_dithering_title">Сглаживание поверхностей</string>
     <string name="pref_use_dithering_summary">Сглаживание поверхностей улучшает качество изображения за счет производительности (требуется перезагрузка)</string>
 
+    <!-- Performance Settings : KSM -->
+    <string name="pref_ksm_title">Kernel samepage merging</string>
+    <string name="pref_ksm_summary">KSM уменьшает требования физической памяти и улучшает производительность</string>
+
     <!-- Performance Settings : 16bpp Alpha -->
     <string name="pref_use_16bpp_alpha_title">16-битная прозрачность</string>
     <string name="pref_use_16bpp_alpha_summary">Использование 16-битной прозрачности может улучшить скорость прокрутки, но возможно появление визуальных артефактов (требуется перезагрузка)</string>
@@ -499,7 +506,6 @@
     <!-- Application Settings : Move any app -->
     <string name="pref_move_all_apps_title">Разрешить перемещение</string>
     <string name="pref_move_all_apps_summary">Разрешить перемещение любых приложений на внешнюю память</string>
-
 
     <!-- Application Settings : Switch storage mountpoints -->
     <string name="pref_switch_storage_title">Внутренняя память</string>
@@ -544,7 +550,6 @@
     <string name="pref_render_effect_calibrated_cool">Калиброванный (N1) Холодный</string>
     <string name="pref_render_effect_red">красный</string>
 
-
     <!--  Widget Types -->
     <string name="widget_render_effect_night">Ночь</string>
     <string name="widget_render_effect_terminal">Терм</string>
@@ -556,7 +561,6 @@
     <string name="widget_render_effect_calibrated">Кал</string>
     <string name="widget_render_effect_calibrated_red">Кал Красноватый</string>
     <string name="widget_render_effect_calibrated_cool">Кал Холодный</string>
-
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Кнопки в панели уведомлений</string>
@@ -662,7 +666,7 @@
     <string name="sound_vibrate_in_call_summary_off">Не вибрировать при уведомлениях во время разговора</string>
     <string name="sound_vibrate_in_call_summary_on">Вибрировать при уведомлениях</string>
     <string name="sound_lock_volume_keys_title">Блок. клавиш громкости</string>
-<string name="sound_lock_volume_keys_summary">Предотвращает снижение громкости до беззвучного режима случайным нажатием клавиши громкости</string>
+    <string name="sound_lock_volume_keys_summary">Предотвращает снижение громкости до беззвучного режима случайным нажатием клавиши громкости</string>
     <string name="sound_camera_shutter_disable_title">Отключить звук камеры</string>
     <string name="sound_camera_shutter_disable_summary_on">Звук камеры выключен</string>
     <string name="sound_camera_shutter_disable_summary_off">Звук камеры включен</string>
@@ -802,6 +806,7 @@
     <string name="cpu_settings_title">Настройки ЦП</string>
     <string name="cpu_title">Настройки ЦП</string>
     <string name="cpu_summary">Настройки режимов и частот</string>
+    <string name="cpu_cur_freq_title">Текущая частота ЦП</string>
     <string name="cpu_governors_title">Доступные режимы</string>
     <string name="cpu_governors_summary">Список доступных режимов\nВыбранный: %S</string>
     <string name="cpu_min_freq_title">Минимальная частота ЦП</string>
@@ -810,6 +815,17 @@
     <string name="cpu_max_freq_summary">Максимальная частота ЦП\nТекущая: %s</string>
     <string name="cpu_set_on_boot">Выставлять при загрузке</string>
     <string name="cpu_set_on_boot_summary">Применить текущие настройки ЦП при загрузке</string>
+    
+    <!-- A2SD Settings strings -->
+    <string name="a2sd_settings_title">A2SD (ext) настройки</string>
+    <string name="a2sd_title">A2SD (ext) настройки</string>
+    <string name="a2sd_summary">Приложения на SD карту (ext) настройки</string>    
+    <string name="a2sd_mode_summary">Список A2SD режимов\nТекущий режим: %S</string>
+    <string name="a2sd_modes_title">Режим (требуется перезагрузка)</string>
+    <string name="a2sd_info_title">A2SD Информация</string>
+    <string name="a2sd_dialog">A2SD Информация</string>
+    <string name="a2sd_loading">Загрузка A2SD информации\u2026</string>
+    <string name="a2sd_error">Ошибка загрузки A2SD информации\u2026</string> 
 
     <!-- Permissions Management Settings strings -->
     <string name="perm_enable_management">Управление разрешениями</string>
@@ -817,4 +833,92 @@
     <string name="perm_enable_warning_message">Внимание!\nОтмена большинства разрешений может стать причиной сбоев в работе приложений. Если приложение с отменёнными разрешениями выдаёт ошибку, пожалуйста, предоставьте необходимые разрешения или не используйте приложение.\nПожалуйста, не посылайте сообщения об ошибках в CyanogenMod если приложение с отменёнными разрешениями не работает, как и следовало ожидать!</string>
     <string name="perm_enable_warning_title">Вы уверены?</string>
 
+    <!-- GingerDX settings -->
+    <string name="gingerdx_settings_title">Настройки GingerDX</string>
+    <string name="gingerdx_settings_summary">Специфические для GingerDX опции</string>
+
+	<!-- Call -->
+    <string name="gdx_call_screen1">Возможности вызова</string>
+    <string name="gdx_call_screen2">Звони мне громче, повторять рингтон, свой текст оператора и т.д.</string>
+    <string name="gdx_call_screen_sound">Звук</string>
+    <string name="gdx_call_screen_sound_pickup1">Поднять для звонка</string>
+    <string name="gdx_call_screen_sound_pickup2">Поднятие телефона вызывает введенный номер в звонилке</string>
+    <string name="gdx_call_screen_sound_lounder1">Звони мне громче</string>
+    <string name="gdx_call_screen_sound_lounder2">Звонок громче, когда телефон внутри сумки</string>
+    <string name="gdx_call_screen_sound_loop1">Повторять рингтон</string>
+    <string name="gdx_call_screen_sound_loop2">Опять, опять и опять...</string>
+    <string name="gdx_call_screen_sound_flipdown1">Поворот вниз</string>
+    <string name="gdx_call_screen_sound_flipdown2">Переворот вниз отключает звук входящего звонка</string>
+    <string name="gdx_call_screen_buttons">Кнопки</string>
+    <string name="gdx_call_screen_buttons_back1">Назад</string>
+    <string name="gdx_call_screen_buttons_back2">Нажатие кнопки Назад завершает текущий вызов</string>
+    <string name="gdx_call_screen_buttons_menu1">Меню</string>
+    <string name="gdx_call_screen_buttons_menu2">Нажатие кнопки Меню принимает текущий вызов</string>
+    <string name="gdx_call_screen_other">Прочее</string>
+    <string name="gdx_call_screen_other_carrier1">Свой текст оператора</string>
+    <string name="gdx_call_screen_other_carrier2">Показывается на экране блокировки / статусбаре</string>
+	
+	<!-- Alarm -->
+    <string name="gdx_alarm_screen1">Будильник</string>
+    <string name="gdx_alarm_screen2">Математические задачи, наростающая громкость и т.д.</string>
+    <string name="gdx_alarm_screen_mathquiz1">Математические задачи</string>
+    <string name="gdx_alarm_screen_mathquiz2">Решить пример для отключения будильника</string>
+    <string name="gdx_alarm_screen_flip1">Действия при перевороте</string>
+    <string name="gdx_alarm_screen_flip2">Перевернуть для переноса / отключения будильника</string>
+    <string name="gdx_alarm_screen_shake1">Действие при встряхивании</string>
+    <string name="gdx_alarm_screen_shake2">Встряхнуть телефон для переноса / отключения будильника</string>
+    <string name="gdx_alarm_screen_increasing">Нарастающая громкость</string>
+    
+	<!-- Jelly Bean -->
+    <string name="gdx_jelly_screen1">Желейные бобы</string>
+    <string name="gdx_jelly_screen2">Выпадающая панель, уведомления и т.д.</string>
+    <string name="gdx_jelly_screen_information1">Примечание</string>
+    <string name="gdx_jelly_screen_information2">Для применения внесенных изменений необходима перезагрузка!\n\n2012 © AChep@xda (artemchep@gmail.com)</string>
+    <string name="gdx_jelly_screen_status_bar_category">ПАНЕЛЬ СОСТОЯНИЯ</string>
+    <string name="gdx_jelly_screen_status_bar">Выпадающая панель</string>
+    <string name="gdx_jelly_screen_sbbuttons1">Софт кнопки</string>
+    <string name="gdx_jelly_screen_sbbuttons2">Искуственные кнопки внизу экрана</string>
+    <string name="gdx_jelly_screen_status_bar_panel_transparency1">Прозрачность фона выпадающей панели</string>
+    <string name="gdx_jelly_screen_status_bar_panel_transparency2">Измените прозрачность фона выпадающей панели уведомлений</string>
+    <string name="gdx_jelly_screen_status_bar_notification">Уведомления</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger1">Большие уведомления</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger2">Это экспериментальная возможность!</string>
+		
+	<!-- LED -->
+    <string name="gdx_led_screen1">LED-уведомления</string>
+    <string name="gdx_led_screen2">Опции для отключения LED-уведомлений ночью</string>
+    <string name="gdx_led_screen_enabled">Отключить LED</string>
+    <string name="gdx_led_screen_from1">С</string>
+    <string name="gdx_led_screen_from2">Когда LED-уведомления будут отключены</string>
+    <string name="gdx_led_screen_to1">По</string>
+    <string name="gdx_led_screen_to2">Когда LED-уведомления будут включены</string>
+	
+	<!-- Other -->
+    <string name="gdx_other_screen1">Прочее</string>
+    <string name="gdx_other_screen2">Ультра-яркость, Sense 3 экран блокировки, часы по центру и т.д.</string>
+    <string name="gdx_other_screen_userinterface">Пользовательский интерфейс</string>
+    <string name="gdx_other_screen_status_bar_centerclock1">Часы по центру</string>
+    <string name="gdx_other_screen_status_bar_centerclock2">Часы по центру панели состояния</string>
+    <string name="gdx_other_screen_status_bar_transparency1">Прозрачность статусбара</string>
+    <string name="gdx_other_screen_status_bar_transparency2">Необходима перезагрузка!</string>
+    <string name="gdx_other_screen_ringlock1">Ring Экран блокировки</string>
+    <string name="gdx_other_screen_ringlock2">Только базовый функционал!</string>
+    <string name="gdx_other_screen_senselock1">Sense 3 Экран блокировки</string>
+    <string name="gdx_other_screen_senselock2">Только базовый функционал!</string>
+    <string name="gdx_other_screen_hidemsgavatar">Скрыть аватар в сообщениях</string>
+    <string name="gdx_other_screen_ultrabrightness1">Ультра-яркость</string>
+    <string name="gdx_other_screen_ultrabrightness2">Может повлиять на скорость разряда батареи</string>
+    <string name="gdx_other_screen_copypaste">Быстрый копи / паст</string>
+    <string name="gdx_other_screen_updates1">Час проверки обновлений</string>
+    <string name="gdx_other_screen_updates2">Час для проверки обновлений</string>
+    <string name="gdx_other_screen_about1">О прошивке</string>
+    <string name="gdx_other_screen_about2">GingerDX by TeamFun</string>
+	
+	<!-- Custom carrier label -->
+    <string name="gdx_carrier_note">Очистить для отключения</string>
+    <string name="gdx_carrier_carrier">Текст оператора</string>
+    <string name="gdx_carrier_btn_save">Сохранить</string>
+    <string name="gdx_carrier_btn_cancel">Отменить</string>
+
+    <string name="title_toggle_ultra_brightness">Ультра-Яркость</string>
 </resources>

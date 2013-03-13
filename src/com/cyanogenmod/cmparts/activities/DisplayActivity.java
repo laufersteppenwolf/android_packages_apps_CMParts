@@ -30,7 +30,12 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+
 import android.os.SystemProperties;
+import android.util.Log;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class DisplayActivity extends PreferenceActivity implements OnPreferenceChangeListener {
 
@@ -54,6 +59,10 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
     private static final String ROTATION_90_PREF = "pref_rotation_90";
     private static final String ROTATION_180_PREF = "pref_rotation_180";
     private static final String ROTATION_270_PREF = "pref_rotation_270";
+    
+    private static final String TAG = "DisplayActivitySettings";
+    
+    private static final String ROTATE_180_PREF = "pref_rotate_180";
 
     private static final int ROTATION_0_MODE = 8;
     private static final int ROTATION_90_MODE = 1;
@@ -63,7 +72,7 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
     private CheckBoxPreference mElectronBeamAnimationOn;
 
     private CheckBoxPreference mElectronBeamAnimationOff;
-
+    
     private CheckBoxPreference mRotationAnimationPref;
 
     private CheckBoxPreference mRotation0Pref;
@@ -118,12 +127,11 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
         mRotation180Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_180_PREF);
         mRotation270Pref = (CheckBoxPreference) prefSet.findPreference(ROTATION_270_PREF);
         int mode = Settings.System.getInt(getContentResolver(),
-                        Settings.System.ACCELEROMETER_ROTATION_MODE,
-                        ROTATION_0_MODE|ROTATION_90_MODE|ROTATION_270_MODE);
-        mRotation0Pref.setChecked((mode & ROTATION_0_MODE) != 0);
-        mRotation90Pref.setChecked((mode & ROTATION_90_MODE) != 0);
-        mRotation180Pref.setChecked((mode & ROTATION_180_MODE) != 0);
-        mRotation270Pref.setChecked((mode & ROTATION_270_MODE) != 0);
+                        Settings.System.ACCELEROMETER_ROTATION_MODE, 13);
+        mRotation0Pref.setChecked((mode & 8) != 0);
+        mRotation90Pref.setChecked((mode & 1) != 0);
+        mRotation180Pref.setChecked((mode & 2) != 0);
+        mRotation270Pref.setChecked((mode & 4) != 0);
     }
 
     /** Whether backlight settings are supported or not */
@@ -171,7 +179,7 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
             if (mRotation180Pref.isChecked()) mode |= ROTATION_180_MODE;
             if (mRotation270Pref.isChecked()) mode |= ROTATION_270_MODE;
             if (mode == 0) {
-                mode |= ROTATION_0_MODE;
+                mode |= 8;
                 mRotation0Pref.setChecked(true);
             }
             Settings.System.putInt(getContentResolver(),
@@ -183,6 +191,22 @@ public class DisplayActivity extends PreferenceActivity implements OnPreferenceC
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         return false;
+    }
+    
+    public static boolean writeOneLine(String fname, String value) {
+        try {
+            FileWriter fw = new FileWriter(fname);
+            try {
+                fw.write(value);
+            } finally {
+                fw.close();
+            }
+        } catch (IOException e) {
+            String Error = "Error writing to " + fname + ". Exception: ";
+            Log.e(TAG, Error, e);
+            return false;
+        }
+        return true;
     }
 
 }
