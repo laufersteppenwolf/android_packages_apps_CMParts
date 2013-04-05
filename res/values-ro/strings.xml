@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Generic -->
+    <string name="app_name">CyanogenMod</string>
+
+    <!--  Primary Screen Settings -->
+    <string name="application_settings_title_head">Aplicaţii</string>
+    <string name="application_settings_title_subhead">Setările aplicației</string>
+    <string name="application_settings_summary_head">Muta aplicatii, locaţie, filtru de comunicare</string>
+    <string name="display_settings_title_head">Afişare</string>
+    <string name="display_settings_title_subhead">Setările de afișare</string>
+    <string name="display_settings_summary_head">Afișare animații, rotaţie, timeout</string>
+    <string name="input_settings_title_head">Intrare</string>
+    <string name="input_settings_title_subhead">Setările de intrare</string>
+    <string name="input_settings_summary_head">Comportament intrare, chei, haptic feedback</string>
+    <string name="interface_settings_title_head">Interfaţă utilizator</string>
+    <string name="interface_settings_title_subhead">Setările de interfaţă utilizator</string>
+    <string name="interface_settings_summary_head">Trucurile, Überscrollen, face efectul</string>
+    <string name="lockscreen_settings_title_head">Lockscreen</string>
+    <string name="lockscreen_settings_title_subhead">LockScreen setările</string>
+    <string name="lockscreen_settings_summary_head">LockScreen gesturi, aspectul, debloca opţiuni</string>
+    <string name="performance_settings_title_head">Performanţă</string>
+    <string name="performance_settings_title_subhead">Setări de performanţă</string>
+    <string name="performance_settings_summary_head">Morman de VM trucurile, JIT,</string>
+    <string name="sound_settings_title_head">Sunete</string>
+    <string name="sound_settings_title_subhead">Setările de sunet</string>
+    <string name="sound_settings_summary_head">Volume, audio-focus, liniştită, ore</string>
+    <string name="system_settings_title_head">Sistem</string>
+    <string name="system_settings_title_subhead">Setări de sistem</string>
+    <string name="system_settings_summary_head">Changelog, statistici, actualizare notificări</string>
+
+    <!--  Update Notifications -->
+    <string name="updatenotify_title">Actualizare notificări</string>
+    <string name="updatenotify_summary">Primi împinge notificări despre actualizările.</string>
+
+    <!-- User interface -->
+    <string name="ui_title">Interfaţă utilizator</string>
+    <string name="ui_summary">Setări & trucurile pentru interfaţa cu utilizatorul</string>
+
+    <string name="pref_electron_beam_animation_on">Anima de comutare</string>
+    <string name="pref_electron_beam_animation_off">Anima stingerea</string>
+    <string name="pref_rotation_animation_title">Animaţie de rotaţie</string>
+    <string name="pref_rotation_animation_summary">Anima rotaţia ecranului prin rotație a dispozitivului (necesită repornirea sistemului)</string>
+
+    <!-- User interface: Tablet tweaks -->
+    <string name="tablet_tweaks_title_head">Trucurile pentru tablete</string>
+    <string name="tablet_tweaks_summary_head">Setările cele mai utile pentru tablete rezumă. De lucru pentru alte dispozitive.</string>
+    <string name="tablet_tweaks_sb_bottom_title">Bara de stare de mai jos</string>
+    <string name="tablet_tweaks_sb_bottom_summary">Afișați bara de stare din partea de jos. Utile pentru tablete, butoanele pentru ecranul principal, etc, în bara de stare utiliza meniul.</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_title">Zona moarta</string>
+    <string name="tablet_tweaks_status_bar_dead_zone_summary">Mijlociu adaugă o gamă inactiv de jumătate lăţimea ecran bara de stare.</string>
+    <string name="tablet_tweaks_soft_buttons_left_title">Tastele stânga</string>
+    <string name="tablet_tweaks_soft_buttons_left_summary">Mutaţi butoane pe partea stanga din bara de stare.</string>
+    <string name="tablet_tweaks_soft_button_list_title">Butoane pentru a selecta</string>
+    <string name="tablet_tweaks_interface_head">Suprafata</string>
+    <string name="tablet_tweaks_disable_lockscreen_title">Clar LockScreen</string>
+    <string name="tablet_tweaks_disable_lockscreen_summary">După boot-area sau când trezirea LockScreen nici caseta pentru Arată Entsperrmuster.</string>
+    <string name="tablet_tweaks_disable_fullscreen_title">Preveni ecran complet</string>
+    <string name="tablet_tweaks_disable_fullscreen_summary">Bloc cerere un app pentru modul fullscreen. Bara de stare este întotdeauna vizibil, dacă nu este oprit manual.</string>
+    <string name="tablet_tweaks_unhide_button_list_head">Ascunde buton</string>
+    <string name="tablet_tweaks_unhide_button_list_title">Selectați butonul pentru a ascunde</string>
+    <string name="tablet_tweaks_extend_pm_title">Avansate de putere meniu</string>
+    <string name="tablet_tweaks_extend_pm_summary">Acțiuni pe ecranul principal/spate/meniu adăuga la meniul de oprire.</string>
+    <string name="tablet_tweaks_extend_pm_list_title">Butoane pentru a selecta</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_title">Control volum inversă</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_off">Se comporte într-un volum normal butoane de control: apăsaţi pe pentru a modifica volumul. Ţine apăsat pentru acţiune.</string>
+    <string name="tablet_tweaks_reverse_volume_behavior_summary_on">Tastele de volum se comporta invers: apăsând de acţiune. Apăsaţi şi ţineţi apăsat pentru a modifica volumul.</string>
+
+    <!-- User interface: Tablet tweaks -> volume remapping -->
+    <string name="tablet_tweaks_input_head">Butoanele de volum</string>
+    <string name="tablet_tweaks_long_volp_action_title">Apăsaţi şi ţineţi apăsat pentru mai tare</string>
+    <string name="tablet_tweaks_long_volp_action_summary">Acţiune pe homescreen/spate/meniu/etc să apăsaţi apăsaţi şi ţineţi volum buton pentru link. (Acces limitat la spre nap pe ecran)</string>
+    <string name="tablet_tweaks_long_volm_action_title">Apăsaţi şi ţineţi apăsat pentru mai silenţioase</string>
+    <string name="tablet_tweaks_vol_both_action_title">Ambele tastele de volum</string>
+    <string name="tablet_tweaks_vol_both_action_summary">Notă: Unele dispozitive face un reset în timp ce ţineţi a volumului şi a / oprire buton.</string>
+    <string name="tablet_tweaks_long_vol_both_action_title">Apăsaţi şi ţineţi apăsat ambele butoane de volum</string>
+
+    <!-- User interface: Tablet tweaks -> Extended power menu buttons -->
+    <string name="tablet_tweaks_extend_pm_list_head">Oprire meniu butoane</string>
+
+    <!-- User interface: Tablet tweaks -> soft buttons -->
+    <string name="tablet_tweaks_soft_buttons_list_head">Chei</string>
+    <string name="tablet_soft_buttons_home_title">Ecranul de start</string>
+    <string name="tablet_soft_buttons_menu_title">Meniu</string>
+    <string name="tablet_soft_buttons_back_title">Spate</string>
+    <string name="tablet_soft_buttons_search_title">Căutare</string>
+    <string name="tablet_soft_buttons_quick_na_title">Notificări rapidă</string>
+
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">Autom. Rotaţie</string>
+    <string name="pref_rotation_0_title">0 Grad</string>
+    <string name="pref_rotation_90_title">90 Grad</string>
+    <string name="pref_rotation_180_title">180 Grad</string>
+    <string name="pref_rotation_270_title">270 Grad</string>
+
+    <!-- User interface: Status bar tweaks -->
+    <string name="ui_status_bar_title">Bara de stare</string>
+    <string name="ui_status_bar_am_pm_title">Timp de zi display</string>
+    <string name="ui_status_bar_am_pm_summary">Dimineaţă/după-amiază lângă stilul de afişare timp</string>
+    <string name="ui_status_bar_clock_title">Arată ceas</string>
+    <string name="ui_status_bar_clock_summary">Ora este afişată dacă este dezactivată</string>
+    <string name="ui_status_bar_battery_title">Indicator de stare baterie</string>
+    <string name="ui_status_bar_battery_summary">Stilul de afişare stare baterie</string>
+    <string name="ui_status_bar_compact_carrier_title">Operatorii de compacte</string>
+    <string name="ui_status_bar_compact_carrier_summary">Dispunerea alternativă din zona de notificare cu nume mai scurte de operatorul</string>
+    <string name="ui_status_bar_carrier_label_title">Numele operatorului</string>
+    <string name="ui_status_bar_carrier_label_summary">Selectarea numele operatorului</string>
+    <string name="ui_status_bar_carrier_label_use_default">Standard de</string>
+    <string name="ui_status_bar_carrier_label_use_spn">Numele furnizorului de serviciu (SPN)</string>
+    <string name="ui_status_bar_carrier_label_use_plmn">Numele operatorului de reţea (PLMN)</string>
+    <string name="ui_status_bar_carrier_label_use_custom">Definite de utilizator</string>
+    <string name="ui_status_bar_carrier_label_custom_title">Hârtie personalizate. Operatorul</string>
+    <string name="ui_status_bar_carrier_label_custom_summary">Ca operatorul de afișat textul</string>
+    <string name="ui_status_bar_toggle_brightness">Controlul luminozităţii</string>
+    <string name="ui_status_bar_toggle_brightness_summary">Permite schimbarea de luminozitate de golire a degetului peste bara de stare</string>
+    <string name="ui_status_bar_toggle_info">Luminozitate automată este activată</string>
+    <string name="ui_status_bar_cm_signal_text_title">Indicator de semnal alternativ</string>
+    <string name="ui_status_bar_cm_signal_text_summary">Afișează intensitatea semnalului fără fir în dBm în loc de bara de afişare</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">Bar</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">Puterea semnalului (valoare numai)</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Puterea semnalului inclusiv "MC"</string>
+
+    <!-- User interface : LED Notifications -->
+    <string name="trackball_title">LED notificări</string>
+    <string name="trackball_summary">Controlul trackball/LED notificări</string>
+
+    <!-- User interface, WebView -->
+    <string name="ui_webview_title">WebView</string>
+    <string name="pref_pinch_reflow_title">Aranjarea textului după priză</string>
+    <string name="pref_pinch_reflow_summary">Ajustaţi imediat după conţinutul de pinch-to-zoom</string>
+
+    <!-- User Interface : Share menu for screenshots -->
+    <string name="pref_share_screenshot_title">Parts capturi de ecran</string>
+    <string name="pref_share_screenshot_summary">Afişa meniul "Părţi" după screenshot</string>
+
+    <!-- User interface : Overscroll -->
+    <string name="ui_overscroll_title">Ueberscrollen</string>
+    <string name="pref_overscroll_title">Überscroll efect</string>
+    <string name="pref_overscroll_summary">Selectaţi efect pentru Überscrollen</string>
+    <string name="pref_overscroll_weight_title">Puterea Überscroll</string>
+    <string name="pref_overscroll_weight_summary">Regla forţa de efectul Überscroll</string>
+
+    <!-- User interface : Lock Screen -->
+    <string name="ui_lockscreen_title">Personaliza ecranul de blocare</string>
+    <string name="pref_lockscreen_delay_title">Întârziere</string>
+    <string name="pref_lockscreen_security_title">Încuietoare de securitate</string>
+    <string name="pref_lockscreen_security_delay_note_title">Notă</string>
+    <string name="pref_lockscreen_security_delay_note_summary">Corespunzătoare timeout LockScreen este dezactivat, sunt ignorate. Este folosit numai timeout pentru încuietoare de securitate</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">După timpul de expirare ecran</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">După trecerea de pe ecran</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">Timp la de blocare de siguranţă este activat după afişarea în sine a oprit</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">Ora la care este activat de blocare de siguranţă după afişarea a fost oprit manual</string>
+    <string name="pref_lockscreen_slide_title">Slider</string>
+    <string name="pref_lockscreen_slide_delay_note_title">Notă</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">Glisorul LockScreen (fără blocare de siguranţă) apare doar atunci când timpul de blocare de siguranţă este mai mare de timp pentru slider LockScreen</string>
+    <string name="pref_lockscreen_slide_delay_title">Timp separată pentru slider</string>
+    <string name="pref_lockscreen_slide_delay_summary">Permite utilizarea de un contor de timp separată pentru slider LockScreen, înainte de siguranţă de blocare este activată</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">După timpul de expirare ecran</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">După trecerea de pe ecran</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Timp la glisantă de blocare este activat, după afişarea în sine a oprit</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Timp la glisantă de blocare este activat, după afişarea a fost oprit manual</string>
+    <string name="pref_lockscreen_timeout_lock_delay">Când ecranul timeout</string>
+    <string name="pref_lockscreen_screenoff_lock_delay">Când ecranul este oprit</string>
+    <string name="pref_lockscreen_timeout_lock_delay_summary">Cât timp să aştepte este activ până la expirare ecran LockScreen</string>
+    <string name="pref_lockscreen_screenoff_lock_delay_summary">Cât de mult timp să aştepte atunci când ecranul este dezactivat este activ până la LockScreen</string>
+
+    <!-- Color Picker -->
+    <string name="title_color_picker">Alege culoare</string>
+    <string name="msg_color_picker">\NZum apăsaţi Revocare înapoi butonul pentru a confirma pe mijloc de tip culoare.</string>
+
+    <!-- User interface: Trackball notifcations -->
+    <string name="trackball_notifications_title">Culoare de notificări trackball</string>
+    <string name="dialog_color_trackball">Alege o culoare</string>
+    <string name="dialog_blink_trackball">Alege clipire a</string>
+    <string name="color_trackball_flash_title">Intermitentă de culoare</string>
+    <string name="color_trackball_flash_summary">Culoare pentru Flash de trackball-ul</string>
+    <string name="color_trackball_custom_title">Alte culori</string>
+    <string name="color_trackball_custom_summary">Selectaţi o altă culoare pentru Flash</string>
+    <string name="color_trackball_blink_title">Clipire</string>
+    <string name="color_trackball_blink_summary">Viteza pentru Flash trackball-ul</string>
+    <string name="color_trackball_test_title">Încercaţi intermitent</string>
+    <string name="color_trackball_test_summary">Trackball-ul clipeste de testare</string>
+    <string name="dialog_clear_flash">Test de ieşire</string>
+    <string name="trackball_advanced_title">Extins</string>
+    <string name="pref_trackball_screen_title">Întotdeauna pulsing</string>
+    <string name="pref_trackball_screen_summary">Lumina trackball pulsează, de asemenea, când ecranul este.</string>
+    <string name="pref_trackball_blend_title">Se amestecă notificări</string>
+    <string name="pref_trackball_blend_summary">Se amestecă culorile de notificări. Suprascrie secvenţă.</string>
+    <string name="pref_trackball_sucess_title">Secvenţă</string>
+    <string name="pref_trackball_sucess_summary">Notificări vibrante de mai jos.</string>
+    <string name="pref_trackball_random_title">Culori aleatoare</string>
+    <string name="pref_trackball_random_summary">Puls LED pentru toate notificările în culori aleatorii.</string>
+    <string name="pref_trackball_order_title">Pulsa în ordinea</string>
+    <string name="pref_trackball_order_summary">Puls LED în ordine.</string>
+    <string name="pref_trackball_reset_title">Resetare</string>
+    <string name="pref_trackball_reset_summary">Reinițializați toate culorile şi apps.</string>
+    <string name="dialog_trackball_loading">Se încarcă...</string>
+    <string name="dialog_trackball_packagelist">Lista de pachete de încărcare</string>
+    <string name="trackball_category_dialog_text">Introduceţi noua categorie</string>
+    <string name="trackball_category_list_title">Categorie</string>
+    <string name="trackball_category_list_summary">Selectaţi o categorie</string>
+    <string name="trackball_category_screen">Gestionaţi categorie</string>
+    <string name="trackball_category_add_title">Adaugă categorie</string>
+    <string name="trackball_category_add_summary">Adăugaţi o categorie în lista</string>
+    <string name="trackball_category_add_error_title">Eroare</string>
+    <string name="trackball_category_add_error_summary">Denumirea categoriei nu poate \ "= \" conţin</string>
+    <string name="trackball_category_remove_title">Scoateţi categoria</string>
+    <string name="trackball_category_remove_summary">Elimina o categorie din lista</string>
+    <string name="trackball_remove_default_toast">Categoria implicit nu poate fi eliminat.</string>
+    <string name="trackball_reset_all">Reinițializați toate culorile şi categorii.</string>
+    <string name="trackball_array_error">Din păcate, a apărut o eroare. Acest pachet este \"Verschiedenes\ din categoria" amânat".</string>
+
+    <string name="trackball_color_notice_title">NOTĂ:</string>
+    <string name="trackball_color_notice_summary">Nu toate culorile LED sunt pe unele dispozitive.</string>
+
+    <string name="trackball_app_email">E-Mail</string>
+    <string name="trackball_app_mms">SMS/MMS</string>
+    <string name="trackball_app_gvoice">Google Voice</string>
+    <string name="trackball_app_gmail">Google Mail</string>
+    <string name="trackball_app_gtalk">Google Talk</string>
+    <string name="trackball_app_twitter">Twitter</string>
+    <string name="trackball_app_twicca">Twicca</string>
+    <!-- Say Missed Call instead of "Dialer" as the notification is for the missed call -->
+    <string name="trackball_app_dialer">Apel pierdut</string>
+
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Verde</string>
+    <string name="trackball_color_entry_white">Alb</string>
+    <string name="trackball_color_entry_red">Rosu</string>
+    <string name="trackball_color_entry_blue">Albastru</string>
+    <string name="trackball_color_entry_yellow">Galben</string>
+    <string name="trackball_color_entry_cyan">Cyan</string>
+    <string name="trackball_color_entry_magenta">Mihai</string>
+    <string name="trackball_color_entry_pink">Roz</string>
+    <string name="trackball_color_entry_orange">Orange</string>
+    <string name="trackball_color_entry_light_blue">Albastru deschis</string>
+    <string name="trackball_color_entry_random">Aleatoare</string>
+    <string name="trackball_color_entry_none">nu</string>
+    <string name="trackball_color_entry_amber">Amber</string>
+
+    <!-- Trackball Settings : Force modes -->
+    <string name="trackball_force_mode_category">Categoria setări</string>
+    <string name="trackball_force_mode_application">Cerere de stabilire</string>
+    <string name="trackball_force_mode_off">Întotdeauna opriţi LED</string>
+    <string name="trackball_force_mode_events">LED numai cu eveniment de notificare</string>
+    <string name="trackball_force_mode_on">Întotdeauna permite LED</string>
+
+    <!-- Trackball Settings : Warning dialog -->
+    <string name="notification_battery_warning_title">Avertisment: baterie de descărcare de gestiune poate accelera</string>
+    <string name="notification_battery_warning">Această opţiune a dovedit negativă pentru baterie taxa ca.3% pe oră. Acesta este motivul pentru care bateria mai repede atunci când descărcarea de gestiune pulsaţie mingea piesa. Utilizaţi această opţiune dacă mai repede descărcarea ar trebui evitate.</string>
+
+    <!-- Lockscreen Overview -->
+    <string name="pref_lockscreen_disable_on_security_title">LockScreen de pe. blocare</string>
+    <string name="pref_lockscreen_disable_on_security_summary">Dacă este activată o blocare ecran (model, PIN, parola), clar LockScreen</string>
+    <string name="pref_lockscreen_stylecfg_title">priveşte</string>
+    <string name="pref_lockscreen_stylecfg_summary">Personaliza aspectul de Lockscreens</string>
+    <string name="pref_lockscreen_widgets_title">Opţiuni de widget</string>
+    <string name="pref_lockscreen_widgets_summary">Un widget-uri diferite pe LockScreen / opriþi</string>
+    <string name="pref_lockscreen_unlock_title">Entsperroptionen</string>
+    <string name="pref_lockscreen_unlock_summary">Entsperren durch Tasten und schnelles Entsperren anpassen</string>
+    <string name="pref_lockscreen_gesture_title">Gesturi</string>
+    <string name="pref_lockscreen_gesture_summary">Permite şi personaliza gesturi pe ecranul de blocare</string>
+    <string name="pref_lockscreen_timeout_title">Timeouts</string>
+    <string name="pref_lockscreen_timeout_summary">Personaliza un interval de timp din ecranul de blocare</string>
+
+    <!-- Lockscreen Settings -->
+    <string name="lockscreen_settings_title">Setările de blocare ecran</string>
+    <string name="pref_lockscreen_always_battery_title">Stare baterie întotdeauna</string>
+    <string name="pref_lockscreen_always_battery_summary">Starea bateriei de vizualizare pe ecranul de blocare</string>
+    <string name="pref_lockscreen_widgets_layout_title">Aspectul widget</string>
+    <string name="pref_lockscreen_widgets_layout_summary">Layout pentru ora, data, operatorul de reţea şi selectaţi starea</string>
+    <string name="pref_lockscreen_widget_layout_entry_default">Standard</string>
+    <string name="pref_lockscreen_widget_layout_entry_hidden">Ascunse</string>
+    <string name="pref_lockscreen_widget_layout_entry_centered">Centrat</string>
+    <string name="pref_lockscreen_widget_layout_entry_right">Aliniat la dreapta</string>
+    <string name="pref_lockscreen_music_controls_title">Muzica de control</string>
+    <string name="pref_lockscreen_music_controls_summary">Afișare controale pentru muzică pe ecran de blocare</string>
+    <string name="pref_lockscreen_now_playing_title">Arată titlul</string>
+    <string name="pref_lockscreen_now_playing_summary">Afişa numele şi artist a melodiei curente</string>
+    <string name="pref_lockscreen_album_art_title">Afişare acoperire</string>
+    <string name="pref_lockscreen_album_art_summary">Arată capacul de titlul curent. Funcţionează numai cu aplicaţia de muzică originală în modul portret</string>
+    <string name="pref_lockscreen_music_headset_title">Control de muzică cu căşti</string>
+    <string name="pref_lockscreen_music_headset_summary">Afișare controale pentru muzica, în cazul în care un cablu sau Bluetooth Setul cu cască este conectat</string>
+    <string name="pref_lockscreen_always_music_controls_title">Arata mereu</string>
+    <string name="pref_lockscreen_always_music_controls_summary">Întotdeauna Arată comenzile pentru muzică, indiferent de dacă sau nu redarea muzicii</string>
+    <string name="pref_trackball_wake_title">Trackball-ul de trezire</string>
+    <string name="pref_trackball_wake_summary">Trezeste-te de unitatea prin apăsarea trackball-ul.</string>
+    <string name="pref_volume_wake_title">Tastele de volum trezi</string>
+    <string name="pref_volume_wake_summary">Apăsaţi volum sus / volum se trezeşte aparatul. Conceput pentru dispozitive cu greu blocare butonul reset.</string>
+    <string name="pref_trackball_unlock_title">Trackball-ul debloca</string>
+    <string name="pref_trackball_unlock_summary">Deblocarea aparatului prin apăsarea trackball-ul</string>
+    <string name="pref_menu_unlock_title">Debloca meniu</string>
+    <string name="pref_menu_unlock_summary">Buton de meniu deschide aparatul.</string>
+    <string name="pref_lockscreen_quick_unlock_control_title">Deblocarea rapidă</string>
+    <string name="pref_lockscreen_quick_unlock_control_summary">Introduceţi codul PIN şi parola fără confirmare. Ştergere este considerat nu a reuşit.</string>
+    <string name="pref_lockscreen_custom_app_toggle_title">Propriile lor app-Starter</string>
+    <string name="pref_lockscreen_custom_app_toggle_summary">Prezinta o a doua fila de alunecare sau rotire cursorul</string>
+    <string name="pref_lockscreen_custom_app_activity_title">Legate de aplicatie</string>
+    <string name="pref_lockscreen_custom_icon_style_title">Pictograma aplicaţiei de aplicare</string>
+    <string name="pref_lockscreen_custom_icon_style_summary">Pictograma aplicaţiei în loc de CM pictograma utilizaţi app lansator</string>
+    <string name="pref_lockscreen_custom_background_title">Selectaţi fundal</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">Selectaţi fundal</string>
+    <string name="pref_lockscreen_custom_background_summary">Selectați o imagine sau umple ca un fundal pentru LockScreen</string>
+    <string name="pref_lockscreen_custom_background_summary_color">În prezent de vizionare: culoarea de umplere</string>
+    <string name="pref_lockscreen_custom_background_summary_image">În prezent de vizionare: Custom. Fundal</string>
+    <string name="pref_lockscreen_custom_background_summary_default">În prezent de vizionare: imagine de fundal</string>
+    <string name="pref_lockscreen_background_result_successful">Fundal schimbat</string>
+    <string name="pref_lockscreen_background_result_not_successful">Fundal nu este schimbat</string>
+    <string name="pref_lockscreen_rotary_unlock_down_title">Deblocare verticală</string>
+    <string name="pref_lockscreen_rotary_unlock_down_summary">Pentru a debloca de ecran a trage jos roata. Viraj dreapta începe aplicarea</string>
+    <string name="pref_lockscreen_rotary_hide_arrows_title">Ascunde săgeţi</string>
+    <string name="pref_lockscreen_rotary_hide_arrows_summary">Ascunde direcţia de instrucţiuni pe roata</string>
+    <string name="lockscreen_style_header">priveşte</string>
+    <string name="lockscreen_delay_header">Întârziere şi shut-jos</string>
+    <string name="pref_lockscreen_style_title">Blocare ecran stil</string>
+    <string name="pref_lockscreen_style_summary">Selectaţi stilul de ecranul de blocare</string>
+    <string name="lockscreen_style_entry_tabs">Diapozitiv</string>
+    <string name="lockscreen_style_entry_rotary">Roata</string>
+    <string name="lockscreen_style_entry_lense">Lentilă</string>
+    <string name="lockscreen_style_entry_ring">Bule</string>
+    <string name="pref_in_call_style_title">Apel ecran stil</string>
+    <string name="pref_in_call_style_summary">Selectaţi stilul de ecran în timpul unui apel</string>
+    <string name="incall_style_entry_tabs">Diapozitiv</string>
+    <string name="incall_style_entry_rotary">Roata</string>
+    <string name="incall_style_entry_ring">Bule</string>
+    <string name="pref_rotary_style_title">Roata stil</string>
+    <string name="pref_rotary_style_summary">Personalizaţi aspectul roata</string>
+    <string name="rotary_style_entry_normal">Standardul</string>
+    <string name="rotary_style_entry_revamped">Remodelarea</string>
+    <string name="pref_ringlock_style_title">Bule de stil</string>
+    <string name="pref_ringlock_style_summary">Particulariza aspectul de bule</string>
+    <string name="ringlock_style_entry_bubbles">Bule</string>
+    <string name="ringlock_style_entry_revamped">Inele</string>
+    <string name="ringlock_style_entry_holo">Holo</string>
+    <string name="ringlock_style_entry_blade">Discuri</string>
+    <string name="lockscreen_music_title">Muzica de control</string>
+    <string name="pref_volbtn_music_controls_title">Titlul alegere m. Lautstärket.</string>
+    <string name="pref_volbtn_music_controls_summary">În cazul în care ecranul este oprit, căutaţi titluri apăsând tastele de volum</string>
+    <string name="pref_cambtn_music_controls_title">Redare/pauză cu aparat de fotografiat cheie</string>
+    <string name="pref_cambtn_music_controls_summary">Când ecranul este dezactivat, Reluare redare / pauză de presă şi apăsat butonul de aparat de fotografiat</string>
+    <string name="lockscreen_widgets_note_title">Notă</string>
+    <string name="lockscreen_widgets_note_summary">Stil \"Lense\" ascunde toate widget-uri cu excepţia controlul muzică. " Pentru mai uşor de comutare între stilurile de Locksreen, alte opţiuni rămân totuşi activat.</string>
+
+    <!-- Input Settings -->
+    <string name="input_settings_title">Setările de intrare</string>
+    <string name="input_settings_summary">Comportament de buton</string>
+    <string name="haptic_title">Haptic feedback</string>
+    <string name="haptic_summary">Ajustările pentru rezistenta si aspect de feedback haptic (HF)</string>
+    <string name="button_settings_title">Butonul Setări</string>
+    <string name="long_press_home_title">Buton acasă</string>
+    <string name="long_press_home_summary">Acţiune pentru costum presat şi apăsat butonul de acasă</string>
+    <string name="input_search_key_title">Cheia de căutare</string>
+    <string name="input_search_key_summary">Personaliza acţiune pentru apăsând butonul de căutare</string>
+    <string name="pref_input_custom_search_app_toggle_title">Link-ul app cu cheia de căutare</string>
+    <string name="pref_input_custom_search_app_toggle_summary">Lansarea unei aplicaţii specifice, atunci când apăsaţi butonul de căutare</string>
+    <string name="pref_input_custom_search_app_activity_title">Setaţi app</string>
+    <string name="pref_input_custom_long_search_app_toggle_title">Apăsaţi şi ţineţi apăsat butonul de căutare</string>
+    <string name="pref_input_custom_long_search_app_toggle_summary">Lansa o aplicaţie specifică la apăsaţi şi ţineţi apăsat butonul Find</string>
+
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">Buton de meniu</string>
+    <string name="long_press_menu_summary">Acţiune pentru costum presat şi apăsat butonul de meniu</string>
+    <string name="pref_user_defined_long_press_menu_title">Alegeţi aplicare propria</string>
+    <string name="pref_long_press_menu_title">Alege acţiunea</string>
+    <string name="pref_long_press_menu_summary">Acţiune la costum presat şi apăsat butonul de meniu</string>
+
+    <!-- Long Press Home -->
+    <string name="recent_apps_show_title">Arată titlul pentru ultimele apps</string>
+    <string name="recent_apps_num_title">Numărul de aplicaţii ultima</string>
+    <string name="recent_apps_num_summary">Număr de a afişa apps pentru a apăsaţi şi ţineţi apăsat butonul de acasă</string>
+    <string name="dialog_recent_apps_num_title">Selectaţi numărul de ultima apps</string>
+    <string name="use_custom_app_title">Utilizaţi o altă aplicaţie</string>
+    <string name="use_custom_app_summary">Alegeţi o altă aplicaţie în loc de dialog app ultima</string>
+    <string name="select_custom_app_title">Alegeţi o altă aplicaţie</string>
+    <string name="group_applications">Aplicaţii</string>
+
+    <!-- HapticTweaks -->
+    <string name="title_haptic_feedback">HF de presă</string>
+    <string name="summary_on_haptic_feedback">Feedback Haptic când apăsând tastele de moale şi anumite interacţiuni</string>
+    <string name="summary_off_haptic_feedback">Nu haptic feedback ecran chei şi anumite interacţiuni</string>
+
+    <string name="title_haptic_feedback_up">HF Când eliberaţi</string>
+    <string name="summary_on_haptic_feedback_up">Feedback Haptic atunci când vă eliberaţi de chei moale şi interacţiunilor anumite</string>
+    <string name="summary_off_haptic_feedback_up">Nici un feedback haptic atunci când vă eliberaţi de chei moale şi interacţiunilor anumite</string>
+
+    <string name="title_haptic_feedback_all">HF Elementele ecranului</string>
+    <string name="summary_on_haptic_feedback_all">Feedback Haptic când selectaţi elementele ecranului</string>
+    <string name="summary_off_haptic_feedback_all">Nici un feedback haptic când selectaţi elementele ecranului</string>
+
+    <string name="title_haptic_down_decider">Model: în jos</string>
+    <string name="title_haptic_up_decider">Model: mare</string>
+    <string name="title_haptic_long_decider">Model: deţine</string>
+    <string name="title_haptic_tap_decider">Model: Apăsaţi pe tastatură</string>
+
+    <string name="title_haptic_menu">HF-Ajustări</string>
+    <string name="title_haptic_notice">REPORNIRE NECESARĂ PENTRU A APLICA MODIFICĂRILE</string>
+
+    <string name="haptic_delay_desc">MS. Întârziere</string>
+    <string name="haptic_vibe_desc">MS. Durata</string>
+
+    <string name="haptic_down_description">Ajustarea valorilor HF pentru chei DRÜCKEN\n (tastele virtuale şi interacţiunile specifice)</string>
+    <string name="haptic_up_description">Ajustarea valorilor HF pentru chei LOSLASSEN\n (tastele virtuale şi majoritatea ecran de intrare)</string>
+    <string name="haptic_long_description">Ajustarea valorilor HF pentru presa deţin</string>
+    <string name="haptic_tap_description">Ajustarea HF valorile pentru tastarea de pe tastatură pe ecran</string>
+
+    <string name="haptic_plus_minus_desc">Apăsaţi plus sau minus butoanele pentru a adăuga sau elimina paşii în ordinea</string>
+
+    <string name="haptic_button_plus">+</string>
+    <string name="haptic_button_minus">-</string>
+
+    <string name="haptic_button_save">Magazin</string>
+    <string name="haptic_button_test">Testul</string>
+    <string name="haptic_button_cancel">Revocare</string>
+    <string name="haptic_button_revert">Restaurare</string>
+    <string name="haptic_button_default">Descarca standarde</string>
+
+    <string name="haptic_save_toast">Stoca valori HF:</string>
+    <string name="haptic_cancel_toast">Valorile HF neschimbate.</string>
+    <string name="haptic_revert_toast">Restabili ultimele valori...</string>
+    <string name="haptic_default_toast">Încărcare valori implicite...</string>
+
+    <!-- Performance Settings -->
+    <string name="performance_settings_title">Performanţă</string>
+    <string name="performance_settings_summary">Trucurile pentru performanţă</string>
+
+    <!-- Performance Settings : Compcache -->
+    <string name="pref_compcache_title">Pirită memorie de utilizare</string>
+    <string name="pref_compcache_summary">Porniţi virtuale creşterea capacităţii Pyrit şi selectaţi dimensiunea. (Repornire necesară)</string>
+
+    <!-- Performance Settings : JIT Mode -->
+    <string name="pref_jit_mode_title">Utilizarea JIT</string>
+    <string name="pref_jit_mode_summary">Folosind compilator Dalvik JIT-timp (repornire necesară)</string>
+
+    <!-- Performance Settings : Dithering -->
+    <string name="pref_use_dithering_title">Cuantizare</string>
+    <string name="pref_use_dithering_summary">Cuantizare îmbunătăţeşte calitatea imaginii în detrimentul dispozitiv de performanţă (impune repornirea) suprafeţe</string>
+
+    <!-- Performance Settings : 16bpp Alpha -->
+    <string name="pref_use_16bpp_alpha_title">16 bit transparenţă</string>
+    <string name="pref_use_16bpp_alpha_summary">Utilizarea 16-bit transparenţa poate îmbunătăţi performanţa în timpul defilării, dar poate provoca erori grafice (repornire necesară)</string>
+
+    <!-- Performance Settings : Scrolling Cache -->
+    <string name="pref_scrollingcache_title">Cache de parcurgere</string>
+    <string name="pref_scrollingcache_summary">Activaţi cache-ul de parcurgere îmbunătăţeşte performanţa de parcurgere, consumă mai multă memorie</string>
+    <string name="pref_scrollingcache_force_enable">Întotdeauna activată</string>
+    <string name="pref_scrollingcache_default_enable">Activat în mod implicit</string>
+    <string name="pref_scrollingcache_default_disable">Cu handicap în mod implicit</string>
+    <string name="pref_scrollingcache_force_disable">Întotdeauna cu handicap</string>
+
+    <!-- Performance Settings : Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">Partajarea resurselor</string>
+    <string name="pref_purgeable_assets_summary">Permite locatii sistemul nu mai folosind pentru a partaja imagini, astfel pentru a oferi mai mult RAM (impune repornirea)</string>
+
+    <!-- Performance Settings : VM Heap Size -->
+    <string name="pref_heapsize_title">Dimensiunea de morman VM</string>
+    <string name="pref_heapsize_summary">Utilizarea de maximum memorie pe VM morman (repornire necesară)</string>
+
+    <!-- Performance : Disable bootanimation
+    <string name="pref_disable_bootanimation_title">Boot-Animation deakt.</string>
+    <string name="pref_disable_bootanimation_summary">Boot-Animation zur Beschleunigung des Systemstarts deaktivieren</string> -->
+
+    <!-- Performance : Lock home memory -->
+    <string name="pref_lock_home_title">App acasă în magazin</string>
+    <string name="pref_lock_home_summary">Încerca şi să păstreze curent app acasă în magazin</string>
+
+    <!-- Performance : Lock mms app in memory -->
+    <string name="pref_lock_mms_title">Ţineţi MMS app magazin</string>
+    <string name="pref_lock_mms_summary">Pentru a evita riscul de pierdere de mesaj cu pic de memorie disponibil pe aparat</string>
+
+    <!-- Performance Settings : Warning dialog -->
+    <string name="performance_settings_warning_title">Avertisment: Dragon mai departe!</string>
+    <string name="performance_settings_warning">Aceste opţiuni experimentale afectează performanţele sistemului dumneavoastră, probabil, pentru mai rău. Vă rugăm să raportaţi orice erori, dacă modificaţi setările implicite.</string>
+
+    <!-- Application Settings -->
+    <string name="application_settings_title">Setări aplicație</string>
+    <string name="application_settings_summary">Diverse aplicarea setări, cum ar fi locaţia, etc...</string>
+
+    <!-- Application Settings : Switch storage mountpoints -->
+    <string name="pref_switch_storage_title">Utilizarea de memorie internă</string>
+    <string name="pref_switch_storage_summary_on">Utilizarea avansată de memorie internă pentru aplicaţii şi mass-media</string>
+    <string name="pref_switch_storage_summary_off">Card de memorie de utilizare pentru aplicaţii şi mass-media</string>
+    <string name="pref_storage_switch_unavailable">Acest aparat dispune de nici o memorie extinsă</string>
+
+    <!-- Application Settings : Move any app -->
+    <string name="pref_move_all_apps_title">Permite mutarea</string>
+    <string name="pref_move_all_apps_summary">Permite mutarea orice aplicaţii externe de stocare</string>
+
+    <!-- Application Settings : Install Location -->
+    <string name="pref_install_location_title">Locaţie de instalare</string>
+    <string name="pref_install_location_summary">Selectaţi locaţia pentru noi aplicatii</string>
+
+    <string name="general_title">Generale</string>
+    <string name="buttons_title">Tastele</string>
+
+    <!-- UI Settings : Power off prompt -->
+    <string name="pref_power_prompt_title">Cere</string>
+    <string name="pref_power_prompt_summary">Prompt pentru a confirma oprirea sau repornirea</string>
+
+    <!-- UI Settings: Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">Haptic feedback</string>
+    <string name="expanded_haptic_feedback_summary">Feedback Haptic pe / opriþi</string>
+
+    <!-- UI Settings : Render effect -->
+    <string name="pref_render_effect_title">Face efectul</string>
+    <string name="pref_render_effect_summary">Desenul de ecran alege culoarea</string>
+
+    <string name="widget_name">RenderFX Widget</string>
+    <string name="renderfx_temp">RenderFX</string>
+    <string name="prefs_render_effect">Face efectul</string>
+    <string name="notify_render_effect">Face efectul</string>
+    <string name="pref_widget_options_category_title">Opţiuni generale</string>
+    <string name="add_widget">Adăugaţi Widget</string>
+    <string name="pref_render_effect_none">Nici un efect de randare</string>
+    <string name="pref_render_effect_night">Modul de noapte (3700 K)</string>
+    <string name="pref_render_effect_green">Terminalul (verde)</string>
+    <string name="pref_render_effect_blue">Albastru</string>
+    <string name="pref_render_effect_amber">Amber</string>
+    <string name="pref_render_effect_salmon">Somon</string>
+    <string name="pref_render_effect_fuscia">Fucsia</string>
+    <string name="pref_render_effect_calibrated">Calibrat (N1)</string>
+    <string name="pref_render_effect_calibrated_red">Calibrat (N1) slab roşu</string>
+    <string name="pref_render_effect_calibrated_cool">Rece calibrat (N1)</string>
+    <string name="pref_render_effect_red">Rosu</string>
+
+    <!-- Widget Types -->
+    <string name="widget_render_effect_night">Noapte</string>
+    <string name="widget_render_effect_terminal">Terminalul</string>
+    <string name="widget_render_effect_blue">Albastru</string>
+    <string name="widget_render_effect_amber">Amber</string>
+    <string name="widget_render_effect_salmon">Somon</string>
+    <string name="widget_render_effect_fuscia">Roz</string>
+    <string name="widget_render_effect_red">Rosu</string>
+    <string name="widget_render_effect_calibrated">Kal</string>
+    <string name="widget_render_effect_calibrated_red">Kal salam Red</string>
+    <string name="widget_render_effect_calibrated_cool">Kal Rece</string>
+
+    <!-- Expanded View Power Widget -->
+    <string name="title_widget_buttons">Energie Widget</string>
+    <string name="title_expanded_widget">Puterea de control caseta de notificare</string>
+    <string name="summary_expanded_widget">Butoane pentru control al puterii în notificare indicatorul îndoite în sus</string>
+    <string name="title_expanded_hide_onchange">Ascunde după schimbare</string>
+    <string name="summary_expanded_hide_onchange">Ascunde ecranul de notificare imediat după ce s-au făcut o schimbare la servodirectie.</string>
+    <string name="title_expanded_hide_indicator">Ascunzându-se de indicatori</string>
+    <string name="summary_expanded_hide_indicator">Ascunde indicatorii de notificare</string>
+    <string name="title_expanded_hide_scrollbar">Ascundere bară de defilare</string>
+    <string name="summary_expanded_hide_scrollbar">Ascundere bară de defilare, dacă există mai multe widgeturi maxim posibil.</string>
+    <string name="expanded_color_mask">Culoare de afişare</string>
+    <string name="title_widget_picker">Pentru a afişa chei</string>
+    <string name="summary_widget_picker">Selectaţi butoanele care doriţi să apară.</string>
+    <string name="title_widget_order">Secvenţe de cheie</string>
+    <string name="summary_widget_order">Rearanja sau reordonaţi butoanele widget</string>
+    <string name="title_buttons">Tastele</string>
+    <string name="title_toggle_wifi">WLAN</string>
+    <string name="title_toggle_bluetooth">Bluetooth</string>
+    <string name="title_toggle_gps">GPS</string>
+    <string name="title_toggle_sound">Modul de inel</string>
+    <string name="title_toggle_brightness">Luminozitate</string>
+    <string name="title_toggle_sync">Sincronizare</string>
+    <string name="title_toggle_wifiap">WLAN-Hotspot</string>
+    <string name="title_toggle_screentimeout">Display-Timeout</string>
+    <string name="title_toggle_mobiledata">Mobilfunk-Daten</string>
+    <string name="title_toggle_lockscreen">Ecranul blocat</string>
+    <string name="title_toggle_networkmode">2G/3G</string>
+    <string name="title_toggle_autorotate">Aliniere</string>
+    <string name="title_toggle_airplane">Modul de zbor</string>
+    <string name="title_toggle_flashlight">Lanterna</string>
+    <string name="title_toggle_sleep">Comuta în modul standby</string>
+    <string name="title_toggle_media_play_pause">Media: Redare/pauză</string>
+    <string name="title_toggle_media_previous">Media: Melodia anterioară</string>
+    <string name="title_toggle_media_next">Media: Următoarea piesă</string>
+    <string name="title_toggle_wimax">WiMAX</string>
+    <string name="title_button_modes">Moduri pentru butoane</string>
+    <string name="pref_brightness_mode_title">Moduri de luminozitate</string>
+    <string name="pref_brightness_mode_summary">Selectați nivelurile de luminozitate</string>
+    <string name="pref_network_mode_title">Moduri de reţea</string>
+    <string name="pref_network_mode_summary">Selectaţi modul de reţea</string>
+    <string name="pref_screentimeout_mode_title">Afişare timeout</string>
+    <string name="pref_screentimeout_mode_summary">Regla întârziere înainte de închidere automată a ecranului</string>
+    <string name="pref_ring_mode_title">Moduri de inel</string>
+    <string name="pref_ring_mode_summary">Selectaţi modul de inel</string>
+    <string name="cm_sound_mode_soundVib_vib">Sunet + vibraţii/vibraţii</string>
+    <string name="cm_sound_mode_sound_vib">Sunet/vibraţii</string>
+    <string name="cm_sound_mode_sound_silent">Sunete/silent</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Sunet + vibraţii/vibratii/dezactivarea</string>
+    <string name="cm_sound_mode_sound_vib_silent">Vibratii/sunet/mut</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Sunet + vibraţii/sunet/vibratii/silent</string>
+    <string name="cm_sound_mode_vib_silent">Vibratii/mut</string>
+    <string name="pref_flash_mode_title">Lanterna</string>
+    <string name="pref_flash_mode_summary">Luminozitatea de torta</string>
+    <string name="pref_mobiledatanetwork_mode_title">Auto-2 G/3 G de date</string>
+    <string name="pref_mobiledatanetwork_mode_summary">Butonul \'Mobilfunk-Daten\ "comută automat între 2 g şi 3 g model</string>
+
+    <!-- Backlight -->
+    <string name="backlight_title">Luminozitate automată</string>
+    <string name="backlight_summary">Nivelurile şi filtrare</string>
+    <string name="light_filter_title">Filtru senzor de lumina</string>
+    <string name="light_filter_enabled_title">Porniţi</string>
+    <string name="light_filter_enabled_summary">Alunecare înseamnă valorile senzor pentru a evita pâlpâire.</string>
+    <string name="light_filter_window_title">Lungime de fereastra de timp</string>
+    <string name="light_filter_window_summary">Valoarea filtrată este fondurile în această perioadă.</string>
+    <string name="light_filter_reset_title">Limita de</string>
+    <string name="light_filter_reset_summary">Valorile pe care atât de puternic se abat de la medie, resetare filtru.</string>
+    <string name="light_filter_interval_title">Intervalul de eşantionare</string>
+    <string name="light_filter_interval_summary">Mai mică valoarea poate îmbunătăţi precizia, dar foloseste mai mult puterea Procesorului.</string>
+    <string name="light_levels_title">Nivelurile de lumină</string>
+    <string name="light_levels_enabled_title">Profita de nivelurile de iluminare personalizate</string>
+    <string name="light_levels_dim_title">Nivel de Bildschirmabdunklung</string>
+    <string name="light_levels_dim_summary">Luminozitatea de întunecare a ecranului</string>
+    <string name="light_levels_editor_title">Editaţi setările...</string>
+    <string name="light_decrease_enabled_title">Permite inspectarea lumina</string>
+    <string name="light_decrease_enabled_summary">Permite că lumina poate decola. Histerezis pentru reducerea pâlpâire.</string>
+    <string name="light_decrease_hysteresis_title">Slăbi histerezis</string>
+    <string name="light_decrease_hysteresis_summary">Senzor niveluri se suprapun până în prezent în jos.</string>
+
+    <!-- Light sensor levels -->
+    <string name="ll_title">Nivel senzor de lumina</string>
+    <string name="ll_header_upper">Superioară</string>
+    <string name="ll_header_lower">Inferioară</string>
+    <string name="ll_header_lcd">Ecran</string>
+    <string name="ll_header_btn">Tastele</string>
+    <string name="ll_header_kb">Tastatură</string>
+    <string name="ll_lux">Senzor (filtrate / directe):</string>
+    <string name="ll_lcd">Ecran:</string>
+    <string name="ll_btn">Butoane:</string>
+    <string name="ll_kb">Tastatură:</string>
+    <string name="ll_disabled">oprit</string>
+    <string name="ll_default">Încărcare valori implicite</string>
+    <string name="ll_save">& Salvare se aplică</string>
+    <string name="ll_reload">Valorile curente de reîncărcare</string>
+    <string name="ll_bad_levels">Paşi pentru a lua la</string>
+    <string name="ll_num_levels">Ajustaţi numărul de niveluri</string>
+
+    <!-- Sound -->
+    <string name="sound_title">Setările de sunet</string>
+    <string name="sound_summary">Setări pentru sunet şi audio focus</string>
+    <string name="sound_notifications_focus_title">Evidenţiaţi de alertă</string>
+    <string name="sound_notifications_focus_summary">Scade volumul compatibil apps a face notificarea audibil în mod clar</string>
+    <string name="sound_volume_control_silent_title">Linişte absolută</string>
+    <string name="sound_volume_control_silent_summary">Volumul adăuga o condiție pentru absolută pace a mintii.</string>
+    <string name="sound_vibrate_in_call_title">Vibrează în timpul apelului</string>
+    <string name="sound_vibrate_in_call_summary_on">Notificările normale vibraţii în timpul unui apel</string>
+    <string name="sound_vibrate_in_call_summary_off">Nu există nici o vibraţie atunci când notificări în timpul unui apel</string>
+    <string name="sound_lock_volume_keys_title">Dezactivaţi butoanele de volum</string>
+    <string name="sound_lock_volume_keys_summary">Dezactivaţi butoanele de volum în modul silenţios; previne Dezactivare accidentale la modul silenţios</string>
+    <string name="sound_camera_shutter_disable_title">Eliberarea Eton afara.</string>
+    <string name="sound_camera_shutter_disable_summary_on">Aparat de fotografiat de presă Eton nu va juca</string>
+    <string name="sound_camera_shutter_disable_summary_off">Aparat de fotografiat de presă Eton este joc</string>
+    <string name="sound_camera_shutter_disable_warning_title">Atentie: Notă juridică!</string>
+    <string name="sound_camera_shutter_disable_warning">Dezactivarea etons de presă aparat de fotografiat este interzis în unele ţări. Sunteţi sigur că doriţi să dezactivaţi-l?</string>
+    <string name="sound_to_speaker_title">Peste pe vorbitor</string>
+    <string name="sound_notifications_title">Notificări</string>
+    <string name="sound_rings_title">Tonuri de apel</string>
+    <string name="sound_alarms_title">Ceas cu alarmă</string>
+    <string name="sound_note_title">Notă</string>
+    <string name="sound_note_summary">Următoarele setări afectează numai atunci când utilizaţi căştile.</string>
+    <string name="sound_attenuation_title">Setaţi volumul</string>
+    <string name="sound_limitvol_title">Volumul în muzică</string>
+    <string name="sound_notifications_attenuation_dialog">Notificare de amortizare</string>
+    <string name="sound_rings_attenuation_dialog">Inel de sunet de amortizare</string>
+    <string name="sound_alarms_attenuation_dialog">Ceas cu alarmă de amortizare</string>
+    <string name="sound_notifications_limitvol_dialog">Volumul de notificare</string>
+    <string name="sound_rings_limitvol_dialog">Ton de apel volum</string>
+    <string name="sound_alarms_limitvol_dialog">Volum alarmă</string>
+
+    <!-- Quiet hours -->
+    <string name="sound_category_quiet_hours_title">Ore liniştite</string>
+    <string name="quiet_hours_note_title">Notă</string>
+    <string name="quiet_hours_note_summary">Apelurile primite sunt depistate ca de obicei în timpul orelor de liniştită</string>
+    <string name="quiet_hours_enabled">Permite ore liniştite</string>
+    <string name="quiet_hours_enabled_on">Ore liniştite sunt puse în aplicare</string>
+    <string name="quiet_hours_enabled_off">notificările normale</string>
+    <string name="quiet_hours_start">Începutul ore liniştite</string>
+    <string name="quiet_hours_start_summary">Ce timp a face ore liniştite scrobeală</string>
+    <string name="quiet_hours_end">La sfârşitul liniştită de ore</string>
+    <string name="quiet_hours_end_summary">Ar trebui să oprească ore liniştite timp ce</string>
+    <string name="quiet_hours_mute">Pentru a dezactiva notificările</string>
+    <string name="quiet_hours_mute_on">Nu sună</string>
+    <string name="quiet_hours_mute_off">Sunete juca în mod normal</string>
+    <string name="quiet_hours_still">Opriþi vibraţii</string>
+    <string name="quiet_hours_still_on">Aparatul nu va vibra</string>
+    <string name="quiet_hours_still_off">Unitatea va vibreze normal</string>
+    <string name="quiet_hours_dim">LED Dim</string>
+    <string name="quiet_hours_dim_on">LED este estompat (dacă este posibil)</string>
+    <string name="quiet_hours_dim_off">LED îşi păstrează luminozitate completă</string>
+    <string name="quiet_hours_haptic">Nap off haptic feedback</string>
+    <string name="quiet_hours_haptic_on">Haptic feedback este aus</string>
+    <string name="quiet_hours_haptic_off">Haptic feedback este an</string>
+
+    <string name="cmstats_title">Statistici anonime</string>
+    <string name="cmstats_summary">Ajuta CyanogenMod a îmbunătăţi prin raportarea anonim de statistici despre aparatul dvs.</string>
+
+    <string name="user_defined_key1">Hotkey 1</string>
+    <string name="user_defined_key2">Hotkey 2</string>
+    <string name="user_defined_key3">Hotkey 3</string>
+    <string name="user_defined_envelope_key">Butonul de plic</string>
+    <string name="user_defined_explorer_key">Buton explorator</string>
+    <string name="user_defined_not_set">Nimic stabilit</string>
+
+    <!-- Lockscreen gesture strings -->
+    <string name="pref_lockscreen_gestures_enable_title">Permite gesturi</string>
+    <string name="pref_lockscreen_gestures_trail_title">Arată cale</string>
+    <string name="pref_lockscreen_gestures_builder_title">Crea gesturi</string>
+    <string name="pref_lockscreen_gestures_sensitivity_title">Sensibilitate</string>
+    <string name="pref_lockscreen_gestures_color_title">Culoare de cale</string>
+    <string name="label_create_gesture">Crea gest</string>
+    <string name="gestures_button_add">Adauga gest</string>
+    <string name="gestures_button_discard">Se îndepărtează</string>
+    <string name="gestures_button_done">Finisaj</string>
+    <string name="gestures_error_missing_shortcut">Acesta trebuie să fie selectate pentru gestul nici o acţiune!</string>
+    <string name="gestures_save_success">Gest salvate în %s</string>
+    <string name="gestures_cancel_action">Revocare</string>
+    <string name="gestures_loading">Gesturi de încărcare...</string>
+    <string name="gestures_empty">Gesturi nu</string>
+    <string name="gestures_activity">Gesturi</string>
+    <string name="gestures_delete">Ştergeţi</string>
+    <string name="gestures_delete_success">Gest de ștergere</string>
+    <string name="gestures_error_loading">Problema cu gesturi dosar operaţie.</string>
+    <string name="gestures_unlock_only">Debloca</string>
+    <string name="gestures_toggle_sound">Modul de inel</string>
+    <string name="gestures_shortcut_or_activity">Comandă rapidă sau o aplicaţie</string>
+    <string name="gestures_flashlight">Lanterna</string>
+    <string name="gestures_next">Următoarea piesă</string>
+    <string name="gestures_previous">Melodia anterioară</string>
+    <string name="gestures_playpause">Redare/pauză</string>
+    <string name="pref_lockscreen_disable_unlock_tab">Ascunde diapozitiv</string>
+    <string name="pref_lockscreen_disable_unlock_tab_summary">Notă: Trebuie să fie activat trackball, meniu sau gest debloca pentru această opţiune</string>
+    <string name="gestures_action_label">Acţiune:</string>
+    <string name="gestures_draw_label">Gest:</string>
+    <string name="gestures_draw_for_label">"Gestul pentru \"<xliff:g id="action">%s</xliff:g>\":</string>
+    <string name="gestures_already_present">Avertisment: Gest Similar deja este asociat cu o altă acţiune!</string>
+    <string name="gestures_run_in_background">Se execută în fundal</string>
+
+    <!-- Change Log strings -->
+    <string name="changelog_title">A se vedea changelog</string>
+    <string name="changelog_dialog">Changelog</string>
+    <string name="changelog_loading">Încărcare Changelog...</string>
+    <string name="changelog_error">Nu a reuşit să se încarce scimbare...</string>
+    <string name="changelog_unknown">Necunoscut</string>
+    <string name="changelog_version">Versiunea</string>
+
+    <!-- Phone goggles -->
+    <string name="category_phone_goggles_period">Durata</string>
+    <string name="category_phone_goggles_confirmation">Confirmarea</string>
+    <string name="category_phone_goggles_filter">Filtru</string>
+    <string name="title_phone_goggles">Phone Goggles</string>
+    <string name="title_phone_goggles_default">Setările implicite</string>
+    <string name="title_phone_goggles_apps">Cererile de filtrat</string>
+    <string name="title_phone_goggles_app_enabled">Phone Goggles Porniţi</string>
+    <string name="title_phone_goggles_use_custom">Propriile setări</string>
+    <string name="title_phone_goggles_filter">Numere de telefon filtrate</string>
+    <string name="title_phone_goggles_enabled">Phone Goggles Porniţi</string>
+    <string name="title_phone_goggles_start">Începe de Phone Goggles Modus</string>
+    <string name="title_phone_goggles_end">La sfârşitul anului Phone Goggles Modus</string>
+    <string name="title_phone_goggles_confirmation_enabled">Confirmare</string>
+    <string name="title_phone_goggles_phone_enabled">Telefon</string>
+    <string name="title_phone_goggles_sms_enabled">SMS</string>
+    <string name="title_phone_goggles_maths_level">Dificultatea de matematica</string>
+    <string name="title_phone_goggles_work_filtered">Locul de muncă</string>
+    <string name="title_phone_goggles_mobile_filtered">Mobile</string>
+    <string name="title_phone_goggles_other_filtered">Altele</string>
+    <string name="summary_phone_goggles">Filtru extern de comunicare</string>
+    <string name="summary_phone_goggles_default">Setările implicite</string>
+    <string name="summary_phone_goggles_filter">Alege tipul de numere care trebuie să fie filtrat</string>
+    <string name="summary_phone_goggles_start">Când ar trebui să filtrare de ieşire apeluri încep</string>
+    <string name="summary_phone_goggles_end">Când ar trebui să filtrarea de apeluri de ieşire end</string>
+    <string name="summary_phone_goggles_confirmation_enabled">Cum confirmare va cere un timp înainte de a începe de filtrare</string>
+    <string name="summary_phone_goggles_maths_level">Dificultatea de a computaţionale problemele de autorizaţie de comunicare</string>
+    <string name="summary_on_phone_goggles_enabled">Ieşire de comunicare se filtrează</string>
+    <string name="summary_on_phone_goggles_use_custom">Propriile setări</string>
+    <string name="summary_on_phone_goggles_app_enabled">Phone Goggles este activată pentru această aplicație</string>
+    <string name="summary_on_phone_goggles_work_filtered">Profesionale de comunicare se filtrează</string>
+    <string name="summary_on_phone_goggles_mobile_filtered">Comunicare la numerele de telefon mobil va fi filtrat</string>
+    <string name="summary_on_phone_goggles_other_filtered">Se filtrează comunicarea către alte numere</string>
+    <string name="summary_off_phone_goggles_enabled">Comunicarea nu este filtrat</string>
+    <string name="summary_off_phone_goggles_use_custom">Utilizaţi setările implicite</string>
+    <string name="summary_off_phone_goggles_app_enabled">Phone Goggles este oprit pentru această aplicaţie</string>
+    <string name="summary_off_phone_goggles_work_filtered">Comunicare profesională nu este filtrat</string>
+    <string name="summary_off_phone_goggles_mobile_filtered">Comunicare la numerele de telefon mobil nu este filtrat</string>
+    <string name="summary_off_phone_goggles_other_filtered">Comunicarea către alte numere nu este filtrat</string>
+    <string name="phone_goggles_maths_level_easy">Uşor</string>
+    <string name="phone_goggles_maths_level_medium">Mediu</string>
+    <string name="phone_goggles_maths_level_hard">Greu</string>
+    <string name="phone_goggles_confirmation_none">nu</string>
+    <string name="phone_goggles_confirmation_prompt">Cererea de dialog</string>
+    <string name="phone_goggles_confirmation_maths">Probleme de calcul</string>
+
+    <!-- CPU Settings strings -->
+    <string name="cpu_settings_title">Setările de CPU</string>
+    <string name="cpu_title">Setările de CPU</string>
+    <string name="cpu_summary">Setările de CPU</string>
+    <string name="cpu_governors_title">Scheme disponibile</string>
+    <string name="cpu_governors_summary">Lista selectata de Regelungen\nMomentan disponibile: %S</string>
+    <string name="cpu_min_freq_title">Viteza de ceas CPU minim</string>
+    <string name="cpu_min_freq_summary">Minim CPU Takt\nMomentan: %s</string>
+    <string name="cpu_max_freq_title">Maxim viteza de ceas CPU</string>
+    <string name="cpu_max_freq_summary">Maxim CPU Takt\nMomentan: %s</string>
+    <string name="cpu_set_on_boot">Setat la pornire</string>
+    <string name="cpu_set_on_boot_summary">Restabilire setări CPU la pornire</string>
+
+    <!-- Permissions Management Settings strings -->
+    <string name="perm_enable_management">Permisiunea gestionare</string>
+    <string name="perm_enable_management_summary">Permite gestionarea permisiunilor pentru aplicaţiile</string>
+    <string name="perm_enable_warning_message">Avertizare! \nDas eliminarea permisiunilor va cauza eroare în cele mai multe aplicaţii. Dacă se blochează o cerere retrase permisiuni, au permis permisiunile sunt \nBitte nici un bug-ul rapoarte CyanogenMod trimite, în cazul în care o cerere retrase permisiuni nu funcţionează cum era de aşteptat!</string>
+    <string name="perm_enable_warning_title">Sigur?</string>
+
+	<!-- GingerDX settings -->
+    <string name="gingerdx_settings_title">GingerDX Setări</string>
+    <string name="gingerdx_settings_summary">Schimbare GingerDX-setările specifice</string>
+    
+	<!-- Call -->
+    <string name="gdx_call_screen1">Caracteristici de apel</string>
+    <string name="gdx_call_screen2">Ma numesc lounder, ringtone bucla, propriul nume de utilizator, etc.</string>
+    <string name="gdx_call_screen_sound">Sunet</string>
+    <string name="gdx_call_screen_sound_pickup1">Ridica la apel</string>
+    <string name="gdx_call_screen_sound_pickup2">Iau telefonul formeazã numãrul tastat</string>
+    <string name="gdx_call_screen_sound_lounder1">Suna-ma mai tare</string>
+    <string name="gdx_call_screen_sound_lounder2">Mai tare de ton de apel când telefonul este în buzunar</string>
+    <string name="gdx_call_screen_sound_loop1">Repetaţi ringtone</string>
+    <string name="gdx_call_screen_sound_loop2">Din nou şi din nou, şi...</string>
+    <string name="gdx_call_screen_sound_flipdown1">Flip down</string>
+    <string name="gdx_call_screen_sound_flipdown2">Răsturnarea este tonul de apel pe mut</string>
+    <string name="gdx_call_screen_buttons">Tastele</string>
+    <string name="gdx_call_screen_buttons_back1">Spate</string>
+    <string name="gdx_call_screen_buttons_back2">Apăsând butonul din spate se termină apel</string>
+    <string name="gdx_call_screen_buttons_menu1">Meniu</string>
+    <string name="gdx_call_screen_buttons_menu2">Apăsând butonul de meniu ia apelul</string>
+    <string name="gdx_call_screen_other">Altele</string>
+    <string name="gdx_call_screen_other_carrier1">Propriile noastre Betreibertext</string>
+    <string name="gdx_call_screen_other_carrier2">Apare în bara de stare şi pe ecranul de blocare</string>
+	
+	<!-- Alarm -->
+    <string name="gdx_alarm_screen1">Ceas cu alarmă</string>
+    <string name="gdx_alarm_screen2">Test de matematica, rotative / vibratoare de acţiune, în creştere de volum etc.</string>
+    <string name="gdx_alarm_screen_mathquiz1">Test de matematica</string>
+    <string name="gdx_alarm_screen_mathquiz2">Rezolvarea unui test de matematica oprit alarma</string>
+    <string name="gdx_alarm_screen_flip1">Acţiune rotativ</string>
+    <string name="gdx_alarm_screen_flip2">Revenind la încă face / anula alarma</string>
+    <string name="gdx_alarm_screen_shake1">Se agită acţiuni</string>
+    <string name="gdx_alarm_screen_shake2">Agitare a încă face / anula alarma</string>
+    <string name="gdx_alarm_screen_increasing">Amplifica volumul</string>
+    
+	<!-- Jelly Bean -->
+    <string name="gdx_jelly_screen1">Jelly Beans</string>
+    <string name="gdx_jelly_screen2">Bara de stare, notificările etc.</string>
+    <string name="gdx_jelly_screen_status_bar_category">BARA DE STARE</string>
+    <string name="gdx_jelly_screen_information1">Comentarii</string>
+    <string name="gdx_jelly_screen_information2">Pentru a aplica aceste setări necesită o repornire! \n\n2012 © AChep@xda (artemchep@gmail.com)</string>
+    <string name="gdx_jelly_screen_status_bar">Casetă de stare</string>
+    <string name="gdx_jelly_screen_sbbuttons1">Butoane moi</string>
+    <string name="gdx_jelly_screen_sbbuttons2">Moale butoane în partea de jos a ecranului</string>
+    <string name="gdx_jelly_screen_status_bar_panel_transparency1">Statutul cutie transparenta</string>
+    <string name="gdx_jelly_screen_status_bar_panel_transparency2">Setarea de transparenţă a panoului jeleu fasole starea bara</string>
+    <string name="gdx_jelly_screen_status_bar_notification">Notificări</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger1">Mai mare notificări</string>
+    <string name="gdx_jelly_screen_status_bar_notification_bigger2">Aceasta este o funcţie experimentală!</string>
+	
+	<!-- LED -->
+    <string name="gdx_led_screen1">LED</string>
+    <string name="gdx_led_screen2">Setările pentru a dezactiva LED la noapte</string>
+    <string name="gdx_led_screen_enabled">LED Nu fi de acord</string>
+    <string name="gdx_led_screen_from1">De</string>
+    <string name="gdx_led_screen_from2">Când va LED oprit?</string>
+    <string name="gdx_led_screen_to1">Până la</string>
+    <string name="gdx_led_screen_to2">Când va LED activat din nou?</string>
+	
+	<!-- Other -->
+    <string name="gdx_other_screen1">Alte</string>
+    <string name="gdx_other_screen2">Ultra brightness, Ecran de blocare sens 3, ceas centrală etc.</string>
+    <string name="gdx_other_screen_userinterface">Interfaţa cu utilizatorul</string>
+    <string name="gdx_other_screen_status_bar_centerclock1">Ceas centrală în bara de stare</string>
+    <string name="gdx_other_screen_status_bar_centerclock2">În loc de pe partea dreapta</string>
+    <string name="gdx_other_screen_status_bar_transparency1">Transparenţa de bara de stare</string>
+    <string name="gdx_other_screen_status_bar_transparency2">Reporniţi pentru a lua asupra modificărilor</string>
+    <string name="gdx_other_screen_senselock1">Ecran de blocare sens 3</string>
+    <string name="gdx_other_screen_senselock2">Numai funcţii de bază</string>
+    <string name="gdx_other_screen_hidemsgavatar">Ascunde avatar la texte SMS</string>
+    <string name="gdx_other_screen_ultrabrightness1">Ultra brightness</string>
+    <string name="gdx_other_screen_ultrabrightness2">Creşte luminozitatea (poate creşte consumul bateriei!)</string>
+    <string name="gdx_other_screen_copypaste">Rapid copie / paste</string>
+    <string name="gdx_other_screen_updates1">Timp pentru a verifica pentru updates</string>
+    <string name="gdx_other_screen_updates2">Seta timpul pentru a verifica pentru updates</string>
+    <string name="gdx_other_screen_about1">Despre</string>
+    <string name="gdx_other_screen_about2">GingerDX by TeamFun</string>
+	
+	<!-- Custom carrier label -->
+    <string name="gdx_carrier_note">Gol pentru a dezactiva</string>
+    <string name="gdx_carrier_carrier">Betreibertext</string>
+    <string name="gdx_carrier_btn_save">Magazin</string>
+    <string name="gdx_carrier_btn_cancel">Revocare</string>
+
+    <string name="title_toggle_ultra_brightness">Ultra-Brightness permite</string>
+    
+    <!-- Pie controls -->
+    <string name="pie_controls_title">Pie controls</string>
+    <string name="pie_controls_summary">Setări pentru navigare plăcintă</string>
+    <string name="pie_color_change_title">Pie Setările de culoare</string>
+    <string name="pie_gravity_title">Pie Gravitatea</string>
+    <string name="pie_gravity_summary">Selectați locul în cazul în care placinta este de a fi plasate</string>
+    <string name="pie_gravity_top">Partea de sus</string>
+    <string name="pie_gravity_bottom">Partea de jos</string>
+    <string name="pie_gravity_right">Dreptul de</string>
+    <string name="pie_gravity_left">Stânga de</string>
+    <string name="pie_mode_title">Pie Style</string>
+    <string name="pie_mode_summary">Pilota cum animaţii şi extensii de statutul ar trebui să fie tratate</string>
+    <string name="pie_mode_bare">kahl</string>
+    <string name="pie_mode_quick">rapid</string>
+    <string name="pie_mode_default">Normal (standard)</string>
+    <string name="pie_mode_slow">lent</string>
+    <string name="pie_size_title">Pie Dimensiune</string>
+    <string name="pie_size_summary">Defini dimensiunea control\ plăcintă</string>
+    <string name="pie_size_small">mici</string>
+    <string name="pie_size_medium">Mediu</string>
+    <string name="pie_size_default">@string/pie_mode_default</string>
+    <string name="pie_size_large">minunat</string>
+    <string name="pie_size_gigantic">gigantice</string>
+    <string name="pie_enable_color_title">Permite culoare de acoperire</string>
+    <string name="pie_enable_color_summary">Activa / dezactiva capacul de culoare plăcintă</string>
+    <string name="pie_button_color_title">Schimba culoarea de buton</string>
+    <string name="pie_button_color_summary">Schimba butoanele de culoare de acoperire</string>
+    <string name="pie_background_button_color_title">Schimbarea culorii de fundal</string>
+    <string name="pie_background_button_color_summary">Schimba culoarea de fundal de acoperire</string>
+    <string name="pie_choice_button_color_title">Schimba culoarea de butonul selectat</string>
+    <string name="pie_choice_button_color_summary">Schimba culoarea de acoperire de butonul selectat</string>
+    <string name="pie_battery_color_title">Schimbare Akkufarbe</string>
+    <string name="pie_battery_color_summary">Schimbare Akkufarbenüberzug</string>
+    <string name="pie_chevron_color_title">Schimba culoarea de unghiul</string>
+    <string name="pie_chevron_color_summary">Schimba capacul de culoare unghi</string>
+    <string name="pie_clock_color_title">Schimba culoarea de ceas</string>
+    <string name="pie_clock_color_summary">Schimba stratul de culoare de ceas</string>
+    <string name="pie_outline_color_title">Schimba culoarea de contur</string>
+    <string name="pie_outline_color_summary">Schimba capacul de culoare contur</string>
+    <string name="piecontrol_notice_summary">NavigationBar este aktiviert.\n\nDeaktiviere dacă doriţi, în timp ce utilizaţi plăcintă NavigationBar.</string>
+    <string name="pie_gap_title">Pie Decalajul</string>
+    <string name="pie_gap_summary">Schimbarea între diferitele articole plăcintă</string>
+    <string name="pie_gap_closed">Închis</string>
+    <string name="pie_gap_small">Mici (tip de oras)</string>
+    <string name="pie_gap_big">Marele</string>
+    <string name="pie_gap_huge">Imens</string>
+    <string name="pie_trigger_title">Gama de</string>
+    <string name="pie_trigger_summary">Alegeţi dimensiunea de locuri de muncă, stergator se mută la registrele de apel de plăcintă</string>
+    <string name="pie_trigger_small">@string/pie_gap_small</string>
+    <string name="pie_trigger_big">@string/pie_gap_big</string>
+    <string name="pie_trigger_huge">@string/pie_gap_huge</string>
+	<string name="pie_trigger_disable">Cu handicap</string>
+    <string name="pie_trigger_default">Standart</string>
+
+	 <string name="pref_pie_buttons_home_title">Pie Home buton 1</string>
+    <string name="pref_pie_buttons_home1_title">Pie Home buton 2</string>
+    <string name="pref_pie_buttons_home2_title">Pie Home buton 3</string>
+    <string name="pref_pie_buttons_home3_title">Pie Home buton 4</string>
+    <string name="pref_pie_buttons_home4_title">Pie Home buton 5</string>
+    <string name="pref_pie_buttons_home_summary">Selectaţi funcţia de acest buton</string>
+    <string name="pref_pie_buttons_home_input_title">Alege funcţia</string>
+    <string name="pref_pie_buttons_home_level_toggle_title">Activa butoanele de placinta</string>
+    <string name="pref_pie_buttons_home_level_toggle_summary">Activa / dezactiva butoanele de placinta</string>
+    <string name="pref_pie_buttons_home_app_toggle_title">Activa plăcintă app-Starter</string>
+    <string name="pref_pie_buttons_home_app_toggle_summary">Activa / dezactiva plăcintă app-Starter</string>
+    <string name="pref_pie_buttons_search_title">Butonul de căutare plăcintă 1</string>
+    <string name="pref_pie_buttons_search1_title">Butonul de căutare plăcintă 2</string>
+    <string name="pref_pie_buttons_search2_title">Butonul de căutare plăcintă 3</string>
+    <string name="pref_pie_buttons_search3_title">Butonul de căutare plăcintă 4</string>
+    <string name="pref_pie_buttons_search4_title">Butonul de căutare plăcintă 5</string>
+    <string name="pref_pie_buttons_recent_title">Placinta recent verendet butonul 1</string>
+    <string name="pref_pie_buttons_recent1_title">Placinta recent verendet butonul 2</string>
+    <string name="pref_pie_buttons_recent2_title">Placinta recent verendet butonul 3</string>
+    <string name="pref_pie_buttons_recent3_title">Placinta recent verendet butonul 4</string>
+    <string name="pref_pie_buttons_recent4_title">Placinta recent verendet butonul 5</string>
+    <string name="pref_pie_buttons_menu_title">Butonul de meniu plăcintă 1</string>
+    <string name="pref_pie_buttons_menu1_title">Butonul de meniu plăcintă 2</string>
+    <string name="pref_pie_buttons_menu2_title">Butonul de meniu plăcintă 3</string>
+    <string name="pref_pie_buttons_menu3_title">Butonul de meniu plăcintă 4</string>
+    <string name="pref_pie_buttons_menu4_title">Butonul de meniu plăcintă 5</string>
+    <string name="pref_pie_buttons_back_title">Placinta spate nasture 1</string>
+    <string name="pref_pie_buttons_back1_title">Placinta spate nasture 2</string>
+    <string name="pref_pie_buttons_back2_title">Placinta spate nasture 3</string>
+    <string name="pref_pie_buttons_back3_title">Placinta spate nasture 4</string>
+    <string name="pref_pie_buttons_back4_title">Placinta spate nasture 5</string>
+    <string name="pie_recent_controls_title">Placinta recent utilizate setări</string>
+    <string name="pie_menu_controls_title">Plăcintă cu meniul de setări</string>
+    <string name="pie_search_controls_title">Setări de căutare plăcintă</string>
+    <string name="pie_back_controls_title">Placinta înapoi setările</string>
+    <string name="pie_home_controls_title">Placinta acasă setări</string>
+    <string name="pie_item_controls_title">Plăcintă cu element de control</string>
+    
+    <string name="pie_center_title">Orientul Mijlociu aliniere</string>
+	<string name="pie_center_summary">Vezi plăcintă în mijlocul ecranului, indiferent de poziţia de activare</string>
+
+    <string name="input_pie_key_title">Plăcintă cu element de control</string>
+    <string name="input_pie_key_summary">Selectaţi activitatea de control plăcintă element</string>
+
+</resources>
